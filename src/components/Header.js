@@ -8,11 +8,11 @@ const HeaderContainer = styled.header`
     right: 0;
     background-color: #333;
     color: #fff;
-    padding: 0.3rem;
+    padding: 0.2rem;
     display: grid;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 `
 
 const Header = () => {
