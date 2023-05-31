@@ -180,13 +180,11 @@ export const Container1 = styled.div`
 
     /* Tablets and Small Screens */
     @media (min-width: 769px) and (max-width: 1024px) {
-        background-color: purple;
     }
 
     /* Medium-sized Screens */
     @media (min-width: 1025px) and (max-width: 1280px) {
         /* Styles for medium-sized screens */
-        background-color: orange;
         img {
             max-width: 100%;
             width: 35vh;
@@ -209,7 +207,7 @@ export const Container2 = styled.div`
     border: 4px whitesmoke solid;
 
     border-radius: 5%;
-    margin-top: 2.3rem;
+    margin-top: 2.6rem;
     margin-bottom: 5rem;
     font-size: 0.7rem;
     width: 55vh;
@@ -341,24 +339,40 @@ export const Main1 = styled.div`
     margin-left: 4rem;
     background-color: #dae1e5;
     @media (min-width: 1025px) and (max-width: 1280px) {
-        margin-bottom: 10rem;
-        background-color: purple;
-        .lessintitle {
-            font-size: 5rem;
-        }
-        width: 60rem;
-        height: 40vh;
+             display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 10vh;
+        margin-top: 0.5rem;
+
+        background-color: transparent;
+        border-color: transparent;
         .mainbox1 {
+            width: 20rem;
             display: grid;
-            align-items: center;
             justify-content: center;
-            height: 20vh;
-            .textContent {
-                font-size: 1.2rem;
-            }
+            align-items: center;
+            height: 40vh;
+            background-color: transparent;
         }
         .button-group {
-            display: flex;
+            display: grid;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            ${
+                '' /* font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 1rem;
+            border-radius: 5%;
+            line-height: 1.5rem; */
+            }
+            display: none;
         }
     }
 

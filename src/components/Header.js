@@ -32,8 +32,12 @@ const Header = () => {
     ]
 
     const currentMessage = messages[currentMessageIndex]
-
-    return <HeaderContainer>{currentMessage}</HeaderContainer>
+    return (
+        <HeaderContainer>
+            <a href="tel:+12155991400">(215) 599-1400</a>
+            {currentMessage}
+        </HeaderContainer>
+    )
 }
 
 export default Header

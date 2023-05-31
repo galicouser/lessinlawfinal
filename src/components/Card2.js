@@ -16,10 +16,10 @@ const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 6.5rem;
+    margin-top: 0.5rem;
     height: 55vh;
     width: 55vh;
-    margin-left: 0.5rem;
+    margin-left: 1.3rem;
     overflow: scroll;
     border-radius: 5%;
     background-color: #dae1e5;

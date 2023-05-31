@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.main`
     display: grid;
@@ -7,18 +7,15 @@ export const Wrapper = styled.main`
     height: 25vh;
     width: 100%;
     @media (max-width: 768px) {
-
     }
 
     /* Tablets and Small Screens */
     @media (min-width: 769px) and (max-width: 1024px) {
         display: flex;
-        background-color: orange;
     }
 
     /* Medium-sized Screens */
     @media (min-width: 1025px) and (max-width: 1280px) {
-        background-color: beige;
     }
 
     /* Large Screens */
