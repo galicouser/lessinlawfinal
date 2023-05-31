@@ -425,7 +425,7 @@ export const Main1 = styled.div`
         justify-content: center;
         align-items: center;
         width: 70%;
-        height: 10vh;
+        height: 40vh;
         margin-top: 0.5rem;
 
         background-color: transparent;
@@ -435,8 +435,8 @@ export const Main1 = styled.div`
             display: grid;
             justify-content: center;
             align-items: center;
-            height: 40vh;
-            background-color: transparent;
+            height: 50vh;
+
         }
         .button-group {
             display: grid;
