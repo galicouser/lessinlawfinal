@@ -24,7 +24,7 @@ export const links = [
     },
     {
         id: 5,
-        url: 'https://secure.lessinlaw.com/',
+        url: '/login',
         text: 'login',
     },
 ]
