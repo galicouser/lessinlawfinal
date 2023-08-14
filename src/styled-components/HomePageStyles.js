@@ -133,7 +133,7 @@ export const ContactCard = styled.div`
 export const Container1 = styled.div`
     background-color: #dae1e5;
     border: 4px whitesmoke solid;
-
+    padding: 2rem;
     border-radius: 5%;
 
     margin-top: 25rem;
@@ -506,10 +506,9 @@ export const Main1 = styled.div`
     }
 `
 export const Sidebar = styled.div`
-    flex: 0 0 300px;
-    padding: 20px;
-    margin-right: 3rem;
-
+    width: 100%;
+    display:flex;
+    margin-top: 400px;
     p {
         font-size: 24px;
         font-weight: bold;
@@ -527,10 +526,14 @@ export const Sidebar = styled.div`
             margin-bottom: 10px;
         }
     }
+
+    @media (max-width: 768px) {
+        display: grid;
+    }
 `
 
 export const Ad = styled.div`
-    flex: 0 0 300px;
+    width: 50%;
     background-color: #f5f5f5;
     padding: 20px;
     text-align: center;
@@ -538,6 +541,47 @@ export const Ad = styled.div`
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 20px;
+    }
+
+    .btn-groups{
+        display: grid;
+        justify-content: center;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: inline-block;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        border-color: transparent;
+        width: 200px;
+        margin-top: 10px;
+        @media (max-width: 767px) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+
+
+    .phone-number{
+        padding: 1rem;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        width: 100%;
     }
 
 
@@ -549,18 +593,15 @@ export const InternalTag1 = styled.span`
 `
 export const InternalTag2 = styled.span`
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 200;
 `
 export const Testimonials = styled.div`
     border: 4px whitesmoke solid;
-
-    flex: 0 0 300px;
-    margin-top: 10px;
-    padding: 5px;
+    padding: 2rem;
     background-color: #dae1e5;
     overflow: auto;
-    max-height: 400px; /* Adjust the value to your desired maximum height */
-    margin-top: 2rem;
+    max-height: 400px;
+    width: 50%;
     p {
         font-size: 18px;
         font-weight: bold;
@@ -594,8 +635,7 @@ export const Testimonials = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin-top: 60rem;
-
+        width: 100%;
     }
 `
 

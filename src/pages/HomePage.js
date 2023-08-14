@@ -262,37 +262,17 @@ const HomePage = () => {
 
             <Main>
                 <Wrapper>
+
+
+
                     <div className="container page ">
                         <div className="info">
                             <Card />
-                            {/* <h1 style={{ fontSize: '4rem' }}>
-                                Lessin{' '}
-                                <span style={{ color: 'blue' }}>Law</span>
-                            </h1> */}
-
-                            {/* <img
-                                src="https://res.cloudinary.com/elpawl-llc/image/upload/v1683570898/1_tfh9ri.png"
-                                alt="logo"
-                                className="logo1"
-                            /> */}
-
-                            {/* <Title>
-                                <div className="container2">
-                                    <h1 className="titleh1">
-                                        Lessin <span>Law</span>
-                                    </h1>
-                                    <p style={{ fontSize: '1.5rem' }}>
-                                        Lessin Law Pennsylvania Lawyers
-                                        Philadelphia Accident Claims Attorney
-                                    </p>
-
-                                </div>
-                            </Title> */}
 
                             <div
                                 className={`${isModalOpen
-                                        ? 'modal-overlay show-modal'
-                                        : 'modal-overlay'
+                                    ? 'modal-overlay show-modal'
+                                    : 'modal-overlay'
                                     }`}
                             >
                                 <div className="modal-container">
@@ -314,8 +294,8 @@ const HomePage = () => {
                             </div>
                             <div
                                 className={`${isChatOpen
-                                        ? 'chat-overlay show-chat'
-                                        : 'chat-overlay'
+                                    ? 'chat-overlay show-chat'
+                                    : 'chat-overlay'
                                     }`}
                             >
                                 <div className="modal-container">
@@ -337,6 +317,9 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+
+
+
                 </Wrapper>
                 <Container1 style={{}}>
                     <img src={carouselContent1[activeIndex1].image} alt="img" />
@@ -346,7 +329,7 @@ const HomePage = () => {
                     </InternalTag2>
                 </Container1>
             </Main>
-            
+
             <Main>
                 <Container2>
                     <img src={carouselContent2[activeIndex2].image} alt="img" />
@@ -365,7 +348,60 @@ const HomePage = () => {
                     alt="logo"
                 /> */}
             </Main>
+
+
             <Sidebar>
+
+
+                <Ad
+                    style={{
+                        backgroundColor: '#dae1e5',
+                        border: '4px whitesmoke solid'
+                    }}
+                >
+                    <div
+                        style={{
+                            display: 'grid',
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}
+                        className="ad"
+                    >
+                        <p>
+                            Jeffrey R. Lessin & Associates, P.C 1515 Market St
+                            #1650, Philadelphia, PA
+                        </p>
+                    </div>
+                    <div className="btn-groups">
+                        <Button
+                            variant="contained"
+                            className="btn btn-hero"
+                            onClick={handleShow}
+                        >
+                            contact us
+                        </Button>
+
+                        <Button
+                            variant="contained"
+                            className="btn btn-hero"
+                            onClick={openChat}
+                        >
+                            live chat
+                        </Button>
+                        <Button
+                            onClick={handleMapClick}
+                            variant="contained"
+                            className="btn btn-hero"
+                        >
+                            {' '}
+                            Directions
+                        </Button>
+                    </div>
+                    <div style={{display:'grid', justifyContent: 'center'}}>
+                    <div className='phone-number' style={{ color: lessinColor }}>(215) 599-1400</div>
+                    </div>
+                </Ad>
+
                 <Testimonials>
                     <p className="client">Client Testimonials</p>
                     <Link to="https://www.facebook.com/lessinlawphiladelphia">
@@ -386,52 +422,7 @@ const HomePage = () => {
                     <Reviews />
                 </Testimonials>
 
-                <Ad
-                    style={{
-                        backgroundColor: '#dae1e5',
-                        border: '4px whitesmoke solid',
 
-                    }}
-                >
-                    <div
-                        style={{
-                            display: 'grid',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-                        className="ad"
-                    >
-                        <p>
-                            Jeffrey R. Lessin & Associates, P.C 1515 Market St
-                            #1650, Philadelphia, PA
-                        </p>
-                    </div>
-                    <div className="btn-groups">
-                        <Button
-                            variant="contained"
-                            onClick={handleShow}
-                            className="btn btn-hero"
-                        >
-                            contact us
-                        </Button>
-
-                        <Button
-                            variant="contained"
-                            onClick={openChat}
-                            className="btn btn-hero"
-                        >
-                            live chat
-                        </Button>
-                        <Button
-                            onClick={handleMapClick}
-                            className="btn btn-hero"
-                        >
-                            {' '}
-                            Directions
-                        </Button>
-                    </div>
-                    <p>(215) 599-1400</p>
-                </Ad>
             </Sidebar>
             <Footer />
         </HomePageContainer>

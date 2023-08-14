@@ -12,7 +12,7 @@ const CardContainer = styled.div`
     border-radius: 4%;
     border: 4px whitesmoke solid;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 0.2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +23,14 @@ const CardContainer = styled.div`
     margin-left: 2rem;
     overflow: scroll;
     background-color: #dae1e5;
+
+    &:hover{
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+    }
+
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
@@ -34,6 +42,10 @@ const CardContainer = styled.div`
         margin-top: 20rem;
         background-color: transparent;
         border-color: transparent;
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
     }
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
@@ -61,15 +73,20 @@ const Video = styled.video`
 const CardTitle = styled.h2`
     font-size: 1.9rem;
     margin: 0.5rem 0;
-    text-decoration: underline;
     font-family: 'Arial', sans-serif;
     color: #333; /* Dark color */
+    @media (max-width: 768px) {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
 `
 
 const CardDescription = styled.p`
     font-size: 1rem;
     line-height: 1.5;
-    overflow: auto;
+    margin-top: 10%;
+    font-weight: 200;
+
 `
 
 const Card = () => {
