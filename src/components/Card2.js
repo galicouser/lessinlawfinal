@@ -11,13 +11,13 @@ const CardContainer = styled.div`
     overflow: scroll;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 0.2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 0.5rem;
-    height: 55vh;
+    height: 60vh;
     width: 55vh;
     margin-left: 1.3rem;
     overflow: scroll;
@@ -28,6 +28,15 @@ const CardContainer = styled.div`
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
+
+    &:hover{
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+    }
+
+
     @media (max-width: 768px) {
         width: 80%;
         height: 50vh;
@@ -35,6 +44,10 @@ const CardContainer = styled.div`
         margin-top: 7rem;
         background-color: transparent;
         border-color: transparent;
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
     }
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
@@ -62,14 +75,20 @@ const Video = styled.video`
 const CardTitle = styled.h2`
     font-size: 1.9rem;
     margin: 0.5rem 0;
-    text-decoration: underline;
     font-family: 'Arial', sans-serif;
     color: #333; /* Dark color */
+    @media (max-width: 768px) {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
 `
 
 const CardDescription = styled.p`
     font-size: 1rem;
     line-height: 1.5;
+    margin-top: 10%;
+    font-weight: 200;
+
 `
 
 const Card = () => {

@@ -13,6 +13,7 @@ import Card2 from '../components/Card2.js'
 import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
+import Button from '@mui/material/Button';
 
 import {
     HomePageContainer,
@@ -24,7 +25,6 @@ import {
     VideoBackground,
     InternalTag1,
     InternalTag2,
-    Button,
     Button2,
     ContactCard,
     Container1,
@@ -198,7 +198,7 @@ const HomePage = () => {
                         <span style={{ color: lessinColor }}>Lessin</span>{' '}
                         <span style={{ color: lawColor }}>Law</span>
                     </h1>
-                    <h3> Pennsylvania Personal Injury Lawyers</h3>
+                    <div className='header-2'> Pennsylvania Personal Injury Lawyers</div>
                     <p
                         onClick={openURL}
                         style={{ marginLeft: '1rem', fontSize: '1.5rem' }}
@@ -210,13 +210,14 @@ const HomePage = () => {
                     <div className="button-group">
                         <Button
                             variant="contained"
-                            onClick={openChat}
                             className="btn btn-hero"
+                            onClick={openChat}
                         >
                             live chat
                         </Button>
                         <Button
                             onClick={handleMapClick}
+                            variant="contained"
                             className="btn btn-hero"
                         >
                             {' '}
@@ -224,8 +225,8 @@ const HomePage = () => {
                         </Button>
                         <Button
                             variant="contained"
-                            onClick={handleShow}
                             className="btn btn-hero"
+                            onClick={handleShow}
                         >
                             contact us
                         </Button>
@@ -289,11 +290,10 @@ const HomePage = () => {
                             </Title> */}
 
                             <div
-                                className={`${
-                                    isModalOpen
+                                className={`${isModalOpen
                                         ? 'modal-overlay show-modal'
                                         : 'modal-overlay'
-                                }`}
+                                    }`}
                             >
                                 <div className="modal-container">
                                     <button
@@ -313,11 +313,10 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div
-                                className={`${
-                                    isChatOpen
+                                className={`${isChatOpen
                                         ? 'chat-overlay show-chat'
                                         : 'chat-overlay'
-                                }`}
+                                    }`}
                             >
                                 <div className="modal-container">
                                     <button
@@ -347,6 +346,7 @@ const HomePage = () => {
                     </InternalTag2>
                 </Container1>
             </Main>
+            
             <Main>
                 <Container2>
                     <img src={carouselContent2[activeIndex2].image} alt="img" />
@@ -390,7 +390,7 @@ const HomePage = () => {
                     style={{
                         backgroundColor: '#dae1e5',
                         border: '4px whitesmoke solid',
-                       
+
                     }}
                 >
                     <div

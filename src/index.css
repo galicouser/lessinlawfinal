@@ -194,7 +194,7 @@ nav {
 
 .links a {
   color: var(--clr-grey-3);
-  font-size: 1.65rem;
+  font-size: 1.00rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -216,6 +216,7 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  z-index: 1;
 }
 
 .show-container {
@@ -224,12 +225,13 @@ nav {
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
+    width: 100%;
 
   }
 

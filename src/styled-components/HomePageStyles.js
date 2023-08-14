@@ -147,19 +147,22 @@ export const Container1 = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 3.2rem;
-    height: 55vh;
+    height: 75vh;
     overflow: scroll;
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
+    &:hover{
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+    }
     img {
-        max-width: 100%;
-        width: 45vh;
-        height: 25vh;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        margin-left: 3rem;
-        border-radius: 4%;
+        width: 100%;
+        height: 30vh;
+        padding: 10px;
+        border-radius: 10%;
         @media (max-width: 768px) {
         }
     }
@@ -167,13 +170,16 @@ export const Container1 = styled.div`
        background-color: transparent;
        border-color: transparent;
         margin-top: 40rem;
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
 
         margin-bottom: 3rem;
         width: 80%;
         margin-left: 2.5rem;
         height: 70vh;
         img {
-            width: 25vh;
+            width: 100%;
 
         }
     }
@@ -205,7 +211,7 @@ export const Container1 = styled.div`
 export const Container2 = styled.div`
     background-color: #dae1e5;
     border: 4px whitesmoke solid;
-
+    
     border-radius: 5%;
     margin-top: 2.6rem;
     margin-bottom: 5rem;
@@ -218,19 +224,23 @@ export const Container2 = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 0.8rem;
-    height: 55vh;
+    height: 70vh;
     overflow: scroll;
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
+
+    &:hover{
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+    }
     img {
-        max-width: 100%;
-        width: 45vh;
-        height: 25vh;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        margin-left: 3rem;
-        border-radius: 4%;
+        width: 100%;
+        height: 30vh;
+        padding: 10px;
+        border-radius: 10px;
         @media (max-width: 768px) {
         }
     }
@@ -238,13 +248,16 @@ export const Container2 = styled.div`
         background-color: transparent;
         border-color: transparent;
         margin-top: 40rem;
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
 
         margin-bottom: 3rem;
         width: 80%;
         margin-left: 2.5rem;
         height: 70vh;
         img {
-            width: 25vh;
+            width: 100%;
         }
     }
     @media (min-width: 481px) and (max-width: 768px) {
@@ -329,51 +342,81 @@ export const Main = styled.div`
 `
 export const Main1 = styled.div`
     border: 4px whitesmoke solid;
-
     display: grid;
     justify-content: center;
     padding: 8px;
     margin-top: 4rem;
     height: 115vh;
-    width: 18rem;
+    width: 20rem;
     margin-left: 4rem;
     background-color: #dae1e5;
+    border-radius: 10px;
+    
     @media (min-width: 1025px) and (max-width: 1280px) {
-             display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        height: 10vh;
-        margin-top: 0.5rem;
-
-        background-color: transparent;
-        border-color: transparent;
-        .mainbox1 {
-            width: 20rem;
             display: grid;
             justify-content: center;
             align-items: center;
-            height: 40vh;
+            width: 70%;
+            height: 10vh;
+            margin-top: 0.5rem;
+
             background-color: transparent;
-        }
-        .button-group {
-            display: grid;
-        }
-        h1 {
-            font-size: 60px;
-        }
-        p {
-            ${
-                '' /* font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            text-align: center;
-            margin-top: 1rem;
-            border-radius: 5%;
-            line-height: 1.5rem; */
+            border-color: transparent;
+            .mainbox1 {
+                width: 20rem;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                height: 40vh;
+                background-color: transparent;
             }
-            display: none;
+            .button-group {
+                display: grid;
+                
+            }
+            h1 {
+                font-size: 60px;
+            }
+            p {
+                ${
+                    '' /* font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+                text-align: center;
+                margin-top: 1rem;
+                border-radius: 5%;
+                line-height: 1.5rem; */
+                }
+                display: none;
+            }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: inline-block;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        border-color: transparent;
+        width: 100%;
+        margin-top: 10px;
+        @media (max-width: 767px) {
+            margin-left: 0px;
+            margin-top: 20px;
         }
+    }
+
+    .header-2{
+        text-align: center;
+        width: 100%;
+        font-style: italic;
     }
 
     .mainbox1 {
@@ -390,6 +433,8 @@ export const Main1 = styled.div`
 
         .textContent {
             font-size: 1.2rem;
+            text-align: center;
+            margin-top: 30%;
         }
     }
     h1 {
@@ -397,11 +442,12 @@ export const Main1 = styled.div`
         margin-bottom: 20px;
     }
     h3 {
+        font-size: 1.0rem;
         text-decoration: underline;
     }
 
     .lessintitle {
-        font-size: 3.2rem;
+        font-size: 2.5rem;
     }
 
     p {
@@ -420,6 +466,7 @@ export const Main1 = styled.div`
             line-height: 1.5;
         }
     }
+    
     @media (max-width: 768px) {
         display: grid;
         justify-content: center;
@@ -497,7 +544,8 @@ export const Ad = styled.div`
 `
 export const InternalTag1 = styled.span`
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 200;
+    padding: 2rem;
 `
 export const InternalTag2 = styled.span`
     font-size: 1.05rem;

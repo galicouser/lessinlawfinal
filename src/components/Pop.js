@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { useModalContext } from '../context/modal_context'
 import { FaWindowClose } from 'react-icons/fa'
-import RainbowChat from '../components/Rainbowchat.js'
+import RainbowChat from '../components/Rainbowchat.js';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const Wrapper = styled.div`
     position: fixed;
@@ -16,11 +18,76 @@ const Wrapper = styled.div`
     align-items: center;
     z-index: 9999;
     background-color: black;
+
+
+    .buttons-holder{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media (max-width: 767px) {
+            display: grid;
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: inline-block;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        border-color: transparent;
+        width: 200px;
+        margin-left: 20px;
+        @media (max-width: 767px) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+
+    .btn:hover {
+        color: var(--clr-primary-1);
+        background: var(--clr-primary-7);
+    }
+
+    .title {
+            width: 100%;
+            padding: 2rem;
+            font-size: 10rem;
+            font-family: 'Lobster';
+            margin-bottom: 20px;
+            transition: color 0.3s 'ease-in-out';
+            @media (max-width: 767px) {
+                font-size: 4rem;
+            }
+    }
+
+
     @media (max-width: 767px) {
     }
+
+    .header{
+        font-family: 'Pontif LP', sans-serif;
+    }
+
+
+    .header-2{
+        font-family: 'Pontif LP', sans-serif;
+        color: #76D7EA;
+        font-weight: lighter;
+    }
+
     .popup-card {
         text-align: center;
-
         box-sizing: border-box;
         overflow: hidden;
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -34,12 +101,7 @@ const Wrapper = styled.div`
         @media (max-width: 767px) {
             border: none;
         }
-        .title {
-            font-size: 10rem;
-            @media (max-width: 767px) {
-                font-size: 8rem;
-            }
-        }
+        
     }
 
     @keyframes float {
@@ -83,7 +145,7 @@ const Button1 = styled.button`
         box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
-`
+`;
 const Button2 = styled.button`
     background-color: white; /* Green */
     border: none;
@@ -114,8 +176,8 @@ const Popup = ({ onClose }) => {
 
     const { openChat } = useModalContext()
     const { isChatOpen, closeChat } = useModalContext()
-  const [lessinColor, setLessinColor] = useState('#003366')
-  const [lawColor, setLawColor] = useState('#B0C4DE')
+    const [lessinColor, setLessinColor] = useState('#003366')
+    const [lawColor, setLawColor] = useState('#B0C4DE')
     useEffect(() => {
         const intervalId = setInterval(() => {
             setLessinColor(getRandomColor())
@@ -153,62 +215,51 @@ const Popup = ({ onClose }) => {
 
     return (
         <Wrapper className="popup-overlay">
-            <div
-                className={`${
-                    isChatOpen ? 'chat-overlay show-chat' : 'chat-overlay'
-                }`}
-            >
-                <div className="modal-container">
-                    <button className="close-chat-btn" onClick={closeChat}>
-                        <FaWindowClose
-                            style={{
-                                position: 'relative',
-                                zIndex: '999990',
-                                top: '0',
-                                right: '0',
-                            }}
-                        ></FaWindowClose>
-                    </button>
-                    <RainbowChat />
-                </div>
-            </div>
-            <div className="popup-card">
-                <h1
-                    className="title"
-                    style={{
-                        fontFamily: 'Lobster',
-
-                        marginBottom: '20px',
-                        transition: 'color 0.3s ease-in-out',
-                    }}
+            <div style={{display: 'grid'}}>
+                <div
+                    className={`${isChatOpen ? 'chat-overlay show-chat' : 'chat-overlay'
+                        }`}
                 >
-                    <span style={{ color: lessinColor }}>Lessin</span>{' '}
-                    <span style={{ color: lawColor }}>Law</span>
-                </h1>
-
-                <div>
+                    <div className="modal-container">
+                        <button className="close-chat-btn" onClick={closeChat}>
+                            <FaWindowClose
+                                style={{
+                                    position: 'relative',
+                                    zIndex: '999990',
+                                    top: '0',
+                                    right: '0',
+                                }}
+                            ></FaWindowClose>
+                        </button>
+                        <RainbowChat />
+                    </div>
+                </div>
+                <div className="popup-card">
+                    <h1
+                        className="title"
+                    >
+                        <span className='header'>Lessin</span>{' '}
+                        <span className='header-2'>Law</span>
+                    </h1>
+                </div>
+                <div className='buttons-holder'>
                     <span>
                         {' '}
-                        <Button1
-                            variant="contained"
-                            onClick={openChat}
-                            className="btn btn-hero"
-                        >
-                            Live Chat
-                        </Button1>
+
+                        <Button className="btn btn-hero" variant="contained" onClick={openChat}>Live Chat</Button>
                     </span>
                     <span
                         style={{
                             width: '100%',
                         }}
                     >
-                        <Button2
-                            variant="contained"
+                        <Button 
+                            variant="contained" 
                             onClick={onClose}
                             className="btn btn-hero"
                         >
                             Close
-                        </Button2>
+                        </Button>
                     </span>
                 </div>
             </div>

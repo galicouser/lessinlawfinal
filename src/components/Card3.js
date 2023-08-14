@@ -23,6 +23,13 @@ const CardContainer = styled.div`
 
     margin-left: 2rem;
 
+    &:hover{
+        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+    }
+
     @media (max-width: 768px) {
         width: 95%;
         height: 100vh;
