@@ -4,7 +4,6 @@ export const HomePageContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top:110px;
    width: 100%;
 
     /* @media (max-width: 768px) {
