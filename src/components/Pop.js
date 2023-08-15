@@ -5,6 +5,10 @@ import { FaWindowClose } from 'react-icons/fa'
 import RainbowChat from '../components/Rainbowchat.js';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import HomeIcon from '@mui/icons-material/Home';
+import { motion, AnimatePresence } from "framer-motion";
+import MessageIcon from '@mui/icons-material/Message';
+import { IconButton } from '@mui/material';
 
 const Wrapper = styled.div`
     position: fixed;
@@ -17,13 +21,13 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background-color: black;
+    background-color: white;
 
 
     .buttons-holder{
         width: 100%;
         height: 50px;
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -38,7 +42,7 @@ const Wrapper = styled.div`
         color: var(--clr-primary-10);
         padding: 0.375rem 0.75rem;
         letter-spacing: var(--spacing);
-        display: inline-block;
+        display: flex;
         font-weight: 400;
         transition: var(--transition);
         font-size: 0.875rem;
@@ -47,6 +51,7 @@ const Wrapper = styled.div`
         border-radius: var(--radius);
         border-color: transparent;
         width: 200px;
+        height: 50px;
         margin-left: 20px;
         @media (max-width: 767px) {
             margin-left: 0px;
@@ -72,6 +77,79 @@ const Wrapper = styled.div`
     }
 
 
+    .liveMsgHolder{
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        height: 100px;
+        right: 0;
+        display:grid;
+        justify-content: center;
+        place-content: center;
+
+        @media (max-width: 767px) {
+            width: 100px;
+        }
+        
+    }
+
+    .btn-live-msg {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: flex;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        border-color: transparent;
+        width: 200px;
+        height: 50px;
+        margin-left: 20px;
+        @media (max-width: 767px) {
+            display: none
+        }
+
+        &:hover {
+            color: var(--clr-primary-1);
+            background: var(--clr-primary-7);
+        }
+    }
+
+    .btn-live-msg-mobile {
+        display: none;
+        @media (max-width: 767px) {
+            display: unset;
+        }
+    }
+
+    .btn-live-msg:hover .LiveChatButtonIcon {
+        color: white;
+    }
+
+    .LiveChatButtonIcon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        background: #003366;
+        color: white;
+        @media (max-width: 767px) {
+            color: var(--clr-primary-1);
+            background: var(--clr-primary-7);
+            border: 0px solid black;
+        }
+    }
+
+
     @media (max-width: 767px) {
     }
 
@@ -90,7 +168,7 @@ const Wrapper = styled.div`
         text-align: center;
         box-sizing: border-box;
         overflow: hidden;
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translateY(0px);
         animation: float 6s ease-in-out infinite;
         img {
@@ -106,15 +184,15 @@ const Wrapper = styled.div`
 
     @keyframes float {
         0% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
             transform: translateY(0px);
         }
         50% {
-            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
             transform: translateY(-20px);
         }
         100% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
             transform: translateY(0px);
         }
     }
@@ -215,7 +293,7 @@ const Popup = ({ onClose }) => {
 
     return (
         <Wrapper className="popup-overlay">
-            <div style={{display: 'grid'}}>
+            <div style={{ display: 'grid' }}>
                 <div
                     className={`${isChatOpen ? 'chat-overlay show-chat' : 'chat-overlay'
                         }`}
@@ -238,31 +316,62 @@ const Popup = ({ onClose }) => {
                     <h1
                         className="title"
                     >
-                        <span className='header'>Lessin</span>{' '}
-                        <span className='header-2'>Law</span>
+                        <AnimatePresence>
+                            <motion.h1
+                                className="title"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                            >
+                                <motion.span
+                                    className='header'
+                                >
+                                    Lessin
+                                </motion.span>{' '}
+                                <motion.span
+                                    className='header-2'
+                                >
+                                    Law
+                                </motion.span>
+                            </motion.h1>
+                        </AnimatePresence>
                     </h1>
                 </div>
                 <div className='buttons-holder'>
-                    <span>
-                        {' '}
 
-                        <Button className="btn btn-hero" variant="contained" onClick={openChat}>Live Chat</Button>
-                    </span>
                     <span
                         style={{
                             width: '100%',
                         }}
                     >
-                        <Button 
-                            variant="contained" 
+                        <Button
+                            variant="contained"
                             onClick={onClose}
                             className="btn btn-hero"
                         >
-                            Close
+                            <div>Home</div><HomeIcon />
                         </Button>
                     </span>
                 </div>
             </div>
+
+            <div className='liveMsgHolder'>
+                <span>
+                    {' '}
+
+                    <Button className="btn-live-msg" variant="contained" onClick={openChat}>
+                        Live Chat
+                        <div className='LiveChatButtonIcon'><MessageIcon /></div>
+                    </Button>
+
+                    <div className="btn-live-msg-mobile">
+                        <IconButton>
+                            <div className='LiveChatButtonIcon' onClick={openChat}><MessageIcon /></div>
+                        </IconButton>
+                    </div>
+                </span>
+            </div>
+
         </Wrapper>
     )
 }
