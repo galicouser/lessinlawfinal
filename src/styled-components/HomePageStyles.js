@@ -213,9 +213,7 @@ export const Container1 = styled.div`
         /* Styles for large screens */
     }
 `
-export const Container2 = styled.div`
-    background-color: #dae1e5;
-    border: 4px whitesmoke solid;
+export const Container2 = styled.div`   
     
     border-radius: 5%;
     margin-top: 2.6rem;
@@ -223,7 +221,6 @@ export const Container2 = styled.div`
     font-size: 0.7rem;
     width: 80vh;
 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -234,18 +231,44 @@ export const Container2 = styled.div`
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
 
+    h1{
+        display: grid;
+        justify-content: center;
+        place-content: center;
+        height: 30%;
+        color: white;
+    }
+
     &:hover{
-        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
+        /* -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
-        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow; */
     }
+
+    .textHolder{
+        position:absolute;
+        z-index: 1;
+        width: 80vh;
+        height: 60vh;
+        padding-right: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 3%;
+        
+    }
+
+    &:hover img{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+    }
+
     img {
         width: 80vh;
         height: 60vh;
-        padding-right: 1%;
-        border-radius: 6%;
+        border-radius: 3%;
         position: absolute;
+        object-fit: cover;
+        
         @media (max-width: 768px) {
         }
     }
@@ -617,6 +640,10 @@ export const InternalTag1 = styled.span`
     font-size: 1.2rem;
     font-weight: 200;
     padding: 2rem;
+    color: white;
+    height: 70%;
+    display: grid;
+    justify-content: center;
 `
 export const InternalTag2 = styled.span`
     font-size: 1.05rem;

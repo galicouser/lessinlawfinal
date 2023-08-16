@@ -341,10 +341,12 @@ const HomePage = () => {
             <Main>
                 <Container2>
                     <img src={carouselContent2[activeIndex2].image} alt="img" />
+                    <div className='textHolder'>
                     <h1>{carouselContent2[activeIndex2].title}</h1>
                     <InternalTag1 style={internalTagStyle1}>
                         {carouselContent2[activeIndex2].description}
                     </InternalTag1>
+                    </div>
                 </Container2>
                 <div>
                     <Card2 />
