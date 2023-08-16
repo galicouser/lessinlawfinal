@@ -9,6 +9,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { motion, AnimatePresence } from "framer-motion";
 import MessageIcon from '@mui/icons-material/Message';
 import { IconButton } from '@mui/material';
+import Logo from '../assets/Lessin Law.png'
 
 const Wrapper = styled.div`
     position: fixed;
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background-color: white;
+    background-color: #FBFAF9;
 
 
     .buttons-holder{
@@ -75,6 +76,7 @@ const Wrapper = styled.div`
                 font-size: 4rem;
             }
     }
+
 
 
     .liveMsgHolder{
@@ -168,6 +170,7 @@ const Wrapper = styled.div`
         text-align: center;
         box-sizing: border-box;
         overflow: hidden;
+        height: 550px;
         //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translateY(0px);
         animation: float 6s ease-in-out infinite;
@@ -323,7 +326,8 @@ const Popup = ({ onClose }) => {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -20 }}
                             >
-                                <motion.span
+                                <img className='main-image' src={Logo} />
+                                {/* <motion.span
                                     className='header'
                                 >
                                     Lessin
@@ -332,7 +336,7 @@ const Popup = ({ onClose }) => {
                                     className='header-2'
                                 >
                                     Law
-                                </motion.span>
+                                </motion.span> */}
                             </motion.h1>
                         </AnimatePresence>
                     </h1>

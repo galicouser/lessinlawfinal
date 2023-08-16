@@ -5,7 +5,7 @@ const ReviewsComponent = () => {
     return (
         <div>
             {reviews.map((review, index) => (
-                <div key={index} style={{ marginBottom: '20px' }}>
+                <div key={index} style={{ marginBottom: '20px', backgroundColor: 'white', padding: '1rem', borderRadius: '6px' }}>
                     <h3>{review.name}</h3>
                     <div  className='stars'>
                         {[...Array(5)].map((_, starIndex) => (

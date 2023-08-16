@@ -18,7 +18,7 @@ const CardContainer = styled.div`
     text-align: center;
     margin-top: 0.5rem;
     height: 60vh;
-    width: 55vh;
+    width: 80vh;
     margin-left: 1.3rem;
     overflow: scroll;
     border-radius: 5%;
@@ -77,6 +77,7 @@ const CardTitle = styled.h2`
     margin: 0.5rem 0;
     font-family: 'Arial', sans-serif;
     color: #333; /* Dark color */
+    font-weight: 200;
     @media (max-width: 768px) {
         font-style: italic;
         font-size: 1.2rem;

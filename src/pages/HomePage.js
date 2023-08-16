@@ -14,6 +14,7 @@ import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
 import Button from '@mui/material/Button';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 import {
     HomePageContainer,
@@ -194,60 +195,67 @@ const HomePage = () => {
             <>{card}</>
             <Main1>
                 <div className="mainbox1">
-                    <h1 className="lessintitle">
+                    {/* <h1 className="lessintitle">
                         <span style={{ color: lessinColor }}>Lessin</span>{' '}
                         <span style={{ color: lawColor }}>Law</span>
-                    </h1>
-                    <div className='header-2'> Pennsylvania Personal Injury Lawyers</div>
-                    <p
+                    </h1> */}
+
+                    <div className='mainbox-left'>
+                        <div className='header-2'> Pennsylvania Personal Injury Lawyers</div>
+                        <div className="button-group">
+                            <Button
+                                variant="contained"
+                                className="btn btn-hero"
+                                onClick={openChat}
+                            >
+                                live chat
+                            </Button>
+                            <Button
+                                onClick={handleMapClick}
+                                variant="contained"
+                                className="btn btn-hero"
+                            >
+                                {' '}
+                                Directions
+                            </Button>
+                            <Button
+                                variant="contained"
+                                className="btn btn-hero"
+                                onClick={handleShow}
+                            >
+                                contact us
+                            </Button>
+                        </div>
+                    </div>
+                    {/* <p
                         onClick={openURL}
                         style={{ marginLeft: '1rem', fontSize: '1.5rem' }}
                     >
                         {' '}
                         Click Here Leave Us a Review!{' '}
-                    </p>
+                    </p> */}
 
-                    <div className="button-group">
-                        <Button
-                            variant="contained"
-                            className="btn btn-hero"
-                            onClick={openChat}
-                        >
-                            live chat
-                        </Button>
-                        <Button
-                            onClick={handleMapClick}
-                            variant="contained"
-                            className="btn btn-hero"
-                        >
-                            {' '}
-                            Directions
-                        </Button>
-                        <Button
-                            variant="contained"
-                            className="btn btn-hero"
-                            onClick={handleShow}
-                        >
-                            contact us
-                        </Button>
+
+
+
+                    <div className='textContentHolder'>
+                        <p className="textContent">
+                            Our team of dedicated personal injury lawyers is devoted
+                            to seeking justice for our clients who have suffered
+                            injuries in various incidents. We specialize in handling
+                            cases such as car accidents, motorcycle accidents,
+                            pedestrian accidents, bicycle accidents, slip and fall
+                            accidents, medical malpractice, product liability,
+                            workplace accidents, construction accidents, dog bites,
+                            assault or battery, wrongful death, public
+                            transportation accidents, aviation accidents, boating
+                            accidents, defamation, toxic exposure, nursing home
+                            abuse, and recreational accidents. With a relentless
+                            pursuit of fair compensation, we work tirelessly to
+                            ensure that our clients receive the financial reparation
+                            they deserve for their injuries.
+                        </p>
                     </div>
-
-                    <p className="textContent">
-                        Our team of dedicated personal injury lawyers is devoted
-                        to seeking justice for our clients who have suffered
-                        injuries in various incidents. We specialize in handling
-                        cases such as car accidents, motorcycle accidents,
-                        pedestrian accidents, bicycle accidents, slip and fall
-                        accidents, medical malpractice, product liability,
-                        workplace accidents, construction accidents, dog bites,
-                        assault or battery, wrongful death, public
-                        transportation accidents, aviation accidents, boating
-                        accidents, defamation, toxic exposure, nursing home
-                        abuse, and recreational accidents. With a relentless
-                        pursuit of fair compensation, we work tirelessly to
-                        ensure that our clients receive the financial reparation
-                        they deserve for their injuries.
-                    </p>
                 </div>
             </Main1>
             <Pop />
@@ -341,12 +349,6 @@ const HomePage = () => {
                 <div>
                     <Card2 />
                 </div>
-                {/* <img
-                    style={{ marginTop: '3rem' }}
-                    src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg"
-                    className="logo"
-                    alt="logo"
-                /> */}
             </Main>
 
 
@@ -397,8 +399,8 @@ const HomePage = () => {
                             Directions
                         </Button>
                     </div>
-                    <div style={{display:'grid', justifyContent: 'center'}}>
-                    <div className='phone-number' style={{ color: lessinColor }}>(215) 599-1400</div>
+                    <div style={{ display: 'grid', justifyContent: 'center' }}>
+                        <div className='phone-number' style={{ color: lessinColor }}>(215) 599-1400</div>
                     </div>
                 </Ad>
 
@@ -406,19 +408,19 @@ const HomePage = () => {
                     <p className="client">Client Testimonials</p>
                     <Link to="https://www.facebook.com/lessinlawphiladelphia">
                         {' '}
-                        <p className="client" style={{ marginLeft: '1rem' }}>
+                        <Button 
+                        variant="contained"
+                        className="btn btn-hero"
+                        style={{ marginLeft: '1rem' }}>
                             {' '}
-                            Find us on Facebook!
-                        </p>
+                            <FacebookIcon/>
+                        </Button>
                     </Link>
-                    <p onClick={openURL} style={{ marginLeft: '4.5rem' }}>
+
+                    <div className='reviewText' onClick={openURL} style={{ marginTop: '1.5rem' }}>
                         {' '}
-                        Click Here{' '}
-                    </p>
-                    <p onClick={openURL} style={{ marginLeft: '2.5rem' }}>
-                        {' '}
-                        Leave us a review!{' '}
-                    </p>
+                        Click here to leave us a review!{' '}
+                    </div>
                     <Reviews />
                 </Testimonials>
 

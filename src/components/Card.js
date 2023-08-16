@@ -18,11 +18,11 @@ const CardContainer = styled.div`
     align-items: center;
     text-align: center;
     margin-top: 6rem;
-    height: 55vh;
-    width: 55vh;
+    height: 60vh;
+    width: 80vh;
     margin-left: 2rem;
     overflow: scroll;
-    background-color: #dae1e5;
+    background-color: rgba(218, 225, 229, 0.5);
 
     &:hover{
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
@@ -75,6 +75,7 @@ const CardTitle = styled.h2`
     margin: 0.5rem 0;
     font-family: 'Arial', sans-serif;
     color: #333; /* Dark color */
+    font-weight: 200;
     @media (max-width: 768px) {
         font-style: italic;
         font-size: 1.2rem;

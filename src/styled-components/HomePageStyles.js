@@ -4,7 +4,8 @@ export const HomePageContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-   width: 100%;
+    width: 100%; 
+    margin-top: 70px;
 
     /* @media (max-width: 768px) {
         background-color: red;
@@ -30,7 +31,7 @@ export const VideoBackground = styled.video`
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 85vh;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
     opacity: 0.5;
@@ -139,7 +140,7 @@ export const Container1 = styled.div`
     margin-top: 25rem;
     margin-bottom: 8rem;
     font-size: 0.7rem;
-    width: 55vh;
+    width: 80vh;
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     display: grid;
@@ -147,7 +148,7 @@ export const Container1 = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 3.2rem;
-    height: 75vh;
+    height: 60vh;
     overflow: scroll;
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
@@ -158,11 +159,15 @@ export const Container1 = styled.div`
         box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
     }
+    h1{
+        font-weight: 200;
+    }
     img {
         width: 100%;
         height: 30vh;
         padding: 10px;
         border-radius: 10%;
+        object-fit: cover;
         @media (max-width: 768px) {
         }
     }
@@ -214,17 +219,16 @@ export const Container2 = styled.div`
     
     border-radius: 5%;
     margin-top: 2.6rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-size: 0.7rem;
-    width: 55vh;
+    width: 80vh;
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 0.8rem;
-    height: 70vh;
+    height: 60vh;
     overflow: scroll;
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
@@ -237,10 +241,11 @@ export const Container2 = styled.div`
         transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) box-shadow;
     }
     img {
-        width: 100%;
-        height: 30vh;
-        padding: 10px;
-        border-radius: 10px;
+        width: 80vh;
+        height: 60vh;
+        padding-right: 1%;
+        border-radius: 6%;
+        position: absolute;
         @media (max-width: 768px) {
         }
     }
@@ -345,11 +350,10 @@ export const Main1 = styled.div`
     display: grid;
     justify-content: center;
     padding: 8px;
-    margin-top: 4rem;
-    height: 115vh;
-    width: 20rem;
-    margin-left: 4rem;
-    background-color: #dae1e5;
+    margin-top: 3rem;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(218, 225, 229, 0.5);
     border-radius: 10px;
     
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -364,15 +368,11 @@ export const Main1 = styled.div`
             border-color: transparent;
             .mainbox1 {
                 width: 20rem;
-                display: grid;
+                display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 40vh;
                 background-color: transparent;
-            }
-            .button-group {
-                display: grid;
-                
             }
             h1 {
                 font-size: 60px;
@@ -391,6 +391,13 @@ export const Main1 = styled.div`
             }
     }
 
+
+    .button-group {
+        display: flex;
+        padding: 2rem;
+        margin-top: 10%;
+    }
+
     .btn {
         text-transform: uppercase;
         background: #003366;
@@ -407,6 +414,7 @@ export const Main1 = styled.div`
         border-color: transparent;
         width: 100%;
         margin-top: 10px;
+        margin-left: 10px;
         @media (max-width: 767px) {
             margin-left: 0px;
             margin-top: 20px;
@@ -414,27 +422,46 @@ export const Main1 = styled.div`
     }
 
     .header-2{
-        text-align: center;
+        margin-left: 10px;
+        text-align: left;
         width: 100%;
-        font-style: italic;
+        height: 20%;
+        font-size: 40px;
+        font-weight: 50;
+        margin-top: 50px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .mainbox-left{
+        width: 50%;
+        height: 100%;
     }
 
     .mainbox1 {
-        width: 15rem;
-        display: grid;
-        flex-direction: column;
-        align-items: center;
-        height: 110vh;
+        width: 100%;
+        display: flex;
+        height: 100%;
         justify-content: center;
         overflow: auto;
         ::-webkit-scrollbar {
             display: none; /* Hide the scrollbar for WebKit-based browsers */
         }
-
+        .textContentHolder {
+            width: 50%;
+            height: 100%;
+            display: grid;
+            justify-content: center;
+            place-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
         .textContent {
             font-size: 1.2rem;
             text-align: center;
-            margin-top: 30%;
+            width: 100%;
+            height: 100%;
+            font-weight: 100;
         }
     }
     h1 {
@@ -602,6 +629,19 @@ export const Testimonials = styled.div`
     overflow: auto;
     max-height: 400px;
     width: 50%;
+
+    .reviewText{
+        font-weight: 200;
+        font-size: 20px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+
+        &:hover{
+            color: navy;
+            cursor: pointer
+        }
+    }
+
     p {
         font-size: 18px;
         font-weight: bold;
@@ -609,8 +649,8 @@ export const Testimonials = styled.div`
         margin-left: 1rem;
     }
     .client {
-        text-decoration: underline;
-        font-size: 1.4rem;
+        font-weight: 200;
+        font-size: 2rem;
         margin-left: 1.5rem;
     }
     h3 {
@@ -633,6 +673,29 @@ export const Testimonials = styled.div`
             margin-bottom: 10px;
         }
     }
+
+    .btn {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: grid;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        border-color: transparent;
+        width: 50px;
+        margin-top: 10px;
+        @media (max-width: 767px) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+
 
     @media (max-width: 768px) {
         width: 100%;
