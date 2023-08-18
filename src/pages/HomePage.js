@@ -240,7 +240,7 @@ const HomePage = () => {
 
                     <div className='textContentHolder'>
                         <p className="textContent">
-                            Our team of dedicated personal injury lawyers is devoted
+                            "Our team of dedicated personal injury lawyers is devoted
                             to seeking justice for our clients who have suffered
                             injuries in various incidents. We specialize in handling
                             cases such as car accidents, motorcycle accidents,
@@ -253,7 +253,7 @@ const HomePage = () => {
                             abuse, and recreational accidents. With a relentless
                             pursuit of fair compensation, we work tirelessly to
                             ensure that our clients receive the financial reparation
-                            they deserve for their injuries.
+                            they deserve for their injuries."
                         </p>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ export const Wrapper = styled.main`
     height: 25vh;
     width: 100%;
     @media (max-width: 768px) {
+        
     }
 
     /* Tablets and Small Screens */
@@ -216,8 +217,8 @@ export const Wrapper = styled.main`
             border-radius: 2%;
             transition: var(--transition);
 
-            height: 505px;
-            width: 300px;
+            height: 100%;
+            width: 100%;
 
             h1 {
                 margin-top: 0.75rem;

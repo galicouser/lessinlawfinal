@@ -17,7 +17,6 @@ const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 6rem;
     height: 60vh;
     width: 80vh;
     margin-left: 2rem;
@@ -36,12 +35,13 @@ const CardContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 95%;
-        height: 50vh;
-        margin-left: 0.5rem;
-        margin-top: 20rem;
+        width: 100%;
+        height: 70vh;
+        margin-top: 2rem;
+        margin-left: 0rem;
         background-color: transparent;
         border-color: transparent;
+        padding: 2rem;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);

@@ -270,23 +270,35 @@ export const Container2 = styled.div`
         object-fit: cover;
         
         @media (max-width: 768px) {
+            
         }
     }
     @media (max-width: 768px) {
         background-color: transparent;
         border-color: transparent;
         margin-top: 40rem;
-        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
-        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
-        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
-
+        margin-left: 0rem;
         margin-bottom: 3rem;
-        width: 80%;
-        margin-left: 2.5rem;
+        width: 96%;
         height: 70vh;
         img {
-            width: 100%;
+            width: 96%;
+            height: 60vh;
+            border-radius: 3%;
+            position: absolute;
+            object-fit: cover;
+        }   
+        .textHolder{
+            position:absolute;
+            z-index: 1;
+            width: 96%;
+            height: 60vh;
+            padding-right: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 3%;
+            
         }
+        
     }
     @media (min-width: 481px) and (max-width: 768px) {
         .Container1 {
@@ -480,11 +492,12 @@ export const Main1 = styled.div`
             text-align: center;
         }
         .textContent {
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             text-align: center;
             width: 100%;
             height: 100%;
             font-weight: 100;
+            font-style: italic;
         }
     }
     h1 {
@@ -521,19 +534,21 @@ export const Main1 = styled.div`
         display: grid;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        height: 40vh;
+        width: 100%;
+        height: 60vh;
         margin-top: 0.5rem;
+        
 
         background-color: transparent;
         border-color: transparent;
         .mainbox1 {
-            width: 20rem;
+            width: 100%;
             display: grid;
             justify-content: center;
             align-items: center;
-            height: 50vh;
-
+            height: 60vh;
+            overflow-y: hidden;
+            margin-bottom: 0rem;
         }
         .button-group {
             display: grid;
@@ -542,15 +557,12 @@ export const Main1 = styled.div`
             font-size: 60px;
         }
         p {
-            ${
-                '' /* font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            text-align: center;
-            margin-top: 1rem;
-            border-radius: 5%;
-            line-height: 1.5rem; */
-            }
+            display: none;
+        }
+        .mainbox-left{
+            width: 100%;
+        }
+        .textContentHolder {
             display: none;
         }
     }
