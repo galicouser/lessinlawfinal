@@ -174,7 +174,7 @@ export const Container1 = styled.div`
     @media (max-width: 768px) {
         background-color: #FBFAF9;
        border-color: transparent;
-        margin-top: 35rem;
+        margin-top: 30rem;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
@@ -276,7 +276,7 @@ export const Container2 = styled.div`
     @media (max-width: 768px) {
         background-color: transparent;
         border-color: transparent;
-        margin-top: 40rem;
+        margin-top: 20rem;
         margin-left: 0rem;
         margin-bottom: 3rem;
         width: 96%;
@@ -591,6 +591,7 @@ export const Sidebar = styled.div`
 
     @media (max-width: 768px) {
         display: grid;
+        margin-top: 40rem;
     }
 `
 
@@ -644,6 +645,7 @@ export const Ad = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
+        border-radius: 6%;
     }
 
 
@@ -737,7 +739,9 @@ export const Testimonials = styled.div`
 
 
     @media (max-width: 768px) {
+        margin-top: 5rem;
         width: 100%;
+        border-radius: 6%;
     }
 `
 

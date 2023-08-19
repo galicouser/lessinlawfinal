@@ -38,10 +38,11 @@ const CardContainer = styled.div`
 
 
     @media (max-width: 768px) {
-        width: 80%;
-        height: 50vh;
+        width: 100%;
+        height: 70vh;
         margin-left: 2.5rem;
         margin-top: 7rem;
+        margin-left: 0rem;
         background-color: transparent;
         border-color: transparent;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
