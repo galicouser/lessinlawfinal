@@ -174,14 +174,14 @@ export const Container1 = styled.div`
     @media (max-width: 768px) {
        background-color: transparent;
        border-color: transparent;
-        margin-top: 40rem;
+        margin-top: 35rem;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
 
         margin-bottom: 3rem;
-        width: 80%;
-        margin-left: 2.5rem;
+        width: 100%;
+        margin-left: 0rem;
         height: 70vh;
         img {
             width: 100%;
