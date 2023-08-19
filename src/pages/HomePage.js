@@ -223,7 +223,7 @@ const HomePage = () => {
                                 className="btn btn-hero"
                                 onClick={handleShow}
                             >
-                                contact us
+                                Get In Touch
                             </Button>
                         </div>
                     </div>
@@ -267,6 +267,7 @@ const HomePage = () => {
                 />
                 Your browser does not support the video tag.
             </VideoBackground>
+            
 
             <Main>
                 <Wrapper>

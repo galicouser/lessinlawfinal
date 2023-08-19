@@ -172,7 +172,7 @@ export const Container1 = styled.div`
         }
     }
     @media (max-width: 768px) {
-       background-color: transparent;
+        background-color: #FBFAF9;
        border-color: transparent;
         margin-top: 35rem;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);

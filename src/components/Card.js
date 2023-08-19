@@ -39,7 +39,7 @@ const CardContainer = styled.div`
         height: 70vh;
         margin-top: 2rem;
         margin-left: 0rem;
-        background-color: transparent;
+        background-color: #FBFAF9;
         border-color: transparent;
         padding: 2rem;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
