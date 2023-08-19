@@ -132,7 +132,7 @@ export const ContactCard = styled.div`
 
 
 export const Container1 = styled.div`
-    background-color: #dae1e5;
+    background-color: rgba(218, 225, 229, 0.5);
     border: 4px whitesmoke solid;
     padding: 2rem;
     border-radius: 5%;
@@ -166,9 +166,10 @@ export const Container1 = styled.div`
         width: 100%;
         height: 30vh;
         padding: 10px;
-        border-radius: 10%;
+        border-radius: 10px;
         object-fit: cover;
         @media (max-width: 768px) {
+            border-radius: 10%;
         }
     }
     @media (max-width: 768px) {
@@ -276,7 +277,7 @@ export const Container2 = styled.div`
     @media (max-width: 768px) {
         background-color: transparent;
         border-color: transparent;
-        margin-top: 20rem;
+        margin-top: 30rem;
         margin-left: 0rem;
         margin-bottom: 3rem;
         width: 96%;
@@ -456,6 +457,11 @@ export const Main1 = styled.div`
         }
     }
 
+    .btn:hover {
+        color: var(--clr-primary-1);
+        background: var(--clr-primary-7);
+    }
+
     .header-2{
         margin-left: 10px;
         text-align: left;
@@ -632,6 +638,10 @@ export const Ad = styled.div`
             margin-top: 20px;
         }
     }
+    .btn:hover {
+        color: var(--clr-primary-1);
+        background: var(--clr-primary-7);
+    }
 
 
     .phone-number{
@@ -645,6 +655,7 @@ export const Ad = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
+        margin-top: 30rem;
         border-radius: 6%;
     }
 
@@ -668,7 +679,7 @@ export const Testimonials = styled.div`
     padding: 2rem;
     background-color: #dae1e5;
     overflow: auto;
-    max-height: 400px;
+    height: 400px;
     width: 50%;
 
     .reviewText{
@@ -736,11 +747,16 @@ export const Testimonials = styled.div`
             margin-top: 20px;
         }
     }
+    .btn:hover {
+        color: var(--clr-primary-1);
+        background: var(--clr-primary-7);
+    }
 
 
     @media (max-width: 768px) {
         margin-top: 5rem;
         width: 100%;
+        height: 70vh;
         border-radius: 6%;
     }
 `

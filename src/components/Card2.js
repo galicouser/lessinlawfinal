@@ -22,7 +22,7 @@ const CardContainer = styled.div`
     margin-left: 1.3rem;
     overflow: scroll;
     border-radius: 5%;
-    background-color: #dae1e5;
+    background-color: rgba(218, 225, 229, 0.5);
     border: 4px whitesmoke solid;
 
     ::-webkit-scrollbar {
@@ -43,7 +43,7 @@ const CardContainer = styled.div`
         margin-left: 2.5rem;
         margin-top: 7rem;
         margin-left: 0rem;
-        background-color: transparent;
+        background-color: #FBFAF9;
         border-color: transparent;
         -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
         -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.65);
