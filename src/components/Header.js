@@ -53,6 +53,7 @@ const Header = () => {
               {currentMessage}
           </a>
           </div>
+          
 
             <Grid container gap={2} className={navbar ? "Navbar" : "NavbarActive"}>
                 <Grid item lg={8.8}  sm={5} xs={6} className='LogoHolder'>
