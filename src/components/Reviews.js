@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
     align-items: center;
     align-content: center;
     @media (max-width: 768px) {
-       height:400px;
+       height:500px;
     .mySwiper {
         width: 100%;
         

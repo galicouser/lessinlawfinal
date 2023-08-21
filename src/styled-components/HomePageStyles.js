@@ -414,15 +414,14 @@ export const Main1 = styled.div`
                 font-size: 60px;
             }
             p {
-                ${
-                    '' /* font-size: 14px;
+                ${'' /* font-size: 14px;
                 line-height: 1.5;
                 margin-bottom: 20px;
                 text-align: center;
                 margin-top: 1rem;
                 border-radius: 5%;
                 line-height: 1.5rem; */
-                }
+    }
                 display: none;
             }
     }
@@ -710,6 +709,7 @@ export const Testimonials = styled.div`
         display:flex;
         justify-content:center;
         padding-top:2%;
+        margin-top: 20px;
     }
     .Holder{
         display:flex;
@@ -791,13 +791,21 @@ export const Testimonials = styled.div`
     @media (max-width: 768px) {
         margin-top: 5rem;
         width: 100%;
-        height: 70vh;
+        height: 120vh;
         border-radius: 6%;
         .HolderInner{
           flex-direction:column;
         }
         .reviewText{
+            margin-top: 20px;
+            margin-bottom: 20px;
             text-align:center;
+        }
+        .Holder{
+            display:grid;
+            justify-content:space-between;
+            align-items:center;
+            align-content:center;
         }
     }
 `
