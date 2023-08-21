@@ -16,6 +16,17 @@ import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
 import Button from '@mui/material/Button';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
+/////
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+/////
+
 import {
     HomePageContainer,
     Main,
@@ -267,7 +278,7 @@ const HomePage = () => {
                 />
                 Your browser does not support the video tag.
             </VideoBackground>
-            
+
 
             <Main>
                 <Wrapper>
@@ -343,10 +354,10 @@ const HomePage = () => {
                 <Container2>
                     <img src={carouselContent2[activeIndex2].image} alt="img" />
                     <div className='textHolder'>
-                    <h1>{carouselContent2[activeIndex2].title}</h1>
-                    <InternalTag1 style={internalTagStyle1}>
-                        {carouselContent2[activeIndex2].description}
-                    </InternalTag1>
+                        <h1>{carouselContent2[activeIndex2].title}</h1>
+                        <InternalTag1 style={internalTagStyle1}>
+                            {carouselContent2[activeIndex2].description}
+                        </InternalTag1>
                     </div>
                 </Container2>
                 <div>
@@ -357,78 +368,99 @@ const HomePage = () => {
 
             <Sidebar>
 
+                <div className='sidebar-holder'>
 
-                <Ad
-                    style={{
-                        backgroundColor: '#dae1e5',
-                        border: '4px whitesmoke solid'
-                    }}
-                >
-                    <div
+                    <Ad
                         style={{
-                            display: 'grid',
-                            justifyContent: 'center',
-                            alignItems: 'center'
+                            backgroundColor: '#dae1e5',
+                            border: '4px whitesmoke solid'
                         }}
-                        className="ad"
                     >
-                        <p>
-                            Jeffrey R. Lessin & Associates, P.C 1515 Market St
-                            #1650, Philadelphia, PA
-                        </p>
-                    </div>
-                    <div className="btn-groups">
-                        <Button
-                            variant="contained"
-                            className="btn btn-hero"
-                            onClick={handleShow}
+                        <div
+                            style={{
+                                display: 'grid',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                            className="ad"
                         >
-                            contact us
-                        </Button>
+                            <p>
+                                Jeffrey R. Lessin & Associates, P.C 1515 Market St
+                                #1650, Philadelphia, PA
+                            </p>
+                        </div>
+                        <div className="btn-groups">
+                            <Button
+                                variant="outlined"
+                                className="btn btn-hero"
+                                onClick={handleShow}
+                            >
+                                contact us
+                            </Button>
 
-                        <Button
-                            variant="contained"
-                            className="btn btn-hero"
-                            onClick={openChat}
-                        >
-                            live chat
-                        </Button>
-                        <Button
-                            onClick={handleMapClick}
-                            variant="contained"
-                            className="btn btn-hero"
-                        >
-                            {' '}
-                            Directions
-                        </Button>
-                    </div>
-                    <div style={{ display: 'grid', justifyContent: 'center' }}>
-                        <div className='phone-number' style={{ color: lessinColor }}>(215) 599-1400</div>
-                    </div>
-                </Ad>
+                            <Button
+                                variant="outlined"
+                                className="btn btn-hero"
+                                onClick={openChat}
+                            >
+                                live chat
+                            </Button>
+                            <Button
+                                onClick={handleMapClick}
+                                variant="outlined"
+                                className="btn btn-hero"
+                            >
+                                {' '}
+                                Directions
+                            </Button>
+                        </div>
+                        <div style={{ display: 'grid', justifyContent: 'center' }}>
+                            <Button
+                                variant="text"
+                                className="btn btn-hero"
+                            >
+                                {' '}
+                                (215) 599-1400
+                            </Button>
 
-                <Testimonials>
-                    <p className="client">Client Testimonials</p>
-                    <Link to="https://www.facebook.com/lessinlawphiladelphia">
-                        {' '}
-                        <Button 
-                        variant="contained"
-                        className="btn btn-hero"
-                        style={{ marginLeft: '1rem' }}>
-                            {' '}
-                            <FacebookIcon/>
-                        </Button>
-                    </Link>
+                        </div>
+                    </Ad>
 
-                    <div className='reviewText' onClick={openURL} style={{ marginTop: '1.5rem' }}>
-                        {' '}
-                        Click here to leave us a review!{' '}
-                    </div>
-                    <Reviews />
-                </Testimonials>
+                </div>
 
 
             </Sidebar>
+
+            <Testimonials>
+
+
+                <div className='Holder'>
+                    <p className="client">Client Testimonials</p>
+                    <div className='HolderInner'>
+                        <Link to="https://www.facebook.com/lessinlawphiladelphia">
+                            {' '}
+                            <Button
+                                variant="contained"
+                                className="btn btn-hero"
+                                style={{ marginLeft: '1rem' }}>
+                                {' '}
+                                <FacebookIcon />
+                            </Button>
+                        </Link>
+
+                        <div className='reviewText' onClick={openURL}>
+                            {' '}
+                            Click here to leave us a review!{' '}
+                        </div>
+                    </div>
+                </div>
+
+
+                <Reviews />
+                <div className='ButtonHolder'>
+                    <Button className='Button' variant="outlined">View All</Button>
+                </div>
+            </Testimonials>
             <Footer />
         </HomePageContainer>
     )

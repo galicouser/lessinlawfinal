@@ -577,6 +577,13 @@ export const Sidebar = styled.div`
     width: 100%;
     display:flex;
     margin-top: 400px;
+    justify-content: center;
+    display: grid;
+
+    .sidebar-holder{
+        width: 100%;
+        border-radius: 6px;
+    }
     p {
         font-size: 24px;
         font-weight: bold;
@@ -602,13 +609,12 @@ export const Sidebar = styled.div`
 `
 
 export const Ad = styled.div`
-    width: 50%;
-    background-color: #f5f5f5;
+    width: 100%;
     padding: 20px;
-    text-align: center;
+    border-radius: 10px;
     p {
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 100;
         margin-bottom: 20px;
     }
 
@@ -618,25 +624,30 @@ export const Ad = styled.div`
     }
 
     .btn {
-        text-transform: uppercase;
-        background: #003366;
-        color: var(--clr-primary-10);
-        padding: 0.375rem 0.75rem;
-        letter-spacing: var(--spacing);
-        display: inline-block;
-        font-weight: 400;
-        transition: var(--transition);
-        font-size: 0.875rem;
-        cursor: pointer;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border-radius: var(--radius);
-        border-color: transparent;
-        width: 200px;
-        margin-top: 10px;
-        @media (max-width: 767px) {
-            margin-left: 0px;
-            margin-top: 20px;
-        }
+        // text-transform: uppercase;
+        // background: #003366;
+        // color: var(--clr-primary-10);
+        // padding: 0.375rem 0.75rem;
+        // letter-spacing: var(--spacing);
+        // display: inline-block;
+        // font-weight: 400;
+        // transition: var(--transition);
+        // font-size: 0.875rem;
+        // cursor: pointer;
+        // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        // border-radius: var(--radius);
+        // border-color: transparent;
+        // width: 200px;
+        // margin-top: 10px;
+        // @media (max-width: 767px) {
+        //     margin-left: 0px;
+        //     margin-top: 20px;
+        // }
+        margin:3.5%;
+        width:150px;
+        height:45px;
+        border:1px solid #003366;
+        color:#003366
     }
     .btn:hover {
         color: var(--clr-primary-1);
@@ -675,18 +686,46 @@ export const InternalTag2 = styled.span`
     font-weight: 200;
 `
 export const Testimonials = styled.div`
-    border: 4px whitesmoke solid;
+    border: 1px whitesmoke solid;
     padding: 2rem;
-    background-color: #dae1e5;
-    overflow: auto;
-    height: 400px;
-    width: 50%;
-
+    background: rgb(255,255,255,0.3);
+    margin-top:5%;
+    height: 100%;
+    width: 100%;
+    .Button{
+        height:50px;
+        width:175px;
+        border:4px solid rgba(4, 41, 64, 1);
+        color:#042940;
+        
+        
+    }
+    .Button:hover{
+        
+        border:4px solid rgba(4, 41, 64, 1);
+        color:#042940;
+    }
+    .ButtonHolder{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        padding-top:2%;
+    }
+    .Holder{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        align-content:center;
+    }
+    .HolderInner{
+        display:flex;
+        align-items:center;
+        align-content:center;
+    }
     .reviewText{
         font-weight: 200;
         font-size: 20px;
         margin-left: 1rem;
-        margin-bottom: 1rem;
 
         &:hover{
             color: navy;
@@ -695,14 +734,13 @@ export const Testimonials = styled.div`
     }
 
     p {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
-        margin-bottom: 20px;
         margin-left: 1rem;
     }
     .client {
-        font-weight: 200;
-        font-size: 2rem;
+        font-weight: 100;
+        font-size: 1.5rem;
         margin-left: 1.5rem;
     }
     h3 {
@@ -722,7 +760,6 @@ export const Testimonials = styled.div`
         li {
             font-size: 18px;
             line-height: 1.5;
-            margin-bottom: 10px;
         }
     }
 
@@ -741,10 +778,8 @@ export const Testimonials = styled.div`
         border-radius: var(--radius);
         border-color: transparent;
         width: 50px;
-        margin-top: 10px;
         @media (max-width: 767px) {
-            margin-left: 0px;
-            margin-top: 20px;
+          
         }
     }
     .btn:hover {
@@ -758,6 +793,12 @@ export const Testimonials = styled.div`
         width: 100%;
         height: 70vh;
         border-radius: 6%;
+        .HolderInner{
+          flex-direction:column;
+        }
+        .reviewText{
+            text-align:center;
+        }
     }
 `
 
