@@ -212,7 +212,7 @@ const HomePage = () => {
                     </h1> */}
 
                     <div className='mainbox-left'>
-                        <div className='header-2'> Pennsylvania Personal Injury Lawyers</div>
+                        <div className='header-2'> Personal Injury Lawyers</div>
                         <div className="button-group">
                             <Button
                                 variant="contained"
