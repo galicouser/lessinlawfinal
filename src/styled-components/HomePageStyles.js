@@ -452,8 +452,8 @@ export const Main1 = styled.div`
     padding-top:3%;
    }
    .textContent{
-    font-size:25px;
-    font-weight:1000;
+    font-size:22.5px;
+    font-weight:100;
     color:#012030;
     text-align:center;
     width:75%;
@@ -844,7 +844,74 @@ export const SwiperHolder = styled.div`
         align-items:center;
     }
 
+    @media only screen and (max-width: 767px) {
+        flex-direction:column;
+        .NavigationButtons{
+            position:relative;
+            left:2%;
+            display:flex;
+            height:90%;
+            width:100%;
+        }
+        .ImageSwiper{
+            height:50px;
+            width:50px;
+            object-fit:cover;
+            border-radius:50%;
+        }
+    
+        .NameHolder{
+            flex-direction:column;
+        }
+        .SwiperSlide{
+            height:100%;
+            padding:15%;
+        }
+        .TitleText{
+            font-size:25px;
+        }
+        .mySwiper{
+            margin-top:10%;
+            width:100%;
+            height:100%;
+        }
+        .DiscriptionText{
+            font-size:22.5px;
+            font-weight:100;
+        }
+        .TitleImageHolder{
+            
+        }
+        .IconImage{
+            height:15px;
+            width:15px;
+            object-cover:fit;
+        }
+        .IconImageClicked{
+            height:15px;
+            width:15px;
+            border-radius:50%;
+            margin-bottom:25px;
+            filter: grayscale(100%);
+        }
 
+        .Name{
+            font-size:15px;
+            text-align:center;
+        }
+        .NameActive{
+            font-size:15px;
+            font-weight:100;
+            text-align:center;
+        }
+        .NameHolder{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            align-content:center;
+            height:100%;
+        }
+        }
     
 `
 
