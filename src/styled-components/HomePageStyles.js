@@ -442,7 +442,6 @@ export const Main1 = styled.div`
     .Button:hover{
         background-color:white;
         color:#012030;
-        box-shadow: 4px 6px 0 #012030;
     }
 
    .textContentHolder{
