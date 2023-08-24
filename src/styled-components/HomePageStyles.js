@@ -848,8 +848,9 @@ export const SwiperHolder = styled.div`
         .NavigationButtons{
             position:relative;
             left:2%;
+            padding-left:0;
             display:flex;
-            height:90%;
+            height:120px;
             width:100%;
         }
         .ImageSwiper{
@@ -870,13 +871,13 @@ export const SwiperHolder = styled.div`
             font-size:25px;
         }
         .mySwiper{
-            margin-top:10%;
             width:100%;
             height:100%;
         }
         .DiscriptionText{
-            font-size:22.5px;
+            font-size:20px;
             font-weight:100;
+            height:100%;
         }
         .TitleImageHolder{
             
