@@ -18,13 +18,10 @@ export const Wrapper = styled.div`
        height:500px;
     .mySwiper {
         width: 100%;
-        
     }
     .stars {
         margin-left: 0%;
-       
     }
-
     }
     .CenteringDiv {
         display: flex;
@@ -34,8 +31,7 @@ export const Wrapper = styled.div`
     }
     .mySwiper {
         width: 75%;
-        padding-top: 1%;
-        
+        padding-top: 1%;   
     }
     .SwiperSlide {
         padding-left: 10%;

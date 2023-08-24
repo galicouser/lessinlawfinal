@@ -13,10 +13,16 @@ import Card2 from '../components/Card2.js'
 import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
-import Button from '@mui/material/Button';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import { motion } from 'framer-motion'
+import Button from '@mui/material/Button'
+import FacebookIcon from '@mui/icons-material/Facebook'
 
-/////
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
+import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -25,7 +31,8 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-/////
+
+
 
 import {
     HomePageContainer,
@@ -34,6 +41,7 @@ import {
     Sidebar,
     Ad,
     Testimonials,
+    SwiperHolder,
     VideoBackground,
     InternalTag1,
     InternalTag2,
@@ -201,22 +209,90 @@ const HomePage = () => {
             )}
         </>
     )
+    const [scrollCheck, setscrollCheck] = useState(false)
+    function checkScroll() {
+        const scrollTop = window.scrollY || window.pageYOffset
+
+        // Adjust this threshold as needed based on when you want the animation to trigger
+        const threshold = 100
+
+        if (scrollTop > threshold) {
+            setscrollCheck(true)
+        } else {
+            setscrollCheck(false)
+        }
+    }
+
+    window.addEventListener('scroll', checkScroll)
+    
+    const [OurFirm,setOurFirm] = useState(false);
+
+    const [SpecialCase,setSpecialCase] = useState(true);
+
+    const [SpecialLawyers,setSpecialLawyers] = useState(false);
+
+    const [OurFirm2,setOurFirm2] = useState(false);
+
+    function OurFirmClicked (){
+        setOurFirm(!OurFirm);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
+        setOurFirm2(false);
+    }
+    function SpecialCaseClicked (){
+        setSpecialCase(!SpecialCase);
+        setSpecialLawyers(false);
+        setOurFirm2(false);
+        setOurFirm(false);
+    }
+    function SpecialLawyersClicked (){
+        setSpecialCase(false);
+        setSpecialLawyers(!SpecialLawyers);
+        setOurFirm2(false);
+        setOurFirm(false);
+    }
+    function OurFirm2Clicked (){
+        setOurFirm2(!OurFirm2);
+        setOurFirm(false);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
+    }
+  
     return (
         <HomePageContainer>
+            <motion.div
+                className="SideIcons"
+                initial={{ opacity: 0, y: 100 }}
+                animate={
+                    scrollCheck
+                        ? {
+                              opacity: 1,
+                              y: 0,
+                              transition: { type:"spring"},
+                          }
+                        : {}
+                }
+            >
+                <div className="IconHolder">
+                    <HomeRoundedIcon className="Icon" />
+                </div>
+                <div className="IconHolder">
+                    <PhoneEnabledIcon className="Icon" />
+                </div>
+                <div className="IconHolder">
+                    <SupportAgentIcon className="Icon" />
+                </div>
+            </motion.div>
             <>{card}</>
             <Main1>
                 <div className="mainbox1">
-                    {/* <h1 className="lessintitle">
-                        <span style={{ color: lessinColor }}>Lessin</span>{' '}
-                        <span style={{ color: lawColor }}>Law</span>
-                    </h1> */}
-
-                    <div className='mainbox-left'>
-                        <div className='header-2'> Personal Injury Lawyers</div>
+                    <div className="mainbox-left">
+                        <p className="header-2">Personal Injury Lawyers</p>
+                       <div className='ButtonHolder'>
                         <div className="button-group">
                             <Button
                                 variant="contained"
-                                className="btn btn-hero"
+                                className="Button"
                                 onClick={openChat}
                             >
                                 live chat
@@ -224,47 +300,39 @@ const HomePage = () => {
                             <Button
                                 onClick={handleMapClick}
                                 variant="contained"
-                                className="btn btn-hero"
+                                className="Button"
                             >
                                 {' '}
                                 Directions
                             </Button>
                             <Button
                                 variant="contained"
-                                className="btn btn-hero"
+                                className="Button"
                                 onClick={handleShow}
                             >
                                 Get In Touch
                             </Button>
                         </div>
+                        </div>
                     </div>
-                    {/* <p
-                        onClick={openURL}
-                        style={{ marginLeft: '1rem', fontSize: '1.5rem' }}
-                    >
-                        {' '}
-                        Click Here Leave Us a Review!{' '}
-                    </p> */}
 
-
-
-
-                    <div className='textContentHolder'>
+                    <div className="textContentHolder">
                         <p className="textContent">
-                            "Our team of dedicated personal injury lawyers is devoted
-                            to seeking justice for our clients who have suffered
-                            injuries in various incidents. We specialize in handling
-                            cases such as car accidents, motorcycle accidents,
-                            pedestrian accidents, bicycle accidents, slip and fall
-                            accidents, medical malpractice, product liability,
-                            workplace accidents, construction accidents, dog bites,
-                            assault or battery, wrongful death, public
-                            transportation accidents, aviation accidents, boating
-                            accidents, defamation, toxic exposure, nursing home
-                            abuse, and recreational accidents. With a relentless
-                            pursuit of fair compensation, we work tirelessly to
-                            ensure that our clients receive the financial reparation
-                            they deserve for their injuries."
+                            "Our team of dedicated personal injury lawyers is
+                            devoted to seeking justice for our clients who have
+                            suffered injuries in various incidents. We
+                            specialize in handling cases such as car accidents,
+                            motorcycle accidents, pedestrian accidents, bicycle
+                            accidents, slip and fall accidents, medical
+                            malpractice, product liability, workplace accidents,
+                            construction accidents, dog bites, assault or
+                            battery, wrongful death, public transportation
+                            accidents, aviation accidents, boating accidents,
+                            defamation, toxic exposure, nursing home abuse, and
+                            recreational accidents. With a relentless pursuit of
+                            fair compensation, we work tirelessly to ensure that
+                            our clients receive the financial reparation they
+                            deserve for their injuries."
                         </p>
                     </div>
                 </div>
@@ -279,21 +347,18 @@ const HomePage = () => {
                 Your browser does not support the video tag.
             </VideoBackground>
 
-
-            <Main>
+            {/* <Main>
                 <Wrapper>
-
-
-
                     <div className="container page ">
                         <div className="info">
                             <Card />
 
                             <div
-                                className={`${isModalOpen
-                                    ? 'modal-overlay show-modal'
-                                    : 'modal-overlay'
-                                    }`}
+                                className={`${
+                                    isModalOpen
+                                        ? 'modal-overlay show-modal'
+                                        : 'modal-overlay'
+                                }`}
                             >
                                 <div className="modal-container">
                                     <button
@@ -313,10 +378,11 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div
-                                className={`${isChatOpen
-                                    ? 'chat-overlay show-chat'
-                                    : 'chat-overlay'
-                                    }`}
+                                className={`${
+                                    isChatOpen
+                                        ? 'chat-overlay show-chat'
+                                        : 'chat-overlay'
+                                }`}
                             >
                                 <div className="modal-container">
                                     <button
@@ -337,9 +403,6 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-
-
-
                 </Wrapper>
                 <Container1 style={{}}>
                     <img src={carouselContent1[activeIndex1].image} alt="img" />
@@ -348,117 +411,172 @@ const HomePage = () => {
                         {carouselContent1[activeIndex1].description}
                     </InternalTag2>
                 </Container1>
-            </Main>
-
+            </Main> */}
+{/* 
             <Main>
                 <Container2>
-                    <img src={carouselContent2[activeIndex2].image} alt="img" />
-                    <div className='textHolder'>
-                        <h1>{carouselContent2[activeIndex2].title}</h1>
+      <Swiper
+    spaceBetween={30}
+    centeredSlides={true}
+    autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+    }}
+    pagination={{
+        clickable: true,
+    }}
+    // navigation={true}
+    modules={[Autoplay, Pagination, Navigation]}
+    className="mySwiper"
+>
+    {carouselContent2.map((item, index) => (
+        <SwiperSlide  key={index} >
+           
+           <img  src={item.image} alt="img" />
+                    <div className="textHolder">
+                        <h1 >{item.title}</h1>
                         <InternalTag1 style={internalTagStyle1}>
-                            {carouselContent2[activeIndex2].description}
+                            {item.description}
                         </InternalTag1>
-                    </div>
+                    </div> 
+        </SwiperSlide>
+    ))}
+</Swiper>
                 </Container2>
                 <div>
                     <Card2 />
                 </div>
-            </Main>
+            </Main> */}
 
+            <SwiperHolder>
+           
+                <div className='NavigationHolder'>
+                <div className='NavigationButtons'>
 
-            <Sidebar>
+                    <div 
+                    className=  "NameHolder"
+                    onClick={OurFirmClicked} >
+                   <img className={OurFirm ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png"}/>
+                    <p className= {OurFirm ? "Name" : "NameActive"}>Our Firm</p>
 
-                <div className='sidebar-holder'>
-
-                    <Ad
-                        style={{
-                            backgroundColor: '#dae1e5',
-                            border: '4px whitesmoke solid'
-                        }}
-                    >
-                        <div
-                            style={{
-                                display: 'grid',
-                                justifyContent: 'center',
-                                alignItems: 'center'
-                            }}
-                            className="ad"
-                        >
-                            <p>
-                                Jeffrey R. Lessin & Associates, P.C 1515 Market St
-                                #1650, Philadelphia, PA
-                            </p>
-                        </div>
-                        <div className="btn-groups">
-                            <Button
-                                variant="outlined"
-                                className="btn btn-hero"
-                                onClick={handleShow}
-                            >
-                                contact us
-                            </Button>
-
-                            <Button
-                                variant="outlined"
-                                className="btn btn-hero"
-                                onClick={openChat}
-                            >
-                                live chat
-                            </Button>
-                            <Button
-                                onClick={handleMapClick}
-                                variant="outlined"
-                                className="btn btn-hero"
-                            >
-                                {' '}
-                                Directions
-                            </Button>
-                        </div>
-                        <div style={{ display: 'grid', justifyContent: 'center' }}>
-                            <Button
-                                variant="text"
-                                className="btn btn-hero"
-                            >
-                                {' '}
-                                (215) 599-1400
-                            </Button>
-
-                        </div>
-                    </Ad>
-
+                    </div>
+                    <div className='NameHolder'
+                    onClick={SpecialCaseClicked}>
+                        <img className={SpecialCase ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg"} />
+                    <p className= {SpecialCase ? "Name" : "NameActive"}>Specialized Cases</p>
+                    
+                    </div>
+                    <div className='NameHolder'
+                    onClick={SpecialLawyersClicked}>
+                    <img className={SpecialLawyers ? "IconImage" : "IconImageClicked"} src={"https://images.unsplash.com/photo-1535376472810-5d229c65da09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"}/>
+                 
+                    <p className= {SpecialLawyers ? "Name" : "NameActive"}>Specialized Lawyers</p>
+                    
+                    </div>
+                    <div className='NameHolder'
+                    onClick={OurFirm2Clicked}>
+                    <img className={OurFirm2 ? "IconImage" : "IconImageClicked"} src={"https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg"}/>
+                 
+                    <p className= {OurFirm2 ? "Name" : "NameActive"}>Our Firm</p>
+                    
+                    </div>
                 </div>
+                </div>
+                {SpecialCase &&
+                 <Swiper
+                 spaceBetween={30}
+                 centeredSlides={true}
+                 autoplay={{
+                     delay: 2500,
+                     disableOnInteraction: false,
+                 }}
+                 // navigation={true}
+                 modules={[Autoplay, Pagination]}
+                 className="mySwiper"
+             >
+                 {carouselContent2.map((item, index) => (
+                     <>
+                     
+                     <SwiperSlide  key={index} className='SwiperSlide'>
+                        
+                                 <div className="textHolder">
+                                     <div className='TitleImageHolder'>
+                                     <p className='TitleText'>{item.title}</p>
+                                     <img className='ImageSwiper'  src={item.image} alt="img" />
+                                     
+                                     </div>
+                                     
+                                     <p className='DiscriptionText'>{item.description}</p>    
+                                     
+                                 </div> 
+                     </SwiperSlide>
+                     </>
+                 ))}
+             </Swiper> }
+             {SpecialLawyers &&
+                 <Swiper
+                 spaceBetween={30}
+                 centeredSlides={true}
+                 autoplay={{
+                     delay: 2500,
+                     disableOnInteraction: false,
+                 }}
+                 // navigation={true}
+                 modules={[Autoplay, Pagination]}
+                 className="mySwiper"
+             >
+                 {carouselContent1.map((item, index) => (
+                     <>
+                     
+                     <SwiperSlide  key={index} className='SwiperSlide'>
+                        
+                                 <div className="textHolder">
+                                     <div className='TitleImageHolder'>
+                                     <p className='TitleText'>{item.title}</p>
+                                     <img className='ImageSwiper'  src={item.image} alt="img" />
+                                     
+                                     </div>
+                                     
+                                     <p className='DiscriptionText'>{item.description}</p>    
+                                     
+                                 </div> 
+                     </SwiperSlide>
+                     </>
+                 ))}
+             </Swiper> }
+               
 
+            </SwiperHolder>
 
-            </Sidebar>
 
             <Testimonials>
-
-
-                <div className='Holder'>
+                <div className="Holder">
                     <p className="client">Client Testimonials</p>
-                    <div className='HolderInner'>
+                    <div className="HolderInner">
                         <Link to="https://www.facebook.com/lessinlawphiladelphia">
                             {' '}
                             <Button
                                 variant="contained"
                                 className="btn btn-hero"
-                                style={{ marginLeft: '1rem' }}>
+                                style={{ marginLeft: '1rem' }}
+                            >
                                 {' '}
                                 <FacebookIcon />
                             </Button>
                         </Link>
 
-                        <div className='reviewText' onClick={openURL}>
+                        <div className="reviewText" onClick={openURL}>
                             {' '}
                             Click here to leave us a review!{' '}
                         </div>
                     </div>
                 </div>
 
-
                 <Reviews />
-                <div className='ButtonHolder'>
-                    <Button className='Button' variant="outlined">View All</Button>
+                <div className="ButtonHolder">
+                    <Button className="Button" variant="outlined">
+                        View All
+                    </Button>
                 </div>
             </Testimonials>
             <Footer />

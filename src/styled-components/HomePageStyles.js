@@ -1,29 +1,50 @@
 import styled from 'styled-components'
 
 export const HomePageContainer = styled.div`
+
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+/* Add hover effect to scrollbar thumb */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}
+
+/* Hide the default scrollbar track in Firefox */
+.scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.SideIcons{
+    
+    position:fixed;
+    right:1%;
+    bottom:2%;
+    z-index:100;
+}
+.SideIcons :hover{
+    cursor:pointer;
+}
+.Icon{
+    font-size:60px;
+}
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     margin: 0 auto;
     width: 100%; 
     margin-top: 70px;
 
-    /* @media (max-width: 768px) {
-        background-color: red;
+    @media (max-width: 768px) {
+        .Icon{
+            font-size:40px;
+        }
     }
+    @media (min-width: 800px) and (max-width: 950px) {
 
-    @media (min-width: 769px) and (max-width: 1024px) {
-        display: flex;
-        background-color: orange;
     }
-
-    @media (min-width: 1025px) and (max-width: 1280px) {
-        background-color: beige;
-    }
-
-    @media (min-width: 1281px) {
-        background-color: hotpink;
-
-    } */
 `
 
 export const VideoBackground = styled.video`
@@ -141,9 +162,11 @@ export const Container1 = styled.div`
     margin-bottom: 8rem;
     font-size: 0.7rem;
     width: 80vh;
+    
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    display: grid;
+    display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -164,7 +187,7 @@ export const Container1 = styled.div`
     }
     img {
         width: 100%;
-        height: 30vh;
+        height: 100%;
         padding: 10px;
         border-radius: 10px;
         object-fit: cover;
@@ -215,19 +238,25 @@ export const Container1 = styled.div`
     }
 `
 export const Container2 = styled.div`   
-    
+
+width:100%;
+.mySwiper{
+    width:100vh;
+    height:100vh;
+    border-radius: 5%;
+}
     border-radius: 5%;
     margin-top: 2.6rem;
     margin-bottom: 2rem;
     font-size: 0.7rem;
-    width: 80vh;
+    width: 100%;
 
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 60vh;
-    overflow: scroll;
+    overflow: auto;
     ::-webkit-scrollbar {
         display: none; /* Hide the scrollbar for WebKit-based browsers */
     }
@@ -236,7 +265,8 @@ export const Container2 = styled.div`
         display: grid;
         justify-content: center;
         place-content: center;
-        height: 30%;
+        font-size:50px;
+        height:30%;
         color: white;
     }
 
@@ -253,7 +283,7 @@ export const Container2 = styled.div`
         width: 80vh;
         height: 60vh;
         padding-right: 2rem;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.2);
         border-radius: 3%;
         
     }
@@ -264,10 +294,10 @@ export const Container2 = styled.div`
     }
 
     img {
-        width: 80vh;
-        height: 60vh;
+        width: 100vh;
+        height: 100vh;
         border-radius: 3%;
-        position: absolute;
+        position:fixed;
         object-fit: cover;
         
         @media (max-width: 768px) {
@@ -351,29 +381,9 @@ export const Title = styled.div`
 export const Main = styled.div`
     flex: 1;
     padding: 8px;
-    height: 55rem;
-    ${'' /* border: 5px black solid; */}
-    h1 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-
-    ul {
-        list-style: disc;
-        margin-left: 20px;
-        margin-bottom: 20px;
-
-        li {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-    }
+    height: 100vh;
+    width:100%;
+    
 
     @media (max-width: 768px) {
     }
@@ -382,196 +392,115 @@ export const Main = styled.div`
     }
 `
 export const Main1 = styled.div`
-    border: 4px whitesmoke solid;
-    display: grid;
+    display: flex;
     justify-content: center;
     padding: 8px;
-    margin-top: 3rem;
-    height: 50vh;
+    height: 100%;
     width: 100%;
-    background-color: rgba(218, 225, 229, 0.5);
     border-radius: 10px;
+    margin-bottom:2.5%;
     
-    @media (min-width: 1025px) and (max-width: 1280px) {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            width: 70%;
-            height: 10vh;
-            margin-top: 0.5rem;
-
-            background-color: transparent;
-            border-color: transparent;
-            .mainbox1 {
-                width: 20rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 40vh;
-                background-color: transparent;
-            }
-            h1 {
-                font-size: 60px;
-            }
-            p {
-                ${'' /* font-size: 14px;
-                line-height: 1.5;
-                margin-bottom: 20px;
-                text-align: center;
-                margin-top: 1rem;
-                border-radius: 5%;
-                line-height: 1.5rem; */
-    }
-                display: none;
-            }
-    }
-
-
-    .button-group {
-        display: flex;
-        padding: 2rem;
-        margin-top: 10%;
-    }
-
-    .btn {
-        text-transform: uppercase;
-        background: #003366;
-        color: var(--clr-primary-10);
-        padding: 0.375rem 0.75rem;
-        letter-spacing: var(--spacing);
-        display: inline-block;
-        font-weight: 400;
-        transition: var(--transition);
-        font-size: 0.875rem;
-        cursor: pointer;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border-radius: var(--radius);
-        border-color: transparent;
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 10px;
-        @media (max-width: 767px) {
-            margin-left: 0px;
-            margin-top: 20px;
-        }
-    }
-
-    .btn:hover {
-        color: var(--clr-primary-1);
-        background: var(--clr-primary-7);
-    }
-
-    .header-2{
-        margin-left: 10px;
-        text-align: left;
-        width: 100%;
-        height: 20%;
-        font-size: 40px;
-        font-weight: 50;
-        margin-top: 50px;
-        text-align: left;
-        vertical-align: middle;
-    }
-
-    .mainbox-left{
-        width: 50%;
-        height: 100%;
-    }
-
-    .mainbox1 {
-        width: 100%;
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        overflow: auto;
-        ::-webkit-scrollbar {
-            display: none; /* Hide the scrollbar for WebKit-based browsers */
-        }
-        .textContentHolder {
-            width: 50%;
-            height: 100%;
-            display: grid;
-            justify-content: center;
-            place-content: center;
-            padding: 2rem;
-            text-align: center;
-        }
-        .textContent {
-            font-size: 1.0rem;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            font-weight: 100;
-            font-style: italic;
-        }
-    }
-    h1 {
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
-    h3 {
-        font-size: 1.0rem;
-        text-decoration: underline;
-    }
-
-    .lessintitle {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 17px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-
-    ul {
-        list-style: disc;
-        margin-left: 20px;
-        margin-bottom: 20px;
-
-        li {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 60vh;
-        margin-top: 0.5rem;
+    .mainbox1{
+        margin-top:3rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        align-content:center;
         
-
-        background-color: transparent;
-        border-color: transparent;
-        .mainbox1 {
-            width: 100%;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
-            overflow-y: hidden;
-            margin-bottom: 0rem;
-        }
-        .button-group {
-            display: grid;
-        }
-        h1 {
-            font-size: 60px;
-        }
-        p {
-            display: none;
-        }
-        .mainbox-left{
-            width: 100%;
-        }
-        .textContentHolder {
-            display: none;
-        }
     }
-`
+    .header-2{
+        font-size:100px;
+        text-align:center;
+        padding-top:8%;
+    }
+    .ButtonHolder{
+        display:flex;
+        justify-content:center;
+        width:100%;
+    }
+    .button-group{
+        display:flex;
+        justify-content:space-between;
+        width:75%;
+    }
+    // .Button{
+    //     width:250px;
+    //     height:50px;
+    //     background-color:#012030;
+        
+    // }
+    .Button{
+             width:250px;
+             height:50px;
+             background:none;
+             border:1px solid #012030;
+             color:#012030;
+             font-size:16px;
+             box-shadow:none;
+            
+         }
+    .Button:hover{
+        background-color:white;
+        color:#012030;
+        box-shadow: 4px 6px 0 #012030;
+    }
+
+   .textContentHolder{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding-top:3%;
+   }
+   .textContent{
+    font-size:25px;
+    font-weight:1000;
+    color:#012030;
+    text-align:center;
+    width:75%;
+    letter-spacing: 2px;
+   }
+   @media (max-width: 768px) {
+    .textContent{
+        font-size:18px;
+        width:100%;
+        font-weight:400;
+    }
+    
+    .button-group{
+        width:85%;
+    }
+    .header-2{
+        font-size:35px;
+        padding-top:8%;
+    }.Button{
+        width:30%;
+        height:50px;
+        background:none;
+        border:1px solid #012030;
+        color:#012030;
+        font-size:12px;
+        box-shadow:none;
+       
+    }
+
+}
+@media (min-width: 800px) and (max-width: 950px) {
+       
+    .button-group{
+        width:85%;
+    }.Button{
+        width:30%;
+        height:50px;
+        background:none;
+        border:1px solid #012030;
+        color:#012030;
+        font-size:12px;
+        box-shadow:none;
+       
+    } 
+}
+
+    `
 export const Sidebar = styled.div`
     width: 100%;
     display:flex;
@@ -672,8 +601,8 @@ export const Ad = styled.div`
 
 `
 export const InternalTag1 = styled.span`
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 1000;
     padding: 2rem;
     color: white;
     height: 70%;
@@ -687,10 +616,12 @@ export const InternalTag2 = styled.span`
 export const Testimonials = styled.div`
     border: 1px whitesmoke solid;
     padding: 2rem;
+    margin-top:10%;
     background: rgb(255,255,255,0.3);
-    margin-top:5%;
     height: 100%;
     width: 100%;
+    position:relative;
+    
     .Button{
         height:50px;
         width:175px;
@@ -808,7 +739,116 @@ export const Testimonials = styled.div`
             align-content:center;
         }
     }
+    @media (min-width: 800px) and (max-width: 950px) {
+            margin-top:50%;
+    }
 `
+export const SwiperHolder = styled.div`
+    height:80vh;
+    
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    
+    .mySwiper{
+        width:60%;
+        height:80%;
+    }
+
+    .ImageSwiper{
+        height:150px;
+        width:150px;
+        object-fit:cover;
+        border-radius:50%;
+    }
+
+    .TitleText{
+        font-size:60px;
+        font-weight:1000;
+        text-align:center;
+        z-index:10;
+    }
+    .TitleImageHolder{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        align-content:center;
+    }
+    .DiscriptionText{
+        font-size:35px;
+        font-weight:1000;
+        text-align:center;
+        z-index:100;
+    }
+    .SwiperSlide{
+        padding:7%;
+        height:100%;
+        background-color:rgba(255, 255, 255, 0.5);
+    }
+
+
+
+    .NavigationButtons{
+        position:absolute;
+        left:2%;
+        height:90%;
+        width:20%;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .Name{
+        font-size:25px;
+        font-weight:1000;
+        text-align:left;
+        padding-left:5%;
+        color:white;
+    }
+    .NameActive{
+        font-size:20px;
+        font-weight:100;
+        text-align:left;
+        padding-left:5%;
+    color:rgba(1, 32, 48, 0.4);
+    }
+    .NameHolder{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:center;
+        height:25%;
+    }
+    .NameHolder:hover{
+        cursor:pointer;
+    }
+    .IconImage{
+        height:40px;
+        width:40px;
+        border-radius:50%;
+        margin-bottom:25px;
+        box-shadow:6px 0 4px rgb(0,0,0,0.7);
+    }
+    .IconImageClicked{
+        height:30px;
+        width:30px;
+        border-radius:50%;
+        margin-bottom:25px;
+        filter: grayscale(100%);
+    }
+
+    .NavigationHolder{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+
+    
+`
+
+
 
 // Holy Grail Flexbox Layout
 export const LayoutContainer = styled.div`
