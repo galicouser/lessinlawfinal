@@ -234,10 +234,10 @@ const HomePage = () => {
     const [OurFirm2,setOurFirm2] = useState(false);
 
     function OurFirmClicked (){
-        setOurFirm(!OurFirm);
-        setSpecialCase(false);
-        setSpecialLawyers(false);
-        setOurFirm2(false);
+        // setOurFirm(!OurFirm);
+        // setSpecialCase(false);
+        // setSpecialLawyers(false);
+        // setOurFirm2(false);
     }
     function SpecialCaseClicked (){
         setSpecialCase(!SpecialCase);
@@ -252,10 +252,10 @@ const HomePage = () => {
         setOurFirm(false);
     }
     function OurFirm2Clicked (){
-        setOurFirm2(!OurFirm2);
-        setOurFirm(false);
-        setSpecialCase(false);
-        setSpecialLawyers(false);
+        // setOurFirm2(!OurFirm2);
+        // setOurFirm(false);
+        // setSpecialCase(false);
+        // setSpecialLawyers(false);
     }
   
     return (
