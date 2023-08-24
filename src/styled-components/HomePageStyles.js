@@ -792,10 +792,9 @@ export const SwiperHolder = styled.div`
 
 
     .NavigationButtons{
-        position:absolute;
-        left:2%;
-        height:90%;
-        width:20%;
+        height:60vh;
+        width:350px;
+        padding-left:10%;
         justify-content:space-between;
         align-items:center;
     }
