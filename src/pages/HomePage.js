@@ -240,17 +240,26 @@ const HomePage = () => {
         // setOurFirm2(false);
     }
     function SpecialCaseClicked (){
+        if(SpecialCase){
+
+        }
+        else{
         setSpecialCase(!SpecialCase);
         setSpecialLawyers(false);
         setOurFirm2(false);
         setOurFirm(false);
     }
-    function SpecialLawyersClicked (){
-        setSpecialCase(false);
-        setSpecialLawyers(!SpecialLawyers);
-        setOurFirm2(false);
-        setOurFirm(false);
     }
+    function SpecialLawyersClicked (){
+        if(SpecialLawyers){}
+        else {
+            setSpecialCase(false);
+            setSpecialLawyers(!SpecialLawyers);
+            setOurFirm2(false);
+            setOurFirm(false);
+        
+        }
+        }
     function OurFirm2Clicked (){
         // setOurFirm2(!OurFirm2);
         // setOurFirm(false);
@@ -453,19 +462,25 @@ const HomePage = () => {
                 <div className='NavigationHolder'>
                 <div className='NavigationButtons'>
 
+                    
+                    
                     <div 
-                    className=  "NameHolder"
+                    className= "NameHolder"
                     onClick={OurFirmClicked} >
                    <img className={OurFirm ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png"}/>
-                    <p className= {OurFirm ? "Name" : "NameActive"}>Our Firm</p>
+                 
 
+                    <p className= {OurFirm ? "Name" : "NameActive"}>Our Firm</p>
+                   
                     </div>
+                    
                     <div className='NameHolder'
                     onClick={SpecialCaseClicked}>
                         <img className={SpecialCase ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg"} />
                     <p className= {SpecialCase ? "Name" : "NameActive"}>Specialized Cases</p>
-                    
                     </div>
+
+
                     <div className='NameHolder'
                     onClick={SpecialLawyersClicked}>
                     <img className={SpecialLawyers ? "IconImage" : "IconImageClicked"} src={"https://images.unsplash.com/photo-1535376472810-5d229c65da09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"}/>

@@ -753,7 +753,7 @@ export const SwiperHolder = styled.div`
     
     .mySwiper{
         width:60%;
-        height:80%;
+        height:100%;
     }
 
     .ImageSwiper{
@@ -798,41 +798,48 @@ export const SwiperHolder = styled.div`
         align-items:center;
     }
     .Name{
-        font-size:25px;
+
+        padding-top:20px;
+        font-size:22px;
         font-weight:1000;
-        text-align:left;
+        text-align:center;
         padding-left:5%;
         color:white;
     }
+    
     .NameActive{
         font-size:20px;
+        padding-top:20px;
         font-weight:100;
         text-align:left;
         padding-left:5%;
-    color:rgba(1, 32, 48, 0.4);
+    color:rgba(255, 255, 255, 0.2);
     }
+    
     .NameHolder{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:center;
-        height:25%;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        background-color: rgb(1,1,1,0.85);
+        margin-top: 15%;
+        border-radius: 70px;
+        height: 65px;
     }
+
     .NameHolder:hover{
         cursor:pointer;
     }
     .IconImage{
-        height:40px;
-        width:40px;
+        height:65px;
+        width:65px;
         border-radius:50%;
-        margin-bottom:25px;
         box-shadow:6px 0 4px rgb(0,0,0,0.7);
     }
+
     .IconImageClicked{
-        height:30px;
-        width:30px;
+        height:65px;
+        width:65px;
         border-radius:50%;
-        margin-bottom:25px;
         filter: grayscale(100%);
     }
 
@@ -861,6 +868,7 @@ export const SwiperHolder = styled.div`
     
         .NameHolder{
             flex-direction:column;
+
         }
         .SwiperSlide{
             height:100%;
@@ -897,11 +905,15 @@ export const SwiperHolder = styled.div`
         .Name{
             font-size:15px;
             text-align:center;
+            padding-top:10px;
+
         }
         .NameActive{
             font-size:15px;
             font-weight:100;
             text-align:center;
+            padding-top:0px;
+            color:black;
         }
         .NameHolder{
             display:flex;
@@ -909,6 +921,8 @@ export const SwiperHolder = styled.div`
             align-items:center;
             align-content:center;
             height:100%;
+            border-radius:0px;
+            background:none;
         }
         }
     
