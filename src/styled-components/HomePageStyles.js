@@ -801,7 +801,7 @@ export const SwiperHolder = styled.div`
 
         padding-top:20px;
         font-size:23px;
-        font-weight:100;
+        font-weight:1000;
         text-align:center;
         padding-left:5%;
         color:grey;

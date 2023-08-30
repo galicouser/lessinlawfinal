@@ -21,18 +21,15 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 import {
     HomePageContainer,
@@ -224,49 +221,46 @@ const HomePage = () => {
     }
 
     window.addEventListener('scroll', checkScroll)
-    
-    const [OurFirm,setOurFirm] = useState(false);
 
-    const [SpecialCase,setSpecialCase] = useState(true);
+    const [OurFirm, setOurFirm] = useState(false)
 
-    const [SpecialLawyers,setSpecialLawyers] = useState(false);
+    const [SpecialCase, setSpecialCase] = useState(true)
 
-    const [OurFirm2,setOurFirm2] = useState(false);
+    const [SpecialLawyers, setSpecialLawyers] = useState(false)
 
-    function OurFirmClicked (){
+    const [OurFirm2, setOurFirm2] = useState(false)
+
+    function OurFirmClicked() {
         // setOurFirm(!OurFirm);
         // setSpecialCase(false);
         // setSpecialLawyers(false);
         // setOurFirm2(false);
     }
-    function SpecialCaseClicked (){
-        if(SpecialCase){
-
+    function SpecialCaseClicked() {
+        if (SpecialCase) {
+        } else {
+            setSpecialCase(!SpecialCase)
+            setSpecialLawyers(false)
+            setOurFirm2(false)
+            setOurFirm(false)
         }
-        else{
-        setSpecialCase(!SpecialCase);
-        setSpecialLawyers(false);
-        setOurFirm2(false);
-        setOurFirm(false);
     }
+    function SpecialLawyersClicked() {
+        if (SpecialLawyers) {
+        } else {
+            setSpecialCase(false)
+            setSpecialLawyers(!SpecialLawyers)
+            setOurFirm2(false)
+            setOurFirm(false)
+        }
     }
-    function SpecialLawyersClicked (){
-        if(SpecialLawyers){}
-        else {
-            setSpecialCase(false);
-            setSpecialLawyers(!SpecialLawyers);
-            setOurFirm2(false);
-            setOurFirm(false);
-        
-        }
-        }
-    function OurFirm2Clicked (){
+    function OurFirm2Clicked() {
         // setOurFirm2(!OurFirm2);
         // setOurFirm(false);
         // setSpecialCase(false);
         // setSpecialLawyers(false);
     }
-  
+
     return (
         <HomePageContainer>
             <motion.div
@@ -277,7 +271,7 @@ const HomePage = () => {
                         ? {
                               opacity: 1,
                               y: 0,
-                              transition: { type:"spring"},
+                              transition: { type: 'spring' },
                           }
                         : {}
                 }
@@ -297,31 +291,31 @@ const HomePage = () => {
                 <div className="mainbox1">
                     <div className="mainbox-left">
                         <p className="header-2">Personal Injury Lawyers</p>
-                       <div className='ButtonHolder'>
-                        <div className="button-group">
-                            <Button
-                                variant="contained"
-                                className="Button"
-                                onClick={openChat}
-                            >
-                                live chat
-                            </Button>
-                            <Button
-                                onClick={handleMapClick}
-                                variant="contained"
-                                className="Button"
-                            >
-                                {' '}
-                                Directions
-                            </Button>
-                            <Button
-                                variant="contained"
-                                className="Button"
-                                onClick={handleShow}
-                            >
-                                Get In Touch
-                            </Button>
-                        </div>
+                        <div className="ButtonHolder">
+                            <div className="button-group">
+                                <Button
+                                    variant="contained"
+                                    className="Button"
+                                    onClick={openChat}
+                                >
+                                    live chat
+                                </Button>
+                                <Button
+                                    onClick={handleMapClick}
+                                    variant="contained"
+                                    className="Button"
+                                >
+                                    {' '}
+                                    Directions
+                                </Button>
+                                <Button
+                                    variant="contained"
+                                    className="Button"
+                                    onClick={handleShow}
+                                >
+                                    Get In Touch
+                                </Button>
+                            </div>
                         </div>
                     </div>
 
@@ -421,7 +415,7 @@ const HomePage = () => {
                     </InternalTag2>
                 </Container1>
             </Main> */}
-{/* 
+            {/* 
             <Main>
                 <Container2>
       <Swiper
@@ -458,111 +452,163 @@ const HomePage = () => {
             </Main> */}
 
             <SwiperHolder>
-           
-                <div className='NavigationHolder'>
-                <div className='NavigationButtons'>
+                <div className="NavigationHolder">
+                    <div className="NavigationButtons">
+                        <motion.div className="NameHolder" onClick={OurFirmClicked}
+                        initial={{ opacity: 0 }} 
+                        animate={{ opacity: 1 }} 
+                        transition={{ type: "spring" }}>
+                            <img
+                                className={
+                                    OurFirm ? 'IconImage' : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png'
+                                }
+                            />
 
-                    
-                    
-                    <div 
-                    className= "NameHolder"
-                    onClick={OurFirmClicked} >
-                   <img className={OurFirm ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png"}/>
-                 
+                            <p className={OurFirm ? 'Name' : 'NameActive'}>
+                                Our Firm
+                            </p>
+                        </motion.div>
 
-                    <p className= {OurFirm ? "Name" : "NameActive"}>Our Firm</p>
-                   
-                    </div>
-                    
-                    <div className='NameHolder'
-                    onClick={SpecialCaseClicked}>
-                        <img className={SpecialCase ? "IconImage" : "IconImageClicked"}  src={"https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg"} />
-                    <p className= {SpecialCase ? "Name" : "NameActive"}>Specialized Cases</p>
-                    </div>
+                        <div
+                            className="NameHolder"
+                            onClick={SpecialCaseClicked}
+                        >
+                            <img
+                                className={
+                                    SpecialCase
+                                        ? 'IconImage'
+                                        : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg'
+                                }
+                            />
+                            <p className={SpecialCase ? 'Name' : 'NameActive'}>
+                                Specialized Cases
+                            </p>
+                        </div>
 
+                        <div
+                            className="NameHolder"
+                            onClick={SpecialLawyersClicked}
+                        >
+                            <img
+                                className={
+                                    SpecialLawyers
+                                        ? 'IconImage'
+                                        : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://images.unsplash.com/photo-1535376472810-5d229c65da09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80'
+                                }
+                            />
 
-                    <div className='NameHolder'
-                    onClick={SpecialLawyersClicked}>
-                    <img className={SpecialLawyers ? "IconImage" : "IconImageClicked"} src={"https://images.unsplash.com/photo-1535376472810-5d229c65da09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"}/>
-                 
-                    <p className= {SpecialLawyers ? "Name" : "NameActive"}>Specialized Lawyers</p>
-                    
-                    </div>
-                    <div className='NameHolder'
-                    onClick={OurFirm2Clicked}>
-                    <img className={OurFirm2 ? "IconImage" : "IconImageClicked"} src={"https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg"}/>
-                 
-                    <p className= {OurFirm2 ? "Name" : "NameActive"}>Our Firm</p>
-                    
+                            <p
+                                className={
+                                    SpecialLawyers ? 'Name' : 'NameActive'
+                                }
+                            >
+                                Specialized Lawyers
+                            </p>
+                        </div>
+                        <div className="NameHolder" onClick={OurFirm2Clicked}>
+                            <img
+                                className={
+                                    OurFirm2 ? 'IconImage' : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg'
+                                }
+                            />
+
+                            <p className={OurFirm2 ? 'Name' : 'NameActive'}>
+                                Our Firm
+                            </p>
+                        </div>
                     </div>
                 </div>
-                </div>
-                {SpecialCase &&
-                 <Swiper
-                 spaceBetween={30}
-                 centeredSlides={true}
-                 autoplay={{
-                     delay: 2500,
-                     disableOnInteraction: false,
-                 }}
-                 // navigation={true}
-                 modules={[Autoplay, Pagination]}
-                 className="mySwiper"
-             >
-                 {carouselContent2.map((item, index) => (
-                     <>
-                     
-                     <SwiperSlide  key={index} className='SwiperSlide'>
-                        
-                                 <div className="textHolder">
-                                     <div className='TitleImageHolder'>
-                                     <p className='TitleText'>{item.title}</p>
-                                     <img className='ImageSwiper'  src={item.image} alt="img" />
-                                     
-                                     </div>
-                                     
-                                     <p className='DiscriptionText'>{item.description}</p>    
-                                     
-                                 </div> 
-                     </SwiperSlide>
-                     </>
-                 ))}
-             </Swiper> }
-             {SpecialLawyers &&
-                 <Swiper
-                 spaceBetween={30}
-                 centeredSlides={true}
-                 autoplay={{
-                     delay: 2500,
-                     disableOnInteraction: false,
-                 }}
-                 // navigation={true}
-                 modules={[Autoplay, Pagination]}
-                 className="mySwiper"
-             >
-                 {carouselContent1.map((item, index) => (
-                     <>
-                     
-                     <SwiperSlide  key={index} className='SwiperSlide'>
-                        
-                                 <div className="textHolder">
-                                     <div className='TitleImageHolder'>
-                                     <p className='TitleText'>{item.title}</p>
-                                     <img className='ImageSwiper'  src={item.image} alt="img" />
-                                     
-                                     </div>
-                                     
-                                     <p className='DiscriptionText'>{item.description}</p>    
-                                     
-                                 </div> 
-                     </SwiperSlide>
-                     </>
-                 ))}
-             </Swiper> }
-               
+                {SpecialCase && (
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        // navigation={true}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        {carouselContent2.map((item, index) => (
+                            <>
+                                <SwiperSlide
+                                    key={index}
+                                    className="SwiperSlide"
+                                >
+                                    <div className="textHolder">
+                                        <div className="TitleImageHolder">
+                                            <p className="TitleText">
+                                                {item.title}
+                                            </p>
+                                            <img
+                                                className="ImageSwiper"
+                                                src={item.image}
+                                                alt="img"
+                                            />
+                                        </div>
 
+                                        <p className="DiscriptionText">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            </>
+                        ))}
+                    </Swiper>
+                )}
+                {SpecialLawyers && (
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        // navigation={true}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        {carouselContent1.map((item, index) => (
+                            <>
+                                <SwiperSlide
+                                    key={index}
+                                    className="SwiperSlide"
+                                >
+                                    <div className="textHolder">
+                                        <div className="TitleImageHolder">
+                                            <p className="TitleText">
+                                                {item.title}
+                                            </p>
+                                            <img
+                                                className="ImageSwiper"
+                                                src={item.image}
+                                                alt="img"
+                                            />
+                                        </div>
+
+                                        <p className="DiscriptionText">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            </>
+                        ))}
+                    </Swiper>
+                )}
             </SwiperHolder>
-
 
             <Testimonials>
                 <div className="Holder">
