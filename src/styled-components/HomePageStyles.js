@@ -800,11 +800,11 @@ export const SwiperHolder = styled.div`
     .Name{
 
         padding-top:20px;
-        font-size:22px;
-        font-weight:1000;
+        font-size:23px;
+        font-weight:100;
         text-align:center;
         padding-left:5%;
-        color:white;
+        color:grey;
     }
     
     .NameActive{
@@ -813,14 +813,14 @@ export const SwiperHolder = styled.div`
         font-weight:100;
         text-align:left;
         padding-left:5%;
-    color:rgba(255, 255, 255, 0.2);
+    color:rgba(0, 0, 0, 0.5);
     }
     
     .NameHolder{
         display: flex;
         flex-direction: row;
         align-items: center; 
-        background-color: rgb(1,1,1,0.85);
+        background-color: rgb(255,255,255,0.40);
         margin-top: 15%;
         border-radius: 70px;
         height: 65px;
