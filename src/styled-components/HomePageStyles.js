@@ -778,7 +778,9 @@ export const SwiperHolder = styled.div`
     }
     .DiscriptionText{
         font-size:35px;
-        font-weight:1000;
+        font-weight:100;
+        letter-spacing:4px;
+        padding-top:10px;
         text-align:center;
         z-index:100;
     }
@@ -800,47 +802,60 @@ export const SwiperHolder = styled.div`
     .Name{
 
         padding-top:20px;
+        margin-right:45px;
         font-size:23px;
         font-weight:1000;
         text-align:center;
         padding-left:5%;
         color:grey;
+        transition: ease 1s;
+        color:white;
     }
     
     .NameActive{
         font-size:20px;
+        margin-left:10px;
         padding-top:20px;
         font-weight:100;
         text-align:left;
         padding-left:5%;
-    color:rgba(0, 0, 0, 0.5);
+    color:white;
+    transition: ease 1s;
     }
     
     .NameHolder{
         display: flex;
         flex-direction: row;
         align-items: center; 
-        background-color: rgb(255,255,255,0.40);
+        background-color: rgb(0,0,0,0.40);
         margin-top: 15%;
         border-radius: 70px;
         height: 65px;
+        width:300px;
     }
 
     .NameHolder:hover{
         cursor:pointer;
+        // background-color:white;
     }
     .IconImage{
         height:65px;
         width:65px;
+        position:absolute;
         border-radius:50%;
+        left:82%;
         box-shadow:6px 0 4px rgb(0,0,0,0.7);
+        transition: ease 1s;
     }
 
     .IconImageClicked{
         height:65px;
         width:65px;
+        position:absolute;
         border-radius:50%;
         filter: grayscale(100%);
+        left:0%;
+        transition: ease 1s;
     }
 
     .NavigationHolder{

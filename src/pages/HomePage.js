@@ -10,6 +10,7 @@ import Footer from '../components/Footer.js'
 import Header from '../components/Header.js'
 import Pop from '../components/Pop.js'
 import Card2 from '../components/Card2.js'
+import { IconButton } from '@mui/material';
 import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
@@ -454,25 +455,24 @@ const HomePage = () => {
             <SwiperHolder>
                 <div className="NavigationHolder">
                     <div className="NavigationButtons">
-                        <motion.div className="NameHolder" onClick={OurFirmClicked}
-                        initial={{ opacity: 0 }} 
-                        animate={{ opacity: 1 }} 
-                        transition={{ type: "spring" }}>
+                        
+                        <IconButton className="NameHolder" onClick={OurFirmClicked}
+                        >
                             <img
                                 className={
                                     OurFirm ? 'IconImage' : 'IconImageClicked'
                                 }
                                 src={
-                                    'https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png'
+                                    'https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                 }
                             />
 
                             <p className={OurFirm ? 'Name' : 'NameActive'}>
                                 Our Firm
                             </p>
-                        </motion.div>
+                        </IconButton>
 
-                        <div
+                        <IconButton
                             className="NameHolder"
                             onClick={SpecialCaseClicked}
                         >
@@ -483,15 +483,15 @@ const HomePage = () => {
                                         : 'IconImageClicked'
                                 }
                                 src={
-                                    'https://cdn.pixabay.com/photo/2017/07/03/20/17/colorful-2468874_1280.jpg'
+                                    'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                 }
                             />
                             <p className={SpecialCase ? 'Name' : 'NameActive'}>
                                 Specialized Cases
                             </p>
-                        </div>
+                        </IconButton>
 
-                        <div
+                        <IconButton
                             className="NameHolder"
                             onClick={SpecialLawyersClicked}
                         >
@@ -502,7 +502,7 @@ const HomePage = () => {
                                         : 'IconImageClicked'
                                 }
                                 src={
-                                    'https://images.unsplash.com/photo-1535376472810-5d229c65da09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80'
+                                    'https://images.pexels.com/photos/7841450/pexels-photo-7841450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                 }
                             />
 
@@ -513,21 +513,23 @@ const HomePage = () => {
                             >
                                 Specialized Lawyers
                             </p>
-                        </div>
-                        <div className="NameHolder" onClick={OurFirm2Clicked}>
-                            <img
-                                className={
+                        </IconButton>
+
+                        <IconButton className="NameHolder" onClick={OurFirm2Clicked}>
+                            <motion.img
+                           
+                            className={
                                     OurFirm2 ? 'IconImage' : 'IconImageClicked'
                                 }
                                 src={
-                                    'https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_1280.jpg'
+                                    'https://images.pexels.com/photos/3751006/pexels-photo-3751006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
                                 }
                             />
 
                             <p className={OurFirm2 ? 'Name' : 'NameActive'}>
                                 Our Firm
                             </p>
-                        </div>
+                        </IconButton>
                     </div>
                 </div>
                 {SpecialCase && (
