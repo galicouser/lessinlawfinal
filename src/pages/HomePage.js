@@ -458,14 +458,14 @@ const HomePage = () => {
                         <Button
                             variant="outlined"
                             onClick={OurFirmClicked}
-                            className="MobileButton"
+                            className={OurFirm ? "MobileButtonActive":"MobileButton"}
                         >
                             Our Firm
                         </Button>
                         <Button
                             variant="outlined"
                             onClick={SpecialLawyersClicked}
-                            className="MobileButton"
+                            className={SpecialLawyers ? "MobileButtonActive":"MobileButton"}
                         >
                             Specilized Lawyers
                         </Button>
@@ -474,14 +474,14 @@ const HomePage = () => {
                     <div className="LowerButtonHolder">
                         <Button
                             variant="outlined"
-                            className="MobileButton"
                             onClick={SpecialCaseClicked}
+                            className={SpecialCase ? "MobileButtonActive":"MobileButton"}
                         >
                             Specilized Case
                         </Button>
                         <Button
                             variant="outlined"
-                            className="MobileButton"
+                            className={OurFirm2 ? "MobileButtonActive":"MobileButton"}
                             onClick={OurFirm2Clicked}
                         >
                             Our Firm

@@ -911,17 +911,35 @@ export const SwiperHolder = styled.div`
             color:white;
             font-size:18px;
             font-weight:1000;
-            background-color:rgba(1, 24, 38, 0.30);;
+            background-color:rgba(1, 24, 38, 0.30);
             outline:none;
             border:1px solid #D0D9F2;
             width:45%;
             height:45px;
             border-radius:35px;
             padding:40px;
+            transition: ease 1s;
+        }
+        .MobileButtonActive{
+            color:white;
+            font-size:18px;
+            font-weight:1000;
+            background-color:black;
+            outline:none;
+            border:1px solid #D0D9F2;
+            width:45%;
+            height:45px;
+            border-radius:35px;
+            padding:40px;
+            transition: ease 1s;
+        }
+        .MobileButtonActive:hover{
+            background-color:black;
+            border:1px solid #D0D9F2;
         }
         .MobileButton:hover{
-            background-color:black;
-            border:none;
+            background-color:rgba(1, 24, 38, 0.30);
+            border:1px solid #D0D9F2;
         }
         .ImageSwiper{
             height:50px;

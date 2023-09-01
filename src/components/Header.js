@@ -137,6 +137,8 @@ const HeaderContainer = styled.header`
     flex-direction: column;
     align-content: center;
     align-items: center;
+    
+    background-color: rgba(1, 32, 48, 1);
     .MenuIconOver {
         display: none;
     }
