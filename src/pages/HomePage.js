@@ -10,7 +10,7 @@ import Footer from '../components/Footer.js'
 import Header from '../components/Header.js'
 import Pop from '../components/Pop.js'
 import Card2 from '../components/Card2.js'
-import { IconButton } from '@mui/material';
+import { IconButton } from '@mui/material'
 import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
@@ -453,10 +453,55 @@ const HomePage = () => {
             </Main> */}
 
             <SwiperHolder>
+                <div className="MobileNavigationButtons">
+                    <div className="UpperButtonHolder">
+                        <Button
+                            variant="outlined"
+                            onClick={OurFirmClicked}
+                            className="MobileButton"
+                        >
+                            Our Firm
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={SpecialLawyersClicked}
+                            className="MobileButton"
+                        >
+                            Specilized Lawyers
+                        </Button>
+                    </div>
+
+                    <div className="LowerButtonHolder">
+                        <Button
+                            variant="outlined"
+                            className="MobileButton"
+                            onClick={SpecialCaseClicked}
+                        >
+                            Specilized Case
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            className="MobileButton"
+                            onClick={OurFirm2Clicked}
+                        >
+                            Our Firm
+                        </Button>
+                    </div>
+
+                    <div className="TextHolder">
+                        <p className="TitleTextSwiper">
+                            {OurFirm && 'Our Firm'}
+                            {SpecialCase && 'Special Case'}
+                            {SpecialLawyers && 'Special Lawyers'}
+                            {OurFirm2 && 'Our Firm'}
+                        </p>
+                    </div>
+                </div>
                 <div className="NavigationHolder">
                     <div className="NavigationButtons">
-                        
-                        <IconButton className="NameHolder" onClick={OurFirmClicked}
+                        <IconButton
+                            className="NameHolder"
+                            onClick={OurFirmClicked}
                         >
                             <img
                                 className={
@@ -515,10 +560,12 @@ const HomePage = () => {
                             </p>
                         </IconButton>
 
-                        <IconButton className="NameHolder" onClick={OurFirm2Clicked}>
+                        <IconButton
+                            className="NameHolder"
+                            onClick={OurFirm2Clicked}
+                        >
                             <motion.img
-                           
-                            className={
+                                className={
                                     OurFirm2 ? 'IconImage' : 'IconImageClicked'
                                 }
                                 src={
@@ -532,6 +579,7 @@ const HomePage = () => {
                         </IconButton>
                     </div>
                 </div>
+
                 {SpecialCase && (
                     <Swiper
                         spaceBetween={30}
@@ -646,5 +694,4 @@ const HomePage = () => {
         </HomePageContainer>
     )
 }
-
 export default HomePage

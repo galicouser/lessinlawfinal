@@ -94,14 +94,7 @@ const Header = () => {
                     <MenuIcon className='MenuIconOver' onClick={MenuClicked}/>
                 </Grid>
             </Grid>
-            {MenuOverlay && 
-            <div className='MenuOverlay'>
-                <p className='menu-option'>Home</p>
-                <p className='menu-option'>Profile</p>
-                <p className='menu-option'>Reviews</p>
-                <p className='menu-option'>Article</p>
-                <p className='menu-option'>Login</p>
-            </div>}
+            
         </HeaderContainer>
     )
 }

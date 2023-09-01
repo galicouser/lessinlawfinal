@@ -466,13 +466,13 @@ export const Main1 = styled.div`
     }
     
     .button-group{
-        width:85%;
+        width:100%;
     }
     .header-2{
         font-size:35px;
         padding-top:8%;
     }.Button{
-        width:30%;
+        width:120px;
         height:50px;
         background:none;
         border:1px solid #012030;
@@ -863,16 +863,65 @@ export const SwiperHolder = styled.div`
         justify-content:center;
         align-items:center;
     }
+    .MobileNavigationButtons{
+        display:none;
+    }
 
     @media only screen and (max-width: 767px) {
         flex-direction:column;
         .NavigationButtons{
+            display:flex;
+            flex-direction:column;
             position:relative;
             left:2%;
             padding-left:0;
-            display:flex;
-            height:120px;
+            height:500px;
             width:100%;
+            background-color:black;
+            transition: ease 1s;
+        }
+        .MobileNavigationButtons{
+            width:100%;
+            display:unset;
+        }
+        .UpperButtonHolder{
+            display:flex;
+            justify-content:space-evenly;
+            width:100%;
+            margin-bottom:5%;
+        }
+        .LowerButtonHolder{
+            display:flex;
+            justify-content:space-evenly;
+            width:100%;
+            margin-bottom:2.5%;
+        }
+        .TitleTextSwiper{
+            font-size:32.5px;
+            font-weight:1000;
+            text-align:center;
+            margin-top:5px;
+            color:white;
+            transition: ease 1s;
+        }
+        .TextHolder{
+            transition: ease 1s;
+        }
+        .MobileButton{
+            color:white;
+            font-size:18px;
+            font-weight:1000;
+            background-color:rgba(1, 24, 38, 0.30);;
+            outline:none;
+            border:1px solid #D0D9F2;
+            width:45%;
+            height:45px;
+            border-radius:35px;
+            padding:40px;
+        }
+        .MobileButton:hover{
+            background-color:black;
+            border:none;
         }
         .ImageSwiper{
             height:50px;
@@ -884,13 +933,19 @@ export const SwiperHolder = styled.div`
         .NameHolder{
             flex-direction:column;
 
+            display: flex;
+        align-items: center; 
+        margin-top: 0%;
+        height: 100%;
+        width:100%;
+
         }
         .SwiperSlide{
             height:100%;
-            padding:15%;
         }
         .TitleText{
             font-size:25px;
+
         }
         .mySwiper{
             width:100%;
@@ -938,6 +993,9 @@ export const SwiperHolder = styled.div`
             height:100%;
             border-radius:0px;
             background:none;
+        }
+        .NavigationHolder{
+            display:none;
         }
         }
     
