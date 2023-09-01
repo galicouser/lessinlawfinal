@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Grid from '@mui/material/Grid'
 import MenuIcon from '@mui/icons-material/Menu';
-
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { motion } from "framer-motion";
 
 const Header = () => {
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0)
@@ -45,6 +46,9 @@ const Header = () => {
     
     return (
         <HeaderContainer >
+
+
+
             <div className='TopText'>
             <a
               href="tel:+12155991400"
@@ -54,8 +58,9 @@ const Header = () => {
           </a>
           </div>
           
-
-            <Grid container gap={2} className={navbar ? "Navbar" : "NavbarActive"}>
+          
+<div className='HolderTemp'>
+            <Grid container gap={0} className={navbar ? "Navbar" : "NavbarActive"}>
                 <Grid item lg={8.8}  sm={5} xs={6} className='LogoHolder'>
                             <div className='LogoName'>
                         Lessin Law
@@ -93,7 +98,45 @@ const Header = () => {
                     </div>
                     <MenuIcon className='MenuIconOver' onClick={MenuClicked}/>
                 </Grid>
+
+                {/* <Grid item  xs={12} style={{height:,backgroundColor:"black"}}>
+
+                            
+                </Grid> */}
+
+
             </Grid>
+
+            
+            </div>
+            {MenuOverlay &&  
+            <motion.div className='NavButtonHolder'
+            initial={{ y: -100 }}  // Start from -100 on the y-axis
+      animate={{ y: 0 }}     // Move to 0 on the y-axis
+      transition={{ type: "spring", stiffness: 120, damping: 20 }}>
+            <div className='HolderSubDiv'> 
+                <KeyboardArrowRightIcon className='SubHolderIcon'/>
+                <div className='SubHolderText'>Home</div>
+            </div>
+            <div className='HolderSubDiv'> 
+                <KeyboardArrowRightIcon className='SubHolderIcon'/>
+                <div className='SubHolderText'>Profiles</div>
+            </div>
+            <div className='HolderSubDiv'> 
+                <KeyboardArrowRightIcon className='SubHolderIcon'/>
+                <div className='SubHolderText'>Reviews</div>
+            </div>
+            <div className='HolderSubDiv'> 
+                <KeyboardArrowRightIcon className='SubHolderIcon'/>
+                <div className='SubHolderText'>Article</div>
+            </div>
+            <div className='HolderSubDiv'> 
+                <KeyboardArrowRightIcon className='SubHolderIcon'/>
+                <div className='SubHolderText'>Login</div>
+            </div>
+           
+    </motion.div>}
+            
             
         </HeaderContainer>
     )
@@ -160,8 +203,36 @@ const HeaderContainer = styled.header`
     .MenuIcon:hover{
         cursor:pointer;
     }
+    .HolderTemp{
+        width:100%;
+    }
+    .NavButtonHolder{
+        display:none;
+    }
 
     @media (max-width: 768px) {
+        
+        .NavButtonHolder{
+            display:unset;
+            background-color:rgba(1, 32, 48, 1);
+            width:100%;
+        }
+        .HolderSubDiv{
+            display:flex;
+            align-items:center;
+            padding:3%;
+        }
+        .SubHolderText{
+            color:white;
+            font-size:20px;
+            font-weight:100;
+            padding-left:5%;
+        }
+        .SubHolderIcon{
+            color:white;
+            font-size:25px;
+        }
+        
         .DesktopView{
             display:none;
         }
@@ -200,7 +271,7 @@ const HeaderContainer = styled.header`
                 font-size: 20px;
                 cursor: pointer;
               }
-        
+       
         
     }
     
