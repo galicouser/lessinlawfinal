@@ -232,10 +232,10 @@ const HomePage = () => {
     const [OurFirm2, setOurFirm2] = useState(false)
 
     function OurFirmClicked() {
-        // setOurFirm(!OurFirm);
-        // setSpecialCase(false);
-        // setSpecialLawyers(false);
-        // setOurFirm2(false);
+        setOurFirm(!OurFirm);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
+        setOurFirm2(false);
     }
     function SpecialCaseClicked() {
         if (SpecialCase) {
@@ -256,10 +256,10 @@ const HomePage = () => {
         }
     }
     function OurFirm2Clicked() {
-        // setOurFirm2(!OurFirm2);
-        // setOurFirm(false);
-        // setSpecialCase(false);
-        // setSpecialLawyers(false);
+        setOurFirm2(!OurFirm2);
+        setOurFirm(false);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
     }
 
     return (
@@ -322,21 +322,7 @@ const HomePage = () => {
 
                     <div className="textContentHolder">
                         <p className="textContent">
-                            "Our team of dedicated personal injury lawyers is
-                            devoted to seeking justice for our clients who have
-                            suffered injuries in various incidents. We
-                            specialize in handling cases such as car accidents,
-                            motorcycle accidents, pedestrian accidents, bicycle
-                            accidents, slip and fall accidents, medical
-                            malpractice, product liability, workplace accidents,
-                            construction accidents, dog bites, assault or
-                            battery, wrongful death, public transportation
-                            accidents, aviation accidents, boating accidents,
-                            defamation, toxic exposure, nursing home abuse, and
-                            recreational accidents. With a relentless pursuit of
-                            fair compensation, we work tirelessly to ensure that
-                            our clients receive the financial reparation they
-                            deserve for their injuries."
+                            "Our team of dedicated personal injury lawyers specializes in a broad spectrum of cases, including car accidents, motorcycle accidents, pedestrian accidents, bicycle accidents, slip and falls, medical malpractice, product liability, workplace accidents, construction accidents, dog bites, assault or battery, wrongful death, public transportation accidents, aviation accidents, boating accidents, defamation, toxic exposure, nursing home abuse, and recreational accidents. We are unwavering in our pursuit of fair compensation for our clients, ensuring they receive the restitution they deserve for their injuries."
                         </p>
                     </div>
                 </div>
@@ -580,7 +566,7 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                {SpecialCase && (
+                {(SpecialCase || OurFirm || OurFirm2) && (
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}

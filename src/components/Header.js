@@ -138,7 +138,7 @@ const HeaderContainer = styled.header`
     align-content: center;
     align-items: center;
     
-    background-color: rgba(1, 32, 48, 1);
+    background-color: none;
     .MenuIconOver {
         display: none;
     }
@@ -160,6 +160,7 @@ const HeaderContainer = styled.header`
     .NavbarActive {
         background-color: rgba(1, 32, 48, 1);
         height: 100%;
+        
     }
 
     .LogoName {
