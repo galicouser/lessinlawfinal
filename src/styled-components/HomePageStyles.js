@@ -721,8 +721,8 @@ export const Testimonials = styled.div`
     @media (max-width: 768px) {
         margin-top: 5rem;
         width: 100%;
-        height: 120vh;
-        border-radius: 6%;
+        height: 100%;
+        border-radius: 0%;
         .HolderInner{
           flex-direction:column;
         }
@@ -730,6 +730,7 @@ export const Testimonials = styled.div`
             margin-top: 20px;
             margin-bottom: 20px;
             text-align:center;
+            
         }
         .Holder{
             display:grid;
@@ -904,20 +905,14 @@ export const SwiperHolder = styled.div`
             width:100%;
             color:rgb(0,0,0,0.75);
             box-shadow:0px 5px 0px rgb(255,255,255,0.70);
-            transition: ease 1s;
+            
+           
         }
         .TextHolder{
             transition: ease 1s;
-            animation: fadeIn 0.5s ease-in-out;
+            
         }
-        @keyframes fadeIn {
-            from {
-              opacity: 0;
-            }
-            to {
-              opacity: 1;
-            }
-          }
+        
         .MobileButton{
             color:white;
             font-size:18px;

@@ -92,7 +92,7 @@ const Header = () => {
                     </Grid>
                 </Grid>
             </div>
-            {MenuOverlay && (
+            {(MenuOverlay && !navbar) && (
                 <motion.div
                     className="NavButtonHolder"
                     initial={{ y: -100 }} // Start from -100 on the y-axis
@@ -153,14 +153,11 @@ const HeaderContainer = styled.header`
         align-items: center;
     }
     .Navbar {
-        background-color: rgba(1, 32, 48, 0.5);
-        height: 100%;
         display: none;
     }
     .NavbarActive {
         background-color: rgba(1, 32, 48, 1);
         height: 100%;
-        
     }
 
     .LogoName {

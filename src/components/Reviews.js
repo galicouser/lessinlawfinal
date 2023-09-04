@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button';
 
 export const Wrapper = styled.div`
-    height: 300px;
+    height: 275px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
     .stars {
         margin-left: 0%;
     }
+    .SwiperSlide
     }
     .CenteringDiv {
         display: flex;
