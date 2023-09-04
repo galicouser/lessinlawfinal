@@ -475,7 +475,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="TextHolder">
-                        <p className="TitleTextSwiper">
+                        <p className={`TitleTextSwiper ${OurFirm ? 'fadeIn' : ''} ${SpecialCase ? 'fadeIn' : ''} ${SpecialLawyers ? 'fadeIn' : ''} ${OurFirm2 ? 'fadeIn' : ''}`}>
                             {OurFirm && 'Our Firm'}
                             {SpecialCase && 'Special Case'}
                             {SpecialLawyers && 'Special Lawyers'}

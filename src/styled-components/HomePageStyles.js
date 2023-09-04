@@ -908,7 +908,16 @@ export const SwiperHolder = styled.div`
         }
         .TextHolder{
             transition: ease 1s;
+            animation: fadeIn 0.5s ease-in-out;
         }
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
         .MobileButton{
             color:white;
             font-size:18px;
