@@ -198,9 +198,17 @@ const HeaderContainer = styled.header`
 
     @media (max-width: 768px) {
         .NavButtonHolder {
+            position:absolute;
+            top:100px;
             display: unset;
             background-color: rgba(1, 32, 48, 1);
             width: 100%;
+        }
+        .TopText {
+           height:160px;
+        }
+        .NavbarActive{
+                height:50px;
         }
         .HolderSubDiv {
             display: flex;
