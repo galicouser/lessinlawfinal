@@ -52,19 +52,22 @@ export const Wrapper = styled.div`
         justify-content:left;
         margin-top:0%;
     }
+
     .ReviewTextHolder{
         display: flex;
         margin-top:0px;
+        height:100%;
     }
     .ReviewText {
         
         font-size: 20px;
         font-weight: 100;
         width: 100%;
+        height:100%;
+        padding:10%;
         margin-left: 0%;
         margin-top: 2.5%;
-        text-align:left;
-        overflow-x:auto;
+        text-align:center;
     }
 `
 
@@ -119,7 +122,7 @@ const ReviewsComponent = () => {
                                                             </div>
                                                         </div>
                                                     </Grid>
-                                                    <Grid item lg={12}  style={{overflowX:"auto"}}>
+                                                    <Grid item lg={12} >
                                                 <div className='ReviewTextHolder'>
                                                     <div className="ReviewText">
                                                         {review.text}
