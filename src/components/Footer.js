@@ -39,7 +39,7 @@ const Footer = () => {
         //     </footer>
         // </section>
         <FooterContainer>
-            <div class="background-image"></div>
+            <div className="background-image"></div>
             <Grid container gap={2}>
                 <Grid item lg={12}>
                     <div>
