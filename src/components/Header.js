@@ -204,12 +204,7 @@ const HeaderContainer = styled.header`
             background-color: rgba(1, 32, 48, 1);
             width: 100%;
         }
-        .TopText {
-           height:160px;
-        }
-        .NavbarActive{
-                height:50px;
-        }
+       
         .HolderSubDiv {
             display: flex;
             align-items: center;
@@ -229,8 +224,11 @@ const HeaderContainer = styled.header`
         .DesktopView {
             display: none;
         }
+        .LogoHolder{
+            width:100%;
+        }
         .LogoName {
-            padding-left: 5%;
+            padding-left: 2.5%;
         }
         .MenuIcon {
             right: 5%;
