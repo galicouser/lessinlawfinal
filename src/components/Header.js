@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Grid from '@mui/material/Grid'
 import MenuIcon from '@mui/icons-material/Menu'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
-import { motion } from 'framer-motion'
+import { motion,AnimatePresence } from 'framer-motion'
 
 const Header = () => {
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0)
@@ -92,11 +92,13 @@ const Header = () => {
                     </Grid>
                 </Grid>
             </div>
+            <AnimatePresence>
             {(MenuOverlay && !navbar) && (
                 <motion.div
                     className="NavButtonHolder"
                     initial={{ y: -100 }} // Start from -100 on the y-axis
                     animate={{ y: 0 }} // Move to 0 on the y-axis
+                    exit={{ opacity: 0, y: -100 }}
                     transition={{ type: 'spring', stiffness: 120, damping: 20 }}
                 >
                     <div className="HolderSubDiv">
@@ -121,6 +123,7 @@ const Header = () => {
                     </div>
                 </motion.div>
             )}
+            </AnimatePresence>
         </HeaderContainer>
     )
 }
