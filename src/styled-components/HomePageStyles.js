@@ -901,7 +901,9 @@ export const SwiperHolder = styled.div`
             font-weight:1000;
             text-align:center;
             margin-top:5px;
-            color:white;
+            width:100%;
+            color:rgb(0,0,0,0.75);
+            box-shadow:0px 5px 0px rgb(255,255,255,0.70);
             transition: ease 1s;
         }
         .TextHolder{
