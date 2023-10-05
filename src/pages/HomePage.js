@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useModalContext } from '../context/modal_context'
-import { FaWindowClose } from 'react-icons/fa'
-import RainbowChat from '../components/Rainbowchat.js'
-import Modal from 'react-bootstrap/Modal'
-import Form from 'react-bootstrap/Form'
-import Card from '../components/Card'
 import Footer from '../components/Footer.js'
-import Header from '../components/Header.js'
 import Pop from '../components/Pop.js'
-import Card2 from '../components/Card2.js'
 import { IconButton } from '@mui/material'
-import Card3 from '../components/Card3.js'
 import Reviews from '../components/Reviews.js'
 import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
 import { motion } from 'framer-motion'
@@ -289,7 +281,8 @@ const HomePage = () => {
             </motion.div>
             <>{card}</>
             <Main1>
-                <div className="mainbox1">
+                <img src="https://images.unsplash.com/photo-1571397275803-006230ba652f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" className='ImageBack'/>
+                {/* <div className="mainbox1">
                     <div className="mainbox-left">
                         <p className="header-2">Personal Injury Lawyers</p>
                         <div className="ButtonHolder">
@@ -325,17 +318,17 @@ const HomePage = () => {
                             "Our team of dedicated personal injury lawyers specializes in a broad spectrum of cases, including car accidents, motorcycle accidents, pedestrian accidents, bicycle accidents, slip and falls, medical malpractice, product liability, workplace accidents, construction accidents, dog bites, assault or battery, wrongful death, public transportation accidents, aviation accidents, boating accidents, defamation, toxic exposure, nursing home abuse, and recreational accidents. We are unwavering in our pursuit of fair compensation for our clients, ensuring they receive the restitution they deserve for their injuries."
                         </p>
                     </div>
-                </div>
+                </div> */}
             </Main1>
             <Pop />
 
-            <VideoBackground autoPlay muted loop>
+            {/* <VideoBackground autoPlay muted loop>
                 <source
                     src="https://res.cloudinary.com/elpawl-llc/video/upload/v1679873411/pexels-kelly-lacy-6606214_1_gcflle.mp4"
                     type="video/mp4"
                 />
                 Your browser does not support the video tag.
-            </VideoBackground>
+            </VideoBackground> */}
 
             {/* <Main>
                 <Wrapper>
@@ -452,8 +445,7 @@ const HomePage = () => {
                             variant="outlined"
                             onClick={SpecialLawyersClicked}
                             className={SpecialLawyers ? "MobileButtonActive":"MobileButton"}
-                        >
-                            Specilized Lawyers
+                        >Specilized Lawyers
                         </Button>
                     </div>
 

@@ -12,7 +12,7 @@ function App() {
   return (
     <Wrapper>
       <BrowserRouter>
-          <Header />
+          {/* <Header /> */}
           {/* <Navbar /> */}
 
           <Routes>

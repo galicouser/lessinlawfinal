@@ -33,9 +33,7 @@ export const HomePageContainer = styled.div`
 }
     display: flex;
     flex-direction:column;
-    margin: 0 auto;
     width: 100%; 
-    margin-top: 70px;
 
     @media (max-width: 768px) {
         .Icon{
@@ -131,23 +129,6 @@ export const ContactCard = styled.div`
 `
 
 
-
-// const Button = styled.button`
-//   display: block;
-//   width: 100%;
-//   padding: 10px;
-//   margin-top: 20px;
-//   background: #4caf50;
-//   color: #fff;
-//   font-size: 16px;
-//   border: none;
-//   border-radius: 4px;
-//   cursor: pointer;
-
-//   &:hover {
-//     background: #45a049;
-//   }
-// `;
 
 
 
@@ -380,7 +361,6 @@ export const Title = styled.div`
 
 export const Main = styled.div`
     flex: 1;
-    padding: 8px;
     height: 100vh;
     width:100%;
     
@@ -395,11 +375,15 @@ export const Main1 = styled.div`
     display: flex;
     justify-content: center;
     padding: 8px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     border-radius: 10px;
-    margin-bottom:2.5%;
-    
+    background-color:rgba(0,0,0,0.5);
+    .ImageBack{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
     .mainbox1{
         margin-top:3rem;
         display:flex;
