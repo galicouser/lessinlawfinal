@@ -60,13 +60,11 @@ export const Wrapper = styled.div`
     }
     .ReviewText {
         
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 100;
         width: 100%;
         height:100%;
-        padding:10%;
         margin-left: 0%;
-        margin-top: 2.5%;
         text-align:center;
     }
 `

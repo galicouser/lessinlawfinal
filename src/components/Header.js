@@ -130,7 +130,7 @@ const Header = () => {
       </div>
       <div className="OpacityBackground"></div>
       <div className="HeaderInner">
-        <img src={Logo} atl="lessin law" className="LogoImage" />
+        {/* <img src={Logo} atl="lessin law" className="LogoImage" /> */}
         <div className="IconHolder">
           <MenuIcon className="MenuIcon" style={{ fontSize: 40 }} onClick={toggleDrawer("left", true)} />
         </div>

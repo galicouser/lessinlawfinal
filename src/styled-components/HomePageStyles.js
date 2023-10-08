@@ -261,7 +261,7 @@ width:100%;
     .textHolder{
         position:absolute;
         z-index: 1;
-        width: 80vh;
+        width: 100%;
         height: 60vh;
         padding-right: 2rem;
         background-color: rgba(255, 255, 255, 0.2);
@@ -761,7 +761,7 @@ export const SwiperHolder = styled.div`
     }
 
     .TitleText{
-        font-size:60px;
+        font-size:40px;
         font-weight:1000;
         text-align:center;
         z-index:10;
@@ -774,7 +774,7 @@ export const SwiperHolder = styled.div`
         align-content:center;
     }
     .DiscriptionText{
-        font-size:35px;
+        font-size:26px;
         font-weight:100;
         letter-spacing:4px;
         padding-top:10px;
@@ -782,13 +782,9 @@ export const SwiperHolder = styled.div`
         z-index:100;
     }
     .SwiperSlide{
-        padding:7%;
-        height:100%;
+        padding:5%;
         background-color:rgba(255, 255, 255, 0.5);
     }
-
-
-
     .NavigationButtons{
         height:60vh;
         width:350px;
