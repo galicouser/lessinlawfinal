@@ -456,28 +456,23 @@ export const Main1 = styled.div`
    }
    @media (max-width: 768px) {
     .textContent{
-        font-size:18px;
+        font-size:16px;
         width:100%;
         font-weight:400;
     }
     
     .button-group{
-        width:100%;
+        width:90%;
     }
     .header-2{
         font-size:35px;
         padding-top:8%;
     }.Button{
-        width:120px;
+        width:100px;
         height:50px;
-        background:none;
-        border:1px solid #012030;
-        color:#012030;
         font-size:12px;
         box-shadow:none;
-       
     }
-
 }
 @media (min-width: 800px) and (max-width: 950px) {
        
@@ -486,13 +481,11 @@ export const Main1 = styled.div`
     }.Button{
         width:30%;
         height:50px;
-        background:none;
-        border:1px solid #012030;
-        color:#012030;
         font-size:12px;
         box-shadow:none;
        
     } 
+    
 }
 
     `
@@ -775,7 +768,7 @@ export const SwiperHolder = styled.div`
         align-content:center;
     }
     .DiscriptionText{
-        font-size:22px;
+        font-size:20px;
         font-weight:100;
         letter-spacing:4px;
         padding-top:10px;
@@ -874,6 +867,7 @@ export const SwiperHolder = styled.div`
             background-color:black;
             transition: ease 1s;
         }
+        
         .MobileNavigationButtons{
             width:100%;
             display:unset;
@@ -969,7 +963,7 @@ export const SwiperHolder = styled.div`
             height:100%;
         }
         .DiscriptionText{
-            font-size:20px;
+            font-size:15px;
             font-weight:100;
             height:100%;
         }

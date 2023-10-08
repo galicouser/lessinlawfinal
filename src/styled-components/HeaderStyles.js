@@ -414,7 +414,7 @@ const GlobalStyles = createGlobalStyle`
   .Subtitle{
   }
   .HeaderInner{
-    justify-content: space-between;
+    justify-content: end;
   }
   .ContactNumber{
     display: none;
@@ -467,11 +467,17 @@ const GlobalStyles = createGlobalStyle`
   .MalpraticeInner{
     flex-direction: column;
   }
+  .HeaderHolder{
+    background-color: black;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 950px){
   .NavigationHolder{
     display: none;
+  }
+  .HeaderHolder{
+    background-color: black;
   }
   .TextHolder{
     width: 100%;
@@ -480,7 +486,7 @@ const GlobalStyles = createGlobalStyle`
     flex-direction: column;
   }
   .HeaderInner{
-    justify-content: space-between;
+    justify-content: end;
   }
   .Review{
     padding: 3%;
