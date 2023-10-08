@@ -774,7 +774,7 @@ export const SwiperHolder = styled.div`
         align-content:center;
     }
     .DiscriptionText{
-        font-size:26px;
+        font-size:22px;
         font-weight:100;
         letter-spacing:4px;
         padding-top:10px;
