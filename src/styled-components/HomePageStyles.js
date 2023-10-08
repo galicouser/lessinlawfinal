@@ -374,11 +374,11 @@ export const Main = styled.div`
 export const Main1 = styled.div`
     display: flex;
     justify-content: center;
-    padding: 8px;
     height: 100vh;
     width: 100%;
     border-radius: 10px;
-    background-color:rgba(0,0,0,0.5);
+    position: relative;
+    margin-bottom: 5%;
     .ImageBack{
         width:100%;
         height:100%;
@@ -390,12 +390,24 @@ export const Main1 = styled.div`
         flex-direction:column;
         align-items:center;
         align-content:center;
+        position: absolute;
+        z-index: 111;
         
+    }
+    .opacitylayer{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        background-color: black;
+        opacity: 0.5;
+
     }
     .header-2{
         font-size:100px;
         text-align:center;
         padding-top:8%;
+        color: white;
     }
     .ButtonHolder{
         display:flex;
@@ -417,8 +429,8 @@ export const Main1 = styled.div`
              width:250px;
              height:50px;
              background:none;
-             border:1px solid #012030;
-             color:#012030;
+             border:1px solid white;
+             color:white;
              font-size:16px;
              box-shadow:none;
             
@@ -437,7 +449,7 @@ export const Main1 = styled.div`
    .textContent{
     font-size:22.5px;
     font-weight:100;
-    color:#012030;
+    color:white;
     text-align:center;
     width:75%;
     letter-spacing: 2px;
@@ -843,7 +855,7 @@ export const SwiperHolder = styled.div`
         transition: ease 1s;
     }
 
-    .NavigationHolder{
+    .NavigationHolder2{
         display:flex;
         justify-content:center;
         align-items:center;
@@ -1002,7 +1014,7 @@ export const SwiperHolder = styled.div`
             border-radius:0px;
             background:none;
         }
-        .NavigationHolder{
+        .NavigationHolder2{
             display:none;
         }
         }

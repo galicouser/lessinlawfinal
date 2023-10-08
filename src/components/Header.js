@@ -1,270 +1,255 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import Grid from '@mui/material/Grid'
-import MenuIcon from '@mui/icons-material/Menu'
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
-import { motion,AnimatePresence } from 'framer-motion'
+import React, { useState } from "react";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import { motion } from "framer-motion";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import Button from "@mui/material/Button";
+import Box from '@mui/material/Box';
+import Drawer from "@mui/material/Drawer";
+import GlobalStyles from "../styled-components/HeaderStyles";
+import Logo from "../assets/Lessin Law.png"
+
 
 const Header = () => {
-    const [currentMessageIndex, setCurrentMessageIndex] = useState(0)
 
-    const [navbar, setnavbar] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
 
-    const handleScroll = () => {
-        const scrollY = window.scrollY
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
 
-        if (scrollY > 50) {
-            setnavbar(true)
-        } else {
-            setnavbar(false)
-        }
-    }
-    window.addEventListener('scroll', handleScroll)
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentMessageIndex((currentMessageIndex + 1) % messages.length)
-        }, 5000)
-        return () => clearInterval(interval)
-    }, [currentMessageIndex])
 
-    const messages = [
-        'Call us (215) 599-1400',
-        'Click here to chat live',
-        'We are available for you',
-    ]
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
 
-    const currentMessage = messages[currentMessageIndex]
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
 
-    function MenuClicked() {
-        setMenuOverlay(!MenuOverlay)
-    }
-    const [MenuOverlay, setMenuOverlay] = useState(false)
+  const handleMouseEnter3 = () => {
+    setIsHovered3(true);
+  };
 
-    return (
-        <HeaderContainer>
-            <div className="TopText">
-                <a
-                    href="tel:+12155991400"
-                    style={{
-                        color: 'white',
-                        textDecoration: 'none',
-                        textAlign: 'center',
-                    }}
-                >
-                    {currentMessage}
-                </a>
-            </div>
+  const handleMouseLeave3 = () => {
+    setIsHovered3(false);
+  };
+  const [state, setState] = React.useState({
+    left: false,
+  });
 
-            <div className="HolderTemp">
-                <Grid
-                    container
-                    gap={0}
-                    className={navbar ? 'Navbar' : 'NavbarActive'}
-                >
-                    <Grid item lg={8.8} sm={5} xs={6} className="LogoHolder">
-                        <div className="LogoName">Lessin Law</div>
-                    </Grid>
-                    <Grid item lg={3} sm={5} xs={4} className="IconHolderMain">
-                        <div className="DesktopView">
-                            <Grid container gap={2}>
-                                <Grid item lg={1.8} className="IconHolder">
-                                    <div className="MenuIcon">Home</div>
-                                </Grid>
-                                <Grid item lg={2}>
-                                    <div className="MenuIcon">Profiles</div>
-                                </Grid>
-                                <Grid item lg={2}>
-                                    <div className="MenuIcon">Reviews</div>
-                                </Grid>
-                                <Grid item lg={2}>
-                                    <div className="MenuIcon">Articles</div>
-                                </Grid>
-                                <Grid item lg={2}>
-                                    <div className="MenuIcon">Login</div>
-                                </Grid>
-                            </Grid>
-                        </div>
-                        <MenuIcon
-                            className="MenuIconOver"
-                            onClick={MenuClicked}
-                        />
-                    </Grid>
-                </Grid>
-            </div>
-            <AnimatePresence>
-            {(MenuOverlay && !navbar) && (
-                <motion.div
-                    className="NavButtonHolder"
-                    initial={{ y: -100 }} // Start from -100 on the y-axis
-                    animate={{ y: 0 }} // Move to 0 on the y-axis
-                    exit={{ opacity: 0, y: -100 }}
-                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-                >
-                    <div className="HolderSubDiv">
-                        <KeyboardArrowRightIcon className="SubHolderIcon" />
-                        <div className="SubHolderText">Home</div>
-                    </div>
-                    <div className="HolderSubDiv">
-                        <KeyboardArrowRightIcon className="SubHolderIcon" />
-                        <div className="SubHolderText">Profiles</div>
-                    </div>
-                    <div className="HolderSubDiv">
-                        <KeyboardArrowRightIcon className="SubHolderIcon" />
-                        <div className="SubHolderText">Reviews</div>
-                    </div>
-                    <div className="HolderSubDiv">
-                        <KeyboardArrowRightIcon className="SubHolderIcon" />
-                        <div className="SubHolderText">Article</div>
-                    </div>
-                    <div className="HolderSubDiv">
-                        <KeyboardArrowRightIcon className="SubHolderIcon" />
-                        <div className="SubHolderText">Login</div>
-                    </div>
-                </motion.div>
-            )}
-            </AnimatePresence>
-        </HeaderContainer>
-    )
-}
-const HeaderContainer = styled.header`
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    color: #fff;
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    
-    background-color: none;
-    .MenuIconOver {
-        display: none;
-    }
-    .TopText {
-        background-color: black;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 50px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .Navbar {
-        display: none;
-    }
-    .NavbarActive {
-        background-color: rgba(1, 32, 48, 1);
-        height: 100%;
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
     }
 
-    .LogoName {
-        font-size: 35px;
-        color: white;
-        font-weight: 700;
-        padding-left: 2.5%;
-    }
-    .LogoHolder {
-        display: flex;
-        height: 100%;
-        align-content: center;
-        align-items: center;
-        font-weight: 100;
-    }
-    .IconHolderMain {
-        display: grid;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-    }
-    .MenuIcon {
-        font-size: 18px;
-        font-weight: 100;
-    }
-    .MenuIcon:hover {
-        cursor: pointer;
-    }
-    .HolderTemp {
-        width: 100%;
-    }
-    .NavButtonHolder {
-        display: none;
-    }
+    setState({ ...state, [anchor]: open });
+  };
 
-    @media (max-width: 768px) {
-        .NavButtonHolder {
-            position:absolute;
-            top:100px;
-            display: unset;
-            background-color: rgba(1, 32, 48, 1);
-            width: 100%;
-        }
-       
-        .HolderSubDiv {
-            display: flex;
-            align-items: center;
-            padding: 3%;
-        }
-        .SubHolderText {
-            color: white;
-            font-size: 20px;
-            font-weight: 100;
-            padding-left: 5%;
-        }
-        .SubHolderIcon {
-            color: white;
-            font-size: 25px;
-        }
+  const list = (anchor) => (
+    <div style={{
+      height: "100vh",
+      backgroundColor: "#272626",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center"
+    }}>
+      <Box
+        sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, false)}
+        onKeyDown={toggleDrawer(anchor, false)}
+      >
+        <div
+          style={{
+            backgroundColor: "#272626",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            height: "680px",
+            padding: "5%"
+          }}
+        >
+          <p
+            className="Files"
+            style={{
+              fontSize: "20px",
+              color: "white",
+              marginTop: "5%",
+              fontWeight: "bold",
+            }}
+          >
+            Files
+          </p>
+          <hr
+            className="line"
+            style={{
+              width: "50%", fontSize: "10px",
+              marginBottom: "10%", opacity: "0.2"
+            }}
+          />
 
-        .DesktopView {
-            display: none;
-        }
-        .LogoHolder{
-            width:100%;
-        }
-        .LogoName {
-            padding-left: 2.5%;
-        }
-        .MenuIcon {
-            right: 5%;
-            font-size: 35px;
-            position: absolute;
-        }
-        .MenuIconOver {
-            display: unset;
-            right: 5%;
-            font-size: 35px;
-            position: absolute;
-        }
+          <h3 style={{ color: "white", marginBottom: "10%", fontWeight: 100, textAlign: "center" }} >Home</h3>
+          <h3 style={{ color: "white", marginBottom: "10%", fontWeight: 100, textAlign: "center" }}>Pratice Area</h3>
+          <h3 style={{ color: "white", marginBottom: "10%", fontWeight: 100, textAlign: "center" }}>About Us</h3>
+          <h3 style={{ color: "white", marginBottom: "10%", fontWeight: 100, textAlign: "center" }}>Locations</h3>
+          <h3 style={{ color: "white", marginBottom: "10%", fontWeight: 100, textAlign: "center" }}>Login</h3>
 
-        .MenuOverlay {
-            position: fixed;
-            top: 80px;
-            right: 15px;
-            width: 200px;
-            border-radius: 5px;
-            height: auto;
-            background-color: rgba(1, 32, 48, 0.95);
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-        }
+        </div>
+      </Box>
+    </div>
+  );
+  //
+  return (
+    <div>
+  <GlobalStyles/>
+    <div className="HeaderHolder">
+      <div style={{ display: "none" }}>
+        {["left"].map((anchor) => (
+          <React.Fragment key={anchor}>
+            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+            <Drawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+            >
+              {list(anchor)}
+            </Drawer>
+          </React.Fragment>
+        ))}
+      </div>
+      <div className="OpacityBackground"></div>
+      <div className="HeaderInner">
+        <img src={Logo} atl="lessin law" className="LogoImage" />
+        <div className="IconHolder">
+          <MenuIcon className="MenuIcon" style={{ fontSize: 40 }} onClick={toggleDrawer("left", true)} />
+        </div>
+        <div className="NavigationHolder">
+          <div className="NavButtonHolder">
+            <p className="NavigationButton">Home</p>
+            <div className="BelowLine"></div>
+          </div>
+          <div className="NavButtonHolder"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
 
-        .menu-option {
-            margin-bottom: 15px;
-            color: white;
-            font-weight: 400;
-            font-size: 20px;
-            cursor: pointer;
-        }
-    }
+            <p className="NavigationButton">Pratice Area</p>
+            <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} />
+            <div className="BelowLine"></div>
+            {isHovered &&
+              <div className="dropdownMenu">
+                <Link to="/MedicalMalpratice" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems" style={{ border: "none",marginTop:10 }}> Medical Malpratice</p>
+                </Link>
+                
 
-    @media (min-width: 800px) and (max-width: 950px) {
-    }
-`
-export default Header
+                <Link to="/SlipandFallAccidents" style={{ textDecoration: "none" }}>
+
+                  <p className="MenuItems">Slip and Fall Accident</p>
+                </Link>
+                
+
+                <Link to="/BusAccidents" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems">Bus Accident</p>
+                </Link>
+                
+
+                <Link to="/WrongfullDeath" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems">Wrongfull Death</p>
+                </Link>
+                
+
+                
+
+                <Link to="/BicycleAccident" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems">Bicycle Accidents</p>
+                </Link>
+
+                
+
+                <Link to="/MotorcycleAccidents" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems">Motorcycle Accidents</p>
+                </Link>
+                
+                <Link to="/UberAccidents" style={{ textDecoration: "none" }}>
+                  <p className="MenuItems">Uber Accidents</p>
+                </Link>
+                
+
+                <p className="MenuItems">Car Accident</p>
+                
+                <p className="MenuItems">Truck Accident</p>
+                
+                <p className="MenuItems">See All Pratice Area</p>
+                
+              </div>}
+
+          </div>
+
+
+          <div className="NavButtonHolder"
+            onMouseEnter={handleMouseEnter2}
+            onMouseLeave={handleMouseLeave2}>
+            {isHovered2 &&
+
+              <div className="dropdownMenu">
+                <p className="MenuItems" style={{ border: "none" }}> Our Firm</p>
+                <p className="MenuItems">Our Attorney</p>
+                <p className="MenuItems">Verdicts</p>
+                <p className="MenuItems">Cases</p>
+                <p className="MenuItems">Bicycle Accidents</p>
+                <p className="MenuItems">News</p>
+                <p className="MenuItems">Info</p>
+              </div>
+            }
+            <p className="NavigationButton">About Us</p>
+            <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} />
+            <div className="BelowLine"></div>
+          </div>
+
+
+
+          <div className="NavButtonHolder"
+            onMouseEnter={handleMouseEnter3}
+            onMouseLeave={handleMouseLeave3}>
+            <p className="NavigationButton">Locations</p>
+            <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} />
+            <div className="BelowLine"></div>
+            {isHovered3 &&
+
+              <div className="dropdownMenu">
+                <p className="MenuItems" style={{ border: "none" }}> Our Firm</p>
+                <p className="MenuItems">Philadelphia,Pa</p>
+                <p className="MenuItems">Montgomery County, Pa</p>
+                <p className="MenuItems">Bucks County, Pa</p>
+                <p className="MenuItems">Fort Lauderdel, FL</p>
+                <p className="MenuItems">Atlantic, City</p>
+              </div>
+            }
+          </div>
+          <div className="NavButtonHolder">
+            <p className="NavigationButton">Login</p>
+            <motion.div className="BelowLine"></motion.div>
+          </div>
+        </div>
+        <div className="ContactNumber">
+          <LocalPhoneIcon className="PhoneIcon" style={{ fontSize: 35 }} />
+          {/* <p className="PhoneNumber">717-316-8324</p> */}
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+};
+
+export default Header;

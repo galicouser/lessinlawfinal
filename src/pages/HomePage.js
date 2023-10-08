@@ -42,7 +42,6 @@ import {
     Title,
 } from '../styled-components/HomePageStyles'
 
-import { Wrapper } from '../styled-components/ModalStyles'
 const HomePage = () => {
     const [testimonials, setTestimonials] = useState([])
     const [show, setShow] = useState(false)
@@ -281,8 +280,9 @@ const HomePage = () => {
             </motion.div>
             <>{card}</>
             <Main1>
-                <img src="https://images.unsplash.com/photo-1571397275803-006230ba652f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" className='ImageBack'/>
-                {/* <div className="mainbox1">
+                <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" className='ImageBack'/>
+               <div className='opacitylayer'></div>
+                <div className="mainbox1">
                     <div className="mainbox-left">
                         <p className="header-2">Personal Injury Lawyers</p>
                         <div className="ButtonHolder">
@@ -318,7 +318,7 @@ const HomePage = () => {
                             "Our team of dedicated personal injury lawyers specializes in a broad spectrum of cases, including car accidents, motorcycle accidents, pedestrian accidents, bicycle accidents, slip and falls, medical malpractice, product liability, workplace accidents, construction accidents, dog bites, assault or battery, wrongful death, public transportation accidents, aviation accidents, boating accidents, defamation, toxic exposure, nursing home abuse, and recreational accidents. We are unwavering in our pursuit of fair compensation for our clients, ensuring they receive the restitution they deserve for their injuries."
                         </p>
                     </div>
-                </div> */}
+                </div>
             </Main1>
             <Pop />
 
@@ -475,7 +475,7 @@ const HomePage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="NavigationHolder">
+                <div className="NavigationHolder2">
                     <div className="NavigationButtons">
                         <IconButton
                             className="NameHolder"

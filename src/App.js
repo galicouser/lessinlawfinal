@@ -7,18 +7,28 @@ import HomePage from './pages/HomePage';
 
 // import AboutPage from './pages/AboutPage';
 // import ContactPage from './pages/ContactPage';
+import MedicalMalpratice from './pages/MedicalMalpratice';
+import SlipandFallAccidents from './pages/SlipandFallAccidents';
+import BusAccidents from './pages/BusAccidents';
+import WrongfullDeath from './pages/WrongfullDeath';
+import BicycleAccident from './pages/BicycleAccidents';
+import MotorcycleAccidents from './pages/MotorCycleAccidents';
 
 function App() {
   return (
     <Wrapper>
       <BrowserRouter>
-          {/* <Header /> */}
+          <Header />
           {/* <Navbar /> */}
 
           <Routes>
               <Route path="/" element={<HomePage />} />
-              {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} /> */}
+              <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
+              <Route path="/SlipandFallAccidents" element={<SlipandFallAccidents />} />
+              <Route path="/BusAccidents" element={<BusAccidents />} />
+              <Route path="/WrongfullDeath" element={<WrongfullDeath />} />
+              <Route path="/BicycleAccident" element={<BicycleAccident />} />
+              <Route path="/MotorcycleAccidents" element={<MotorcycleAccidents />} />
           </Routes>
       </BrowserRouter>
       </Wrapper>
