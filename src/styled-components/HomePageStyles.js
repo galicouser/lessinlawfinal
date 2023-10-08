@@ -712,6 +712,7 @@ export const Testimonials = styled.div`
         color: var(--clr-primary-1);
         background: var(--clr-primary-7);
     }
+    /*  */
 
 
     @media (max-width: 768px) {
