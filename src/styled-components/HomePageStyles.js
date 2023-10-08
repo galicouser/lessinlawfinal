@@ -853,8 +853,7 @@ export const SwiperHolder = styled.div`
     .MobileNavigationButtons{
         display:none;
     }
-
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 850px) {
         flex-direction:column;
         .NavigationButtons{
             display:flex;
@@ -1010,6 +1009,11 @@ export const SwiperHolder = styled.div`
         }
         }
     
+        @media only screen and (min-width: 768px) {
+        .DiscriptionText{
+            font-size:24px;
+        }
+    }
 `
 
 

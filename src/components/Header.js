@@ -135,10 +135,12 @@ const Header = () => {
           <MenuIcon className="MenuIcon" style={{ fontSize: 40 }} onClick={toggleDrawer("left", true)} />
         </div>
         <div className="NavigationHolder">
+          <Link to="/">
           <div className="NavButtonHolder">
             <p className="NavigationButton">Home</p>
             <div className="BelowLine"></div>
           </div>
+          </Link>
           <div className="NavButtonHolder"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
