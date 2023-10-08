@@ -9,11 +9,9 @@ import { carouselContent1, carouselContent2 } from '../utils/imagedata.js'
 import { motion } from 'framer-motion'
 import Button from '@mui/material/Button'
 import FacebookIcon from '@mui/icons-material/Facebook'
-
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles

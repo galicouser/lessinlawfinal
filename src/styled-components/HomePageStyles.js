@@ -19,11 +19,12 @@ export const HomePageContainer = styled.div`
 }
 
 .SideIcons{
-    
     position:fixed;
     right:1%;
     bottom:2%;
     z-index:100;
+    display: flex;
+    flex-direction: column;
 }
 .SideIcons :hover{
     cursor:pointer;
@@ -736,7 +737,7 @@ export const Testimonials = styled.div`
     }
 `
 export const SwiperHolder = styled.div`
-    height:80vh;
+    height:100%;
     
     display:flex;
     flex-direction:row;
