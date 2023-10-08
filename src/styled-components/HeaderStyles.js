@@ -308,7 +308,7 @@ const GlobalStyles = createGlobalStyle`
   justify-content: center;
   
   align-content: center;
-  z-index: 10;
+  z-index: 150;
 }
 
 .MenuItems{

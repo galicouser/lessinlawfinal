@@ -391,7 +391,7 @@ export const Main1 = styled.div`
         align-items:center;
         align-content:center;
         position: absolute;
-        z-index: 111;
+        z-index: 11;
         
     }
     .opacitylayer{
