@@ -366,6 +366,7 @@ const Header = () => {
                 <div className="OpacityBackground"></div>
                 <div className="HeaderInner">
                     {/* <img src={Logo} atl="lessin law" className="LogoImage" /> */}
+                   <div className='LogoName'>Lessin Law</div>
                     <div className="IconHolder">
                         <MenuIcon
                             className="MenuIcon"

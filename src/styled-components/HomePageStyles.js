@@ -459,9 +459,12 @@ export const Main1 = styled.div`
    }
    @media (max-width: 768px) {
     .textContent{
-        font-size:16px;
+        font-size:15px;
         width:100%;
-        font-weight:400;
+        font-weight:100;
+    }
+    .textContentHolder{
+        padding: 5%;
     }
     
     .button-group{

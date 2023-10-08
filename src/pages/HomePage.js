@@ -660,11 +660,7 @@ const HomePage = () => {
                 </div>
 
                 <Reviews />
-                <div className="ButtonHolder">
-                    <Button className="Button" variant="outlined">
-                        View All
-                    </Button>
-                </div>
+                
             </Testimonials>
             <Footer />
         </HomePageContainer>

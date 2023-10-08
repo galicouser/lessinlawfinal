@@ -7,9 +7,9 @@ const GlobalStyles = createGlobalStyle`
   width: 100%;
   position: relative;
 }
+
 .LogoImage{
-  height:50px;
-  border: 1px dashed rgb(255,255,255,0.2);
+  display: none;
 }
 
 .HeaderHolder{
@@ -66,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
 }
 .HeaderInner{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding-top:1%;
@@ -411,14 +412,22 @@ const GlobalStyles = createGlobalStyle`
   .NavigationHolder{
     display: none;
   }
+  .LogoName{
+    color:white;
+    font-size: 25px;
+    font-weight: 1000;
+  }
+  .LogoImage{
+    display: unset;
+  height:50px;
+  border: 1px dashed rgb(255,255,255,0.2);
+}
   .Subtitle{
   }
   .SidebarDropdown{
     color: white;
   }
-  .HeaderInner{
-    justify-content: end;
-  }
+  
   .ContactNumber{
     display: none;
   }
@@ -492,6 +501,10 @@ const GlobalStyles = createGlobalStyle`
   .HeaderHolder{
     background-color: black;
   }
+  .HeaderInner{
+    width: 95%;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 950px){
@@ -510,9 +523,7 @@ const GlobalStyles = createGlobalStyle`
   .MalpraticeInner{
     flex-direction: column;
   }
-  .HeaderInner{
-    justify-content: end;
-  }
+  
   .Review{
     padding: 3%;
   }
@@ -556,6 +567,15 @@ const GlobalStyles = createGlobalStyle`
   .MenuIcon{
     display: unset;
     color: white;
+  }
+  .HeaderInner{
+    width: 95%;
+    justify-content: space-between;
+  }
+  .LogoName{
+    color:white;
+    font-size: 30px;
+    font-weight: 1000;
   }
 }
 
