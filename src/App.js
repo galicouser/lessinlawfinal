@@ -13,7 +13,8 @@ import BusAccidents from './pages/BusAccidents';
 import WrongfullDeath from './pages/WrongfullDeath';
 import BicycleAccident from './pages/BicycleAccidents';
 import MotorcycleAccidents from './pages/MotorCycleAccidents';
-
+import UberAccidents from './pages/UberAccidents';
+import CarAccidents from './pages/CarAccidents';
 function App() {
   return (
     <Wrapper>
@@ -29,6 +30,9 @@ function App() {
               <Route path="/WrongfullDeath" element={<WrongfullDeath />} />
               <Route path="/BicycleAccident" element={<BicycleAccident />} />
               <Route path="/MotorcycleAccidents" element={<MotorcycleAccidents />} />
+              <Route path="/UberAccidents" element={<UberAccidents />} />
+              <Route path="/CarAccidents" element={<CarAccidents />} />
+
           </Routes>
       </BrowserRouter>
       </Wrapper>

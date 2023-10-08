@@ -240,9 +240,13 @@ const Header = () => {
                                  style={{color:"white",fontSize:22,textAlign:"center"}}>Uber Accidents</p>
                             </Link>
 
-                            <p className="SidebarOption"
+
+<Link to="/CarAccidents">
+<p className="SidebarOption"
                             onClick={toggleDrawer(anchor, false)}
                             style={{color:"white",fontSize:22,textAlign:"center"}}>Car Accident</p>
+</Link>
+                           
 
                             <p className="SidebarOption"
                             onClick={toggleDrawer(anchor, false)}
@@ -470,7 +474,10 @@ const Header = () => {
                                         </p>
                                     </Link>
 
+                                    <Link to="/CarAccidents">
                                     <p className="MenuItems">Car Accident</p>
+                                    </Link>
+                                    
 
                                     <p className="MenuItems">Truck Accident</p>
 

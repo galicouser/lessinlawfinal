@@ -421,6 +421,10 @@ display:none
     color:rgb(0,0,0,0.6);
     letter-spacing: 0.5px;
 }
+ul {
+    list-style-type: disc;
+    margin-left: 50px;
+}
 .MainHeading{
     font-weight: 700;
 }
