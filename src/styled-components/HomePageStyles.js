@@ -759,6 +759,9 @@ export const SwiperHolder = styled.div`
         object-fit:cover;
         border-radius:50%;
     }
+    .ImageSwiper2{
+        display: none;
+    }
 
     .TitleText{
         font-size:40px;
@@ -872,6 +875,21 @@ export const SwiperHolder = styled.div`
             background-color:black;
             transition: ease 1s;
         }
+        .DiscriptionText{
+            font: 50px;
+        }
+        .ImageSwiper2{
+        display: unset;
+        height: 100%;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+        top:0px;
+        left:0px;
+    }
+        .ImageSwiper{
+            display: none;
+        }
         
         .MobileNavigationButtons{
             width:100%;
@@ -958,9 +976,11 @@ export const SwiperHolder = styled.div`
         }
         .SwiperSlide{
             height:100%;
+            background-color: rgb(0,0,0,0.5);
         }
         .TitleText{
             font-size:25px;
+            color:white;
 
         }
         .mySwiper{
@@ -971,6 +991,8 @@ export const SwiperHolder = styled.div`
             font-size:15px;
             font-weight:100;
             height:100%;
+            width: 100%;
+            color:white;
         }
         .TitleImageHolder{
             
@@ -1015,10 +1037,12 @@ export const SwiperHolder = styled.div`
         }
         }
     
-        @media only screen and (min-width: 768px) {
+        @media (min-width: 768px) {
         .DiscriptionText{
             font-size:24px;
         }
+       
+       
     }
 `
 

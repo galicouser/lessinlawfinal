@@ -575,6 +575,11 @@ const HomePage = () => {
                                     className="SwiperSlide"
                                 >
                                     <div className="textHolder">
+                                    <img
+                                                className="ImageSwiper2"
+                                                src={item.image}
+                                                alt="img"
+                                            />
                                         <div className="TitleImageHolder">
                                             <p className="TitleText">
                                                 {item.title}
