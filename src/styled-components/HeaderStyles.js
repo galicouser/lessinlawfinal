@@ -413,6 +413,9 @@ const GlobalStyles = createGlobalStyle`
   }
   .Subtitle{
   }
+  .SidebarDropdown{
+    color: white;
+  }
   .HeaderInner{
     justify-content: end;
   }
@@ -422,6 +425,25 @@ const GlobalStyles = createGlobalStyle`
   .FormHolder{
       flex-direction: column;
       justify-content: center;
+  }
+  .SidebarHolder{
+        display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color:white;
+      margin-top: 10px;
+  }
+  .SidebarDropdown{
+    color: white;
+  }
+  .SidebarOption{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+  }
+  .SideArrow{
+    margin-left: 10px;
   }
   .PortraitSegment{
     width: 95%;
@@ -475,6 +497,9 @@ const GlobalStyles = createGlobalStyle`
 @media (min-width: 767px) and (max-width: 950px){
   .NavigationHolder{
     display: none;
+  }
+  .SidebarDropdown{
+    color: white;
   }
   .HeaderHolder{
     background-color: black;

@@ -374,7 +374,7 @@ export const Main = styled.div`
 export const Main1 = styled.div`
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
     position: relative;
@@ -383,14 +383,16 @@ export const Main1 = styled.div`
         width:100%;
         height:100%;
         object-fit:cover;
+        position: absolute;
     }
+   
     .mainbox1{
         margin-top:3rem;
         display:flex;
         flex-direction:column;
         align-items:center;
         align-content:center;
-        position: absolute;
+        height: 100%;
         z-index: 11;
         
     }
