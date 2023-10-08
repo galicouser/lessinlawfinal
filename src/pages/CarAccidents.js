@@ -352,232 +352,495 @@ There are sometimes caps on the amount of compensation you can obtain. Our Penns
                         </div>
 
                     <h1 className="MainHeading">
-                        Inadequate Vehicle Maintenance
+                    It All Usually Comes Down to Negligence
                     </h1>
                     <div className="ImageTextHolder">
                         <p className="TextPassage">
-                            Philadelphia Uber drivers must have a vehicle that
-                            meets the minimum standards, as well as maintain a
-                            valid inspection certificate. While a driver might
-                            meet these requirements when they begin driving,
-                            there is little to stop them from ignoring problems
-                            with their vehicles that arise in between
-                            inspections. A driver may notice that a tire is
-                            overly work, though puts off replacing it until it
-                            is necessary to pass inspection. In the meantime,
-                            the tire blows on the highway and the Uber driver
-                            crashes. Uber drivers are responsible for all their
-                            own vehicle-related expenses, so it is no surprise
-                            that some drivers try to cut dangerous corners when
-                            it comes to vehicle maintenance.
-                        </p>
+                        In the most basic sense, the person at fault for an accident is the one whose actions caused it to happen.
+
+</p>
                         <p className="TextPassage">
-                            The above are only some reasons why Uber drivers may
-                            be at a particularly high risk of crashing. It is
-                            important to determine exactly what led to your
-                            crash to ensure you identify the proper liable
-                            parties. The legal team at The Lawyer Connection
-                            Firm investigates crashes to gather evidence of
-                            negligence and prove liability for your losses. The
-                            sooner we start looking into the cause of your Uber
-                            accident, the better.
-                        </p>
+                        Under Pennsylvania law, the person or entity at fault for an accident will be on the hook for paying damages to those injured only if that person or entity’s actions were wrongful. Now, most of the time, people don’t try to cause a car accident. (Obviously, if they do, they’ll be held liable.) Instead, legal liability for a car accident usually boils down to whether the person or entity at fault acted negligently in causing a motor vehicle accident.
+
+</p>
+<p className="TextPassage">
+Though most people have heard lawyers use the word negligent, many may not fully understand what the term means.
+
+
+</p>
+<p className="TextPassage">
+To prove someone was negligent in their actions, under Pennsylvania law, you must prove 4 key elements:
+
+
+</p>
+<ul>
+              <li className="TextPassage">
+              Had a duty of care to behave or act responsibly
+
+              </li>
+
+              <li className="TextPassage">
+              Breached that duty of care by acting in a way that a reasonable person would expect to cause the victim harm
+              </li>
+              <li className="TextPassage">
+              Harmed the victim through those actions
+              </li>
+
+              <li className="TextPassage">
+              Caused the victim to suffer damages as a result of that harm
+              </li>
+
+             
+            </ul>
+<p className="TextPassage">
+All drivers on Pennsylvania roads owe a duty of care to everyone else on the road, including other drivers, bicyclists, and pedestrians. That duty requires drivers to operate their vehicles in a reasonably safe manner that will avoid accidents and injuries to others.
+
+
+
+</p>
+<p className="TextPassage">
+In Philadelphia and across the state, every driver must follow specific laws and regulations. These laws provide guidelines for what constitutes that duty of care. When a driver breaks those rules and gets into an accident, that violation is evidence that he or she was “negligent” behind the wheel.
+
+
+</p>
                     </div>
 
                     <h1 className="MainHeading">
-                        Representing All Uber Accident Victims
+                    Our Philadelphia Car Accident Lawyer Can Find All Responsible Parties
                     </h1>
+                    <h2 className="MainHeading">
+                    The Importance in Proving Fault in an Accident
+                    </h2>
                     <div className="ImageTextHolder">
                         <p className="TextPassage">
-                            When you think of an Uber-related injury, you might
-                            immediately think of a passenger injured when an
-                            Uber driver crashed. While this is a common
-                            scenario, there are other ways that Uber drivers can
-                            be involved in injury crashes, as follows:
-                        </p>
-                        <p className="TextPassage">
-                            The above are only some reasons why Uber drivers may
-                            be at a particularly high risk of crashing. It is
-                            important to determine exactly what led to your
-                            crash to ensure you identify the proper liable
-                            parties. The legal team at The Lawyer Connection
-                            Firm investigates crashes to gather evidence of
-                            negligence and prove liability for your losses. The
-                            sooner we start looking into the cause of your Uber
-                            accident, the better.
-                        </p>
+                        Lawyers who represent victims of car accidents spend a lot of time and energy thinking about fault, and for good reason. Under Pennsylvania law, who was at fault in a motor vehicle accident determines who owes damages to the victim and how much the victim should recover. An experienced car accident attorney will usually focus on identifying who was at fault in a car accident as soon as possible.
+
+</p>
+                       
                     </div>
 
                     <h1 className="MainHeading">
-                        Common Uber Accident Injuries
+                    Where Do Philadelphia Car Accidents Occur?
                     </h1>
                     <div className="ImageTextHolder">
                         <p className="TextPassage">
-                            Uber accidents can result in the same types of
-                            injuries and losses as any other type of traffic
-                            accident. As mentioned, Uber passengers may often
-                            sustain severe injuries due to being unrestrained in
-                            the backseat of the Uber. The following are some
-                            injuries that may result from an Uber crash:
-                        </p>
+                        In one recent year, more than 28,000 people were involved in crashes in Philadelphia alone. Nearly 100 lost their lives in those crashes, and an additional 11,000 suffered an injury. In 55 percent of those accidents, aggressive driving was a factor. Distracted driving, speeding, and drunk driving all play a role in making the streets of Philadelphia dangerous.
+
+</p>
+<p className="TextPassage">
+Where do Philadelphia car accidents occur most?
+</p>
+<p className="TextPassage">
+According to recent data, some of the most dangerous streets and intersections in Philly include:
+
+</p>
                         <ul>
-                            <li className="TextPassage">Sprains and strains</li>
+                            <li className="TextPassage">Street Road
+</li>
 
-                            <li className="TextPassage">Torn soft tissue</li>
+                            <li className="TextPassage">I-95
+</li>
 
-                            <li className="TextPassage">Fractures</li>
+                            <li className="TextPassage">Delaware Expressway
+</li>
                             <li className="TextPassage">
-                                Concussion and traumatic brain injury (TBI)
+                            Route 1
                             </li>
                             <li className="TextPassage">
-                                Back and spinal cord injuries
+                            Roosevelt Boulevard
                             </li>
                             <li className="TextPassage">
-                                Head trauma and skull fractures
+                            Schuylkill Expressway
                             </li>
                             <li className="TextPassage">
-                                Internal injuries and bleeding
+                            Rt 611
+                            </li>
+                            <li className="TextPassage">
+                            Broad Street
+                            </li>
+                            <li className="TextPassage">
+                            Easton Road
+                            </li>
+                            <li className="TextPassage">
+                            Old York Road
                             </li>
                         </ul>
                         <p className="TextPassage">
-                            After an Uber accident, it is critical that you get
-                            the medical attention you need as soon as possible.
-                            You should always listen to first responders if they
-                            say you need emergency transportation. Otherwise,
-                            you should still visit the emergency room as soon as
-                            you can following the crash.
-                        </p>
-                        <p className="TextPassage">
-                            A doctor can discover injuries that you didn’t know
-                            existed. For example, you may think you are dizzy
-                            and disoriented because the crash “shook you up,”
-                            when in reality, you have a serious concussion. A
-                            doctor will record all of your injuries and
-                            diagnoses, which you can later use as important
-                            evidence of the types of injuries resulting from
-                            your Uber crash.
-                        </p>
-                        <p className="TextPassage">
-                            In the days and weeks following your accident, you
-                            may experience a variety of losses due to your
-                            injuries. Losses will vary depending on the nature
-                            of your injuries and the treatment you need, though
-                            some losses may include:
-                        </p>
-                        <ul>
-                            <li className="TextPassage">
-                                Medical bills for emergency care,
-                                hospitalization, surgery, physical therapy,
-                                medication, doctor’s visits, and more
-                            </li>
+                        At The Lawyer Connection our Philadelphia car accident lawyers are proud to represent injured accident victims and families throughout Philadelphia. Some of the communities we serve include:
 
-                            <li className="TextPassage">
-                                The costs of the medical care you need in the
-                                future
-                            </li>
-
-                            <li className="TextPassage">
-                                Lost income if your injuries keep you from
-                                working for a period of time
-                            </li>
-                            <li className="TextPassage">
-                                Lost future income if you cannot return to your
-                                previous job
-                            </li>
-                            <li className="TextPassage">Pain and suffering</li>
-                            <li className="TextPassage">
-                                Permanent disfigurement or disability
-                            </li>
-                        </ul>
+</p>
                         <p className="TextPassage">
-                            These losses can add up very quickly and can become
-                            overwhelming. Financial concerns can also cause
-                            problems for your household, including covering
-                            bills and regular expenses. It is important to act
-                            fast after an accident to limit the financial issues
-                            you face and help you receive the compensation you
-                            need as soon as possible.
-                        </p>
+                        Strawberry Mansion, Allegheny West, North Philadelphia, West Philadelphia, Lanning Square, Camden, Pennsauken Township, Cherry Hill, Port Richmond, Fairmount Park, Germantown, Kinsessing, Juniata, South Philadelphia, University City, Oxford, and more.
+
+ </p>
                     </div>
 
                     <h1 className="MainHeading">
-                        Seeking Compensation For Your Uber-Related Losses
+                    What Are the Common Causes of Car Accidents in Philadelphia?
                     </h1>
                     <div className="ImageTextHolder">
                         <p className="TextPassage">
-                            When another driver crashes into your car, you
-                            likely know that you can file a claim with their
-                            auto insurance company or with your own company,
-                            depending on the type of policy that you have.
-                            However, what claim can you file after an Uber
-                            accident? There are different policies that may
-                            cover your losses after this type of crash, and we
-                            can identify the proper claims you need to file.
-                            These can include:
+                        In Philadelphia, there are many causes of car accidents. One of the most common reasons car accidents occur is because of driver negligence. Drivers who are irresponsible behind the wheel may engage in a variety of risky driving behaviors, including:
+
+
                         </p>
                         <ul>
                             <li className="TextPassage">
-                                A claim with the Uber driver’s personal
-                                insurance
+                            Driving while intoxicated by drugs or alcohol (DUI)
+
                             </li>
 
                             <li className="TextPassage">
-                                A claim with Uber’s insurance policy, as long as
-                                the driver caused the crash while picking up or
-                                transporting a passenger
-                            </li>
+                            Driving distracted
+      </li>
 
                             <li className="TextPassage">
-                                A claim with a third party driver’s insurance if
-                                their negligence caused the accident
-                            </li>
+                            Speeding
+ </li>
                             <li className="TextPassage">
-                                A claim with a third party driver’s employer if
-                                the driver was on the job at the time they
-                                caused a crash
-                            </li>
+                            Tailgating
+         </li>
+         <li className="TextPassage">
+         Driving aggressively or unpredictably
+         </li>
+         <li className="TextPassage">
+         Failing to obey traffic signals
+         </li>
+         <li className="TextPassage">
+         Drowsy driving
+         </li>
+         <li className="TextPassage">
+         Driving without a license
+         </li>
+         <li className="TextPassage">
+         Road Rage
+         </li>
                         </ul>
                         <p className="TextPassage">
-                            Like most states, Pennsylvania has rideshare laws
-                            that require Uber and other companies to cover
-                            drivers while they are engaged in a pre-arranged
-                            ride. This can be helpful, as these policies can
-                            provide coverage up to $1 million, which is critical
-                            for accident victims with catastrophic injuries and
-                            losses.
+                        In some cases, defective auto parts can cause serious accidents. Defective tires, steering components, and transmissions can cause devastating accidents with little warning. These cases are different from typical car accident cases because they involve product liability laws.
+
+
                         </p>
-                        <p className="TextPassage">
-                            No matter who your insurance claim is against, the
-                            insurer will likely try to fight your compensation
-                            however possible. It is always a good idea to have
-                            an experienced Uber accident lawyer representing you
-                            from the very beginning of your claim. Most
-                            importantly, you should never accept a settlement
-                            offer from an insurer without first discussing your
-                            case with an attorney. Insurers are notorious for
-                            tricking injured accident victims into accepting
-                            much less than they need, though our legal team can
-                            prevent this from happening whenever possible.
-                        </p>
+                       
                     </div>
 
                     <h1 className="MainHeading">
-                        Contact Our Philadelphia Uber Accident Attorney For Help
-                        Today
+                    How Do You Prove Fault After a Philadelphia Car Accident?
+
                     </h1>
+                    <h2 className="MainHeading">
+                    Gathering Evidence After a Car Crash
+
+                    </h2>
                     <div className="ImageTextHolder">
                         <p className="TextPassage">
-                            One moment, you call an Uber as usual and the next,
-                            you are on the way to the hospital in serious pain.
-                            In this situation, The Lawyer Connection Firm is
-                            here to help.
+                        To prove negligence, our lawyers often need to gather independent evidence or show the other driver was at fault.
+
+
                         </p>
                         <p className="TextPassage">
-                            Our Philadelphia Uber accident law firm can handle
-                            your claim from start to finish, so please call at
-                            (717) 316-8324 or contact us online today.
-                        </p>
+                        For example, it may not be enough for you to testify that you saw the other driver texting just before the accident happened. Instead, our Philadelphia car accident lawyers will need to gather real, tangible evidence. This may include the other driver’s cellphone records to show the exact moment the driver sent or received a text. We may also need to track down other witnesses who saw the driver texting.
+
+</p>
+                        <p className="TextPassage">
+                        Our experienced auto accident lawyer understands the kind of evidence necessary in Philadelphia courts to demonstrate that the other driver’s negligent actions caused an accident.
+
+</p>
+
+<ul>
+              <li className="TextPassage">
+              Photos from the crash scene showing the positioning of the vehicles, skid marks, damage, traffic signals, etc.
+
+              </li>
+
+              <li className="TextPassage">
+              Statements from witnesses
+              </li>
+              <li className="TextPassage">
+              Surveillance video from traffic cameras or nearby businesses
+              </li>
+
+              <li className="TextPassage">
+              Driving records
+              </li>
+
+              <li className="TextPassage">
+              Cellphone records
+              </li>
+              
+              <li className="TextPassage">
+              Analysis from accident reconstruction experts
+              </li>
+            </ul>
                     </div>
+
+
+
+
+
+
+
+
+
+
+                    <h1 className="MainHeading">
+                    What If I Am Partly to Blame For the Philadelphia Car Accident?
+
+                    </h1>
+                   
+                    <div className="ImageTextHolder">
+                        <p className="TextPassage">
+                        If you believe that you might be partly to blame for the car accident, do not worry. Unless you are more than 50 percent liable for the accident, you can still collect compensation. This is due to Philadelphia’s modified contributory negligence doctrine.
+
+
+                        </p>
+                        <p className="TextPassage">
+                        Here’s how it works:
+
+
+</p>
+              
+
+<ul>
+              <li className="TextPassage">
+              Under Pennsylvania law, a court will attribute a percentage of fault to each party in a car accident lawsuit.
+
+              </li>
+
+              <li className="TextPassage">
+              So long as your share of fault is less than the total share of the fault borne by all defendants combined, the plaintiff can recover damages.
+              </li>
+              <li className="TextPassage">
+              Your recovery from the defendant(s) will be reduced by the proportion you are found at fault.
+              </li>
+
+             
+            </ul>
+            <p className="TextPassage">
+            The rules of modified comparative negligence can make calculating fault and damages even more complicated. Sometimes, for example, one of the defendants may be on the hook for 100 percent of the damages, even if more than one defendant was at fault.
+
+
+
+</p>
+<p className="TextPassage">
+Always consult an experienced Philadelphia car accident attorney before taking action to seek damages from someone who caused a wreck—especially if someone tries to shift some of the blame to you. An attorney at The Lawyer Connection can help sort through the parties at fault to identify those who may be both most at fault and most capable of paying damages.
+
+
+
+</p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h1 className="MainHeading">
+                    What Are the Common Types of Car Accidents?
+
+                    </h1>
+                   
+                    <div className="ImageTextHolder">
+                        <p className="TextPassage">
+                        Our Philadelphia Car Accident Lawyers Handle All Types of Car Accident Claims
+
+
+
+                        </p>
+                        <p className="TextPassage">
+                        Just as our firm handles motor vehicle accidents caused by a wide variety of factors, we also represent clients who sustained their injuries and losses in every conceivable type of car accident. Here are some of the most common types of collisions and wrecks for which our team helps our clients recover compensation.
+
+
+
+</p>
+              
+
+<ul>
+              <li className="TextPassage">
+              Rear-end Collisions
+
+              </li>
+
+              <li className="TextPassage">
+              Side impact accidents or T-bone collisions
+              </li>
+              <li className="TextPassage">
+              Head-on collisions
+              </li>
+              <li className="TextPassage">
+              Single vehicle accidents
+              </li>
+              <li className="TextPassage">
+              Collisions with fixed objects
+              </li>
+              <li className="TextPassage">
+              Rollover crashes
+              </li>
+              <li className="TextPassage">
+              Hit and run accidents
+              </li>
+              <li className="TextPassage">
+              Ridesharing accidents
+              </li>
+              <li className="TextPassage">
+              Uninsured and underinsured motorist crashes
+              </li>
+
+             
+            </ul>
+            <p className="TextPassage">
+            At The Lawyer Connection, clients come to us after all types of car accidents. No matter whether your accident involved one, two, or 10 vehicles, we have the experience and know-how to help you fight for the compensation you deserve. Contact us today to schedule a free consultation.
+</p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h1 className="MainHeading">
+                    What Types of Injuries Do Car Accidents in Philadelphia Cause?
+
+                    </h1>
+                    <h2 className="MainHeading">
+                    We Help Injured Car Crash Survivors Like You!
+
+                    </h2>
+                   
+                    <div className="ImageTextHolder">
+                        <p className="TextPassage">
+                        Car accidents can result in serious and life-threatening injuries. Even accidents that occur at low speeds can result in serious harm and chronic disability.
+
+
+
+
+                        </p>
+                        <p className="TextPassage">
+                        At The Lawyer Connection our Philadelphia car accident lawyers have helped numerous accident survivors who suffered serious car accident injuries, such as:
+
+
+
+
+</p>
+              
+
+<ul>
+              <li className="TextPassage">
+              Traumatic brain injuries
+
+              </li>
+
+              <li className="TextPassage">
+              Spinal cord injuries
+              </li>
+              <li className="TextPassage">
+              Head and neck injuries
+              </li>
+              <li className="TextPassage">
+              Whiplash
+              </li>
+              <li className="TextPassage">
+              Soft tissue injuries
+              </li>
+              <li className="TextPassage">
+              Back injuries
+              </li>
+              <li className="TextPassage">
+              Fractures
+              </li>
+              <li className="TextPassage">
+              Disfigurement
+              </li>
+              <li className="TextPassage">
+              Burns              </li>
+
+             
+            </ul>
+            <p className="TextPassage">
+            We know that medical bills can quickly pile up after a serious injury. A herniated disc that requires surgery after acar accident can cost patients up to $150,000 or more. This does not include lost wages, rehabilitation expenses, and pain and suffering.
+
+</p>
+<p className="TextPassage">
+You may need more compensation than you realize after suffering an injury in a car accident. As such, never sign a settlement from the auto insurance company without first speaking to an experienced Philadelphia car accident lawyer at The Levin Firm. We can ensure any settlement offer includes fair compensation that will cover all your medical expenses now and in the future.
+
+
+</p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h1 className="MainHeading">
+                    Contact Our Philadelphia Car Accident Lawyers Today!
+
+                    </h1>
+                   
+                   
+                    <div className="ImageTextHolder">
+                        <p className="TextPassage">
+                        The Lawyer Connection represents clients injured in car accidents and the families of those tragically killed in car accidents. We are a full-service personal injury law firm. From the moment a client walks through our doors, our goal is to serve the client’s needs by recovering the maximum possible compensation for their injuries and losses. Every representation starts with our team getting to know all about our clients and their auto accident.
+
+
+
+
+
+                        </p>
+                        <p className="TextPassage">
+Call our Philadelphia auto accident attorneys today at (717) 316-8324 or toll-free at (877) 825-8542, or contact or chat with us online to schedule a free consultation with a member of our team and discuss whether we can help you recover the compensation you deserve.
+
+
+
+
+                        </p>
+
+</div>
+
+
+
+
+
+
                 </div>
 
                 <div className="InputSegment">

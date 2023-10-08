@@ -477,13 +477,21 @@ const Header = () => {
                                     <Link to="/CarAccidents">
                                     <p className="MenuItems">Car Accident</p>
                                     </Link>
-                                    
 
-                                    <p className="MenuItems">Truck Accident</p>
 
+                                    {/* <Link to="/CarAccidents">
+                                    <p className="MenuItems">Truck Accident</p> 
+                                    </Link> */}
+                                    <Link to="/AllPratices">
                                     <p className="MenuItems">
                                         See All Pratice Area
                                     </p>
+                                    </Link> 
+                                    
+
+                                    {/* */}
+
+                                    
                                 </motion.div>
                             )}
                         </div>

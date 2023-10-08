@@ -15,6 +15,7 @@ import BicycleAccident from './pages/BicycleAccidents';
 import MotorcycleAccidents from './pages/MotorCycleAccidents';
 import UberAccidents from './pages/UberAccidents';
 import CarAccidents from './pages/CarAccidents';
+import AllPratices from './pages/AllPratices';
 function App() {
   return (
     <Wrapper>
@@ -32,6 +33,7 @@ function App() {
               <Route path="/MotorcycleAccidents" element={<MotorcycleAccidents />} />
               <Route path="/UberAccidents" element={<UberAccidents />} />
               <Route path="/CarAccidents" element={<CarAccidents />} />
+              <Route path="/AllPratices" element={<AllPratices />} />
 
           </Routes>
       </BrowserRouter>
