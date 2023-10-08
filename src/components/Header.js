@@ -378,7 +378,7 @@ const Header = () => {
                         <Link to="/">
                             <div className="NavButtonHolder">
                                 <p className="NavigationButton">Home</p>
-                                <div className="BelowLine"></div>
+                                <div className="BelowLine2"></div>
                             </div>
                         </Link>
                         <div
@@ -393,10 +393,13 @@ const Header = () => {
                             />
                             <div className="BelowLine"></div>
                             {isHovered && (
-                                <div className="dropdownMenu">
+                                <div className="dropdownMenu"
+                                onClick={handleMouseLeave}
+                                >
                                     <Link
                                         to="/MedicalMalpratice"
                                         style={{ textDecoration: 'none' }}
+
                                     >
                                         <p
                                             className="MenuItems"
@@ -481,7 +484,8 @@ const Header = () => {
                             onMouseLeave={handleMouseLeave2}
                         >
                             {isHovered2 && (
-                                <div className="dropdownMenu">
+                                <div className="dropdownMenu"
+                                onClick={handleMouseLeave2}>
                                     <p
                                         className="MenuItems"
                                         style={{ border: 'none' }}
@@ -519,14 +523,8 @@ const Header = () => {
                             />
                             <div className="BelowLine"></div>
                             {isHovered3 && (
-                                <div className="dropdownMenu">
-                                    <p
-                                        className="MenuItems"
-                                        style={{ border: 'none' }}
-                                    >
-                                        {' '}
-                                        Our Firm
-                                    </p>
+                                <div className="dropdownMenu"
+                                onClick={handleMouseLeave3}>
                                     <p className="MenuItems">Philadelphia,Pa</p>
                                     <p className="MenuItems">
                                         Montgomery County, Pa

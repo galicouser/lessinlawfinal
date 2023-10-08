@@ -48,6 +48,12 @@ const GlobalStyles = createGlobalStyle`
   
   box-shadow: 1px 1px 1px rgb(255,255,255,0.5);
 }
+.NavButtonHolder:hover .BelowLine2{
+  background-color:white;
+  right: 2px;
+  box-shadow: 1px 1px 1px rgb(255,255,255,0.5);
+}
+
 .NavButtonHolder:hover .ArrowIcon{
   color:white;
 }
@@ -59,6 +65,16 @@ const GlobalStyles = createGlobalStyle`
   width:100%;
   background-color: rgb(0,0,0,0.0);
   bottom: 10px;
+  position: absolute;
+  transition: all 0.5s;
+  right:30px;
+  box-shadow: 1px 1px 1px rgb(255,255,255,0.05);
+}
+.BelowLine2{
+  height: 1px;
+  width:100%;
+  background-color: rgb(0,0,0,0.0);
+  bottom: 26px;
   position: absolute;
   transition: all 0.5s;
   right:30px;
@@ -127,6 +143,10 @@ const GlobalStyles = createGlobalStyle`
   font-size: 25px;
   font-weight: 700;
   text-align: left;
+}
+.LogoName{
+  
+display:none
 }
 .FormHolder{
   width: 100%;
@@ -413,6 +433,7 @@ const GlobalStyles = createGlobalStyle`
     display: none;
   }
   .LogoName{
+    display: unset;
     color:white;
     font-size: 25px;
     font-weight: 1000;
@@ -573,6 +594,7 @@ const GlobalStyles = createGlobalStyle`
     justify-content: space-between;
   }
   .LogoName{
+    display: unset;
     color:white;
     font-size: 30px;
     font-weight: 1000;
