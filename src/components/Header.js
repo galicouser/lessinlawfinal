@@ -393,8 +393,11 @@ const Header = () => {
                             />
                             <div className="BelowLine"></div>
                             {isHovered && (
-                                <div className="dropdownMenu"
+                                <motion.div className="dropdownMenu"
                                 onClick={handleMouseLeave}
+                                initial={{ y: 50}}
+                                animate={{y:0}}
+                                transition={{type:"spring",damping:15}}
                                 >
                                     <Link
                                         to="/MedicalMalpratice"
@@ -474,7 +477,7 @@ const Header = () => {
                                     <p className="MenuItems">
                                         See All Pratice Area
                                     </p>
-                                </div>
+                                </motion.div>
                             )}
                         </div>
 
@@ -484,8 +487,11 @@ const Header = () => {
                             onMouseLeave={handleMouseLeave2}
                         >
                             {isHovered2 && (
-                                <div className="dropdownMenu"
-                                onClick={handleMouseLeave2}>
+                                <motion.div className="dropdownMenu"
+                                onClick={handleMouseLeave2}
+                                initial={{ y: 50}}
+                                animate={{y:0}}
+                                transition={{type:"spring",damping:15}}>
                                     <p
                                         className="MenuItems"
                                         style={{ border: 'none' }}
@@ -501,7 +507,7 @@ const Header = () => {
                                     </p>
                                     <p className="MenuItems">News</p>
                                     <p className="MenuItems">Info</p>
-                                </div>
+                                </motion.div>
                             )}
                             <p className="NavigationButton">About Us</p>
                             <KeyboardArrowDownIcon
@@ -523,8 +529,11 @@ const Header = () => {
                             />
                             <div className="BelowLine"></div>
                             {isHovered3 && (
-                                <div className="dropdownMenu"
-                                onClick={handleMouseLeave3}>
+                                <motion.div className="dropdownMenu"
+                                onClick={handleMouseLeave3}
+                                initial={{ y: 50}}
+                                animate={{y:0}}
+                                transition={{type:"spring",damping:15}}>
                                     <p className="MenuItems">Philadelphia,Pa</p>
                                     <p className="MenuItems">
                                         Montgomery County, Pa
@@ -536,7 +545,7 @@ const Header = () => {
                                         Fort Lauderdel, FL
                                     </p>
                                     <p className="MenuItems">Atlantic, City</p>
-                                </div>
+                                </motion.div>
                             )}
                         </div>
                         <div className="NavButtonHolder">
