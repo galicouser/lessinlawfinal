@@ -528,7 +528,7 @@ display:none
   }
 }
 
-@media (min-width: 767px) and (max-width: 950px){
+@media (min-width: 767px) and (max-width: 1050px){
   .NavigationHolder{
     display: none;
   }
