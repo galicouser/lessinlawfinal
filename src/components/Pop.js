@@ -12,11 +12,11 @@ import { IconButton } from '@mui/material';
 import Logo from '../assets/Lessin Law.png'
 
 const Wrapper = styled.div`
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -112,14 +112,16 @@ const Wrapper = styled.div`
         width: 200px;
         height: 50px;
         margin-left: 20px;
-        @media (max-width: 767px) {
-            display: none
-        }
-
+        
         &:hover {
             color: var(--clr-primary-1);
             background: var(--clr-primary-7);
         }
+
+        @media (max-width: 767px) {
+            display: none
+        }
+
     }
 
     .btn-live-msg-mobile {
@@ -151,9 +153,6 @@ const Wrapper = styled.div`
         }
     }
 
-
-    @media (max-width: 767px) {
-    }
 
     .header{
         font-family: 'Pontif LP', sans-serif;
@@ -191,69 +190,21 @@ const Wrapper = styled.div`
             transform: translateY(0px);
         }
         50% {
-            //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
             transform: translateY(-20px);
         }
         100% {
-            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
             transform: translateY(0px);
         }
     }
+
+
+    
+
+    @media (min-width: 767px) {
+    }
 `
 
-const Button1 = styled.button`
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-
-    @media (max-width: 767px) {
-        font-size: 17px;
-    }
-    &:hover {
-        background-color: #b0c4de;
-    }
-
-    &:active {
-        background-color: #4caf50;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-`;
-const Button2 = styled.button`
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-
-    &:hover {
-        background-color: #b0c4de;
-    }
-
-    &:active {
-        background-color: #4caf50;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-    @media (max-width: 767px) {
-        font-size: 17px;
-    }
-`
-const Popup = ({ onClose }) => {
+const Pop = ({ getSomeValue}) => {
 
     const { openChat } = useModalContext()
     const { isChatOpen, closeChat } = useModalContext()
@@ -268,6 +219,12 @@ const Popup = ({ onClose }) => {
             clearInterval(intervalId)
         }
     }, [])
+
+
+    const handleClick = () => {
+        getSomeValue(true);
+      };
+    
 
     const getRandomColor = () => {
         const colors = [
@@ -350,7 +307,7 @@ const Popup = ({ onClose }) => {
                     >
                         <Button
                             variant="contained"
-                            onClick={onClose}
+                            onClick={handleClick}
                             className="btn btn-hero"
                         >
                             <div>Home</div><HomeIcon />
@@ -362,7 +319,6 @@ const Popup = ({ onClose }) => {
             <div className='liveMsgHolder'>
                 <span>
                     {' '}
-
                     <Button className="btn-live-msg" variant="contained" onClick={openChat}>
                         Live Chat
                         <div className='LiveChatButtonIcon'><MessageIcon /></div>
@@ -380,19 +336,19 @@ const Popup = ({ onClose }) => {
     )
 }
 
-const PopupComponent = () => {
-    const [showPopup, setShowPopup] = useState(true)
+// const PopupComponent = () => {
+//     const [showPopup, setShowPopup] = useState(true)
 
-    const handlePopupClose = () => {
-        setShowPopup(false)
-    }
+//     const handlePopupClose = () => {
+//         setShowPopup(false)
+//     }
 
-    return (
-        <div>
-            {showPopup && <Popup onClose={handlePopupClose} />}
-            {/* Rest of your component */}
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             {showPopup && <Pop onClose={handlePopupClose} />}
+//             {/* Rest of your component */}
+//         </div>
+//     )
+// }
 
-export default PopupComponent
+export default Pop;

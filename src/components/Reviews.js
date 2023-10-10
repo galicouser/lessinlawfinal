@@ -22,8 +22,6 @@ export const Wrapper = styled.div`
     .stars {
         margin-left: 0%;
     }
-    .SwiperSlide
-    }
     .CenteringDiv {
         display: flex;
         justify-content: center;
@@ -67,77 +65,78 @@ export const Wrapper = styled.div`
         margin-left: 0%;
         text-align:center;
     }
-`
+    }
+`;
 
 const ReviewsComponent = () => {
     return (
         <Wrapper>
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay]}
-                    className="mySwiper"
-                >
-                    {reviews.map((review, index) => (
-                        <SwiperSlide key={index} className="SwiperSlide">
-                           
-                            <Grid container spacing={2}>
-                                <Grid item lg={11}>
-                                    <div>
-                                        <Grid container spacing={2}>
-                                            
-                                                    <Grid item lg={12}>
-                                                        <div>
-                                                            <p className="ReviewName">
-                                                                {review.name}
-                                                            </p>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item lg={12}>
-                                                        <div>
-                                                            <div className="stars">
-                                                                {[
-                                                                    ...Array(5),
-                                                                ].map(
-                                                                    (
-                                                                        _,
-                                                                        starIndex
-                                                                    ) => (
-                                                                        <FaStar
-                                                                            key={
-                                                                                starIndex
-                                                                            }
-                                                                            size={
-                                                                                20
-                                                                            }
-                                                                        />
-                                                                    )
-                                                                )}
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item lg={12} >
-                                                <div className='ReviewTextHolder'>
-                                                    <div className="ReviewText">
-                                                        {review.text}
-                                                    </div>
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
+                className="mySwiper"
+            >
+                {reviews.map((review, index) => (
+                    <SwiperSlide key={index} className="SwiperSlide">
+
+                        <Grid container spacing={2}>
+                            <Grid item lg={11}>
+                                <div>
+                                    <Grid container spacing={2}>
+
+                                        <Grid item lg={12}>
+                                            <div>
+                                                <p className="ReviewName">
+                                                    {review.name}
+                                                </p>
+                                            </div>
+                                        </Grid>
+                                        <Grid item lg={12}>
+                                            <div>
+                                                <div className="stars">
+                                                    {[
+                                                        ...Array(5),
+                                                    ].map(
+                                                        (
+                                                            _,
+                                                            starIndex
+                                                        ) => (
+                                                            <FaStar
+                                                                key={
+                                                                    starIndex
+                                                                }
+                                                                size={
+                                                                    20
+                                                                }
+                                                            />
+                                                        )
+                                                    )}
                                                 </div>
-                                            </Grid>
-                                                </Grid>
-                                           
-                                    </div>
-                                </Grid>
+                                            </div>
+                                        </Grid>
+                                        <Grid item lg={12} >
+                                            <div className='ReviewTextHolder'>
+                                                <div className="ReviewText">
+                                                    {review.text}
+                                                </div>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+
+                                </div>
                             </Grid>
-                        </SwiperSlide>
-                    ))}
-                    
-                </Swiper>
-                 
-              
+                        </Grid>
+                    </SwiperSlide>
+                ))}
+
+            </Swiper>
+
+
         </Wrapper>
     )
 }
