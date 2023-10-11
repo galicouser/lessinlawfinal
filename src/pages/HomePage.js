@@ -80,7 +80,7 @@ const HomePage = () => {
  useEffect(() => {
   const timer = setTimeout(() => {
    setActiveIndex2(
-    activeIndex2 === carouselContent2.length - 1 ? 0 : activeIndex2 + 1
+    activeIndex2 === carouselContent1.length - 1 ? 0 : activeIndex2 + 1
    )
   }, 4000)
 
@@ -531,7 +531,7 @@ const HomePage = () => {
       modules={[Autoplay, Pagination]}
       className="mySwiper"
      >
-      {carouselContent2.map((item, index) => (
+      {carouselContent1.map((item, index) => (
        <>
         <SwiperSlide key={index} className="SwiperSlide">
          <div className="textHolder">

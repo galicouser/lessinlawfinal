@@ -1,4 +1,4 @@
-export const carouselContent1 = [
+export const carouselcontent1 = [
  {
   image:
    'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983314/lessinlaw/bicycle_hwrpnk.jpg',
