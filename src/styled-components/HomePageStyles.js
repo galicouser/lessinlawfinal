@@ -226,6 +226,7 @@ width:100%;
     width:100vh;
     height:100vh;
     border-radius: 5%;
+    cursor: pointer;
 }
     border-radius: 5%;
     margin-top: 2.6rem;
