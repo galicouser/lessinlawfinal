@@ -145,7 +145,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983453/lessinlaw/uberlyft_ta8sak.jpg',
   title: 'Uber & Lyft Accidents',
   description: `
         As ride-sharing gains popularity in Philadelphia, accidents can occur. Our team specializes in navigating the complexities of such cases.
