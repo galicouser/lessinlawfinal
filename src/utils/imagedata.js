@@ -194,14 +194,14 @@ export const carouselContent2 = [
             If you've been involved in a bus accident, our skilled personal injury lawyers will protect your rights and pursue a claim against the responsible party, ensuring you receive fair compensation for your injuries and damages.
         `,
  },
- {
-  image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684782972/Whistleblower_lwc2sa.jpg',
-  title: 'Whistleblower Lawsuits',
-  description: `
-            Our knowledgeable personal injury attorneys specialize in whistleblower lawsuits, helping courageous individuals expose fraud or misconduct while protecting their rights and seeking appropriate compensation.
-        `,
- },
+ // {
+ //  image:
+ //   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684782972/Whistleblower_lwc2sa.jpg',
+ //  title: 'Whistleblower Lawsuits',
+ //  description: `
+ //            Our knowledgeable personal injury attorneys specialize in whistleblower lawsuits, helping courageous individuals expose fraud or misconduct while protecting their rights and seeking appropriate compensation.
+ //        `,
+ // },
  {
   image:
    'https://res.cloudinary.com/elpawl-llc/image/upload/v1684786809/Mesothelioma_but_in_Philly_yrlnzk.jpg',
@@ -210,14 +210,14 @@ export const carouselContent2 = [
             If you have been diagnosed with mesothelioma due to asbestos exposure, our experienced personal injury lawyers will guide you through the legal process, fighting for justice and pursuing compensation from liable parties.
         `,
  },
- {
-  image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684783319/Talcum_Powder_x5yyvs.jpg',
-  title: 'Talcum Powder Cancer',
-  description: `
-            Our dedicated personal injury attorneys handle cases involving talcum powder-related cancers, advocating for individuals affected by these harmful products and pursuing rightful compensation for their suffering.
-        `,
- },
+ // {
+ //  image:
+ //   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684783319/Talcum_Powder_x5yyvs.jpg',
+ //  title: 'Talcum Powder Cancer',
+ //  description: `
+ //            Our dedicated personal injury attorneys handle cases involving talcum powder-related cancers, advocating for individuals affected by these harmful products and pursuing rightful compensation for their suffering.
+ //        `,
+ // },
  {
   image:
    'https://res.cloudinary.com/elpawl-llc/image/upload/v1684783393/Happy-child_i4f4hv.jpg',
