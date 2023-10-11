@@ -425,6 +425,10 @@ ul {
     list-style-type: disc;
     margin-left: 50px;
 }
+ol {
+    list-style-type: disc;
+    margin-left: 50px;
+}
 .MainHeading{
     font-weight: 700;
 }

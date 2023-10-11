@@ -17,6 +17,8 @@ import UberAccidents from './pages/UberAccidents';
 import CarAccidents from './pages/CarAccidents';
 import SeptaInjuries from './pages/SeptaInjuries'
 import AllPratices from './pages/AllPratices';
+import PhiladelphiaLocation from './pages/PhiladelphiaLocation';
+import MontgomeryCountyLocation from './pages/MontgomeryCountyLocation';
 
 function App() {
   return (
@@ -43,6 +45,10 @@ function App() {
           <Route path="/CarAccidents" element={<CarAccidents />} />
           <Route path="/SeptaInjuries" element={<SeptaInjuries />} />
           <Route path="/AllPratices" element={<AllPratices />} />
+          <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
+          <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
+          <Route path="/MontgomeryCountyLocation" element={<MontgomeryCountyLocation />} />
+          
         </Routes>
       </BrowserRouter>
     </Wrapper>

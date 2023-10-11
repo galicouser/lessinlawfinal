@@ -755,8 +755,13 @@ const Header = () => {
          animate={{ y: 0 }}
          transition={{ type: 'spring', damping: 15 }}
         >
-         <p className="MenuItems">Philadelphia,Pa</p>
+        <Link to="/PhiladelphiaLocation">
+        <p className="MenuItems">Philadelphia,Pa</p>
+        </Link>
+        <Link to="/MontgomeryCountyLocation">
+            
          <p className="MenuItems">Montgomery County, Pa</p>
+        </Link>
          <p className="MenuItems">Bucks County, Pa</p>
          <p className="MenuItems">Fort Lauderdel, FL</p>
          <p className="MenuItems">Atlantic, City</p>
