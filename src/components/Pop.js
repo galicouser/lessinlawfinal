@@ -12,17 +12,17 @@ import { IconButton } from '@mui/material'
 import Logo from '../assets/Lessin Law.png'
 
 const Wrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  background-color: #fbfaf9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: #FBFAF9;
 
   .buttons-holder {
     width: 100%;
@@ -92,32 +92,32 @@ const Wrapper = styled.div`
     }
   }
 
-  .btn-live-msg {
-    text-transform: uppercase;
-    background: #003366;
-    color: var(--clr-primary-10);
-    padding: 0.375rem 0.75rem;
-    letter-spacing: var(--spacing);
-    display: flex;
-    font-weight: 400;
-    transition: var(--transition);
-    font-size: 0.875rem;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border-color: transparent;
-    width: 200px;
-    height: 50px;
-    margin-left: 20px;
-    @media (max-width: 767px) {
-      display: none;
-    }
+    .btn-live-msg {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: flex;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        border-color: transparent;
+        width: 200px;
+        height: 50px;
+        margin-left: 20px;
+        @media (max-width: 767px) {
+            display: none
+        }
 
-    &:hover {
-      color: var(--clr-primary-1);
-      background: var(--clr-primary-7);
+        &:hover {
+            color: var(--clr-primary-1);
+            background: var(--clr-primary-7);
+        }
     }
-  }
 
   .btn-live-msg-mobile {
     display: none;
@@ -130,26 +130,27 @@ const Wrapper = styled.div`
     color: white;
   }
 
-  .LiveChatButtonIcon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    background: #003366;
-    color: white;
-    @media (max-width: 767px) {
-      color: var(--clr-primary-1);
-      background: var(--clr-primary-7);
-      border: 0px solid black;
+    .LiveChatButtonIcon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        background: #003366;
+        color: white;
+        @media (max-width: 767px) {
+            color: var(--clr-primary-1);
+            background: var(--clr-primary-7);
+            border: 0px solid black;
+        }
     }
-  }
 
-  @media (max-width: 767px) {
-  }
+
+    @media (max-width: 767px) {
+    }
 
   .header {
     font-family: 'Pontif LP', sans-serif;
@@ -180,109 +181,110 @@ const Wrapper = styled.div`
     }
   }
 
-  @keyframes float {
-    0% {
-      //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-      transform: translateY(0px);
+    @keyframes float {
+        0% {
+            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translateY(0px);
+        }
+        50% {
+            //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            transform: translateY(-20px);
+        }
+        100% {
+            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translateY(0px);
+        }
     }
-    50% {
-      //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-      transform: translateY(-20px);
-    }
-    100% {
-      //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-      transform: translateY(0px);
-    }
-  }
 `
 
 const Button1 = styled.button`
-  background-color: white; /* Green */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
 
-  @media (max-width: 767px) {
-    font-size: 17px;
-  }
-  &:hover {
-    background-color: #b0c4de;
-  }
+    @media (max-width: 767px) {
+        font-size: 17px;
+    }
+    &:hover {
+        background-color: #b0c4de;
+    }
 
-  &:active {
-    background-color: #4caf50;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-`
+    &:active {
+        background-color: #4caf50;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+`;
 const Button2 = styled.button`
-  background-color: white; /* Green */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
 
-  &:hover {
-    background-color: #b0c4de;
-  }
+    &:hover {
+        background-color: #b0c4de;
+    }
 
-  &:active {
-    background-color: #4caf50;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  @media (max-width: 767px) {
-    font-size: 17px;
-  }
+    &:active {
+        background-color: #4caf50;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    @media (max-width: 767px) {
+        font-size: 17px;
+    }
 `
 const Popup = ({ onClose }) => {
-  const { openChat } = useModalContext()
-  const { isChatOpen, closeChat } = useModalContext()
-  const [lessinColor, setLessinColor] = useState('#003366')
-  const [lawColor, setLawColor] = useState('#B0C4DE')
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setLessinColor(getRandomColor())
-      setLawColor(getRandomColor())
-    }, 2000)
-    return () => {
-      clearInterval(intervalId)
-    }
-  }, [])
 
-  const getRandomColor = () => {
-    const colors = [
-      '#003366',
-      '#76D7EA',
-      '#37AFD4',
-      '#20AAEA',
-      '#7FBEBD',
-      '#327BCD',
-      '#57A8E3',
-      '#80B2C2',
-      '#3BBFCF',
-      '#00CCFC',
-      '#0B8BB8',
-      '#17C6EA',
-      '#008FB1',
-      '#00BFFF',
-      '#12C5FF',
-      '#9AD5FF',
-      '#11CCFF',
-    ]
+    const { openChat } = useModalContext()
+    const { isChatOpen, closeChat } = useModalContext()
+    const [lessinColor, setLessinColor] = useState('#003366')
+    const [lawColor, setLawColor] = useState('#B0C4DE')
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setLessinColor(getRandomColor())
+            setLawColor(getRandomColor())
+        }, 2000)
+        return () => {
+            clearInterval(intervalId)
+        }
+    }, [])
+
+    const getRandomColor = () => {
+        const colors = [
+            '#003366',
+            '#76D7EA',
+            '#37AFD4',
+            '#20AAEA',
+            '#7FBEBD',
+            '#327BCD',
+            '#57A8E3',
+            '#80B2C2',
+            '#3BBFCF',
+            '#00CCFC',
+            '#0B8BB8',
+            '#17C6EA',
+            '#008FB1',
+            '#00BFFF',
+            '#12C5FF',
+            '#9AD5FF',
+            '#11CCFF',
+        ]
 
     const randomIndex = Math.floor(Math.random() * colors.length)
     return colors[randomIndex]
@@ -330,67 +332,62 @@ const Popup = ({ onClose }) => {
                                 >
                                     Law
                                 </motion.span> */}
-              </motion.h1>
-            </AnimatePresence>
-          </h1>
-        </div>
-        <div className="buttons-holder">
-          <span
-            style={{
-              width: '100%',
-            }}
-          >
-            <Button
-              variant="contained"
-              onClick={onClose}
-              className="btn btn-hero"
-            >
-              <div>Home</div>
-              <HomeIcon />
-            </Button>
-          </span>
-        </div>
-      </div>
+                            </motion.h1>
+                        </AnimatePresence>
+                    </h1>
+                </div>
+                <div className='buttons-holder'>
 
-      <div className="liveMsgHolder">
-        <span>
-          {' '}
-          <Button
-            className="btn-live-msg"
-            variant="contained"
-            onClick={openChat}
-          >
-            Live Chat
-            <div className="LiveChatButtonIcon">
-              <MessageIcon />
+                    <span
+                        style={{
+                            width: '100%',
+                        }}
+                    >
+                        <Button
+                            variant="contained"
+                            onClick={onClose}
+                            className="btn btn-hero"
+                        >
+                            <div>Home</div><HomeIcon />
+                        </Button>
+                    </span>
+                </div>
             </div>
-          </Button>
-          <div className="btn-live-msg-mobile">
-            <IconButton>
-              <div className="LiveChatButtonIcon" onClick={openChat}>
-                <MessageIcon />
-              </div>
-            </IconButton>
-          </div>
-        </span>
-      </div>
-    </Wrapper>
-  )
+
+            <div className='liveMsgHolder'>
+                <span>
+                    {' '}
+
+                    <Button className="btn-live-msg" variant="contained" onClick={openChat}>
+                        Live Chat
+                        <div className='LiveChatButtonIcon'><MessageIcon /></div>
+                    </Button>
+
+                    <div className="btn-live-msg-mobile">
+                        <IconButton>
+                            <div className='LiveChatButtonIcon' onClick={openChat}><MessageIcon /></div>
+                        </IconButton>
+                    </div>
+                </span>
+            </div>
+
+        </Wrapper>
+    )
 }
 
 const PopupComponent = () => {
-  const [showPopup, setShowPopup] = useState(true)
+    const [showPopup, setShowPopup] = useState(true)
 
-  const handlePopupClose = () => {
-    setShowPopup(false)
-  }
+    const handlePopupClose = () => {
+        setShowPopup(false)
+    }
 
-  return (
-    <div>
-      {showPopup && <Popup onClose={handlePopupClose} />}
-      {/* Rest of your component */}
-    </div>
-  )
+    return (
+        <div>
+            {showPopup && <Popup onClose={handlePopupClose} />}
+            {/* Rest of your component */}
+        </div>
+    )
 }
 
-export default PopupComponent
+export default Pop;

@@ -13,13 +13,9 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 import {
@@ -39,34 +35,35 @@ import {
  Container2,
  Title,
 } from '../styled-components/HomePageStyles'
+import { SettingsPhone } from '@mui/icons-material'
 
 const HomePage = () => {
- const [testimonials, setTestimonials] = useState([])
- const [show, setShow] = useState(false)
- const { openModal } = useModalContext()
- const { openChat } = useModalContext()
- const { isModalOpen, closeModal } = useModalContext()
- const { isChatOpen, closeChat } = useModalContext()
- const [lessinColor, setLessinColor] = useState('#003366')
- const [lawColor, setLawColor] = useState('#B0C4DE')
- const handleClose = () => setShow(false)
- const handleShow = () => setShow(true)
- const [activeIndex1, setActiveIndex1] = useState(0)
- const [activeIndex2, setActiveIndex2] = useState(0)
+    const [testimonials, setTestimonials] = useState([])
+    const [show, setShow] = useState(false)
+    const { openModal } = useModalContext()
+    const { openChat } = useModalContext()
+    const { isModalOpen, closeModal } = useModalContext()
+    const { isChatOpen, closeChat } = useModalContext()
+    const [lessinColor, setLessinColor] = useState('#003366')
+    const [lawColor, setLawColor] = useState('#B0C4DE')
+    const handleClose = () => setShow(false)
+    const handleShow = () => setShow(true)
+    const [activeIndex1, setActiveIndex1] = useState(0)
+    const [activeIndex2, setActiveIndex2] = useState(0)
 
- const [name, setName] = useState('')
- const [email, setEmail] = useState('')
- const [message, setMessage] = useState('')
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
- const handleSubmit = (e) => {
-  e.preventDefault()
-  // Handle form submission logic here
-  console.log('Submitted:', { name, email, message })
-  // Reset form inputs
-  setName('')
-  setEmail('')
-  setMessage('')
- }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // Handle form submission logic here
+        console.log('Submitted:', { name, email, message })
+        // Reset form inputs
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
 
  useEffect(() => {
   const timer = setTimeout(() => {
@@ -75,14 +72,16 @@ const HomePage = () => {
    )
   }, 8000)
 
-  return () => clearTimeout(timer)
- }, [activeIndex1])
- useEffect(() => {
-  const timer = setTimeout(() => {
-   setActiveIndex2(
-    activeIndex2 === carouselContent2.length - 1 ? 0 : activeIndex2 + 1
-   )
-  }, 4000)
+        return () => clearTimeout(timer)
+    }, [activeIndex1])
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setActiveIndex2(
+                activeIndex2 === carouselContent2.length - 1
+                    ? 0
+                    : activeIndex2 + 1
+            )
+        }, 4000)
 
   return () => clearTimeout(timer)
  }, [activeIndex2])
@@ -216,107 +215,107 @@ const HomePage = () => {
 
  const [OurFirm2, setOurFirm2] = useState(false)
 
- function OurFirmClicked() {
-  setOurFirm(!OurFirm)
-  setSpecialCase(false)
-  setSpecialLawyers(false)
-  setOurFirm2(false)
- }
- function SpecialCaseClicked() {
-  if (SpecialCase) {
-  } else {
-   setSpecialCase(!SpecialCase)
-   setSpecialLawyers(false)
-   setOurFirm2(false)
-   setOurFirm(false)
-  }
- }
- function SpecialLawyersClicked() {
-  if (SpecialLawyers) {
-  } else {
-   setSpecialCase(false)
-   setSpecialLawyers(!SpecialLawyers)
-   setOurFirm2(false)
-   setOurFirm(false)
-  }
- }
- function OurFirm2Clicked() {
-  setOurFirm2(!OurFirm2)
-  setOurFirm(false)
-  setSpecialCase(false)
-  setSpecialLawyers(false)
- }
-
- return (
-  <HomePageContainer>
-   <motion.div
-    className="SideIcons"
-    initial={{ opacity: 0, y: 100 }}
-    animate={
-     scrollCheck
-      ? {
-         opacity: 1,
-         y: 0,
-         transition: { type: 'spring' },
-        }
-      : {}
+    function OurFirmClicked() {
+        setOurFirm(!OurFirm);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
+        setOurFirm2(false);
     }
-   >
-    <div className="IconHolder">
-     <HomeRoundedIcon className="Icon" />
-    </div>
-    <div className="IconHolder">
-     <PhoneEnabledIcon className="Icon" />
-    </div>
-    <div className="IconHolder">
-     <SupportAgentIcon className="Icon" />
-    </div>
-   </motion.div>
-   <>{card}</>
-   <Main1>
-    <img
-     src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-     className="ImageBack"
-    />
-    <div className="opacitylayer"></div>
-    <div className="mainbox1">
-     <div className="mainbox-left">
-      <p className="header-2">Personal Injury Lawyers</p>
-      <div className="ButtonHolder">
-       <div className="button-group">
-        <Button variant="contained" className="Button" onClick={openChat}>
-         live chat
-        </Button>
-        <Button onClick={handleMapClick} variant="contained" className="Button">
-         {' '}
-         Directions
-        </Button>
-        <Button variant="contained" className="Button" onClick={handleShow}>
-         Get In Touch
-        </Button>
-       </div>
-      </div>
-     </div>
+    function SpecialCaseClicked() {
+        if (SpecialCase) {
+        } else {
+            setSpecialCase(!SpecialCase)
+            setSpecialLawyers(false)
+            setOurFirm2(false)
+            setOurFirm(false)
+        }
+    }
+    function SpecialLawyersClicked() {
+        if (SpecialLawyers) {
+        } else {
+            setSpecialCase(false)
+            setSpecialLawyers(!SpecialLawyers)
+            setOurFirm2(false)
+            setOurFirm(false)
+        }
+    }
+    function OurFirm2Clicked() {
+        setOurFirm2(!OurFirm2);
+        setOurFirm(false);
+        setSpecialCase(false);
+        setSpecialLawyers(false);
+    }
 
-     <div className="textContentHolder">
-      <p className="textContent">
-       "Our team of dedicated personal injury lawyers specializes in a broad
-       spectrum of cases, including car accidents, motorcycle accidents,
-       pedestrian accidents, bicycle accidents, slip and falls, medical
-       malpractice, product liability, workplace accidents, construction
-       accidents, dog bites, assault or battery, wrongful death, public
-       transportation accidents, aviation accidents, boating accidents,
-       defamation, toxic exposure, nursing home abuse, and recreational
-       accidents. We are unwavering in our pursuit of fair compensation for our
-       clients, ensuring they receive the restitution they deserve for their
-       injuries."
-      </p>
-     </div>
-    </div>
-   </Main1>
-   <Pop />
+    return (
+        <HomePageContainer>
+            <motion.div
+                className="SideIcons"
+                initial={{ opacity: 0, y: 100 }}
+                animate={
+                    scrollCheck
+                        ? {
+                              opacity: 1,
+                              y: 0,
+                              transition: { type: 'spring' },
+                          }
+                        : {}
+                }
+            >
+                <div className="IconHolder">
+                    <HomeRoundedIcon className="Icon" />
+                </div>
+                <div className="IconHolder">
+                    <PhoneEnabledIcon className="Icon" />
+                </div>
+                <div className="IconHolder">
+                    <SupportAgentIcon className="Icon" />
+                </div>
+            </motion.div>
+            <>{card}</>
+            <Main1>
+                <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" className='ImageBack'/>
+               <div className='opacitylayer'></div>
+                <div className="mainbox1">
+                    <div className="mainbox-left">
+                        <p className="header-2">Personal Injury Lawyers</p>
+                        <div className="ButtonHolder">
+                            <div className="button-group">
+                                <Button
+                                    variant="contained"
+                                    className="Button"
+                                    onClick={openChat}
+                                >
+                                    live chat
+                                </Button>
+                                <Button
+                                    onClick={handleMapClick}
+                                    variant="contained"
+                                    className="Button"
+                                >
+                                    {' '}
+                                    Directions
+                                </Button>
+                                <Button
+                                    variant="contained"
+                                    className="Button"
+                                    onClick={handleShow}
+                                >
+                                    Get In Touch
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
 
-   {/* <VideoBackground autoPlay muted loop>
+                    <div className="textContentHolder">
+                        <p className="textContent">
+                            "Our team of dedicated personal injury lawyers specializes in a broad spectrum of cases, including car accidents, motorcycle accidents, pedestrian accidents, bicycle accidents, slip and falls, medical malpractice, product liability, workplace accidents, construction accidents, dog bites, assault or battery, wrongful death, public transportation accidents, aviation accidents, boating accidents, defamation, toxic exposure, nursing home abuse, and recreational accidents. We are unwavering in our pursuit of fair compensation for our clients, ensuring they receive the restitution they deserve for their injuries."
+                        </p>
+                    </div>
+                </div>
+            </Main1>
+            <Pop />
+
+            {/* <VideoBackground autoPlay muted loop>
                 <source
                     src="https://res.cloudinary.com/elpawl-llc/video/upload/v1679873411/pexels-kelly-lacy-6606214_1_gcflle.mp4"
                     type="video/mp4"
@@ -324,7 +323,7 @@ const HomePage = () => {
                 Your browser does not support the video tag.
             </VideoBackground> */}
 
-   {/* <Main>
+            {/* <Main>
                 <Wrapper>
                     <div className="container page ">
                         <div className="info">
@@ -389,7 +388,7 @@ const HomePage = () => {
                     </InternalTag2>
                 </Container1>
             </Main> */}
-   {/*
+            {/*
             <Main>
                 <Container2>
       <Swiper
@@ -425,186 +424,246 @@ const HomePage = () => {
                 </div>
             </Main> */}
 
-   <SwiperHolder>
-    <div className="MobileNavigationButtons">
-     <div className="UpperButtonHolder">
-      <Button
-       variant="outlined"
-       onClick={OurFirmClicked}
-       className={OurFirm ? 'MobileButtonActive' : 'MobileButton'}
-      >
-       Our Firm
-      </Button>
-      <Button
-       variant="outlined"
-       onClick={SpecialLawyersClicked}
-       className={SpecialLawyers ? 'MobileButtonActive' : 'MobileButton'}
-      >
-       Specilized Lawyers
-      </Button>
-     </div>
-     {/*  */}
-     <div className="LowerButtonHolder">
-      <Button
-       variant="outlined"
-       onClick={SpecialCaseClicked}
-       className={SpecialCase ? 'MobileButtonActive' : 'MobileButton'}
-      >
-       Specilized Case
-      </Button>
-      <Button
-       variant="outlined"
-       className={OurFirm2 ? 'MobileButtonActive' : 'MobileButton'}
-       onClick={OurFirm2Clicked}
-      >
-       Our Lawyers
-      </Button>
-     </div>
+            <SwiperHolder>
+                <div className="MobileNavigationButtons">
+                    <div className="UpperButtonHolder">
+                        <Button
+                            variant="outlined"
+                            onClick={OurFirmClicked}
+                            className={OurFirm ? "MobileButtonActive":"MobileButton"}
+                        >
+                            Our Firm
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            onClick={SpecialLawyersClicked}
+                            className={SpecialLawyers ? "MobileButtonActive":"MobileButton"}
+                        >Specilized Lawyers
+                        </Button>
+                    </div>
+{/*  */}
+                    <div className="LowerButtonHolder">
+                        <Button
+                            variant="outlined"
+                            onClick={SpecialCaseClicked}
+                            className={SpecialCase ? "MobileButtonActive":"MobileButton"}
+                        >
+                            Specilized Case
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            className={OurFirm2 ? "MobileButtonActive":"MobileButton"}
+                            onClick={OurFirm2Clicked}
+                        >
+                            Our Firm
+                        </Button>
+                    </div>
 
-     <div className="TextHolder">
-      <p className="TitleTextSwiper">
-       {OurFirm && 'Our Firm'}
-       {SpecialCase && 'Special Case'}
-       {SpecialLawyers && 'Special Lawyers'}
-       {OurFirm2 && 'Our Firm'}
-      </p>
-     </div>
-    </div>
-    <div className="NavigationHolder2">
-     <div className="NavigationButtons">
-      <IconButton className="NameHolder" onClick={OurFirmClicked}>
-       <img
-        className={OurFirm ? 'IconImage' : 'IconImageClicked'}
-        src={
-         'https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        }
-       />
+                    <div className="TextHolder">
+                        <p className="TitleTextSwiper">
+                            {OurFirm && 'Our Firm'}
+                            {SpecialCase && 'Special Case'}
+                            {SpecialLawyers && 'Special Lawyers'}
+                            {OurFirm2 && 'Our Firm'}
+                        </p>
+                    </div>
+                </div>
+                <div className="NavigationHolder2">
+                    <div className="NavigationButtons">
+                        <IconButton
+                            className="NameHolder"
+                            onClick={OurFirmClicked}
+                        >
+                            <img
+                                className={
+                                    OurFirm ? 'IconImage' : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                }
+                            />
 
-       <p className={OurFirm ? 'Name' : 'NameActive'}>Our Firm</p>
-      </IconButton>
+                            <p className={OurFirm ? 'Name' : 'NameActive'}>
+                                Our Firm
+                            </p>
+                        </IconButton>
 
-      <IconButton className="NameHolder" onClick={SpecialCaseClicked}>
-       <img
-        className={SpecialCase ? 'IconImage' : 'IconImageClicked'}
-        src={
-         'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        }
-       />
-       <p className={SpecialCase ? 'Name' : 'NameActive'}>Specialized Cases</p>
-      </IconButton>
+                        <IconButton
+                            className="NameHolder"
+                            onClick={SpecialCaseClicked}
+                        >
+                            <img
+                                className={
+                                    SpecialCase
+                                        ? 'IconImage'
+                                        : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                }
+                            />
+                            <p className={SpecialCase ? 'Name' : 'NameActive'}>
+                                Specialized Cases
+                            </p>
+                        </IconButton>
 
-      <IconButton className="NameHolder" onClick={SpecialLawyersClicked}>
-       <img
-        className={SpecialLawyers ? 'IconImage' : 'IconImageClicked'}
-        src={
-         'https://images.pexels.com/photos/7841450/pexels-photo-7841450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        }
-       />
+                        <IconButton
+                            className="NameHolder"
+                            onClick={SpecialLawyersClicked}
+                        >
+                            <img
+                                className={
+                                    SpecialLawyers
+                                        ? 'IconImage'
+                                        : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://images.pexels.com/photos/7841450/pexels-photo-7841450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                }
+                            />
 
-       <p className={SpecialLawyers ? 'Name' : 'NameActive'}>
-        Specialized Lawyers
-       </p>
-      </IconButton>
+                            <p
+                                className={
+                                    SpecialLawyers ? 'Name' : 'NameActive'
+                                }
+                            >
+                                Specialized Lawyers
+                            </p>
+                        </IconButton>
 
-      <IconButton className="NameHolder" onClick={OurFirm2Clicked}>
-       <motion.img
-        className={OurFirm2 ? 'IconImage' : 'IconImageClicked'}
-        src={
-         'https://images.pexels.com/photos/3751006/pexels-photo-3751006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        }
-       />
+                        <IconButton
+                            className="NameHolder"
+                            onClick={OurFirm2Clicked}
+                        >
+                            <motion.img
+                                className={
+                                    OurFirm2 ? 'IconImage' : 'IconImageClicked'
+                                }
+                                src={
+                                    'https://images.pexels.com/photos/3751006/pexels-photo-3751006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                                }
+                            />
 
-       <p className={OurFirm2 ? 'Name' : 'NameActive'}>Our Lawyers</p>
-      </IconButton>
-     </div>
-    </div>
+                            <p className={OurFirm2 ? 'Name' : 'NameActive'}>
+                                Our Firm
+                            </p>
+                        </IconButton>
+                    </div>
+                </div>
 
-    {(SpecialCase || OurFirm || OurFirm2) && (
-     <Swiper
-      spaceBetween={30}
-      centeredSlides={true}
-      autoplay={{
-       delay: 2500,
-       disableOnInteraction: false,
-      }}
-      // navigation={true}
-      modules={[Autoplay, Pagination]}
-      className="mySwiper"
-     >
-      {carouselContent2.map((item, index) => (
-       <>
-        <SwiperSlide key={index} className="SwiperSlide">
-         <div className="textHolder">
-          <img className="ImageSwiper2" src={item.image} alt="img" />
-          <div className="TitleImageHolder">
-           <p className="TitleText">{item.title}</p>
-           <img className="ImageSwiper" src={item.image} alt="img" />
-          </div>
+                {(SpecialCase || OurFirm || OurFirm2) && (
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        // navigation={true}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        {carouselContent2.map((item, index) => (
+                            <>
+                                <SwiperSlide
+                                    key={index}
+                                    className="SwiperSlide"
+                                >
+                                    <div className="textHolder">
+                                    <img
+                                                className="ImageSwiper2"
+                                                src={item.image}
+                                                alt="img"
+                                            />
+                                        <div className="TitleImageHolder">
+                                            <p className="TitleText">
+                                                {item.title}
+                                            </p>
+                                            <img
+                                                className="ImageSwiper"
+                                                src={item.image}
+                                                alt="img"
+                                            />
+                                        </div>
 
-          <p className="DiscriptionText">{item.description}</p>
-         </div>
-        </SwiperSlide>
-       </>
-      ))}
-     </Swiper>
-    )}
-    {SpecialLawyers && (
-     <Swiper
-      spaceBetween={30}
-      centeredSlides={true}
-      autoplay={{
-       delay: 2500,
-       disableOnInteraction: false,
-      }}
-      // navigation={true}
-      modules={[Autoplay, Pagination]}
-      className="mySwiper"
-     >
-      {carouselContent1.map((item, index) => (
-       <>
-        <SwiperSlide key={index} className="SwiperSlide">
-         <div className="textHolder">
-          <div className="TitleImageHolder">
-           <p className="TitleText">{item.title}</p>
-           <img className="ImageSwiper" src={item.image} alt="img" />
-          </div>
+                                        <p className="DiscriptionText">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            </>
+                        ))}
+                    </Swiper>
+                )}
+                {SpecialLawyers && (
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        // navigation={true}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        {carouselContent1.map((item, index) => (
+                            <>
+                                <SwiperSlide
+                                    key={index}
+                                    className="SwiperSlide"
+                                >
+                                    <div className="textHolder">
+                                        <div className="TitleImageHolder">
+                                            <p className="TitleText">
+                                                {item.title}
+                                            </p>
+                                            <img
+                                                className="ImageSwiper"
+                                                src={item.image}
+                                                alt="img"
+                                            />
+                                        </div>
 
-          <p className="DiscriptionText">{item.description}</p>
-         </div>
-        </SwiperSlide>
-       </>
-      ))}
-     </Swiper>
-    )}
-   </SwiperHolder>
+                                        <p className="DiscriptionText">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            </>
+                        ))}
+                    </Swiper>
+                )}
+            </SwiperHolder>
 
-   <Testimonials>
-    <div className="Holder">
-     <p className="client">Client Testimonials</p>
-     <div className="HolderInner">
-      <Link to="https://www.facebook.com/lessinlawphiladelphia">
-       {' '}
-       <Button
-        variant="contained"
-        className="btn btn-hero"
-        style={{ marginLeft: '1rem' }}
-       >
-        {' '}
-        <FacebookIcon />
-       </Button>
-      </Link>
+            <Testimonials>
+                <div className="Holder">
+                    <p className="client">Client Testimonials</p>
+                    <div className="HolderInner">
+                        <Link to="https://www.facebook.com/lessinlawphiladelphia">
+                            {' '}
+                            <Button
+                                variant="contained"
+                                className="btn btn-hero"
+                                style={{ marginLeft: '1rem' }}
+                            >
+                                {' '}
+                                <FacebookIcon />
+                            </Button>
+                        </Link>
 
-      <div className="reviewText" onClick={openURL}>
-       {' '}
-       Click here to leave us a review!{' '}
-      </div>
-     </div>
-    </div>
+                        <div className="reviewText" onClick={openURL}>
+                            {' '}
+                            Click here to leave us a review!{' '}
+                        </div>
+                    </div>
+                </div>
 
-    <Reviews />
-   </Testimonials>
-   <Footer />
-  </HomePageContainer>
- )
+                <Reviews />
+
+            </Testimonials>
+            <Footer />
+        </HomePageContainer>
+    )
 }
 export default HomePage
