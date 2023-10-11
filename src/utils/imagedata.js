@@ -17,7 +17,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684779361/oil-refinery_u7fdhd.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983344/lessinlaw/burninjuries_ebtvo0.jpg',
   title: 'Burn Injury Attorneys',
   description: `
             From electrical mishaps in Philadelphia homes to chemical incidents in local industries, burn injuries can be severe. Let our experienced attorneys guide you through the recovery process.
@@ -25,7 +25,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684779451/medical-malpractice-joseph-joy_nxxwud.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983344/lessinlaw/busaccidents_yxvjwz.jpg',
   title: 'Bus Accident',
   description: `
            Navigating the busy streets of Philadelphia, SEPTA bus accidents can happen. If you're a victim, trust our legal expertise to assist in your compensation claim.
@@ -33,7 +33,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1685030944/wrongfuldeath_nixdsb.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983344/lessinlaw/caraccidents_qyzqml.jpg',
   title: 'Car Accidents',
   description: `
            From gridlocks on I-95 to unexpected crashes in Center City, Philadelphia car accidents are traumatic. Our team is well-versed in assisting victims in their path to recovery.
@@ -41,7 +41,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684780210/DALL_E_2023-05-22_14.29.42_-_Baby_wearing_a_cast_obh1zl.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983456/lessinlaw/policebrutality_r2imgr.webp',
   title: 'Civil Rights / Police Brutality',
   description: `
             Stand up against injustices experienced in Philadelphia's neighborhoods. Whether it's a case of excessive force in North Philly or unlawful detention downtown, our attorneys will champion your rights.
@@ -57,7 +57,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684780384/DALL_E_2023-05-22_14.32.51_-_A_Truck_Accident_vojop2.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983345/lessinlaw/construction_jijqhs.jpg',
   title: 'Construction Accident & Injury',
   description: `
             From lively events at Penn's Landing to concerts at the Mann Center, crowd-related injuries in Philadelphia require adept legal guidance. We're here to help.
@@ -65,7 +65,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684782468/Gas_Station_2_fw2fco.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983353/lessinlaw/crowdrelated_sbbmjt.jpg',
   title: 'Crowd Related Injuries',
   description: `
             If you've been injured on someone else's property, our dedicated personal injury attorneys will assist you in navigating premises liability laws, advocating for fair compensation for your injuries and related damages.
@@ -73,7 +73,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781088/Elder_Abuse_iwsuth.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983352/lessinlaw/insuranceandbadfaith_u0kh4h.jpg',
   title: 'Insurance & Bad Faith Claims',
   description: `
            Confronting insurance companies after an accident in Philadelphia can be daunting. Our attorneys ensure you're not shortchanged and that your claims are honored.
@@ -81,7 +81,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781184/Amazon_Truck_Accident_fh5zaa.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983352/lessinlaw/legalmalpractice_r6tlv0.jpg',
   title: 'Legal Malpractice',
   description: `
            If a Philadelphia attorney has failed in their duty, leading to your detriment, our experienced team can provide the legal recourse you need.
@@ -89,7 +89,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781329/Stroke_Malpractice_wcgzua.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983353/lessinlaw/medicalmalpractice_xr5moi.jpg',
   title: 'Medical Malpractice',
   description: `
            Whether it's a misdiagnosis at a Philadelphia medical center or surgical errors at a local hospital, we're dedicated to holding medical professionals accountable.
@@ -97,7 +97,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684783782/Child_Abuse_d9d9qo.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983344/lessinlaw/caraccidents_qyzqml.jpg',
   title: 'Motor Vehicle Accidents',
   description: `
             Navigating Philadelphia's diverse roads from Broad Street to the narrow alleys of Society Hill can lead to accidents. We're here to provide expert legal assistance.
@@ -105,7 +105,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781500/Motorcycle_assault_xaanzd.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983353/lessinlaw/motorcycle_nceazy.jpg',
   title: 'Motorcycle Accident',
   description: `
             If you've been injured in a motorcycle accident, our skilled personal injury attorneys will fight to protect your rights and secure fair compensation for your injuries, medical expenses, and other damages.
@@ -113,7 +113,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781576/Brain_Injury_b6wtu4.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983457/lessinlaw/productliability_fb1qu9.jpg',
   title: 'Product Liability',
   description: `
            Purchased a defective product from a Philadelphia store? We ensure manufacturers and distributors are held accountable for their oversights.
@@ -121,7 +121,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983457/lessinlaw/publictransportation_epnwme.jpg',
   title: 'Public Transportation Injuries',
   description: `
            Whether it's an injury on a SEPTA train, trolley, or subway in Philadelphia, our expert attorneys are equipped to handle your compensation claim.
@@ -129,7 +129,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983453/lessinlaw/slipandfall_kpradd.jpg',
   title: 'Slip and Fall Accident',
   description: `
           From icy sidewalks in Rittenhouse Square to a wet floor in a Philadelphia mall, slip and fall accidents require adept legal attention.
@@ -137,7 +137,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983453/lessinlaw/truckaccidents_lwikqx.jpg',
   title: 'Trucking Accidents',
   description: `
          The bustling ports and highways of Philadelphia see frequent truck traffic, leading to potential accidents. We're here to assist victims in their legal journey.
@@ -153,7 +153,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983454/lessinlaw/victimsofcrimes_zmtuws.jpg',
   title: 'Victims of Crimes',
   description: `
        From incidents in Philadelphia's nightspots to muggings in alleyways, we stand by victims of crimes, ensuring their rights and seeking just compensation.
@@ -161,7 +161,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983454/lessinlaw/workplaceaccidents_lyfu5u.jpg',
   title: 'Workplace Accidents',
   description: `
       Whether it's an injury in a Philadelphia office or an industrial mishap in the Navy Yard, trust our team to guide you through your workplace accident claim.
@@ -169,7 +169,7 @@ export const carouselContent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684781648/Drowning_kawoil.png',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983455/lessinlaw/wrongfuldeaths_rp1r4g.jpg',
   title: 'Wrongful Deaths',
   description: `
      The tragic loss of a loved one due to negligence in Philadelphia requires compassionate and competent legal guidance. We're here to support families in their pursuit of justice.
@@ -180,7 +180,7 @@ export const carouselContent1 = [
 export const carouselContent2 = [
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684786616/Someone_Falling_off_their_bike_fzbjaw.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983456/lessinlaw/pedestrianaccidents_gcskq0.jpg',
   title: 'Pedestrian Accidents',
   description: `
             Our dedicated personal injury attorneys have a proven track record in handling pedestrian accident cases, fighting for the rights of injured pedestrians and holding negligent drivers accountable for their actions.
@@ -188,7 +188,7 @@ export const carouselContent2 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684782806/Bus_Accidents_equmzr.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983344/lessinlaw/busaccidents_yxvjwz.jpg',
   title: 'Bus Accident',
   description: `
             If you've been involved in a bus accident, our skilled personal injury lawyers will protect your rights and pursue a claim against the responsible party, ensuring you receive fair compensation for your injuries and damages.
@@ -253,7 +253,7 @@ export const carouselContent2 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684785004/Uber_and_Lift_Car_Crashes_vusr3z.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983453/lessinlaw/uberlyft_ta8sak.jpg',
   title: 'Uber and Lyft Car Accidents',
   description: `
             If you've been injured in an accident involving an Uber or Lyft vehicle, our skilled personal injury attorneys will navigate the complexities of rideshare laws to ensure you receive fair compensation for your injuries and losses.
@@ -261,7 +261,7 @@ export const carouselContent2 = [
  },
  {
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684785116/Young-Workers-and-Safety_imbely.jpg',
+   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983454/lessinlaw/workplaceaccidents_lyfu5u.jpg',
   title: 'Workplace Injury',
   description: `
             If you've suffered a workplace injury, our dedicated personal injury lawyers will help you understand your rights and pursue a workers' compensation claim or personal injury lawsuit, seeking fair compensation for your injuries and damages.
