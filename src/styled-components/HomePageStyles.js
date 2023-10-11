@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HomePageContainer = styled.div`
-
+ width: 50%;
 
 .scroll-container::-webkit-scrollbar-track {
     background-color: #f0f0f0;

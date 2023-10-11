@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { useModalContext } from '../context/modal_context'
 import { FaWindowClose } from 'react-icons/fa'
-import RainbowChat from '../components/Rainbowchat.js'
-import Button from '@mui/material/Button'
-import Stack from '@mui/material/Stack'
-import HomeIcon from '@mui/icons-material/Home'
-import { motion, AnimatePresence } from 'framer-motion'
-import MessageIcon from '@mui/icons-material/Message'
-import { IconButton } from '@mui/material'
+import RainbowChat from '../components/Rainbowchat.js';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import HomeIcon from '@mui/icons-material/Home';
+import { motion, AnimatePresence } from "framer-motion";
+import MessageIcon from '@mui/icons-material/Message';
+import { IconButton } from '@mui/material';
 import Logo from '../assets/Lessin Law.png'
 
 const Wrapper = styled.div`
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -24,73 +24,76 @@ const Wrapper = styled.div`
     z-index: 9999;
     background-color: #FBFAF9;
 
-  .buttons-holder {
-    width: 100%;
-    height: 20px;
-    margin-bottom: 170px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    @media (max-width: 767px) {
-      display: grid;
+
+    .buttons-holder{
+        width: 100%;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media (max-width: 767px) {
+            display: grid;
+        }
     }
-  }
 
-  .btn {
-    text-transform: uppercase;
-    background: #003366;
-    color: var(--clr-primary-10);
-    padding: 0.375rem 0.75rem;
-    letter-spacing: var(--spacing);
-    display: flex;
-    font-weight: 400;
-    transition: var(--transition);
-    font-size: 0.875rem;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: var(--radius);
-    border-color: transparent;
-    width: 200px;
-    height: 50px;
-    margin-left: 20px;
-    @media (max-width: 767px) {
-      margin-left: 0px;
-      margin-top: 20px;
+    .btn {
+        text-transform: uppercase;
+        background: #003366;
+        color: var(--clr-primary-10);
+        padding: 0.375rem 0.75rem;
+        letter-spacing: var(--spacing);
+        display: flex;
+        font-weight: 400;
+        transition: var(--transition);
+        font-size: 0.875rem;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius);
+        border-color: transparent;
+        width: 200px;
+        height: 50px;
+        margin-left: 20px;
+        @media (max-width: 767px) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
     }
-  }
 
-  .btn:hover {
-    color: var(--clr-primary-1);
-    background: var(--clr-primary-7);
-  }
-
-  .title {
-    width: 100%;
-    padding: 2rem;
-    font-size: 10rem;
-    font-family: 'Lobster';
-    margin-bottom: 20px;
-    transition: color 0.3s 'ease-in-out';
-    @media (max-width: 767px) {
-      font-size: 4rem;
+    .btn:hover {
+        color: var(--clr-primary-1);
+        background: var(--clr-primary-7);
     }
-  }
 
-  .liveMsgHolder {
-    position: absolute;
-    bottom: 0;
-    width: 300px;
-    height: 100px;
-    right: 0;
-    display: grid;
-    justify-content: center;
-    place-content: center;
-
-    @media (max-width: 767px) {
-      width: 100px;
+    .title {
+            width: 100%;
+            padding: 2rem;
+            font-size: 10rem;
+            font-family: 'Lobster';
+            margin-bottom: 20px;
+            transition: color 0.3s 'ease-in-out';
+            @media (max-width: 767px) {
+                font-size: 4rem;
+            }
     }
-  }
+
+
+
+    .liveMsgHolder{
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        height: 100px;
+        right: 0;
+        display:grid;
+        justify-content: center;
+        place-content: center;
+
+        @media (max-width: 767px) {
+            width: 100px;
+        }
+        
+    }
 
     .btn-live-msg {
         text-transform: uppercase;
@@ -109,26 +112,28 @@ const Wrapper = styled.div`
         width: 200px;
         height: 50px;
         margin-left: 20px;
-        @media (max-width: 767px) {
-            display: none
-        }
-
+        
         &:hover {
             color: var(--clr-primary-1);
             background: var(--clr-primary-7);
         }
+
+        @media (max-width: 767px) {
+            display: none
+        }
+
     }
 
-  .btn-live-msg-mobile {
-    display: none;
-    @media (max-width: 767px) {
-      display: unset;
+    .btn-live-msg-mobile {
+        display: none;
+        @media (max-width: 767px) {
+            display: unset;
+        }
     }
-  }
 
-  .btn-live-msg:hover .LiveChatButtonIcon {
-    color: white;
-  }
+    .btn-live-msg:hover .LiveChatButtonIcon {
+        color: white;
+    }
 
     .LiveChatButtonIcon{
         width: 70px;
@@ -149,37 +154,35 @@ const Wrapper = styled.div`
     }
 
 
-    @media (max-width: 767px) {
+    .header{
+        font-family: 'Pontif LP', sans-serif;
     }
 
-  .header {
-    font-family: 'Pontif LP', sans-serif;
-  }
 
-  .header-2 {
-    font-family: 'Pontif LP', sans-serif;
-    color: #76d7ea;
-    font-weight: lighter;
-  }
-
-  .popup-card {
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 550px;
-    //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translateY(0px);
-    animation: float 6s ease-in-out infinite;
-    img {
-      width: 110%;
-
-      height: auto;
+    .header-2{
+        font-family: 'Pontif LP', sans-serif;
+        color: #76D7EA;
+        font-weight: lighter;
     }
 
-    @media (max-width: 767px) {
-      border: none;
+    .popup-card {
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 550px;
+        //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translateY(0px);
+        animation: float 6s ease-in-out infinite;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            border: none;
+        }
+        
     }
-  }
 
     @keyframes float {
         0% {
@@ -187,69 +190,21 @@ const Wrapper = styled.div`
             transform: translateY(0px);
         }
         50% {
-            //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
             transform: translateY(-20px);
         }
         100% {
-            //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
             transform: translateY(0px);
         }
     }
+
+
+    
+
+    @media (min-width: 767px) {
+    }
 `
 
-const Button1 = styled.button`
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-
-    @media (max-width: 767px) {
-        font-size: 17px;
-    }
-    &:hover {
-        background-color: #b0c4de;
-    }
-
-    &:active {
-        background-color: #4caf50;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-`;
-const Button2 = styled.button`
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-
-    &:hover {
-        background-color: #b0c4de;
-    }
-
-    &:active {
-        background-color: #4caf50;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-    @media (max-width: 767px) {
-        font-size: 17px;
-    }
-`
-const Pop = ({ onClose }) => {
+const Pop = ({ getSomeValue}) => {
 
     const { openChat } = useModalContext()
     const { isChatOpen, closeChat } = useModalContext()
@@ -264,6 +219,12 @@ const Pop = ({ onClose }) => {
             clearInterval(intervalId)
         }
     }, [])
+
+
+    const handleClick = () => {
+        getSomeValue(true);
+      };
+    
 
     const getRandomColor = () => {
         const colors = [
@@ -286,43 +247,44 @@ const Pop = ({ onClose }) => {
             '#11CCFF',
         ]
 
-    const randomIndex = Math.floor(Math.random() * colors.length)
-    return colors[randomIndex]
-  }
+        const randomIndex = Math.floor(Math.random() * colors.length)
+        return colors[randomIndex]
+    }
 
-  return (
-    <Wrapper className="popup-overlay">
-      <div style={{ display: 'grid' }}>
-        <div
-          className={`${
-            isChatOpen ? 'chat-overlay show-chat' : 'chat-overlay'
-          }`}
-        >
-          <div className="modal-container">
-            <button className="close-chat-btn" onClick={closeChat}>
-              <FaWindowClose
-                style={{
-                  position: 'relative',
-                  zIndex: '999990',
-                  top: '0',
-                  right: '0',
-                }}
-              ></FaWindowClose>
-            </button>
-            <RainbowChat />
-          </div>
-        </div>
-        <div className="popup-card">
-          <h1 className="title">
-            <AnimatePresence>
-              <motion.h1
-                className="title"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-              >
-                <img className="main-image" src={Logo} />
-                {/* <motion.span
+    return (
+        <Wrapper className="popup-overlay">
+            <div style={{ display: 'grid' }}>
+                <div
+                    className={`${isChatOpen ? 'chat-overlay show-chat' : 'chat-overlay'
+                        }`}
+                >
+                    <div className="modal-container">
+                        <button className="close-chat-btn" onClick={closeChat}>
+                            <FaWindowClose
+                                style={{
+                                    position: 'relative',
+                                    zIndex: '999990',
+                                    top: '0',
+                                    right: '0',
+                                }}
+                            ></FaWindowClose>
+                        </button>
+                        <RainbowChat />
+                    </div>
+                </div>
+                <div className="popup-card">
+                    <h1
+                        className="title"
+                    >
+                        <AnimatePresence>
+                            <motion.h1
+                                className="title"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                            >
+                                <img className='main-image' src={Logo} />
+                                {/* <motion.span
                                     className='header'
                                 >
                                     Lessin
@@ -345,8 +307,9 @@ const Pop = ({ onClose }) => {
                     >
                         <Button
                             variant="contained"
-                            onClick={onClose}
+                            onClick={handleClick}
                             className="btn btn-hero"
+                            style={{marginBottom: '40%'}}
                         >
                             <div>Home</div><HomeIcon />
                         </Button>
@@ -357,7 +320,6 @@ const Pop = ({ onClose }) => {
             <div className='liveMsgHolder'>
                 <span>
                     {' '}
-
                     <Button className="btn-live-msg" variant="contained" onClick={openChat}>
                         Live Chat
                         <div className='LiveChatButtonIcon'><MessageIcon /></div>
@@ -375,19 +337,19 @@ const Pop = ({ onClose }) => {
     )
 }
 
-const PopupComponent = () => {
-    const [showPopup, setShowPopup] = useState(true)
+// const PopupComponent = () => {
+//     const [showPopup, setShowPopup] = useState(true)
 
-    const handlePopupClose = () => {
-        setShowPopup(false)
-    }
+//     const handlePopupClose = () => {
+//         setShowPopup(false)
+//     }
 
-    return (
-        <div>
-            {showPopup && <Pop onClose={handlePopupClose} />}
-            {/* Rest of your component */}
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             {showPopup && <Pop onClose={handlePopupClose} />}
+//             {/* Rest of your component */}
+//         </div>
+//     )
+// }
 
 export default Pop;
