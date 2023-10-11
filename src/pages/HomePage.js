@@ -5,7 +5,7 @@ import Footer from '../components/Footer.js'
 import Pop from '../components/Pop.js'
 import { IconButton } from '@mui/material'
 import Reviews from '../components/Reviews.js'
-import { carouselContent1 } from '../utils/imagedata.js'
+import { carouselcontent1, carouselContent2 } from '../utils/imagedata.js'
 import { motion } from 'framer-motion'
 import Button from '@mui/material/Button'
 import FacebookIcon from '@mui/icons-material/Facebook'
@@ -71,7 +71,7 @@ const HomePage = () => {
  useEffect(() => {
   const timer = setTimeout(() => {
    setActiveIndex1(
-    activeIndex1 === carouselContent1.length - 1 ? 0 : activeIndex1 + 1
+    activeIndex1 === carouselcontent1.length - 1 ? 0 : activeIndex1 + 1
    )
   }, 8000)
 
@@ -80,7 +80,7 @@ const HomePage = () => {
  useEffect(() => {
   const timer = setTimeout(() => {
    setActiveIndex2(
-    activeIndex2 === carouselContent1.length - 1 ? 0 : activeIndex2 + 1
+    activeIndex2 === carouselcontent1.length - 1 ? 0 : activeIndex2 + 1
    )
   }, 4000)
 
@@ -382,10 +382,10 @@ const HomePage = () => {
                     </div>
                 </Wrapper>
                 <Container1 style={{}}>
-                    <img src={carouselContent1[activeIndex1].image} alt="img" />
-                    <h1>{carouselContent1[activeIndex1].title}</h1>
+                    <img src={carouselcontent1[activeIndex1].image} alt="img" />
+                    <h1>{carouselcontent1[activeIndex1].title}</h1>
                     <InternalTag2 style={internalTagStyle2}>
-                        {carouselContent1[activeIndex1].description}
+                        {carouselcontent1[activeIndex1].description}
                     </InternalTag2>
                 </Container1>
             </Main> */}
@@ -531,7 +531,7 @@ const HomePage = () => {
       modules={[Autoplay, Pagination]}
       className="mySwiper"
      >
-      {carouselContent1.map((item, index) => (
+      {carouselcontent1.map((item, index) => (
        <>
         <SwiperSlide key={index} className="SwiperSlide">
          <div className="textHolder">
@@ -560,7 +560,7 @@ const HomePage = () => {
       modules={[Autoplay, Pagination]}
       className="mySwiper"
      >
-      {carouselContent1.map((item, index) => (
+      {carouselcontent1.map((item, index) => (
        <>
         <SwiperSlide key={index} className="SwiperSlide">
          <div className="textHolder">
