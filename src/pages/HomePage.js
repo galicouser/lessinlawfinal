@@ -313,7 +313,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </Main1>
-            <Pop />
+           {/*<Pop/> */}
 
             {/* <VideoBackground autoPlay muted loop>
                 <source

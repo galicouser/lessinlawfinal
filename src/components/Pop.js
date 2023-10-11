@@ -249,7 +249,7 @@ const Button2 = styled.button`
         font-size: 17px;
     }
 `
-const Popup = ({ onClose }) => {
+const Pop = ({ onClose }) => {
 
     const { openChat } = useModalContext()
     const { isChatOpen, closeChat } = useModalContext()
@@ -384,7 +384,7 @@ const PopupComponent = () => {
 
     return (
         <div>
-            {showPopup && <Popup onClose={handlePopupClose} />}
+            {showPopup && <Pop onClose={handlePopupClose} />}
             {/* Rest of your component */}
         </div>
     )
