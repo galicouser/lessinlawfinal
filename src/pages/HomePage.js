@@ -316,6 +316,115 @@ const HomePage = () => {
    </Main1>
    {/* <Pop /> */}
 
+   {/* <VideoBackground autoPlay muted loop>
+                <source
+                    src="https://res.cloudinary.com/elpawl-llc/video/upload/v1679873411/pexels-kelly-lacy-6606214_1_gcflle.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </VideoBackground> */}
+
+   {/* <Main>
+                <Wrapper>
+                    <div className="container page ">
+                        <div className="info">
+                            <Card />
+
+                            <div
+                                className={`${
+                                    isModalOpen
+                                        ? 'modal-overlay show-modal'
+                                        : 'modal-overlay'
+                                }`}
+                            >
+                                <div className="modal-container">
+                                    <button
+                                        className="close-modal-btn"
+                                        onClick={closeModal}
+                                    >
+                                        <FaWindowClose
+                                            style={{
+                                                position: 'relative',
+                                                zIndex: '1',
+                                                top: '0',
+                                                right: '0',
+                                            }}
+                                        ></FaWindowClose>
+                                    </button>
+                                    Contact
+                                </div>
+                            </div>
+                            <div
+                                className={`${
+                                    isChatOpen
+                                        ? 'chat-overlay show-chat'
+                                        : 'chat-overlay'
+                                }`}
+                            >
+                                <div className="modal-container">
+                                    <button
+                                        className="close-chat-btn"
+                                        onClick={closeChat}
+                                    >
+                                        <FaWindowClose
+                                            style={{
+                                                position: 'relative',
+                                                zIndex: '999990',
+                                                top: '0',
+                                                right: '0',
+                                            }}
+                                        ></FaWindowClose>
+                                    </button>
+                                    <RainbowChat />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Wrapper>
+                <Container1 style={{}}>
+                    <img src={carouselContent1[activeIndex1].image} alt="img" />
+                    <h1>{carouselContent1[activeIndex1].title}</h1>
+                    <InternalTag2 style={internalTagStyle2}>
+                        {carouselContent1[activeIndex1].description}
+                    </InternalTag2>
+                </Container1>
+            </Main> */}
+   {/*
+            <Main>
+                <Container2>
+      <Swiper
+    spaceBetween={30}
+    centeredSlides={true}
+    autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+    }}
+    pagination={{
+        clickable: true,
+    }}
+    // navigation={true}
+    modules={[Autoplay, Pagination, Navigation]}
+    className="mySwiper"
+>
+    {carouselContent2.map((item, index) => (
+        <SwiperSlide  key={index} >
+
+           <img  src={item.image} alt="img" />
+                    <div className="textHolder">
+                        <h1 >{item.title}</h1>
+                        <InternalTag1 style={internalTagStyle1}>
+                            {item.description}
+                        </InternalTag1>
+                    </div>
+        </SwiperSlide>
+    ))}
+</Swiper>
+                </Container2>
+                <div>
+                    <Card2 />
+                </div>
+            </Main> */}
+
    <SwiperHolder>
     <div className="MobileNavigationButtons">
      <div className="UpperButtonHolder">
@@ -326,23 +435,23 @@ const HomePage = () => {
       >
        Our Firm
       </Button> */}
-      {/* <Button
-                            variant="outlined"
-                            onClick={SpecialLawyersClicked}
-                            className={SpecialLawyers ? 'MobileButtonActive' : 'MobileButton'}
-                        >
-                            Specilized Lawyers
-                        </Button> */}
+      <Button
+       variant="outlined"
+       onClick={SpecialLawyersClicked}
+       className={SpecialLawyers ? 'MobileButtonActive' : 'MobileButton'}
+      >
+       Specilized Cases
+      </Button>
      </div>
      {/*  */}
      <div className="LowerButtonHolder">
-      <Button
+      {/* <Button
        variant="outlined"
        onClick={SpecialCaseClicked}
        className={SpecialCase ? 'MobileButtonActive' : 'MobileButton'}
       >
        Specilized Case
-      </Button>
+      </Button> */}
       {/* <Button
        variant="outlined"
        className={OurFirm2 ? 'MobileButtonActive' : 'MobileButton'}
@@ -356,14 +465,14 @@ const HomePage = () => {
       <p className="TitleTextSwiper">
        {OurFirm && 'Our Firm'}
        {SpecialCase && 'Special Case'}
-       {SpecialLawyers && 'Special Lawyers'}
+       {SpecialLawyers && 'Specialized Cases'}
        {OurFirm2 && 'Our Firm'}
       </p>
      </div>
     </div>
     <div className="NavigationHolder2">
      <div className="NavigationButtons">
-      {/* <IconButton className="NameHolder" onClick={OurFirmClicked}>
+      <IconButton className="NameHolder" onClick={OurFirmClicked}>
        <img
         className={OurFirm ? 'IconImage' : 'IconImageClicked'}
         src={
@@ -372,17 +481,17 @@ const HomePage = () => {
        />
 
        <p className={OurFirm ? 'Name' : 'NameActive'}>Our Firm</p>
-      </IconButton> */}
-      {/*
-                        <IconButton className="NameHolder" onClick={SpecialCaseClicked}>
-                            <img
-                                className={SpecialCase ? 'IconImage' : 'IconImageClicked'}
-                                src={
-                                    'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-                                }
-                            />
-                            <p className={SpecialCase ? 'Name' : 'NameActive'}>Specialized Cases</p>
-                        </IconButton> */}
+      </IconButton>
+
+      <IconButton className="NameHolder" onClick={SpecialCaseClicked}>
+       <img
+        className={SpecialCase ? 'IconImage' : 'IconImageClicked'}
+        src={
+         'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        }
+       />
+       <p className={SpecialCase ? 'Name' : 'NameActive'}>Specialized Cases</p>
+      </IconButton>
 
       <IconButton className="NameHolder" onClick={SpecialLawyersClicked}>
        <img
@@ -393,10 +502,10 @@ const HomePage = () => {
        />
 
        <p className={SpecialLawyers ? 'Name' : 'NameActive'}>
-        Specialized Cases
+        Specialized Lawyers
        </p>
       </IconButton>
-      {/*
+
       <IconButton className="NameHolder" onClick={OurFirm2Clicked}>
        <motion.img
         className={OurFirm2 ? 'IconImage' : 'IconImageClicked'}
@@ -406,11 +515,11 @@ const HomePage = () => {
        />
 
        <p className={OurFirm2 ? 'Name' : 'NameActive'}>Our Lawyers</p>
-      </IconButton> */}
+      </IconButton>
      </div>
     </div>
 
-    {SpecialCase && (
+    {(SpecialCase || OurFirm || OurFirm2) && (
      <Swiper
       spaceBetween={30}
       centeredSlides={true}
@@ -439,37 +548,61 @@ const HomePage = () => {
       ))}
      </Swiper>
     )}
-    {/* {SpecialLawyers && (
-                    <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        // navigation={true}
-                        modules={[Autoplay, Pagination]}
-                        className="mySwiper"
-                    >
-                        {carouselContent1.map((item, index) => (
-                            <>
-                                <SwiperSlide key={index} className="SwiperSlide">
-                                    <div className="textHolder">
-                                        <img className="ImageSwiper2" src={item.image} alt="img" />
-                                        <div className="TitleImageHolder">
-                                            <p className="TitleText">{item.title}</p>
-                                            <img className="ImageSwiper" src={item.image} alt="img" />
-                                        </div>
+    {SpecialLawyers && (
+     <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+       delay: 2500,
+       disableOnInteraction: false,
+      }}
+      // navigation={true}
+      modules={[Autoplay, Pagination]}
+      className="mySwiper"
+     >
+      {carouselContent1.map((item, index) => (
+       <>
+        <SwiperSlide key={index} className="SwiperSlide">
+         <div className="textHolder">
+          <div className="TitleImageHolder">
+           <p className="TitleText">{item.title}</p>
+           <img className="ImageSwiper" src={item.image} alt="img" />
+          </div>
 
-                                        <p className="DiscriptionText">{item.description}</p>
-                                    </div>
-                                </SwiperSlide>
-                            </>
-                        ))}
-                    </Swiper>
-                )} */}
+          <p className="DiscriptionText">{item.description}</p>
+         </div>
+        </SwiperSlide>
+       </>
+      ))}
+     </Swiper>
+    )}
    </SwiperHolder>
 
+   {/* <Testimonials>
+    <div className="Holder">
+     <p className="client">Client Testimonials</p>
+     <div className="HolderInner">
+      <Link to="https://www.facebook.com/lessinlawphiladelphia">
+       {' '}
+       <Button
+        variant="contained"
+        className="btn btn-hero"
+        style={{ marginLeft: '1rem' }}
+       >
+        {' '}
+        <FacebookIcon />
+       </Button>
+      </Link>
+
+      <div className="reviewText" onClick={openURL}>
+       {' '}
+       Click here to leave us a review!{' '}
+      </div>
+     </div>
+    </div>
+
+    <Reviews />
+   </Testimonials> */}
    <Footer />
   </HomePageContainer>
  )
