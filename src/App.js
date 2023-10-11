@@ -15,29 +15,37 @@ import BicycleAccident from './pages/BicycleAccidents';
 import MotorcycleAccidents from './pages/MotorCycleAccidents';
 import UberAccidents from './pages/UberAccidents';
 import CarAccidents from './pages/CarAccidents';
+import SeptaInjuries from './pages/SeptaInjuries'
 import AllPratices from './pages/AllPratices';
+
 function App() {
   return (
     <Wrapper>
       <BrowserRouter>
-          <Header />
-          {/* <Navbar /> */}
+        <Header />
+        {/* <Navbar /> */}
 
-          <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
-              <Route path="/SlipandFallAccidents" element={<SlipandFallAccidents />} />
-              <Route path="/BusAccidents" element={<BusAccidents />} />
-              <Route path="/WrongfullDeath" element={<WrongfullDeath />} />
-              <Route path="/BicycleAccident" element={<BicycleAccident />} />
-              <Route path="/MotorcycleAccidents" element={<MotorcycleAccidents />} />
-              <Route path="/UberAccidents" element={<UberAccidents />} />
-              <Route path="/CarAccidents" element={<CarAccidents />} />
-              <Route path="/AllPratices" element={<AllPratices />} />
-
-          </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
+          <Route
+            path="/SlipandFallAccidents"
+            element={<SlipandFallAccidents />}
+          />
+          <Route path="/BusAccidents" element={<BusAccidents />} />
+          <Route path="/WrongfullDeath" element={<WrongfullDeath />} />
+          <Route path="/BicycleAccident" element={<BicycleAccident />} />
+          <Route
+            path="/MotorcycleAccidents"
+            element={<MotorcycleAccidents />}
+          />
+          <Route path="/UberAccidents" element={<UberAccidents />} />
+          <Route path="/CarAccidents" element={<CarAccidents />} />
+          <Route path="/SeptaInjuries" element={<SeptaInjuries />} />
+          <Route path="/AllPratices" element={<AllPratices />} />
+        </Routes>
       </BrowserRouter>
-      </Wrapper>
+    </Wrapper>
   )
 }
 
