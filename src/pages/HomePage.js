@@ -328,13 +328,13 @@ const HomePage = () => {
       >
        Our Firm
       </Button> */}
-                        <Button
+                        {/* <Button
                             variant="outlined"
                             onClick={SpecialLawyersClicked}
                             className={SpecialLawyers ? 'MobileButtonActive' : 'MobileButton'}
                         >
                             Specilized Lawyers
-                        </Button>
+                        </Button> */}
                     </div>
                     {/*  */}
                     <div className="LowerButtonHolder">
@@ -386,7 +386,7 @@ const HomePage = () => {
                             <p className={SpecialCase ? 'Name' : 'NameActive'}>Specialized Cases</p>
                         </IconButton>
 
-                        <IconButton className="NameHolder" onClick={SpecialLawyersClicked}>
+                        {/* <IconButton className="NameHolder" onClick={SpecialLawyersClicked}>
                             <img
                                 className={SpecialLawyers ? 'IconImage' : 'IconImageClicked'}
                                 src={
@@ -397,7 +397,7 @@ const HomePage = () => {
                             <p className={SpecialLawyers ? 'Name' : 'NameActive'}>
                                 Specialized Lawyers
                             </p>
-                        </IconButton>
+                        </IconButton> */}
                         {/* 
       <IconButton className="NameHolder" onClick={OurFirm2Clicked}>
        <motion.img
@@ -441,7 +441,7 @@ const HomePage = () => {
                         ))}
                     </Swiper>
                 )}
-                {SpecialLawyers && (
+                {/* {SpecialLawyers && (
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
@@ -469,7 +469,7 @@ const HomePage = () => {
                             </>
                         ))}
                     </Swiper>
-                )}
+                )} */}
             </SwiperHolder>
 
 

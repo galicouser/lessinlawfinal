@@ -980,7 +980,7 @@ export const SwiperHolder = styled.div`
         }
         .TitleText{
             font-size:25px;
-            color:white;
+            color:black;
 
         }
         .mySwiper{
@@ -992,7 +992,7 @@ export const SwiperHolder = styled.div`
             font-weight:100;
             height:100%;
             width: 100%;
-            color:white;
+            color:black;
         }
         .TitleImageHolder{
             

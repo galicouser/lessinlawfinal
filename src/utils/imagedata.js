@@ -47,14 +47,14 @@ export const carouselContent1 = [
             Stand up against injustices experienced in Philadelphia's neighborhoods. Whether it's a case of excessive force in North Philly or unlawful detention downtown, our attorneys will champion your rights.
         `,
  },
- {
-  image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1684780305/product-liability_wxngxt.jpg',
-  title: 'Claims Against Servers - Dram Shop Cases',
-  description: `
-           Over-serving at a South Street bar or a club in Fishtown can lead to serious repercussions. We assist in holding establishments accountable for their actions in Philadelphia.
-        `,
- },
+//  {
+//   image:
+//    'https://res.cloudinary.com/elpawl-llc/image/upload/v1684780305/product-liability_wxngxt.jpg',
+//   title: 'Claims Against Servers - Dram Shop Cases',
+//   description: `
+//            Over-serving at a South Street bar or a club in Fishtown can lead to serious repercussions. We assist in holding establishments accountable for their actions in Philadelphia.
+//         `,
+//  },
  {
   image:
    'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983345/lessinlaw/construction_jijqhs.jpg',
