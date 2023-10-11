@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const HomePageContainer = styled.div`
  width: 50%;
+ 
 
 .scroll-container::-webkit-scrollbar-track {
     background-color: #f0f0f0;
@@ -34,7 +35,7 @@ export const HomePageContainer = styled.div`
 }
     display: flex;
     flex-direction:column;
-    width: 100%; 
+    width: 100%;
 
     @media (max-width: 768px) {
         .Icon{
@@ -144,7 +145,7 @@ export const Container1 = styled.div`
     margin-bottom: 8rem;
     font-size: 0.7rem;
     width: 80vh;
-    
+
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -219,7 +220,7 @@ export const Container1 = styled.div`
         /* Styles for large screens */
     }
 `
-export const Container2 = styled.div`   
+export const Container2 = styled.div`
 
 width:100%;
 .mySwiper{
@@ -268,7 +269,7 @@ width:100%;
         padding-right: 2rem;
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 3%;
-        
+
     }
 
     &:hover img{
@@ -282,9 +283,9 @@ width:100%;
         border-radius: 3%;
         position:fixed;
         object-fit: cover;
-        
+
         @media (max-width: 768px) {
-            
+
         }
     }
     @media (max-width: 768px) {
@@ -301,7 +302,7 @@ width:100%;
             border-radius: 3%;
             position: absolute;
             object-fit: cover;
-        }   
+        }
         .textHolder{
             position:absolute;
             z-index: 1;
@@ -310,9 +311,9 @@ width:100%;
             padding-right: 2rem;
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 3%;
-            
+
         }
-        
+
     }
     @media (min-width: 481px) and (max-width: 768px) {
         .Container1 {
@@ -365,7 +366,7 @@ export const Main = styled.div`
     flex: 1;
     height: 100vh;
     width:100%;
-    
+
 
     @media (max-width: 768px) {
     }
@@ -387,7 +388,7 @@ export const Main1 = styled.div`
         object-fit:cover;
         position: absolute;
     }
-   
+
     .mainbox1{
         margin-top:3rem;
         display:flex;
@@ -396,7 +397,7 @@ export const Main1 = styled.div`
         align-content:center;
         height: 100%;
         z-index: 11;
-        
+
     }
     .opacitylayer{
         height: 100%;
@@ -427,7 +428,7 @@ export const Main1 = styled.div`
     //     width:250px;
     //     height:50px;
     //     background-color:#012030;
-        
+
     // }
     .Button{
              width:250px;
@@ -437,7 +438,7 @@ export const Main1 = styled.div`
              color:white;
              font-size:16px;
              box-shadow:none;
-            
+
          }
     .Button:hover{
         background-color:white;
@@ -467,7 +468,7 @@ export const Main1 = styled.div`
     .textContentHolder{
         padding: 5%;
     }
-    
+
     .button-group{
         width:90%;
     }
@@ -482,7 +483,7 @@ export const Main1 = styled.div`
     }
 }
 @media (min-width: 800px) and (max-width: 950px) {
-       
+
     .button-group{
         width:85%;
     }.Button{
@@ -490,9 +491,9 @@ export const Main1 = styled.div`
         height:50px;
         font-size:12px;
         box-shadow:none;
-       
-    } 
-    
+
+    }
+
 }
 
     `
@@ -613,20 +614,20 @@ export const Testimonials = styled.div`
     padding: 2rem;
     margin-top:10%;
     background: rgb(255,255,255,0.3);
-    height: 100%;
+    height: 30%;
     width: 100%;
     position:relative;
-    
+
     .Button{
         height:50px;
         width:175px;
         border:4px solid rgba(4, 41, 64, 1);
         color:#042940;
-        
-        
+
+
     }
     .Button:hover{
-        
+
         border:4px solid rgba(4, 41, 64, 1);
         color:#042940;
     }
@@ -705,7 +706,7 @@ export const Testimonials = styled.div`
         border-color: transparent;
         width: 50px;
         @media (max-width: 767px) {
-          
+
         }
     }
     .btn:hover {
@@ -726,7 +727,7 @@ export const Testimonials = styled.div`
             margin-top: 20px;
             margin-bottom: 20px;
             text-align:center;
-            
+
         }
         .Holder{
             display:grid;
@@ -741,13 +742,13 @@ export const Testimonials = styled.div`
 `
 export const SwiperHolder = styled.div`
     height:100%;
-    
+
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:center;
     position:relative;
-    
+
     .mySwiper{
         width:60%;
         height:100%;
@@ -807,7 +808,7 @@ export const SwiperHolder = styled.div`
         transition: ease 1s;
         color:white;
     }
-    
+
     .NameActive{
         font-size:20px;
         margin-left:10px;
@@ -818,11 +819,11 @@ export const SwiperHolder = styled.div`
     color:white;
     transition: ease 1s;
     }
-    
+
     .NameHolder{
         display: flex;
         flex-direction: row;
-        align-items: center; 
+        align-items: center;
         background-color: rgb(0,0,0,0.40);
         margin-top: 15%;
         border-radius: 70px;
@@ -890,7 +891,7 @@ export const SwiperHolder = styled.div`
         .ImageSwiper{
             display: none;
         }
-        
+
         .MobileNavigationButtons{
             width:100%;
             display:unset;
@@ -915,14 +916,14 @@ export const SwiperHolder = styled.div`
             width:100%;
             color:rgb(0,0,0,0.75);
             box-shadow:0px 5px 0px rgb(255,255,255,0.70);
-            
-           
+
+
         }
         .TextHolder{
             transition: ease 1s;
-            
+
         }
-        
+
         .MobileButton{
             color:white;
             font-size:18px;
@@ -963,12 +964,12 @@ export const SwiperHolder = styled.div`
             object-fit:cover;
             border-radius:50%;
         }
-    
+
         .NameHolder{
             flex-direction:column;
 
             display: flex;
-        align-items: center; 
+        align-items: center;
         margin-top: 0%;
         height: 100%;
         width:100%;
@@ -998,7 +999,7 @@ export const SwiperHolder = styled.div`
             text-shadow:1px 1px 2px black;
         }
         .TitleImageHolder{
-            
+
         }
         .IconImage{
             height:15px;
@@ -1039,13 +1040,13 @@ export const SwiperHolder = styled.div`
             display:none;
         }
         }
-    
+
         @media (min-width: 768px) {
         .DiscriptionText{
             font-size:24px;
         }
-       
-       
+
+
     }
 `
 

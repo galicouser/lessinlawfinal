@@ -65,14 +65,6 @@ export const carouselcontent1 = [
  },
  {
   image:
-   'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983353/lessinlaw/crowdrelated_sbbmjt.jpg',
-  title: 'Crowd Related Injuries',
-  description: `
-            If you've been injured on someone else's property, our dedicated personal injury attorneys will assist you in navigating premises liability laws, advocating for fair compensation for your injuries and related damages.
-        `,
- },
- {
-  image:
    'https://res.cloudinary.com/dwyqdiqds/image/upload/v1696983352/lessinlaw/insuranceandbadfaith_u0kh4h.jpg',
   title: 'Insurance & Bad Faith Claims',
   description: `

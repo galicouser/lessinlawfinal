@@ -435,13 +435,13 @@ const HomePage = () => {
       >
        Our Firm
       </Button> */}
-      <Button
+      {/* <Button
        variant="outlined"
        onClick={SpecialLawyersClicked}
        className={SpecialLawyers ? 'MobileButtonActive' : 'MobileButton'}
       >
        Specilized Cases
-      </Button>
+      </Button> */}
      </div>
      {/*  */}
      <div className="LowerButtonHolder">
@@ -464,8 +464,8 @@ const HomePage = () => {
      <div className="TextHolder">
       <p className="TitleTextSwiper">
        {OurFirm && 'Our Firm'}
-       {SpecialCase && 'Special Case'}
-       {SpecialLawyers && 'Specialized Cases'}
+       {SpecialCase && 'Practice Areas'}
+       {SpecialLawyers && 'Practice Areas'}
        {OurFirm2 && 'Our Firm'}
       </p>
      </div>
@@ -578,7 +578,7 @@ const HomePage = () => {
     )}
    </SwiperHolder>
 
-   {/* <Testimonials>
+    <Testimonials>
     <div className="Holder">
      <p className="client">Client Testimonials</p>
      <div className="HolderInner">
@@ -602,7 +602,7 @@ const HomePage = () => {
     </div>
 
     <Reviews />
-   </Testimonials> */}
+   </Testimonials>
    <Footer />
   </HomePageContainer>
  )
