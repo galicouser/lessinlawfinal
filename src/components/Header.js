@@ -9,6 +9,7 @@ import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
 import GlobalStyles from '../styled-components/HeaderStyles'
 import Logo from '../assets/Lessin Law.png'
+import SearchIcon from '@mui/icons-material/Search';
 
 ///
 import Accordion from '@mui/material/Accordion'
@@ -501,6 +502,19 @@ const Header = () => {
  return (
   <div>
    <GlobalStyles />
+   <div className='NavHolder'>
+            
+                <div className='AttorneyReferral'>
+ATTORNEY REFERRAL
+                </div>
+                <div className='FreeCase'>
+FREE CASE EVALUATION
+                </div>
+        </div>
+        <div className='LogoHolder'>
+            
+               <img src={Logo} className='CenterLogo'/>
+        </div>
    <div className="HeaderHolder">
     <div style={{ display: 'none' }}>
      {['left'].map((anchor) => (
@@ -530,7 +544,7 @@ const Header = () => {
        onClick={toggleDrawer('left', true)}
       />
      </div>
-     <div className="NavigationHolder">
+     <div className="NavigationHolder" >
       <Link to="/">
        <div className="NavButtonHolder">
         <p className="NavigationButton">Home</p>
@@ -689,6 +703,9 @@ const Header = () => {
       <div className="NavButtonHolder">
        <p className="NavigationButton">Login</p>
        <motion.div className="BelowLine"></motion.div>
+      </div>
+      <div className="NavButtonHolder">
+       <SearchIcon className="SearchIcon"/>
       </div>
      </div>
      <div className="ContactNumber">

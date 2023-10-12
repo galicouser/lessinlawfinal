@@ -1,6 +1,47 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
+
+.LogoHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #FBFAF8;
+}
+.CenterLogo{
+  height: 100%;
+}
+.NavHolder{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 50px;
+  background-color: #EFEFEF;
+}
+
+.AttorneyReferral{
+  background-color: #4A4A4A;
+  width:12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:15px;
+  color:white;
+  font-weight: 700;
+}
+.FreeCase{
+  background-color: #EA3520;
+  color:white;
+  font-weight: 700;
+  width:12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:15px;
+}
   
 .Homepage{
   height:100%;
@@ -14,22 +55,27 @@ const GlobalStyles = createGlobalStyle`
 
 .HeaderHolder{
   width:100%;
-  height:80px;
-  top: 0px;
+  height:40px;
+  top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
   position: absolute;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 2px solid #DDDDDD;
+  text-transform: uppercase;
+  
+
 
 }
 .OpacityBackground{
   position: absolute;
   height: 100%;
   width: 100%;
- background-color: black;
+  background-color: #FBFAF8;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .NavButtonHolder{
@@ -43,22 +89,22 @@ const GlobalStyles = createGlobalStyle`
 }
 
 .NavButtonHolder:hover .BelowLine{
-  background-color:white;
+  background-color:black;
   right: 2px;
   
   box-shadow: 1px 1px 1px rgb(255,255,255,0.5);
 }
 .NavButtonHolder:hover .BelowLine2{
-  background-color:white;
+  background-color:black;
   right: 2px;
   box-shadow: 1px 1px 1px rgb(255,255,255,0.5);
 }
 
 .NavButtonHolder:hover .ArrowIcon{
-  color:white;
+  color:black;
 }
 .NavButtonHolder:hover .NavigationButton{
-  color:white;
+  color:black;
 }
 .BelowLine{
   height: 1px;
@@ -92,16 +138,17 @@ const GlobalStyles = createGlobalStyle`
 .NavigationHolder{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width:65%;
   margin-left: 20%;
 }
 .NavigationButton{
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.1s;
-  margin-top: 18px;
+  margin-top: 17px;
   font-weight: 100;
 }
 .NavigationButton:hover{
@@ -113,7 +160,7 @@ const GlobalStyles = createGlobalStyle`
   color: white;
 }
 .ArrowIcon{
-  color: white;
+  color: black;
   margin-left: 10px;
 
 }

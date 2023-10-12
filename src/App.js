@@ -35,7 +35,7 @@ function App() {
   <Wrapper>
    <BrowserRouter>
     <Header />
-    {/* <Navbar /> */}
+    <Navbar />
 
     <Routes>
      <Route path="/" element={<HomePage />} />

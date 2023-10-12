@@ -13,6 +13,7 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Navbar from '../components/Navbar'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -20,7 +21,17 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
+//
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+//
 
 import {
  HomePageContainer,
@@ -274,7 +285,7 @@ const HomePage = () => {
    </motion.div>
    <>{card}</>
    <Main1>
-    <img
+    {/* <img
      src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
      className="ImageBack"
     />
@@ -311,7 +322,24 @@ const HomePage = () => {
        restitution they deserve for their injuries."
       </p>
      </div>
-    </div>
+    </div> */}
+
+  <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <SwiperSlide className='SwiperSlide'>
+          <div className='ImagesHolder'>
+            <img src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg" className='SwiperImages'/>
+            <img src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg" className='SwiperImages'/>
+            <img src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg" className='SwiperImages'/>
+            
+             <p className='WhiteLetters'>THEY HURT YOU
+             <br/><span className='RedLetters'>IT'S TIME TO FIGHT BACK</span></p>
+             
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='SwiperSlide'>Slide 2</SwiperSlide>
+        <SwiperSlide className='SwiperSlide'>Slide 3</SwiperSlide>
+        <SwiperSlide className='SwiperSlide'>Slide 4</SwiperSlide>
+      </Swiper>
    </Main1>
    <Testimonials>
     <div className="Holder">

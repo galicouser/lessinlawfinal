@@ -363,9 +363,46 @@ export const Main1 = styled.div`
  justify-content: center;
  height: 100%;
  width: 100%;
- border-radius: 10px;
  position: relative;
  margin-bottom: 5%;
+ .mySwiper{
+      height: 70vh;
+ }
+ .SwiperSlide{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #131313;
+      position: relative;
+ }
+ .ImagesHolder{
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top:2.5%;
+}
+.WhiteLetters{
+      position: absolute;
+      font-size: 70px;
+      font-weight: 700;
+      color:white;
+      text-align: center;
+}
+.RedLetters{
+      color:#EE3425;
+}
+.SwiperImages{
+      width: 30%;
+}
+ 
+
+
+
+
  .ImageBack {
   width: 100%;
   height: 100%;
