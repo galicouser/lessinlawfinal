@@ -533,17 +533,18 @@ const Header = () => {
      </div>
      {LocationClickedVal && (
       <div className="SidebarDropdown" onClick={toggleDrawer(anchor, false)}>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Philadelphia,Pa
-       </p>
-    
+       <Link to="/PhiladelphiaLocation">
+        <p
+         className="SidebarOption"
+         style={{
+          color: 'white',
+          fontSize: 18,
+          textAlign: 'center',
+         }}
+        >
+         Philadelphia,Pa
+        </p>
+       </Link>
       </div>
      )}
 
@@ -716,13 +717,12 @@ const Header = () => {
          animate={{ y: 0 }}
          transition={{ type: 'spring', damping: 15 }}
         >
-        <Link to="/PhiladelphiaLocation">
-        <p className="MenuItems">Philadelphia,Pa</p>
-        </Link>
-        <Link to="/MontgomeryCountyLocation">
-
-         <p className="MenuItems">Montgomery County, Pa</p>
-        </Link>
+         <Link to="/PhiladelphiaLocation">
+          <p className="MenuItems">Philadelphia,Pa</p>
+         </Link>
+         <Link to="/MontgomeryCountyLocation">
+          <p className="MenuItems">Montgomery County, Pa</p>
+         </Link>
          <p className="MenuItems">Bucks County, Pa</p>
          <p className="MenuItems">Fort Lauderdel, FL</p>
          <p className="MenuItems">Atlantic, City</p>
