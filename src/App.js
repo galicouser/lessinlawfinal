@@ -16,6 +16,15 @@ import MotorcycleAccidents from './pages/MotorCycleAccidents'
 import UberAccidents from './pages/UberAccidents'
 import CarAccidents from './pages/CarAccidents'
 import SeptaInjuries from './pages/SeptaInjuries'
+import BrainInjuryAttorney from './pages/BrainInjuryAttorney'
+import BurnInjuryAttorney from './pages/BurnInjuryAttorney'
+import CivilRights from './pages/CivilRights'
+import ConstructionAccidentInjury from './pages/ConstructionAccidentInjury'
+import DramShop from './pages/DramShop'
+import InsuranceClaims from './pages/InsuranceClaims'
+import LegalMalpractice from './pages/LegalMalpractice'
+import ProductLiability from './pages/ProductLiability'
+import PublicTransportationInjuries from './pages/PublicTransportationInjuries'
 import AllPratices from './pages/AllPratices'
 import PhiladelphiaLocation from './pages/PhiladelphiaLocation'
 import MontgomeryCountyLocation from './pages/MontgomeryCountyLocation'
@@ -39,6 +48,15 @@ function App() {
      <Route path="/UberAccidents" element={<UberAccidents />} />
      <Route path="/CarAccidents" element={<CarAccidents />} />
      <Route path="/SeptaInjuries" element={<SeptaInjuries />} />
+     <Route path="/BrainInjuryAttorney" element={<BrainInjuryAttorney/>} />
+     <Route path="/BurnInjuryAttorney" element={<BurnInjuryAttorney/>} />
+     <Route path="/CivilRights" element={<CivilRights/>} />
+     <Route path="/ConstructionAccidentInjury" element={<ConstructionAccidentInjury/>} />
+     <Route path="/DramShop" element={<DramShop/>} />
+     <Route path="/InsuranceClaims" element={<InsuranceClaims/>} />
+     <Route path="/LegalMalpractice" element={<LegalMalpractice/>} />
+     <Route path="/ProductLiability" element={<ProductLiability/>} />
+     <Route path="/PublicTransportationInjuries" element={<PublicTransportationInjuries/>} />
      <Route path="/AllPratices" element={<AllPratices />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
