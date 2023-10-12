@@ -301,19 +301,7 @@ const Header = () => {
          Construction Accidents
         </p>
        </Link>
-       <Link to="/CrowdRelatedInjuries">
-        <p
-         className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
-        >
-         Crowd Related Injuries
-        </p>
-       </Link>
+     
        <Link to="/InsuranceClaims">
         <p
          className="SidebarOption"
