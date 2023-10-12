@@ -542,7 +542,7 @@ const Header = () => {
           textAlign: 'center',
          }}
         >
-         Philadelphia,Pa
+         Philadelphia, Pennsylvania
         </p>
        </Link>
       </div>

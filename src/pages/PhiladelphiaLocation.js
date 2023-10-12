@@ -5,11 +5,14 @@ const PhiladelphiaLocation = () => {
  return (
   <div className="MalpraticeHolder">
    {/* <Header /> */}
+
    <div className="MalpraticeInner">
     <div className="TextHolder">
-     <h2 className="MainHeading">Philadelphia City Personal injury</h2>
+     <h2 className="MainHeading">Philadelphia Personal Injury Attorney</h2>
+                 <h3> </h3>
 
-     <div className="ImageTextHolder">
+                 
+                 <div className="ImageTextHolder">
       <p className="TextPassage">
        If someone else’s negligence has caused you harm in an accident, you
        undoubtedly want to put the entire ordeal behind you. In the case of a
