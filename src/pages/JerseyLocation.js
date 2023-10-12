@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 
-const PhiladelphiaLocation = () => {
+const JerseyLocation = () => {
  return (
   <div className="MalpraticeHolder">
    {/* <Header /> */}
@@ -11,26 +11,12 @@ const PhiladelphiaLocation = () => {
      <h2 className="MainHeading">Philadelphia Personal Injury Attorney</h2>
      <div className="ImageTextHolder">
       <ol>
+       <li className="TextPassage">Motor Vehicle Accidents</li>
+       <li className="TextPassage">Brain Injuries</li>
+       <li className="TextPassage">Burn Injury Attorney</li>
+       <li className="TextPassage">Civil Rights & Police Brutality</li>
        <li className="TextPassage">
-        <b>Address: </b><a
-         href="https://www.google.com/maps/search/?api=1&query=1515+Market+St+%231650,+Philadelphia,+PA+19102"
-         target="_blank"
-         rel="noopener noreferrer"
-        >
-        1515 Market St #1650, Philadelphia, PA 19102
-        </a>
-       </li>
-       <li className="TextPassage">
-        <b>Phone Number:</b>
-        <a href="tel:(215) 599-1400"> (215) 599-1400</a>
-       </li>
-       <li className="TextPassage">
-        <b>Fax Number:</b>
-        <a href="fax:(215) 599-0120"> (215) 599-0120</a>
-       </li>
-       <li className="TextPassage">
-        <b>Email Us:</b>
-        <a href="mailto:secure@lessinlaw.com"> secure@lessinlaw.com</a>
+        Claims Against Alcohol Servers - Dram Shop Cases
        </li>
       </ol>
      </div>
@@ -657,9 +643,7 @@ const PhiladelphiaLocation = () => {
     </div>
 
     <div className="InputSegment">
-     <p className="RedText">
-      FOR CONSULTATION CALL <a href="tel:(215) 599-1400">(215) 599-1400</a>
-     </p>
+     <p className="RedText">FOR CONSULTATION CALL (717) 316-8324</p>
      <input placeholder="Full Name" className="InputField" />
 
      <input placeholder="Email" className="InputField" />
@@ -685,4 +669,4 @@ const PhiladelphiaLocation = () => {
  )
 }
 
-export default PhiladelphiaLocation
+export default JerseyLocation

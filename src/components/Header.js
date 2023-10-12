@@ -459,16 +459,6 @@ const Header = () => {
          textAlign: 'center',
         }}
        >
-        Our Attorney
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
         Verdicts
        </p>
        <p
@@ -479,37 +469,7 @@ const Header = () => {
          textAlign: 'center',
         }}
        >
-        Cases
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Bicycle Accidents
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
         News
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Info
        </p>
       </div>
      )}
@@ -543,6 +503,18 @@ const Header = () => {
          }}
         >
          Philadelphia, Pennsylvania
+        </p>
+       </Link>
+       <Link to="/JerseyLocation">
+        <p
+         className="SidebarOption"
+         style={{
+          color: 'white',
+          fontSize: 18,
+          textAlign: 'center',
+         }}
+        >
+         Voorhees, New Jersey
         </p>
        </Link>
       </div>
@@ -607,7 +579,7 @@ const Header = () => {
        onMouseEnter={handleMouseEnter}
        onMouseLeave={handleMouseLeave}
       >
-       <p className="NavigationButton">Pratice Area</p>
+       <p className="NavigationButton">Practice Areas</p>
        <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} />
        <div className="BelowLine"></div>
        {isHovered && (
@@ -618,52 +590,95 @@ const Header = () => {
          animate={{ y: 0 }}
          transition={{ type: 'spring', damping: 15 }}
         >
-         <Link to="/MedicalMalpratice" style={{ textDecoration: 'none' }}>
-          <p
-           className="MenuItems"
-           style={{
-            border: 'none',
-            marginTop: 10,
-           }}
-          >
-           {' '}
-           Medical Malpractice
-          </p>
+         <Link to="/BrainInjuries" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Brain Injuries</p>
          </Link>
 
-         <Link to="/SlipandFallAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Slip and Fall Accident</p>
-         </Link>
-
-         <Link to="/BusAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Bus Accident</p>
-         </Link>
-
-         <Link to="/WrongfullDeath" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Wrongfull Death</p>
+         <Link to="/BurnInjuryAttorney" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Burn Injury Attorney</p>
          </Link>
 
          <Link to="/BicycleAccident" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Bicycle Accidents</p>
          </Link>
 
+         <Link to="/BusAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Bus Accident</p>
+         </Link>
+
+         <Link
+          to="/CivilRightsPoliceBrutality"
+          style={{ textDecoration: 'none' }}
+         >
+          <p className="MenuItems">Civil Rights & Police Brutality</p>
+         </Link>
+
+         <Link
+          to="/ClaimsAgainstAlcoholServers"
+          style={{ textDecoration: 'none' }}
+         >
+          <p className="MenuItems">
+           Claims Against Alcohol Servers - Dram Shop Cases
+          </p>
+         </Link>
+
+         <Link
+          to="/ConstructionAccidentInjury"
+          style={{ textDecoration: 'none' }}
+         >
+          <p className="MenuItems">Construction Accident & Injury</p>
+         </Link>
+
+         <Link to="/InsuranceBadFaithClaims" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Insurance & Bad Faith Claims</p>
+         </Link>
+
+         <Link to="/LegalMalPractice" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Legal MalPractice</p>
+         </Link>
+
+         <Link to="/MedicalMalpratice" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Medical Malpractice</p>
+         </Link>
+
          <Link to="/MotorcycleAccidents" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Motorcycle Accidents</p>
+         </Link>
+
+         <Link to="/PremisesLiability" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Premises Liability</p>
+         </Link>
+
+         <Link to="/ProductLiability" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Product Liability</p>
+         </Link>
+
+         <Link to="/SlipandFallAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Slip and Fall Accident</p>
+         </Link>
+
+         <Link to="/TruckingAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Trucking Accidents</p>
          </Link>
 
          <Link to="/UberAccidents" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Uber Accidents</p>
          </Link>
 
-         <Link to="/SeptaInjuries">
-          <p className="MenuItems">Septa Injuries</p>
+         <Link to="/VictimsOfCrimes" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Victims of Crimes</p>
          </Link>
 
-         {/* <Link to="/CarAccidents">
-                                    <p className="MenuItems">Truck Accident</p>
-                                    </Link> */}
+         <Link to="/WorkplaceAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Workplace Accidents</p>
+         </Link>
+
+         <Link to="/WrongfulDeaths" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Wrongful Deaths</p>
+         </Link>
+
          <Link to="/AllPratices">
-          <p className="MenuItems">See All Pratice Area</p>
+          <p className="MenuItems">See All Practice Areas</p>
          </Link>
 
          {/* */}
@@ -688,12 +703,9 @@ const Header = () => {
           {' '}
           Our Firm
          </p>
-         <p className="MenuItems">Our Attorney</p>
+
          <p className="MenuItems">Verdicts</p>
-         <p className="MenuItems">Cases</p>
-         <p className="MenuItems">Bicycle Accidents</p>
          <p className="MenuItems">News</p>
-         <p className="MenuItems">Info</p>
         </motion.div>
        )}
        <p className="NavigationButton">About Us</p>
@@ -718,14 +730,11 @@ const Header = () => {
          transition={{ type: 'spring', damping: 15 }}
         >
          <Link to="/PhiladelphiaLocation">
-          <p className="MenuItems">Philadelphia,Pa</p>
+          <p className="MenuItems"> Philadelphia, Pennsylvania</p>
          </Link>
-         <Link to="/MontgomeryCountyLocation">
-          <p className="MenuItems">Montgomery County, Pa</p>
+         <Link to="/JerseyLocation">
+          <p className="MenuItems"> Voorhees, New Jersey</p>
          </Link>
-         <p className="MenuItems">Bucks County, Pa</p>
-         <p className="MenuItems">Fort Lauderdel, FL</p>
-         <p className="MenuItems">Atlantic, City</p>
         </motion.div>
        )}
       </div>
