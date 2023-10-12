@@ -25,7 +25,7 @@ import InsuranceClaims from './pages/InsuranceClaims'
 import LegalMalpractice from './pages/LegalMalpractice'
 import ProductLiability from './pages/ProductLiability'
 import PublicTransportationInjuries from './pages/PublicTransportationInjuries'
-import AllPratices from './pages/AllPratices'
+import AllPractices from './pages/AllPractices'
 import PhiladelphiaLocation from './pages/PhiladelphiaLocation'
 import MontgomeryCountyLocation from './pages/MontgomeryCountyLocation'
 import JerseyLocation from './pages/JerseyLocation'
@@ -48,16 +48,22 @@ function App() {
      <Route path="/UberAccidents" element={<UberAccidents />} />
      <Route path="/CarAccidents" element={<CarAccidents />} />
      <Route path="/SeptaInjuries" element={<SeptaInjuries />} />
-     <Route path="/BrainInjuryAttorney" element={<BrainInjuryAttorney/>} />
-     <Route path="/BurnInjuryAttorney" element={<BurnInjuryAttorney/>} />
-     <Route path="/CivilRights" element={<CivilRights/>} />
-     <Route path="/ConstructionAccidentInjury" element={<ConstructionAccidentInjury/>} />
-     <Route path="/DramShop" element={<DramShop/>} />
-     <Route path="/InsuranceClaims" element={<InsuranceClaims/>} />
-     <Route path="/LegalMalpractice" element={<LegalMalpractice/>} />
-     <Route path="/ProductLiability" element={<ProductLiability/>} />
-     <Route path="/PublicTransportationInjuries" element={<PublicTransportationInjuries/>} />
-     <Route path="/AllPratices" element={<AllPratices />} />
+     <Route path="/BrainInjuryAttorney" element={<BrainInjuryAttorney />} />
+     <Route path="/BurnInjuryAttorney" element={<BurnInjuryAttorney />} />
+     <Route path="/CivilRights" element={<CivilRights />} />
+     <Route
+      path="/ConstructionAccidentInjury"
+      element={<ConstructionAccidentInjury />}
+     />
+     <Route path="/DramShop" element={<DramShop />} />
+     <Route path="/InsuranceClaims" element={<InsuranceClaims />} />
+     <Route path="/LegalMalpractice" element={<LegalMalpractice />} />
+     <Route path="/ProductLiability" element={<ProductLiability />} />
+     <Route
+      path="/PublicTransportationInjuries"
+      element={<PublicTransportationInjuries />}
+     />
+     <Route path="/AllPratices" element={<AllPractices />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
      <Route

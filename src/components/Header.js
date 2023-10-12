@@ -169,35 +169,13 @@ const Header = () => {
      {PraticeClickedVal && (
       <div className="SidebarDropdown">
        <Link
-        to="/BicycleAccidents"
-        style={{ textDecoration: 'none' }}
-        onClick={toggleDrawer(anchor, false)}
-       >
-        <p
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
-         className="SidebarOption"
-        >
-         {' '}
-         Bicycle Accidents
-        </p>
-       </Link>
-
-       <Link
         to="/BrainInjuries"
         style={{ textDecoration: 'none' }}
         onClick={toggleDrawer(anchor, false)}
        >
         <p
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
          className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
         >
          Brain Injury Attorney
         </p>
@@ -210,47 +188,9 @@ const Header = () => {
        >
         <p
          className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Burn Injury Attorney
-        </p>
-       </Link>
-
-       <Link
-        to="/BusAccidents"
-        style={{ textDecoration: 'none' }}
-        onClick={toggleDrawer(anchor, false)}
-       >
-        <p
-         className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
-        >
-         Bus Accidents
-        </p>
-       </Link>
-
-       <Link
-        to="/CarAccidents"
-        style={{ textDecoration: 'none' }}
-        onClick={toggleDrawer(anchor, false)}
-       >
-        <p
-         className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
-        >
-         Car Accidents
         </p>
        </Link>
 
@@ -261,11 +201,7 @@ const Header = () => {
        >
         <p
          className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 15,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Civil Rights & Police Brutality
         </p>
@@ -278,119 +214,165 @@ const Header = () => {
        >
         <p
          className="SidebarOption"
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Claims Against Servers & Dram Shop Cases
         </p>
        </Link>
 
-       <Link to="/ConstructionAccidents">
+       <Link
+        to="/ConstructionAccidents"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
-         Construction Accidents
+         Construction Accidents & Injury
         </p>
        </Link>
-     
-       <Link to="/InsuranceClaims">
+
+       <Link
+        to="/InsuranceClaims"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Insurance & Bad Faith Claims
         </p>
        </Link>
-       <Link to="/LegalMalpractice">
+
+       <Link
+        to="/LegalMalpractice"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Legal Malpractice
         </p>
        </Link>
-       <Link to="/MedicalMalpractice">
+
+       <Link
+        to="/MedicalMalpractice"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Medical Malpractice
         </p>
        </Link>
-       <Link to="/MotorVehicleAccidents">
+
+       <Link
+        to="/MotorVehicleAccidents"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Motor Vehicle Accidents
         </p>
        </Link>
-       <Link to="/ProductLiability">
+
+       <Link
+        to="/PremisesLiability"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
+        >
+         Premises Liability
+        </p>
+       </Link>
+
+       <Link
+        to="/ProductLiability"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
+        <p
+         className="SidebarOption"
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
          Product Liability
         </p>
        </Link>
-       <Link to="/PublicTransportation">
+
+       <Link
+        to="/TruckingAccidents"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
-         Public Transportation Injuries
+         Trucking Accidents
         </p>
        </Link>
-       <Link to="/Slip & Fall Accidents">
+
+       <Link
+        to="/UberLyftAccidents"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
         <p
          className="SidebarOption"
-         onClick={toggleDrawer(anchor, false)}
-         style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-         }}
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
         >
-         Slip & Fall Accidents
+         Uber & Lyft Accidents
+        </p>
+       </Link>
+
+       <Link
+        to="/VictimsOfCrimes"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
+        <p
+         className="SidebarOption"
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
+        >
+         Victims of Crimes
+        </p>
+       </Link>
+
+       <Link
+        to="/WorkplaceAccidents"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
+        <p
+         className="SidebarOption"
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
+        >
+         Workplace Accidents
+        </p>
+       </Link>
+
+       <Link
+        to="/WrongfulDeaths"
+        style={{ textDecoration: 'none' }}
+        onClick={toggleDrawer(anchor, false)}
+       >
+        <p
+         className="SidebarOption"
+         style={{ color: 'white', fontSize: 18, textAlign: 'center' }}
+        >
+         Wrongful Deaths
         </p>
        </Link>
        <Link to="/AllPratices">
@@ -578,20 +560,12 @@ const Header = () => {
          animate={{ y: 0 }}
          transition={{ type: 'spring', damping: 15 }}
         >
-         <Link to="/BrainInjuries" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Brain Injuries</p>
+         <Link to="/BrainInjuryAttorney" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Brain Injury Attorney</p>
          </Link>
 
          <Link to="/BurnInjuryAttorney" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Burn Injury Attorney</p>
-         </Link>
-
-         <Link to="/BicycleAccident" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Bicycle Accidents</p>
-         </Link>
-
-         <Link to="/BusAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Bus Accident</p>
          </Link>
 
          <Link
@@ -602,35 +576,33 @@ const Header = () => {
          </Link>
 
          <Link
-          to="/ClaimsAgainstAlcoholServers"
+          to="/ClaimsAgainstServersDramShopCases"
           style={{ textDecoration: 'none' }}
          >
-          <p className="MenuItems">
-           Claims Against Alcohol Servers - Dram Shop Cases
-          </p>
+          <p className="MenuItems">Claims Against Servers & Dram Shop Cases</p>
          </Link>
 
          <Link
-          to="/ConstructionAccidentInjury"
+          to="/ConstructionAccidentsInjury"
           style={{ textDecoration: 'none' }}
          >
-          <p className="MenuItems">Construction Accident & Injury</p>
+          <p className="MenuItems">Construction Accidents & Injury</p>
          </Link>
 
          <Link to="/InsuranceBadFaithClaims" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Insurance & Bad Faith Claims</p>
          </Link>
 
-         <Link to="/LegalMalPractice" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Legal MalPractice</p>
+         <Link to="/LegalMalpractice" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Legal Malpractice</p>
          </Link>
 
-         <Link to="/MedicalMalpratice" style={{ textDecoration: 'none' }}>
+         <Link to="/MedicalMalpractice" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Medical Malpractice</p>
          </Link>
 
-         <Link to="/MotorcycleAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Motorcycle Accidents</p>
+         <Link to="/MotorVehicleAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Motor Vehicle Accidents</p>
          </Link>
 
          <Link to="/PremisesLiability" style={{ textDecoration: 'none' }}>
@@ -641,16 +613,12 @@ const Header = () => {
           <p className="MenuItems">Product Liability</p>
          </Link>
 
-         <Link to="/SlipandFallAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Slip and Fall Accident</p>
-         </Link>
-
          <Link to="/TruckingAccidents" style={{ textDecoration: 'none' }}>
           <p className="MenuItems">Trucking Accidents</p>
          </Link>
 
-         <Link to="/UberAccidents" style={{ textDecoration: 'none' }}>
-          <p className="MenuItems">Uber Accidents</p>
+         <Link to="/UberLyftAccidents" style={{ textDecoration: 'none' }}>
+          <p className="MenuItems">Uber & Lyft Accidents</p>
          </Link>
 
          <Link to="/VictimsOfCrimes" style={{ textDecoration: 'none' }}>

@@ -12,12 +12,13 @@ const PhiladelphiaLocation = () => {
      <div className="ImageTextHolder">
       <ol>
        <li className="TextPassage">
-        <b>Address: </b><a
+        <b>Address: </b>
+        <a
          href="https://www.google.com/maps/search/?api=1&query=1515+Market+St+%231650,+Philadelphia,+PA+19102"
          target="_blank"
          rel="noopener noreferrer"
         >
-        1515 Market St #1650, Philadelphia, PA 19102
+         1515 Market St #1650, Philadelphia, PA 19102
         </a>
        </li>
        <li className="TextPassage">
@@ -163,17 +164,15 @@ const PhiladelphiaLocation = () => {
 
      <div className="ImageTextHolder">
       <ol>
-       <li className="TextPassage">Motor Vehicle Accidents</li>
-       <li className="TextPassage">Brain Injuries</li>
+       <li className="TextPassage">Brain Injury Attorney</li>
        <li className="TextPassage">Burn Injury Attorney</li>
        <li className="TextPassage">Civil Rights & Police Brutality</li>
-       <li className="TextPassage">
-        Claims Against Alcohol Servers - Dram Shop Cases
-       </li>
-       <li className="TextPassage">Construction Accident & Injury</li>
+       <li className="TextPassage">Claims Against Servers & Dram Shop Cases</li>
+       <li className="TextPassage">Construction Accidents & Injury</li>
        <li className="TextPassage">Insurance & Bad Faith Claims</li>
-       <li className="TextPassage">Legal MalPractice</li>
+       <li className="TextPassage">Legal Malpractice</li>
        <li className="TextPassage">Medical Malpractice</li>
+       <li className="TextPassage">Motor Vehicle Accidents</li>
        <li className="TextPassage">Premises Liability</li>
        <li className="TextPassage">Product Liability</li>
        <li className="TextPassage">Trucking Accidents</li>
