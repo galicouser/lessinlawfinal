@@ -375,7 +375,7 @@ const Header = () => {
          Wrongful Deaths
         </p>
        </Link>
-       <Link to="/AllPratices">
+       <Link to="/AllPractices">
         <p
          className="SidebarOption"
          onClick={toggleDrawer(anchor, false)}
@@ -421,26 +421,19 @@ const Header = () => {
         {' '}
         Our Firm
        </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Verdicts
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        News
-       </p>
+       <Link to="/VerdictsPage">
+        <p
+         className="SidebarOption"
+         style={{
+          color: 'white',
+          fontSize: 18,
+          textAlign: 'center',
+         }}
+        >
+         Verdicts
+        </p>
+       </Link>
+     
       </div>
      )}
 
@@ -633,7 +626,7 @@ const Header = () => {
           <p className="MenuItems">Wrongful Deaths</p>
          </Link>
 
-         <Link to="/AllPratices">
+         <Link to="/AllPractices">
           <p className="MenuItems">See All Practice Areas</p>
          </Link>
 
@@ -661,7 +654,6 @@ const Header = () => {
          </p>
 
          <p className="MenuItems">Verdicts</p>
-         <p className="MenuItems">News</p>
         </motion.div>
        )}
        <p className="NavigationButton">About Us</p>

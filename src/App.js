@@ -29,7 +29,7 @@ import AllPractices from './pages/AllPractices'
 import PhiladelphiaLocation from './pages/PhiladelphiaLocation'
 import MontgomeryCountyLocation from './pages/MontgomeryCountyLocation'
 import JerseyLocation from './pages/JerseyLocation'
-
+import VerdictsPage from './pages/VerdictsPage'
 function App() {
  return (
   <Wrapper>
@@ -63,7 +63,7 @@ function App() {
       path="/PublicTransportationInjuries"
       element={<PublicTransportationInjuries />}
      />
-     <Route path="/AllPratices" element={<AllPractices />} />
+     <Route path="/AllPractices" element={<AllPractices />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
      <Route path="/PhiladelphiaLocation" element={<PhiladelphiaLocation />} />
      <Route
@@ -71,6 +71,7 @@ function App() {
       element={<MontgomeryCountyLocation />}
      />
      <Route path="/JerseyLocation" element={<JerseyLocation />} />
+     <Route path="/VerdictsPage" element={<VerdictsPage />} />
     </Routes>
    </BrowserRouter>
   </Wrapper>

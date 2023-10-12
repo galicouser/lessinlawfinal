@@ -281,7 +281,7 @@ const HomePage = () => {
     <div className="opacitylayer"></div>
     <div className="mainbox1">
      <div className="mainbox-left">
-      <p className="header-2">Personal Injury Lawyers</p>
+      <p className="header-2">Jeffrey R. Lessin & Associates PC</p>
       <div className="ButtonHolder">
        <div className="button-group">
         <Button variant="contained" className="Button" onClick={openChat}>
@@ -292,7 +292,7 @@ const HomePage = () => {
          Directions
         </Button>
         <Button variant="contained" className="Button" onClick={handleShow}>
-         Get In Touch
+         Contact Us
         </Button>
        </div>
       </div>
@@ -300,22 +300,20 @@ const HomePage = () => {
 
      <div className="textContentHolder">
       <p className="textContent">
-       "Our team of dedicated personal injury lawyers specializes in a broad
-       spectrum of cases, including car accidents, motorcycle accidents,
-       pedestrian accidents, bicycle accidents, slip and falls, medical
-       malpractice, product liability, workplace accidents, construction
-       accidents, dog bites, assault or battery, wrongful death, public
-       transportation accidents, aviation accidents, boating accidents,
-       defamation, toxic exposure, nursing home abuse, and recreational
-       accidents. We are unwavering in our pursuit of fair compensation for our
-       clients, ensuring they receive the restitution they deserve for their
-       injuries."
+       "Our team of dedicated attorneys specializes in a broad spectrum of
+       cases, including Brain Injury, Burn Injury, Civil Rights & Police
+       Brutality, Claims Against Servers & Dram Shop Cases, Construction
+       Accidents & Injury, Insurance & Bad Faith Claims, Legal Malpractice,
+       Medical Malpractice, Motor Vehicle Accidents, Premises Liability, Product
+       Liability, Trucking Accidents, Uber & Lyft Accidents, Victims of Crimes,
+       Workplace Accidents, and Wrongful Deaths. We are unwavering in our
+       pursuit of fair compensation for our clients, ensuring they receive the
+       restitution they deserve for their injuries."
       </p>
      </div>
     </div>
    </Main1>
-
-    <Testimonials>
+   <Testimonials>
     <div className="Holder">
      <p className="client">Client Testimonials</p>
      <div className="HolderInner">
