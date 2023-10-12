@@ -543,46 +543,7 @@ const Header = () => {
        >
         Philadelphia,Pa
        </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Montgomery County, Pa
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Bucks County, Pa
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Fort Lauderdel, FL
-       </p>
-       <p
-        className="SidebarOption"
-        style={{
-         color: 'white',
-         fontSize: 18,
-         textAlign: 'center',
-        }}
-       >
-        Atlantic, City
-       </p>
+    
       </div>
      )}
 
@@ -759,7 +720,7 @@ const Header = () => {
         <p className="MenuItems">Philadelphia,Pa</p>
         </Link>
         <Link to="/MontgomeryCountyLocation">
-            
+
          <p className="MenuItems">Montgomery County, Pa</p>
         </Link>
          <p className="MenuItems">Bucks County, Pa</p>
