@@ -415,7 +415,7 @@ const Header = () => {
           textAlign: 'center',
          }}
         >
-         See All Pratice Area
+         See All Practice Area
         </p>
        </Link>
       </div>
