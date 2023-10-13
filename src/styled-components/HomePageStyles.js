@@ -663,8 +663,56 @@ export const Main1 = styled.div`
  width: 100%;
  position: relative;
  margin-bottom: 5%;
+ .SlideHolder{
+     width: 75%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .SingleImage{
+     width: 50%;
+     height: 100%;
+     mask-image: linear-gradient(to right, transparent, black, black, transparent);
+ }
+ .MainText{
+     text-align: left;
+     font-size: 55px;
+     color:white;
+     font-weight: 100;
+     line-height: 50px;
+ }
+ .MainText2{
+     text-align: center;
+     font-size: 70px;
+     color:white;
+     font-weight: 1000;
+     line-height: 50px;
+ }
+ .TextDiv{
+     padding-left:5%;
+ }
+ .SubText{
+     font-size: 50px;
+     font-weight: 1000;
+     text-align: left;
+     line-height: 50px;
+     color:red;
+     font-style: italic;
+     margin-top: 20px;
+ }
+ .SubText2{
+     font-size: 50px;
+     font-weight: 1000;
+     text-align: center;
+     
+     line-height: 50px;
+     color:red;
+     margin-top: 20px;
+ }
  .mySwiper{
-      height: 70vh;
+      height: 80vh;
  }
  .SwiperSlide{
       width: 100%;

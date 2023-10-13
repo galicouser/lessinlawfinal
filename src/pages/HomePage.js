@@ -354,9 +354,42 @@ const HomePage = () => {
        </p>
       </div>
      </SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+      <div className='SlideHolder'>
+            <img  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
+            <div className='TextDiv'>
+                  <p className='MainText'>One of the nation's dominant personal injury firms</p>
+                  <p className='SubText'>The Philadelphia Inquirer</p>
+            </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+     <div className='SlideHolder'>
+            <img  src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
+            <div className='TextDiv'>
+                  <p className='MainText2'>$ 1 Million</p>
+                  <p className='SubText2'>Settlement Reached in Amtrak Train Derailment</p>
+            </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+     <div className='SlideHolder'>
+            <img  src="https://images.unsplash.com/photo-1509330008791-ef3fb25a4a01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" className='SingleImage'/>
+            <div className='TextDiv'>
+                  <p className='MainText'>"The King of Construction Accidents."</p>
+                  <p className='SubText'>The Times Magazine</p>
+            </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+     <div className='SlideHolder'>
+            <img  src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
+            <div className='TextDiv'>
+                  <p className='MainText2'>$ 1 Million</p>
+                  <p className='SubText2'>Settlement Reached in Amtrak Train Derailment</p>
+            </div>
+      </div>
+     </SwiperSlide>
     </Swiper>
    </Main1>
 
