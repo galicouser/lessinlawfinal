@@ -556,7 +556,9 @@ FREE CASE EVALUATION
        // onMouseEnter={handleMouseEnter}
        // onMouseLeave={handleMouseLeave}
       >
+       <Link to="/PraticeArea">
        <p className="NavigationButton">Practice Areas</p>
+       </Link>
        {/* <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} /> */}
        <div className="BelowLine"></div>
        {isHovered && (

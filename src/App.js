@@ -30,6 +30,7 @@ import PhiladelphiaLocation from './pages/PhiladelphiaLocation'
 import MontgomeryCountyLocation from './pages/MontgomeryCountyLocation'
 import JerseyLocation from './pages/JerseyLocation'
 import VerdictsPage from './pages/VerdictsPage'
+import PraticeArea from './pages/PraticeArea'
 function App() {
  return (
   <Wrapper>
@@ -72,6 +73,9 @@ function App() {
      />
      <Route path="/JerseyLocation" element={<JerseyLocation />} />
      <Route path="/VerdictsPage" element={<VerdictsPage />} />
+     <Route path="/PraticeArea" element={<PraticeArea />} />
+
+     
     </Routes>
    </BrowserRouter>
   </Wrapper>

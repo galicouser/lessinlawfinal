@@ -3,6 +3,58 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 
 
+.PraticeAreaHolder{
+  height: 100%;
+  margin-top: 70px;
+  margin-bottom: 5%;
+}
+.PraticeAreaSwiper{
+  height: 80vh;
+}
+.PraticeOpacityBackground{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.75;
+}
+.PraticeInner{
+  padding-left: 5%;
+  width: 75%;
+}
+.PraticeSwiperImage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.PraticeSlide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.PraticeTextHolder{
+ z-index: 10;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.PraticeTitle{
+  font-size: 50px;
+  font-weight: 1000;
+  color: white;
+}
+.PraticeDescription{
+  font-size: 30px;
+  font-weight: 1000;
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
 .LogoHolder{
   display: flex;
   justify-content: center;
