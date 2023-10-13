@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { useModalContext } from '../context/modal_context'
 import Footer from '../components/Footer.js'
-import Pop from '../components/Pop.js'
-import { IconButton } from '@mui/material'
-import Reviews from '../components/Reviews.js'
-import { carouselcontent1, carouselContent2 } from '../utils/imagedata.js'
+import { carouselcontent1 } from '../utils/imagedata.js'
 import { motion } from 'framer-motion'
-import Button from '@mui/material/Button'
-import FacebookIcon from '@mui/icons-material/Facebook'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Navbar from '../components/Navbar'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 // Import Swiper styles
 import 'swiper/css'
@@ -264,6 +258,15 @@ const HomePage = () => {
 
  return (
   <HomePageContainer>
+    <div className='LiveChatPrompt'>
+          <p className='LiveChatText'>LIVE  <span >CHAT</span></p>
+    </div>
+
+
+    <div className='NewsPrompt'>
+          <p className='NewsText'>FEATURED NEWS</p>
+          <KeyboardArrowLeftIcon className='MoreArrow'/>
+    </div>
    <motion.div
     className="SideIcons"
     initial={{ opacity: 0, y: 100 }}
@@ -675,17 +678,17 @@ const HomePage = () => {
        className="SwiperImage"
        src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
       />
-      <div className='TextHolder'>
+      <div className="TextHolder">
        <p className="MainText">
-       With a focus on personal injury law, John is dedicated to representing those who 
-       have been injured due to the negligence of others. He tirelessly fights for the rights of 
-       accident victims and their families, ensuring they receive the compensation they deserve. </p>
-       <p className="SubText">
-        Person - Founder
+        With a focus on personal injury law, John is dedicated to representing
+        those who have been injured due to the negligence of others. He
+        tirelessly fights for the rights of accident victims and their families,
+        ensuring they receive the compensation they deserve.{' '}
        </p>
+       <p className="SubText">Person - Founder</p>
        <div className="Biodiv">
-        <div className='ViewText'>View Bio</div>
-        <ArrowRightAltIcon  className='ArrowIcon'/>
+        <div className="ViewText">View Bio</div>
+        <ArrowRightAltIcon className="ArrowIcon" />
        </div>
       </div>
      </SwiperSlide>
@@ -694,17 +697,19 @@ const HomePage = () => {
        className="SwiperImage"
        src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
       />
-      <div className='TextHolder'>
-       <p className="MainText" style={{color:"white"}}>
-       With a focus on personal injury law, John is dedicated to representing those who 
-       have been injured due to the negligence of others. He tirelessly fights for the rights of 
-       accident victims and their families, ensuring they receive the compensation they deserve. </p>
-       <p className="SubText" style={{color:"white"}}>
+      <div className="TextHolder">
+       <p className="MainText" style={{ color: 'white' }}>
+        With a focus on personal injury law, John is dedicated to representing
+        those who have been injured due to the negligence of others. He
+        tirelessly fights for the rights of accident victims and their families,
+        ensuring they receive the compensation they deserve.{' '}
+       </p>
+       <p className="SubText" style={{ color: 'white' }}>
         Person - Founder
        </p>
        <div className="Biodiv">
-        <div className='ViewText'>View Bio</div>
-        <ArrowRightAltIcon  className='ArrowIcon'/>
+        <div className="ViewText">View Bio</div>
+        <ArrowRightAltIcon className="ArrowIcon" />
        </div>
       </div>
      </SwiperSlide>
@@ -713,17 +718,17 @@ const HomePage = () => {
        className="SwiperImage"
        src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
       />
-      <div className='TextHolder'>
+      <div className="TextHolder">
        <p className="MainText">
-       With a focus on personal injury law, John is dedicated to representing those who 
-       have been injured due to the negligence of others. He tirelessly fights for the rights of 
-       accident victims and their families, ensuring they receive the compensation they deserve. </p>
-       <p className="SubText">
-        Person - Founder
+        With a focus on personal injury law, John is dedicated to representing
+        those who have been injured due to the negligence of others. He
+        tirelessly fights for the rights of accident victims and their families,
+        ensuring they receive the compensation they deserve.{' '}
        </p>
+       <p className="SubText">Person - Founder</p>
        <div className="Biodiv">
-        <div className='ViewText'>View Bio</div>
-        <ArrowRightAltIcon  className='ArrowIcon'/>
+        <div className="ViewText">View Bio</div>
+        <ArrowRightAltIcon className="ArrowIcon" />
        </div>
       </div>
      </SwiperSlide>
@@ -732,17 +737,17 @@ const HomePage = () => {
        className="SwiperImage"
        src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
       />
-      <div className='TextHolder'>
+      <div className="TextHolder">
        <p className="MainText">
-       With a focus on personal injury law, John is dedicated to representing those who 
-       have been injured due to the negligence of others. He tirelessly fights for the rights of 
-       accident victims and their families, ensuring they receive the compensation they deserve. </p>
-       <p className="SubText">
-        Person - Founder
+        With a focus on personal injury law, John is dedicated to representing
+        those who have been injured due to the negligence of others. He
+        tirelessly fights for the rights of accident victims and their families,
+        ensuring they receive the compensation they deserve.{' '}
        </p>
+       <p className="SubText">Person - Founder</p>
        <div className="Biodiv">
-        <div className='ViewText'>View Bio</div>
-        <ArrowRightAltIcon  className='ArrowIcon'/>
+        <div className="ViewText">View Bio</div>
+        <ArrowRightAltIcon className="ArrowIcon" />
        </div>
       </div>
      </SwiperSlide>
@@ -750,40 +755,51 @@ const HomePage = () => {
    </LawyerCarosel>
 
    <Awards>
-
-
-              <div className='ImageHolder'>
-                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/Best-Lawyers-in-America.png"/>
-                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/SuperLawyers2020.png"/>
-                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/2023-Best-Law-Firms.png"/>
-             
-              </div>
+    <div className="ImageHolder">
+     <img
+      className="AwardImage"
+      src="https://www.smbb.com/wp-content/themes/smbb/images/Best-Lawyers-in-America.png"
+     />
+     <img
+      className="AwardImage"
+      src="https://www.smbb.com/wp-content/themes/smbb/images/SuperLawyers2020.png"
+     />
+     <img
+      className="AwardImage"
+      src="https://www.smbb.com/wp-content/themes/smbb/images/2023-Best-Law-Firms.png"
+     />
+    </div>
    </Awards>
 
    <TextSwiper>
-          <div className='StartText'>
-          <p className='Text'>If you or a family member has suffered a severe injury or the tragic loss of a loved one, SMB is committed to pursuing justice on your behalf. Feel free to get in touch with SMB today to discover how we can provide assistance.
-          </p>
-          </div>
-
-        <div className='Holder'>
-          <p className='TopText'>Select the attorneys known for achieving the highest and unprecedented recoveries.</p>
-      
-          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-       
-     <SwiperSlide className="SwiperSlide">
-      <div className="TextHolder">
-       
-        <p className='MainText'>The Largest Verdict for a Construction Worker in Pennsylvania History</p>
-      </div>
-     </SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
-     <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
-    </Swiper>
+    <div className="StartText">
+     <p className="Text">
+      If you or a family member has suffered a severe injury or the tragic loss
+      of a loved one, SMB is committed to pursuing justice on your behalf. Feel
+      free to get in touch with SMB today to discover how we can provide
+      assistance.
+     </p>
     </div>
 
+    <div className="Holder">
+     <p className="TopText">
+      Select the attorneys known for achieving the highest and unprecedented
+      recoveries.
+     </p>
 
+     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <SwiperSlide className="SwiperSlide">
+       <div className="TextHolder">
+        <p className="MainText">
+         The Largest Verdict for a Construction Worker in Pennsylvania History
+        </p>
+       </div>
+      </SwiperSlide>
+      <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
+      <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
+      <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
+     </Swiper>
+    </div>
    </TextSwiper>
 
    {/* <Testimonials>

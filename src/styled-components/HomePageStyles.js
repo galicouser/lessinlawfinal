@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const HomePageContainer = styled.div`
- width: 50%;
-
  
  .scroll-container::-webkit-scrollbar-track {
   background-color: #f0f0f0;
@@ -36,6 +34,58 @@ export const HomePageContainer = styled.div`
  display: flex;
  flex-direction: column;
  width: 100%;
+ position: relative;
+
+ .LiveChatPrompt{
+     background-color: #8C030E;
+     position: fixed;
+     height: 200px;
+     width: 55px;
+     z-index: 100;
+     border-radius:0px 35px 35px 0px;
+     top:25%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ .LiveChatText{
+  transform: rotate(-90deg);
+  font-size: 30px;
+  white-space: nowrap;
+  color: whitesmoke;
+  margin-top: 15px;
+  margin-right: 5px;
+  font-weight: 1000;
+ }
+ .NewsPrompt{
+     background-color: #8C030E;
+     position: fixed;
+     height: 350px;
+     width: 45px;
+     z-index: 100;
+     top:25%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     right: 0%;
+ }
+ .MoreArrow{
+     color: white;
+     position: absolute;
+     top:10%;
+     right: 15px;
+ }
+ .NewsText{
+  transform: rotate(-90deg);
+  font-size: 20px;
+  white-space: nowrap;
+  color: whitesmoke;
+  margin-top: 15px;
+  margin-right: 5px;
+  font-weight: 1000;
+ }
 
  @media (max-width: 768px) {
   .Icon {
