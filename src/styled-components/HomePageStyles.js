@@ -49,6 +49,9 @@ export const HomePageContainer = styled.div`
      align-items: center;
      
  }
+ .LiveChatPrompt:hover{
+     cursor: pointer;
+ }
  .LiveChatText{
   transform: rotate(-90deg);
   font-size: 30px;
@@ -70,6 +73,9 @@ export const HomePageContainer = styled.div`
      justify-content: center;
      align-items: center;
      right: 0%;
+ }
+ .NewsPrompt:hover{
+     cursor: pointer;
  }
  .MoreArrow{
      color: white;
