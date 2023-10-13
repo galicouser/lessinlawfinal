@@ -47,6 +47,7 @@ const PraticeArea = () => {
       <SwiperSlide index className="PraticeSlide">
        <img src={item.image} className="PraticeSwiperImage" />
        <div className="PraticeOpacityBackground"></div>
+       <div className="PraticeOpacityBackground2"></div>
        <div className="PraticeTextHolder">
         <p className="PraticeTitle">{item.title}</p>
         <p className="PraticeDescription">{item.description}</p>

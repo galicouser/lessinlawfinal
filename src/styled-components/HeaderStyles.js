@@ -18,15 +18,24 @@ const GlobalStyles = createGlobalStyle`
   position: absolute;
   opacity: 0.75;
 }
+.PraticeOpacityBackground2{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 1;
+  z-index: -10;
+}
 .PraticeInner{
   padding-left: 5%;
   width: 75%;
 }
 .PraticeSwiperImage{
- height: 100%;
- width: 100%;
   position: absolute;
   z-index: -1;
+  mask-image: linear-gradient(to right, transparent, white, white, transparent);
+ height: 100%;
+ width: 100%;
 }
 .PraticeSlide{
   display: flex;
