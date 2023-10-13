@@ -339,34 +339,60 @@ const HomePage = () => {
     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
      <SwiperSlide className="SwiperSlide">
       <div className="ImagesHolder">
-       <img
+       <motion.img
+          initial={{ opacity: 0,scale:0 }} // Initial position above the container
+          animate={{ opacity: 1,scale:1}} // Final position inside the container
+          transition={{ type: 'spring', stiffness: 260, damping: 30 }} // Spring animation config
+       
+       
         src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg"
         className="SwiperImages"
        />
-       <img
+       <motion.img
+        initial={{ opacity: 0,scale:0 }} // Initial position above the container
+        animate={{ opacity: 1,scale:1}} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30,delay:0.5 }} // Spring animation config
+     
         src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg"
         className="SwiperImages"
        />
-       <img
+       <motion.img
+        initial={{ opacity: 0,scale:0 }} // Initial position above the container
+        animate={{ opacity: 1,scale:1}} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30,delay:1 }} // Spring animation config
+     
         src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg"
         className="SwiperImages"
        />
 
-       <p className="WhiteLetters">
+       <motion.p className="WhiteLetters"
+       initial={{ opacity: 0,scale:0 }} // Initial position above the container
+       animate={{ opacity: 1,scale:1}} // Final position inside the container
+       transition={{ type: 'spring', stiffness: 260, damping: 30,delay:1.5 }} // Spring animation config
+    >
         THEY HURT YOU
         <br />
-        <span className="RedLetters">IT'S TIME TO FIGHT BACK</span>
-       </p>
+        <motion.span className="RedLetters"
+           initial={{ opacity: 0,scale:0 }} // Initial position above the container
+           animate={{ opacity: 1,scale:1}} // Final position inside the container
+           transition={{ type: 'spring', stiffness: 260, damping: 30,delay:2 }} // Spring animation config
+        >IT'S TIME TO FIGHT BACK</motion.span>
+       </motion.p>
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
-      <div className='SlideHolder'>
+      <motion.div className='SlideHolder'
+         initial={{ opacity: 0, y: -100 }} // Initial position above the container
+         animate={{ opacity: 1, y: 0 }} // Final position inside the container
+         transition={{ type: 'spring', stiffness: 260, damping: 20 }} // Spring animation config
+      
+      >
             <img  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
             <div className='TextDiv'>
                   <p className='MainText'>One of the nation's dominant personal injury firms</p>
                   <p className='SubText'>The Philadelphia Inquirer</p>
             </div>
-      </div>
+      </motion.div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
      <div className='SlideHolder'>
