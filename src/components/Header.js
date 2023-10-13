@@ -151,7 +151,7 @@ const Header = () => {
      </h3>
      <div
       className="SidebarHolder"
-      onClick={PraticeClicked}
+//       onClick={PraticeClicked}
       style={{ display: 'flex', color: 'white' }}
      >
       <h3
@@ -165,7 +165,7 @@ const Header = () => {
       >
        Practice Areas
       </h3>
-      <KeyboardArrowDownIcon className="SideArrow" />
+      {/* <KeyboardArrowDownIcon className="SideArrow" /> */}
      </div>
      {PraticeClickedVal && (
       <div className="SidebarDropdown">
@@ -553,11 +553,11 @@ FREE CASE EVALUATION
       </Link>
       <div
        className="NavButtonHolder"
-       onMouseEnter={handleMouseEnter}
-       onMouseLeave={handleMouseLeave}
+       // onMouseEnter={handleMouseEnter}
+       // onMouseLeave={handleMouseLeave}
       >
        <p className="NavigationButton">Practice Areas</p>
-       <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} />
+       {/* <KeyboardArrowDownIcon className="ArrowIcon" style={{ fontSize: 20 }} /> */}
        <div className="BelowLine"></div>
        {isHovered && (
         <motion.div
