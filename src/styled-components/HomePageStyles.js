@@ -358,6 +358,110 @@ export const Main = styled.div`
  @media (min-width: 1025px) and (max-width: 1280px) {
  }
 `
+
+export const CaseCards = styled.div`
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+ position: relative;
+ 
+ .Toptext{
+      width:60%;
+      text-align: center;
+      font-size: 20px;
+      color:grey;
+ }
+ .CardHolder{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 75%;
+      padding-bottom:5%;
+ }
+ .Cardlist1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 27%;
+ }
+ .Cardlist2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 27%;
+      margin-top: 10%;
+ }
+ .Cardlist3{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 27%;
+ }
+ .displayCard{
+      height: 100%;
+      background-color: white;
+      width: 100%;
+      margin-top: 10%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      border-top: 5px solid red;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-bottom: 2%;
+      border-radius: 3px;
+ }
+ .titletext{
+      font-size:14px;
+      font-weight: 700;
+      margin-bottom: 0px;
+ }
+ .AmountText{
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      color:red;
+ }
+ .descriptionText{
+      display: -webkit-box;
+  -webkit-line-clamp: 5; /* Adjust this number to the desired number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 100;
+ }
+ .ShowMore{
+      display: flex;
+ }
+ .readText{
+      color: red;
+ }
+.ArrowIcon{
+      color: red;
+}
+.MainTextHolder{
+      width:100%;
+      padding-top:2%;
+      padding-bottom:2%;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.MainText{
+      width: 50%;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      font-weight: 100;
+}
+
+`
 export const Main1 = styled.div`
  display: flex;
  justify-content: center;
