@@ -8,8 +8,8 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import ForumIcon from '@mui/icons-material/Forum';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
+import ForumIcon from '@mui/icons-material/Forum'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -67,6 +67,78 @@ const HomePage = () => {
  const [name, setName] = useState('')
  const [email, setEmail] = useState('')
  const [message, setMessage] = useState('')
+
+ 
+ const [Slide1, setSlide1] = useState(false)
+
+ const [Slide2, setSlide2] = useState(false)
+
+ const [Slide3, setSlide3] = useState(false)
+
+ const [Slide4, setSlide4] = useState(false)
+
+ const [Slide5, setSlide5] = useState(false)
+
+ const handleSlideChange = (swiper) => {
+  console.log('Current slide index: ' + swiper.activeIndex)
+
+  switch (swiper.activeIndex) {
+      case 0: {
+            setSlide1(true)
+            setSlide2(false)
+      
+            setSlide3(false)
+        
+            setSlide4(false)
+        
+            setSlide5(false)
+          break
+         }
+   case 1: {
+      setSlide2(true)
+
+      setSlide3(false)
+  
+      setSlide4(false)
+  
+      setSlide5(false)
+      setSlide1(false)
+    break
+   }
+   case 2: {
+      setSlide3(true)
+
+    setSlide2(false)
+
+    setSlide4(false)
+
+    setSlide5(false)
+    
+    setSlide1(false)
+    break
+   }
+   case 3: {
+    setSlide4(true)
+
+    setSlide2(false)
+
+    setSlide3(false)
+
+    setSlide5(false)
+    
+    setSlide1(false)
+   }
+   case 4: {
+    setSlide5(true)
+
+    setSlide2(false)
+
+    setSlide3(false)
+
+    setSlide4(false)
+   }
+  }
+ }
 
  const handleSubmit = (e) => {
   e.preventDefault()
@@ -259,19 +331,20 @@ const HomePage = () => {
 
  return (
   <HomePageContainer>
-    <div className='LiveChatPrompt'>
-          <p className='LiveChatText'>LIVE  <span >CHAT</span></p>
-    </div>
+   <div className="LiveChatPrompt">
+    <p className="LiveChatText">
+     LIVE <span>CHAT</span>
+    </p>
+   </div>
 
-    <div className='Message'>
-        <ForumIcon className='Icon' style={{fontSize:50}}/>
-    </div>
+   <div className="Message">
+    <ForumIcon className="Icon" style={{ fontSize: 50 }} />
+   </div>
 
-
-    <div className='NewsPrompt'>
-          <p className='NewsText'>FEATURED NEWS</p>
-          <KeyboardArrowLeftIcon className='MoreArrow'/>
-    </div>
+   <div className="NewsPrompt">
+    <p className="NewsText">FEATURED NEWS</p>
+    <KeyboardArrowLeftIcon className="MoreArrow" />
+   </div>
    <motion.div
     className="SideIcons"
     initial={{ opacity: 0, y: 100 }}
@@ -336,89 +409,146 @@ const HomePage = () => {
      </div>
     </div> */}
 
-    <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+    <Swiper
+     pagination={true}
+     modules={[Pagination]}
+     onSlideChange={handleSlideChange}
+     className="mySwiper"
+    >
      <SwiperSlide className="SwiperSlide">
       <div className="ImagesHolder">
        <motion.img
-          initial={{ opacity: 0,scale:0 }} // Initial position above the container
-          animate={{ opacity: 1,scale:1}} // Final position inside the container
-          transition={{ type: 'spring', stiffness: 260, damping: 30 }} // Spring animation config
-       
-       
+        initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg"
         className="SwiperImages"
        />
        <motion.img
-        initial={{ opacity: 0,scale:0 }} // Initial position above the container
-        animate={{ opacity: 1,scale:1}} // Final position inside the container
-        transition={{ type: 'spring', stiffness: 260, damping: 30,delay:0.5 }} // Spring animation config
-     
+        initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 0.5 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg"
         className="SwiperImages"
        />
        <motion.img
-        initial={{ opacity: 0,scale:0 }} // Initial position above the container
-        animate={{ opacity: 1,scale:1}} // Final position inside the container
-        transition={{ type: 'spring', stiffness: 260, damping: 30,delay:1 }} // Spring animation config
-     
+        initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg"
         className="SwiperImages"
        />
 
-       <motion.p className="WhiteLetters"
-       initial={{ opacity: 0,scale:0 }} // Initial position above the container
-       animate={{ opacity: 1,scale:1}} // Final position inside the container
-       transition={{ type: 'spring', stiffness: 260, damping: 30,delay:1.5 }} // Spring animation config
-    >
+       <motion.p
+        className="WhiteLetters"
+        initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1.5 }} // Spring animation config
+       >
         THEY HURT YOU
         <br />
-        <motion.span className="RedLetters"
-           initial={{ opacity: 0,scale:0 }} // Initial position above the container
-           animate={{ opacity: 1,scale:1}} // Final position inside the container
-           transition={{ type: 'spring', stiffness: 260, damping: 30,delay:2 }} // Spring animation config
-        >IT'S TIME TO FIGHT BACK</motion.span>
+        <motion.span
+         className="RedLetters"
+         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+         animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 2 }} // Spring animation config
+        >
+         IT'S TIME TO FIGHT BACK
+        </motion.span>
        </motion.p>
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
-      <motion.div className='SlideHolder'
-         initial={{ opacity: 0, y: -100 }} // Initial position above the container
-         animate={{ opacity: 1, y: 0 }} // Final position inside the container
-         transition={{ type: 'spring', stiffness: 260, damping: 20 }} // Spring animation config
-      
+      <motion.div
+       className="SlideHolder"
+       initial={{ opacity: 0, y: -100 }} // Initial position above the container
+       animate={{ opacity: 1, y: 0 }} // Final position inside the container
+       transition={{ type: 'spring', stiffness: 260, damping: 20 }} 
       >
-            <img  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
-            <div className='TextDiv'>
-                  <p className='MainText'>One of the nation's dominant personal injury firms</p>
-                  <p className='SubText'>The Philadelphia Inquirer</p>
-            </div>
+       <motion.img
+        initial={{ opacity: 0, scale: 0 }} 
+        animate={!Slide2 ? {} : { opacity: 1, scale: 1 }} 
+        transition={{ type: 'spring', stiffness: 260, damping: 30 }} 
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+        className="SingleImage"
+       />
+       <div className="TextDiv">
+        <motion.p
+         className="MainText"
+         initial={{ opacity: 0, y: -100 }} // Initial position above the container
+         animate={!Slide2 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+         transition={{
+          type: 'spring',
+          stiffness: 260,
+          damping: 30,
+          delay: 0.4,
+         }} // Spring animation config
+        >
+         One of the nation's dominant personal injury firms
+        </motion.p>
+        <motion.p
+         className="SubText"
+         initial={{ opacity: 0, y: 100 }} // Initial position above the container
+         animate={!Slide2 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }}
+        >
+         The Philadelphia Inquirer
+        </motion.p>
+       </div>
       </motion.div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
-     <div className='SlideHolder'>
-            <img  src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
-            <div className='TextDiv'>
-                  <p className='MainText2'>$ 1 Million</p>
-                  <p className='SubText2'>Settlement Reached in Amtrak Train Derailment</p>
-            </div>
+      <div className="SlideHolder">
+       <motion.img
+        initial={{ opacity: 0, scale: 0 }} // Initial position above the container
+        animate={!Slide3 ? {} : { opacity: 1, scale: 1 }} // Final position inside the container
+        transition={{ type: 'spring', stiffness: 260, damping: 30 }}
+        src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+        className="SingleImage"
+       />
+       <div className="TextDiv">
+        <motion.p className="MainText2"
+         initial={{ opacity: 0, y: -100 }} // Initial position above the container
+         animate={!Slide3 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+         transition={{
+          type: 'spring',
+          stiffness: 260,
+          damping: 30,
+          delay: 0.4,
+         }}>$ 1 Million</motion.p>
+        <motion.p className="SubText2"
+          initial={{ opacity: 0, y: 100 }} // Initial position above the container
+          animate={!Slide3 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+          transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }}>
+         Settlement Reached in Amtrak Train Derailment
+        </motion.p>
+       </div>
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
-     <div className='SlideHolder'>
-            <img  src="https://images.unsplash.com/photo-1509330008791-ef3fb25a4a01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" className='SingleImage'/>
-            <div className='TextDiv'>
-                  <p className='MainText'>"The King of Construction Accidents."</p>
-                  <p className='SubText'>The Times Magazine</p>
-            </div>
+      <div className="SlideHolder">
+       <img
+        src="https://images.unsplash.com/photo-1509330008791-ef3fb25a4a01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
+        className="SingleImage"
+       />
+       <div className="TextDiv">
+        <p className="MainText">"The King of Construction Accidents."</p>
+        <p className="SubText">The Times Magazine</p>
+       </div>
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
-     <div className='SlideHolder'>
-            <img  src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" className='SingleImage'/>
-            <div className='TextDiv'>
-                  <p className='MainText2'>$ 1 Million</p>
-                  <p className='SubText2'>Settlement Reached in Amtrak Train Derailment</p>
-            </div>
+      <div className="SlideHolder">
+       <img
+        src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+        className="SingleImage"
+       />
+       <div className="TextDiv">
+        <p className="MainText2">$ 1 Million</p>
+        <p className="SubText2">
+         Settlement Reached in Amtrak Train Derailment
+        </p>
+       </div>
       </div>
      </SwiperSlide>
     </Swiper>
@@ -851,7 +981,12 @@ const HomePage = () => {
       recoveries.
      </p>
 
-     <Swiper pagination={true} autoplay={{ delay: 100 }} modules={[Pagination]} className="mySwiper">
+     <Swiper
+      pagination={true}
+      autoplay={{ delay: 100 }}
+      modules={[Pagination]}
+      className="mySwiper"
+     >
       <SwiperSlide className="SwiperSlide">
        <div className="TextHolder">
         <p className="MainText">
@@ -860,21 +995,21 @@ const HomePage = () => {
        </div>
       </SwiperSlide>
       <SwiperSlide className="SwiperSlide">
-      <div className="TextHolder">
+       <div className="TextHolder">
         <p className="MainText">
          The Largest Verdict for a Construction Worker in Pennsylvania History
         </p>
        </div>
       </SwiperSlide>
       <SwiperSlide className="SwiperSlide">
-      <div className="TextHolder">
+       <div className="TextHolder">
         <p className="MainText">
          The Largest Verdict for a Construction Worker in Pennsylvania History
         </p>
        </div>
       </SwiperSlide>
       <SwiperSlide className="SwiperSlide">
-      <div className="TextHolder">
+       <div className="TextHolder">
         <p className="MainText">
          The Largest Verdict for a Construction Worker in Pennsylvania History
         </p>
