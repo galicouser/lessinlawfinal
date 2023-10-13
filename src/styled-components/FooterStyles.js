@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
     height: 100%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    background-color: #4A4A4A;
+    background-color: #13678A;
     display: flex;
     flex-direction: column;
     justify-content: center;

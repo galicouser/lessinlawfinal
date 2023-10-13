@@ -410,7 +410,7 @@ export const CaseCards = styled.div`
       width: 100%;
       margin-top: 10%;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-      border-top: 5px solid red;
+      border-top: 5px solid  #012030;
       padding-left: 2%;
       padding-right: 2%;
       padding-bottom: 2%;
@@ -425,7 +425,7 @@ export const CaseCards = styled.div`
       font-size: 50px;
       margin-top: 0px;
       margin-bottom: 5px;
-      color:red;
+      color: #012030;
  }
  .descriptionText{
       display: -webkit-box;
@@ -439,16 +439,16 @@ export const CaseCards = styled.div`
       display: flex;
  }
  .readText{
-      color: red;
+      color:  #012030;
  }
 .ArrowIcon{
-      color: red;
+      color:  #012030;
 }
 .MainTextHolder{
       width:100%;
       padding-top:2%;
       padding-bottom:2%;
-      background-color:#ED3326;
+      background-color: #012030;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -491,7 +491,7 @@ justify-content: center;
       justify-content: center;
 }
 .Holder{
-      background-color: #ED3326;
+      background-color:  #012030;
       display: flex;
       flex-direction: column;
       justify-content: center;

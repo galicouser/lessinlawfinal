@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 .AttorneyReferral{
-  background-color: #4A4A4A;
+  background-color: #13678A;
   width:12%;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   font-weight: 700;
 }
 .FreeCase{
-  background-color: #EA3520;
+  background-color: #012030;
   color:white;
   font-weight: 700;
   width:12%;
