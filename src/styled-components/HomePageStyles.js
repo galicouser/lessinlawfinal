@@ -543,7 +543,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-
+.swiper-pagination-bullet {
+  background: white; /* Change 'your-color' to the desired color */
+}
 .mySwiper{
       height: 100%;
       width: 100%;
@@ -621,7 +623,12 @@ align-items: center;
 
 export const LawyerCarosel = styled.div`
 
-
+.swiper-pagination-bullet {
+  background: grey; /* Change 'your-color' to the desired color */
+}
+.swiper-pagination-bullet-active {
+  background: red; /* Change 'your-active-color' to the color for the active bullet */
+}
 .mySwiper{
       height: 80vh;
       width: 100%;

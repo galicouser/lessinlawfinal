@@ -825,7 +825,7 @@ const HomePage = () => {
       recoveries.
      </p>
 
-     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+     <Swiper pagination={true} autoplay={{ delay: 100 }} modules={[Pagination]} className="mySwiper">
       <SwiperSlide className="SwiperSlide">
        <div className="TextHolder">
         <p className="MainText">
@@ -833,9 +833,27 @@ const HomePage = () => {
         </p>
        </div>
       </SwiperSlide>
-      <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
-      <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
-      <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
+      <SwiperSlide className="SwiperSlide">
+      <div className="TextHolder">
+        <p className="MainText">
+         The Largest Verdict for a Construction Worker in Pennsylvania History
+        </p>
+       </div>
+      </SwiperSlide>
+      <SwiperSlide className="SwiperSlide">
+      <div className="TextHolder">
+        <p className="MainText">
+         The Largest Verdict for a Construction Worker in Pennsylvania History
+        </p>
+       </div>
+      </SwiperSlide>
+      <SwiperSlide className="SwiperSlide">
+      <div className="TextHolder">
+        <p className="MainText">
+         The Largest Verdict for a Construction Worker in Pennsylvania History
+        </p>
+       </div>
+      </SwiperSlide>
      </Swiper>
     </div>
    </TextSwiper>
