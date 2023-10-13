@@ -38,6 +38,7 @@ import {
  CaseCards,
  LawyerCarosel,
  Awards,
+ TextSwiper,
  Main,
  Main1,
  Sidebar,
@@ -758,6 +759,32 @@ const HomePage = () => {
              
               </div>
    </Awards>
+
+   <TextSwiper>
+          <div className='StartText'>
+          <p className='Text'>If you or a family member has suffered a severe injury or the tragic loss of a loved one, SMB is committed to pursuing justice on your behalf. Feel free to get in touch with SMB today to discover how we can provide assistance.
+          </p>
+          </div>
+
+        <div className='Holder'>
+          <p className='TopText'>Select the attorneys known for achieving the highest and unprecedented recoveries.</p>
+      
+          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+       
+     <SwiperSlide className="SwiperSlide">
+      <div className="TextHolder">
+       
+        <p className='MainText'>The Largest Verdict for a Construction Worker in Pennsylvania History</p>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
+    </Swiper>
+    </div>
+
+
+   </TextSwiper>
 
    {/* <Testimonials>
     <div className="Holder">

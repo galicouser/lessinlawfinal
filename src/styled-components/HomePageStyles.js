@@ -448,7 +448,7 @@ export const CaseCards = styled.div`
       width:100%;
       padding-top:2%;
       padding-bottom:2%;
-      background-color: red;
+      background-color:#ED3326;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -457,7 +457,7 @@ export const CaseCards = styled.div`
       width: 50%;
       text-align: center;
       font-size: 20px;
-      color: white;
+      color: #FFEEDF;
       font-weight: 100;
 }
 
@@ -465,6 +465,71 @@ export const CaseCards = styled.div`
 
 
 
+export const TextSwiper = styled.div`
+
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+.mySwiper{
+      height: 100%;
+      width: 100%;
+}
+.SwiperSlide{
+      height: 100%;
+      width: 100%;
+}
+.TextHolder{
+      height: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.Holder{
+      background-color: #ED3326;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2.5%;
+      
+      padding-bottom: 2.5%;
+}
+.TopText{
+      color: #FFEEDF;
+      margin-bottom: 0px;
+      font-size: 20px;
+      text-transform: uppercase;
+}
+
+.MainText{
+      font-size: 35px;
+      font-weight: 400;
+      color: #FFEEDF;
+}
+
+.StartText{
+      background-color: white;
+      padding-top:3%;
+      padding-bottom: 3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.Text{
+      width: 60%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 100;
+      color: grey;
+}
+
+`
 
 export const Awards = styled.div`
 width: 100%;
