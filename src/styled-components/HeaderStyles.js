@@ -146,6 +146,8 @@ const GlobalStyles = createGlobalStyle`
   
   box-shadow: 1px 1px 1px rgb(255,255,255,0.5);
 }
+
+
 .NavButtonHolder:hover .BelowLine2{
   background-color:black;
   right: 2px;
@@ -172,7 +174,7 @@ const GlobalStyles = createGlobalStyle`
   height: 1px;
   width:100%;
   background-color: rgb(0,0,0,0.0);
-  bottom: 26px;
+  bottom: 10px;
   position: absolute;
   transition: all 0.5s;
   right:30px;
