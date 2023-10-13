@@ -16,7 +16,21 @@ export const HomePageContainer = styled.div`
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
  }
-
+ .Message{
+     position: fixed;
+     bottom:5%;
+     right: 5%;
+     border-radius: 50%;
+     background-color: whitesmoke;
+     z-index: 100;
+     padding: 1%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .Icon{
+     font-size: 10px;
+ }
  .SideIcons {
   position: fixed;
   right: 1%;
@@ -686,7 +700,8 @@ export const Main1 = styled.div`
  .MainText2{
      text-align: center;
      font-size: 70px;
-     color:white;
+     color:whitesmoke;
+     outline: none;
      font-weight: 1000;
      line-height: 50px;
  }
@@ -698,7 +713,7 @@ export const Main1 = styled.div`
      font-weight: 1000;
      text-align: left;
      line-height: 50px;
-     color:red;
+     color:#EE3425;
      font-style: italic;
      margin-top: 20px;
  }
@@ -708,7 +723,7 @@ export const Main1 = styled.div`
      text-align: center;
      
      line-height: 50px;
-     color:red;
+     color:#EE3425;
      margin-top: 20px;
  }
  .mySwiper{

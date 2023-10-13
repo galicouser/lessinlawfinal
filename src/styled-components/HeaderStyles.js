@@ -23,9 +23,8 @@ const GlobalStyles = createGlobalStyle`
   width: 75%;
 }
 .PraticeSwiperImage{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+ height: 100%;
+ width: 100%;
   position: absolute;
   z-index: -1;
 }

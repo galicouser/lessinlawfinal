@@ -24,6 +24,7 @@ const Header = () => {
  const [isHovered, setIsHovered] = useState(false)
  const [isHovered2, setIsHovered2] = useState(false)
  const [isHovered3, setIsHovered3] = useState(false)
+ const [isHovered4, setIsHovered4] = useState(false)
 
  const [expanded, setExpanded] = React.useState(false)
 
@@ -54,6 +55,14 @@ const Header = () => {
  const handleMouseLeave3 = () => {
   setIsHovered3(false)
  }
+ 
+ const handleMouseEnter4 = () => {
+      setIsHovered4(true)
+     }
+    
+     const handleMouseLeave4 = () => {
+      setIsHovered4(false)
+     }
  const [state, setState] = React.useState({
   left: false,
  })
@@ -705,8 +714,26 @@ FREE CASE EVALUATION
       <div className="NavButtonHolder">
        <p className="NavigationButton">Login</p>
        <motion.div className="BelowLine"></motion.div>
+       {isHovered4 && (
+        <motion.div
+         className="dropdownMenu"
+         onClick={handleMouseLeave3}
+         initial={{ y: 50 }}
+         animate={{ y: 0 }}
+         transition={{ type: 'spring', damping: 15 }}
+        >
+         <Link to="/PhiladelphiaLocation">
+          <p className="MenuItems"> </p>
+         </Link>
+         <Link to="/JerseyLocation">
+          <p className="MenuItems"></p>
+         </Link>
+        </motion.div>
+       )}
       </div>
-      <div className="NavButtonHolder">
+      <div className="NavButtonHolder"
+       onMouseEnter={handleMouseEnter4}
+       onMouseLeave={handleMouseLeave4}>
        <SearchIcon className="SearchIcon"/>
       </div>
      </div>

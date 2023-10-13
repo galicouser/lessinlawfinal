@@ -9,6 +9,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import ForumIcon from '@mui/icons-material/Forum';
 
 // Import Swiper styles
 import 'swiper/css'
@@ -260,6 +261,10 @@ const HomePage = () => {
   <HomePageContainer>
     <div className='LiveChatPrompt'>
           <p className='LiveChatText'>LIVE  <span >CHAT</span></p>
+    </div>
+
+    <div className='Message'>
+        <ForumIcon className='Icon' style={{fontSize:50}}/>
     </div>
 
 
