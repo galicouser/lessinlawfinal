@@ -462,6 +462,58 @@ export const CaseCards = styled.div`
 }
 
 `
+
+export const LawyerCarosel = styled.div`
+
+
+.mySwiper{
+      height: 80vh;
+      width: 100%;
+ }
+ .SwiperSlide{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #131313;
+      position: relative;
+ }
+ .SwiperImage{
+      object-fit: cover;
+      position: absolute;
+ }
+
+ .TextHolder{
+      z-index: 10;
+      width: 25%;
+      margin-left: 15%;
+      padding-top:2.5%;
+      padding-bottom:2.5%;
+
+ }
+ .MainText{
+      font-size: 25px;
+      font-weight: bold;
+ }
+ .Biodiv{
+      display:flex;
+      align-items: center;
+ }
+ .Biodiv:hover{
+      cursor: pointer;
+ }
+ .ViewText{
+      font-size: 18px;
+      color:red;
+ }
+ .SubText{
+      font-weight: 100;
+ }
+ .ArrowIcon{
+      color: red;
+ }
+
+`
 export const Main1 = styled.div`
  display: flex;
  justify-content: center;

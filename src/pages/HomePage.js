@@ -14,7 +14,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Navbar from '../components/Navbar'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -26,17 +26,17 @@ import { Autoplay, Navigation } from 'swiper/modules'
 //
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules'
 //
 
 import {
  HomePageContainer,
  CaseCards,
+ LawyerCarosel,
  Main,
  Main1,
  Sidebar,
@@ -326,231 +326,428 @@ const HomePage = () => {
      </div>
     </div> */}
 
-  <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide className='SwiperSlide'>
-          <div className='ImagesHolder'>
-            <img src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg" className='SwiperImages'/>
-            <img src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg" className='SwiperImages'/>
-            <img src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg" className='SwiperImages'/>
-            
-             <p className='WhiteLetters'>THEY HURT YOU
-             <br/><span className='RedLetters'>IT'S TIME TO FIGHT BACK</span></p>
-             
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className='SwiperSlide'>Slide 2</SwiperSlide>
-        <SwiperSlide className='SwiperSlide'>Slide 3</SwiperSlide>
-        <SwiperSlide className='SwiperSlide'>Slide 4</SwiperSlide>
-      </Swiper>
+    <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+     <SwiperSlide className="SwiperSlide">
+      <div className="ImagesHolder">
+       <img
+        src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg"
+        className="SwiperImages"
+       />
+       <img
+        src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg"
+        className="SwiperImages"
+       />
+       <img
+        src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg"
+        className="SwiperImages"
+       />
+
+       <p className="WhiteLetters">
+        THEY HURT YOU
+        <br />
+        <span className="RedLetters">IT'S TIME TO FIGHT BACK</span>
+       </p>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 2</SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 3</SwiperSlide>
+     <SwiperSlide className="SwiperSlide">Slide 4</SwiperSlide>
+    </Swiper>
    </Main1>
+
    <CaseCards>
-        <div className='Toptext'>Lessin Law is among the top personal injury firms nationwide, having successfully obtained some of the most substantial settlements and verdicts in the legal history of Pennsylvania and New Jersey. It enjoys widespread recognition as a preeminent legal firm in the United States when it comes to advocating for workers who have suffered injuries or lost their lives while on the job. Renowned for its ability to secure victories in challenging, high-profile cases, Lessin Law maintains an exceptional record in defending the rights of injured victims.</div>
-    
-      <div className='CardHolder'> 
+    <div className="Toptext">
+     Lessin Law is among the top personal injury firms nationwide, having
+     successfully obtained some of the most substantial settlements and verdicts
+     in the legal history of Pennsylvania and New Jersey. It enjoys widespread
+     recognition as a preeminent legal firm in the United States when it comes
+     to advocating for workers who have suffered injuries or lost their lives
+     while on the job. Renowned for its ability to secure victories in
+     challenging, high-profile cases, Lessin Law maintains an exceptional record
+     in defending the rights of injured victims.
+    </div>
 
-            <div className='Cardlist1'>
-
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-            </div>
-            
-            <div className='Cardlist2'>
-           
-            <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-            </div>
-            
-            <div className='Cardlist3'>
-            
-            <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-                    
-                    <div className='displayCard'>
-                        <p className='titletext'>VERDICTS AND SETTLEMENTS</p>
-                        <p className='AmountText'>$26,550,000</p>
-                        <p className='descriptionText'>
-                        $26.550 million is being provided to former landscape service worker David Williams, 32, because those responsible for maintaining his company truck allegedly wouldn’t spend a few hundred dollars to replace bald, dangerous tires linked to the sudden November 2011 rollover that rendered the father of three young sons a quadriplegic, attorney Robert J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C. announced today. The settlement amount is the largest ever in a Philadelphia County personal injury case.
-                        </p>
-                        <div className='ShowMore'>
-                          <p className='readText'>Read Story</p>
-                          <ArrowRightAltIcon className='ArrowIcon'/>
-                        </div>
-                    </div>
-
-            </div>
-
+    <div className="CardHolder">
+     <div className="Cardlist1">
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
       </div>
 
-      <div className='MainTextHolder'>
-        <div className='MainText'>
-        When faced with a challenging, prominent case that demands seasoned trial attorneys equipped with the expertise and capabilities to confront major corporations and insurers and emerge victorious, individuals affected by accidents and their loved ones seek assistance from Lessin Law.
-     
-        </div>
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
       </div>
-   
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+     </div>
+
+     <div className="Cardlist2">
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+     </div>
+
+     <div className="Cardlist3">
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+
+      <div className="displayCard">
+       <p className="titletext">VERDICTS AND SETTLEMENTS</p>
+       <p className="AmountText">$26,550,000</p>
+       <p className="descriptionText">
+        $26.550 million is being provided to former landscape service worker
+        David Williams, 32, because those responsible for maintaining his
+        company truck allegedly wouldn’t spend a few hundred dollars to replace
+        bald, dangerous tires linked to the sudden November 2011 rollover that
+        rendered the father of three young sons a quadriplegic, attorney Robert
+        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
+        announced today. The settlement amount is the largest ever in a
+        Philadelphia County personal injury case.
+       </p>
+       <div className="ShowMore">
+        <p className="readText">Read Story</p>
+        <ArrowRightAltIcon className="ArrowIcon" />
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <div className="MainTextHolder">
+     <div className="MainText">
+      When faced with a challenging, prominent case that demands seasoned trial
+      attorneys equipped with the expertise and capabilities to confront major
+      corporations and insurers and emerge victorious, individuals affected by
+      accidents and their loved ones seek assistance from Lessin Law.
+     </div>
+    </div>
    </CaseCards>
 
+   <LawyerCarosel>
+    <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+     <SwiperSlide className="SwiperSlide">
+      <img
+       className="SwiperImage"
+       src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+      />
+      <div className='TextHolder'>
+       <p className="MainText">
+       With a focus on personal injury law, John is dedicated to representing those who 
+       have been injured due to the negligence of others. He tirelessly fights for the rights of 
+       accident victims and their families, ensuring they receive the compensation they deserve. </p>
+       <p className="SubText">
+        Person - Founder
+       </p>
+       <div className="Biodiv">
+        <div className='ViewText'>View Bio</div>
+        <ArrowRightAltIcon  className='ArrowIcon'/>
+       </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+      <img
+       className="SwiperImage"
+       src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+      />
+      <div className='TextHolder'>
+       <p className="MainText" style={{color:"white"}}>
+       With a focus on personal injury law, John is dedicated to representing those who 
+       have been injured due to the negligence of others. He tirelessly fights for the rights of 
+       accident victims and their families, ensuring they receive the compensation they deserve. </p>
+       <p className="SubText" style={{color:"white"}}>
+        Person - Founder
+       </p>
+       <div className="Biodiv">
+        <div className='ViewText'>View Bio</div>
+        <ArrowRightAltIcon  className='ArrowIcon'/>
+       </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+      <img
+       className="SwiperImage"
+       src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+      />
+      <div className='TextHolder'>
+       <p className="MainText">
+       With a focus on personal injury law, John is dedicated to representing those who 
+       have been injured due to the negligence of others. He tirelessly fights for the rights of 
+       accident victims and their families, ensuring they receive the compensation they deserve. </p>
+       <p className="SubText">
+        Person - Founder
+       </p>
+       <div className="Biodiv">
+        <div className='ViewText'>View Bio</div>
+        <ArrowRightAltIcon  className='ArrowIcon'/>
+       </div>
+      </div>
+     </SwiperSlide>
+     <SwiperSlide className="SwiperSlide">
+      <img
+       className="SwiperImage"
+       src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+      />
+      <div className='TextHolder'>
+       <p className="MainText">
+       With a focus on personal injury law, John is dedicated to representing those who 
+       have been injured due to the negligence of others. He tirelessly fights for the rights of 
+       accident victims and their families, ensuring they receive the compensation they deserve. </p>
+       <p className="SubText">
+        Person - Founder
+       </p>
+       <div className="Biodiv">
+        <div className='ViewText'>View Bio</div>
+        <ArrowRightAltIcon  className='ArrowIcon'/>
+       </div>
+      </div>
+     </SwiperSlide>
+    </Swiper>
+   </LawyerCarosel>
 
-
-
-   <Testimonials>
+   {/* <Testimonials>
     <div className="Holder">
      <p className="client">Client Testimonials</p>
      <div className="HolderInner">
@@ -574,7 +771,7 @@ const HomePage = () => {
     </div>
 
     <Reviews />
-   </Testimonials>
+   </Testimonials> */}
    <Footer />
   </HomePageContainer>
  )
