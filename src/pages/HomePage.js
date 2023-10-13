@@ -37,6 +37,7 @@ import {
  HomePageContainer,
  CaseCards,
  LawyerCarosel,
+ Awards,
  Main,
  Main1,
  Sidebar,
@@ -746,6 +747,17 @@ const HomePage = () => {
      </SwiperSlide>
     </Swiper>
    </LawyerCarosel>
+
+   <Awards>
+
+
+              <div className='ImageHolder'>
+                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/Best-Lawyers-in-America.png"/>
+                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/SuperLawyers2020.png"/>
+                      <img className='AwardImage' src="https://www.smbb.com/wp-content/themes/smbb/images/2023-Best-Law-Firms.png"/>
+             
+              </div>
+   </Awards>
 
    {/* <Testimonials>
     <div className="Holder">

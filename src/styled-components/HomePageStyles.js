@@ -463,6 +463,27 @@ export const CaseCards = styled.div`
 
 `
 
+
+
+
+export const Awards = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+ background-color: #EFEFEF;
+ padding-top:3%;
+ padding-bottom:3%;
+.ImageHolder{
+      width: 50%;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+
+}
+
+`
+
 export const LawyerCarosel = styled.div`
 
 
