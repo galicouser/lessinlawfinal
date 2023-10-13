@@ -1,7 +1,89 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-    background-color: #333;
+    width: 100%;
+    height: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .MainText{
+        font-size: 30px;
+        color: white;
+        font-weight: 1000;
+    }
+    .SubText{
+        font-size: 26px;
+        color: white;
+        font-weight: 100;
+    }
+    .ActionHolder{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2.5%;
+        align-items: center;
+    }
+    .FormFill{
+        background: none;
+        color: white;
+        padding: 1.5%;
+        border:1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        width: 250px;
+        height: 60px;
+    }
+    .CallNumber{
+        background: red;
+        border:3px solid red;
+        color: white;
+        padding: 1.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        width: 250px;
+        height: 60px;
+    }
+    .TextDivider{
+        font-size: 20px;
+        margin: 2%;
+        color: white;
+    }
+    .Partetion{
+        margin-top:4%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    .FooterLower{
+        width: 65%;
+        margin-top: 3%;
+    }
+    .Icon{
+        color: white;
+        font-size: 20px;
+    }
+    .SocialIcons{
+        width:200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .CopyrightText{
+        margin-top: 7px;
+        color: white;
+        font-weight: 100;
+    }
+
+
+    /* background-color: #333;
     color: #fff;
     height:100%;
     padding: 0.5rem;
@@ -75,7 +157,7 @@ export const FooterContainer = styled.footer`
         opacity: 1;
         z-index: -1; /* Place the background image behind the content */
         
-      }
+      /* }
     .InputIcon{
     }
     .InputTitle{
@@ -130,8 +212,8 @@ export const FooterContainer = styled.footer`
     }
 
     @media (max-width: 768px) {
-        flex-direction: column;
-        position: relative;
+        flex-direction:column
+        position: relative
         height:100%;
         .ContactPageHolder{
             background-color:#13678A;
@@ -205,7 +287,7 @@ export const FooterContainer = styled.footer`
         .ContactPageHolder{
             padding-bottom:7.5%;
         }
-    }
+    } */ 
 `
 
 export const FooterLogo = styled.div`

@@ -6,6 +6,11 @@ import MessageIcon from '@mui/icons-material/Message'
 
 import Button from '@mui/material/Button'
 
+ import FacebookIcon from '@mui/icons-material/Facebook';
+                import InstagramIcon from '@mui/icons-material/Instagram'; 
+                 import TwitterIcon from '@mui/icons-material/Twitter'; 
+                 import YouTubeIcon from '@mui/icons-material/YouTube'; 
+
 const Footer = () => {
  return (
   // <section>
@@ -39,7 +44,33 @@ const Footer = () => {
   //     </footer>
   // </section>
   <FooterContainer>
-   <div className="background-image"></div>
+    <div className='MainText'>ARE YOU READY FOR A FREE AND PRIVATE CASE ASSESSMENT?</div>
+    <div className='SubText'>Get in touch with us NOW. Timing is crucial for your case.</div>
+    <div className='ActionHolder'>
+            <div className='FormFill'>
+                FILL OUT THE CONTACT FORM
+            </div>
+            <div className='TextDivider'>or</div>
+            <div className='CallNumber'>
+                CALL +1 889 225 4444
+            </div>
+    </div>
+    <hr className='Partetion'/>
+
+    <div className='FooterLower'>
+        <div className='SocialIcons'>
+                <FacebookIcon className='Icon'/>
+                <InstagramIcon className='Icon'/>
+                <TwitterIcon className='Icon'/>
+                <YouTubeIcon className='Icon'/>
+               
+        </div>
+        <div className='CopyrightText'>
+        © 2023 Lessin Law LLC All rights reserved.
+        </div>
+    </div>
+   
+   {/* <div className="background-image"></div>
    <Grid container gap={2}>
     <Grid item lg={12}>
      <div>
@@ -79,7 +110,7 @@ const Footer = () => {
       </Grid>
      </div>
     </Grid>
-   </Grid>
+   </Grid> */}
   </FooterContainer>
  )
 }
