@@ -28,7 +28,7 @@ const PraticeArea =()=>{
                 We are dedicated to delivering results for our clients. Our legal professionals have established a robust history of achievement, thanks to their thorough preparation, unwavering attention to detail, and tireless efforts. With over 100 cases taken to verdict, we are experienced trial attorneys who pool our abilities, expertise, and resources to advocate for clients in diverse practice areas, encompassing:                </p>
          </div>
         
-         <Swiper pagination={true} navigation={true}  modules={[Pagination]} className="PraticeAreaSwiper">
+         <Swiper pagination={true} navigation={true}  modules={[Pagination,Navigation]} className="PraticeAreaSwiper">
             {carouselcontent1.map((item,index) =>(
                         <SwiperSlide index className='PraticeSlide'>
                             <img src={item.image} className='PraticeSwiperImage'/>
