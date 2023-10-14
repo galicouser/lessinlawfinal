@@ -88,6 +88,10 @@ export const HomePageContainer = styled.div`
      align-items: center;
      right: 0%;
  }
+ .NewsPromptHolder{
+     position: relative;
+ }
+
  .NewsPrompt:hover{
      cursor: pointer;
  }

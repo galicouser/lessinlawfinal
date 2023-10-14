@@ -301,6 +301,9 @@ const HomePage = () => {
 
  const [OurFirm2, setOurFirm2] = useState(false)
 
+ 
+ const [FeaturedNews, setFeaturedNews] = useState(false)
+
  function OurFirmClicked() {
   setOurFirm(!OurFirm)
   setSpecialCase(false)
@@ -331,6 +334,9 @@ const HomePage = () => {
   setSpecialCase(false)
   setSpecialLawyers(false)
  }
+ function FeaturedNewClicked (){
+      setFeaturedNews(!FeaturedNews)
+ }
 
  return (
   <HomePageContainer>
@@ -343,10 +349,19 @@ const HomePage = () => {
    <div className="Message">
     <ForumIcon className="Icon" style={{ fontSize: 50 }} />
    </div>
-
-   <div className="NewsPrompt">
+      <div className='NewsPromptHolder'>
+      {/* FeaturedNews */}
+   <div className="NewsPrompt"
+   onClick={FeaturedNewClicked}>
     <p className="NewsText">FEATURED NEWS</p>
     <KeyboardArrowLeftIcon className="MoreArrow" />
+    {/* {
+      FeaturedNews &&
+      <div className='NewsDisplay'>
+            d
+      </div>
+    } */}
+   </div>
    </div>
    <motion.div
     className="SideIcons"
