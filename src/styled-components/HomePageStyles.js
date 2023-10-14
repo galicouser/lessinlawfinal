@@ -68,12 +68,12 @@ export const HomePageContainer = styled.div`
  }
  .LiveChatText{
   transform: rotate(-90deg);
-  font-size: 30px;
+  font-size: 25px;
   white-space: nowrap;
   color: whitesmoke;
   margin-top: 15px;
   margin-right: 5px;
-  font-weight: 1000;
+  font-weight: 500;
  }
  .NewsPrompt{
      background-color: #8C030E;
@@ -173,6 +173,10 @@ export const HomePageContainer = styled.div`
   .NewsPrompt{
     display: none;
   }
+  .LiveChatText{
+    font-weight: 600;
+   }
+
  }
  @media (min-width: 800px) and (max-width: 950px) {
  }

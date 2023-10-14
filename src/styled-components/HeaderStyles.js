@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
 }
 .PraticeAreaSwiper{
   height: 80vh;
+  width: 80%;
+  border-radius: 10px;
 }
 .PraticeOpacityBackground{
   height: 100%;
@@ -28,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
 }
 .PraticeInner{
   padding-left: 5%;
-  width: 75%;
+  width: 80%;
 }
 .PraticeSwiperImage{
   position: absolute;
@@ -70,6 +72,7 @@ const GlobalStyles = createGlobalStyle`
   width: 100%;
   height: 150px;
   background-color: #FBFAF8;
+  cursor: pointer;
 }
 .CenterLogo{
   height: 100%;
@@ -84,7 +87,7 @@ const GlobalStyles = createGlobalStyle`
 
 .AttorneyReferral{
   background-color: #13678A;
-  width:12%;
+  width:20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
   background-color: #012030;
   color:white;
   font-weight: 700;
-  width:12%;
+  width:20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -652,6 +655,20 @@ ol {
     width: 100%;
     justify-content: end;
   }
+
+  .PraticeInner{
+    padding-left: 5%;
+    width: 100%;
+  }
+  .TextPassage{
+    font-size: 15px;
+  }
+  .PraticeTitle{
+    font-size: 25px;
+  }
+  .PraticeDescription{
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1050px){
@@ -713,7 +730,7 @@ ol {
   }
   .MenuIcon{
     display: unset;
-    color: white;
+    color: grey;
   }
   .HeaderInner{
     width: 95%;
@@ -724,6 +741,21 @@ ol {
     color:white;
     font-size: 30px;
     font-weight: 1000;
+  }
+  .TextPassage{
+    font-size: 15px;
+  }
+  .PraticeTitle{
+    font-size: 25px;
+  }
+  .PraticeDescription{
+    font-size: 20px;
+  }
+  .AttorneyReferral{
+   font-size: 12px;
+  }
+  .FreeCase{
+    font-size: 12px;
   }
 }
 
