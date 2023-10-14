@@ -374,7 +374,7 @@ const HomePage = () => {
       </div>
     }
    </div>
-   <motion.div
+   {/* <motion.div
     className="SideIcons"
     initial={{ opacity: 0, y: 100 }}
     animate={
@@ -396,7 +396,7 @@ const HomePage = () => {
     <div className="IconHolder">
      <SupportAgentIcon className="Icon" />
     </div>
-   </motion.div>
+   </motion.div> */}
    <>{card}</>
    <Main1>
     {/* <img

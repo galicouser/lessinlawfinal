@@ -167,6 +167,12 @@ export const HomePageContainer = styled.div`
   .Icon {
    font-size: 40px;
   }
+  .LiveChatPrompt{
+    display: none;
+  }
+  .NewsPrompt{
+    display: none;
+  }
  }
  @media (min-width: 800px) and (max-width: 950px) {
  }
@@ -586,6 +592,41 @@ export const CaseCards = styled.div`
       color: #FFEEDF;
       font-weight: 100;
 }
+@media (max-width: 768px) {
+     .Toptext{
+      width:80%;
+      font-size: 15px;
+      font-weight: 100;
+      color:grey;
+ }
+ .CardHolder{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+ }
+ .Cardlist1{
+     width:100%;
+ }
+ .Cardlist2{
+     width:100%;
+ }
+ .Cardlist3{
+     width:100%;
+ }
+ .displayCard{
+     width:95%;
+ }
+ .MainText{
+      width: 95%;
+      text-align: center;
+      font-size: 17px;
+      color: #FFEEDF;
+      font-weight: 100;
+      padding: 2%;
+}
+}
 
 `
 
@@ -657,6 +698,31 @@ justify-content: center;
       color: grey;
 }
 
+@media (max-width: 768px) {
+     .Text{
+      width: 95%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 100;
+      color: grey;
+}
+.StartText{
+      padding-top:4%;
+      padding-bottom: 0%;
+}
+.TopText{
+      font-size: 13px;
+      text-align: center;
+}
+.MainText{
+      font-size: 25px;
+      font-weight: 100;
+      text-align: center;
+}
+
+}
+
+
 `
 
 export const Awards = styled.div`
@@ -672,6 +738,19 @@ align-items: center;
       display: flex;
       justify-content:space-evenly;
       align-items: center;
+
+}
+@media (max-width: 768px) {
+.AwardImage{
+     width: 25%;
+}
+.ImageHolder{
+      width: 95%;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+
+}
 
 }
 
@@ -731,7 +810,20 @@ export const LawyerCarosel = styled.div`
  .ArrowIcon{
       color: red;
  }
+ 
+ @media (max-width: 768px) {
+     .MainText{
+          font-size: 22.5px;
+     }
+     .TextHolder{
+      z-index: 10;
+      width: 100%;
+      margin-left: 5%;
+      padding-top:2.5%;
+      padding-bottom:2.5%;
 
+ }
+ }
 `
 export const Main1 = styled.div`
  display: flex;
@@ -907,6 +999,46 @@ export const Main1 = styled.div`
    width: 100%;
    font-weight: 100;
   }
+  .WhiteLetters{
+     font-size: 25px;
+  }
+  .ImagesHolder{
+     width: 100%;
+  }
+  .SwiperImages{
+     height: 50%;
+     width: 33%;
+  }
+  .SlideHolder{
+     width: 100%;
+ }
+ .MainText{
+     font-size: 30px;
+     line-height: 30px;
+     text-align: center;
+ }
+ .SubText{
+     font-size: 25px;
+     line-height: 25px;
+     text-align: center;
+ }
+ .MainText2{
+     font-size: 30px;
+     line-height: 30px;
+     text-align: center;
+ }
+ .SubText2{
+     font-size: 25px;
+     line-height: 25px;
+     text-align: center;
+ }
+ .SingleImage{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+ }
+ 
   .textContentHolder {
    padding: 5%;
   }

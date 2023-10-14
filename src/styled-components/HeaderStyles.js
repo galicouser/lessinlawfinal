@@ -546,14 +546,22 @@ ol {
 }
 
 @media (max-width: 767px) {
+  .AttorneyReferral{
+  width:50%;
+  display: flex;
+  justify-content: center;
+}
+.FreeCase{
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
   .NavigationHolder{
     display: none;
   }
   .LogoName{
-    display: unset;
-    color:white;
-    font-size: 25px;
-    font-weight: 1000;
   }
   .LogoImage{
     display: unset;
@@ -624,7 +632,8 @@ ol {
   }
   .MenuIcon{
     display: unset;
-    color: white;
+    color: grey;
+    margin-right: 5px;
   }
   .Review{
     width: 75%;
@@ -640,8 +649,8 @@ ol {
     background-color: black;
   }
   .HeaderInner{
-    width: 95%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: end;
   }
 }
 

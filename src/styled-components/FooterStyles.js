@@ -98,6 +98,23 @@ export const FooterContainer = styled.footer`
         font-weight: 100;
     }
 
+    @media (max-width: 768px) {
+        .MainText{
+            text-align: center;
+            font-size:20px;
+        }
+        .SubText{
+            text-align: center;
+            font-size: 22px;
+        }
+        .FormFill{
+        width: 40%;
+    }
+    .CallNumber{
+        width: 40%;
+    }
+    }
+
 
     /* background-color: #333;
     color: #fff;
