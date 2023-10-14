@@ -621,7 +621,7 @@ const HomePage = () => {
      <div className="Cardlist1">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -640,7 +640,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -659,7 +659,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -677,7 +677,7 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -695,7 +695,7 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -716,7 +716,7 @@ const HomePage = () => {
      <div className="Cardlist2">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -735,7 +735,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -753,7 +753,7 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -772,7 +772,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -790,7 +790,7 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -811,7 +811,7 @@ const HomePage = () => {
      <div className="Cardlist3">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -830,7 +830,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -849,7 +849,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -868,7 +868,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
@@ -887,7 +887,7 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26,550,000</p>
+       <p className="AmountText">$26 M</p>
        <p className="descriptionText">
         $26.550 million is being provided to former landscape service worker
         David Williams, 32, because those responsible for maintaining his
