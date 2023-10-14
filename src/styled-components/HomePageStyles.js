@@ -595,6 +595,50 @@ export const CaseCards = styled.div`
       color: #FFEEDF;
       font-weight: 100;
 }
+@media (min-width: 769px) and (max-width:1150px) {
+    .Toptext{
+      width:80%;
+      font-size: 15px;
+      font-weight: 100;
+      color:grey;
+ }
+ .titletext{
+    text-align: center;
+ }
+ .AmountText{
+    text-align: center;
+ }
+ .descriptionText{
+    text-align: center;
+ }
+ .CardHolder{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+ }
+ .Cardlist1{
+     width:100%;
+ }
+ .Cardlist2{
+     width:100%;
+ }
+ .Cardlist3{
+     width:100%;
+ }
+ .displayCard{
+     width:95%;
+ }
+ .MainText{
+      width: 95%;
+      text-align: center;
+      font-size: 17px;
+      color: #FFEEDF;
+      font-weight: 100;
+      padding: 2%;
+}
+}
 @media (max-width: 768px) {
      .Toptext{
       width:80%;
@@ -812,6 +856,20 @@ export const LawyerCarosel = styled.div`
  }
  .ArrowIcon{
       color: red;
+ }
+
+ @media (min-width: 768px) and (max-width:1300px){
+     .MainText{
+          font-size: 22.5px;
+     }
+     .TextHolder{
+      z-index: 10;
+      width: 50%;
+      margin-left: 5%;
+      padding-top:2.5%;
+      padding-bottom:2.5%;
+
+ }
  }
  
  @media (max-width: 768px) {
