@@ -621,16 +621,10 @@ const HomePage = () => {
      <div className="Cardlist1">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Pike County Settlement</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        Williamsport - A confidential settlement was reached in a civil rights suit against the Pike County
+        Probation Department stemming from the death of a parolee, according to attorneys involved in the case.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -640,16 +634,9 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Excessive force lawsuit costs township $25K </p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        Kevin Efaw, 24 claimed that officers roughed him up and unleased a K9 on him while he was in handcuffs.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -659,16 +646,10 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">$ 300K Verdict in Vehile Negligence Case</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        On Dec, 12, 2001, Jose Lopez, then 48 years old, was injured in a car accident with a vehicle driven by Thyrone G. Chevannes
+        , according to the plaintiff's attorney, Jeffrey R. Lessin. The collision took place at the intersection of 51st and Market streets in Philadelphia.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -695,16 +676,11 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Pennsylvania Super Lawyers</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        Congratulations! You will be published in the June 2007 issue Pennsylvania Super Lawyers magazine featuring the top 5% 
+        of attorneys in the state, Pennsyvania Super Lawyers magazine will be distributed to attorneys in Pennsylvania and Delaware, nationwide to the lead counsel of Russell 3000 companies
+        and the ABA-accredited law libraries. Pennsylvania and Delaware attorneys will also appear in a special advertising section in the June 2007 issues of Philadelphia magazine. The publication will reach a combined audience of more than 535,000 readers.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -716,16 +692,10 @@ const HomePage = () => {
      <div className="Cardlist2">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">$1.85 M Settlement Reached in Lawsuit Over Fatal Accident</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+      A $1.85 million settlement was reached in the case of a Bangladeshi man who died from injuries
+      sustained in a New Jersey motor vehicle accident involving a Delaware River Port Authority police officers.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
