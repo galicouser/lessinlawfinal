@@ -893,7 +893,6 @@ export const Main1 = styled.div`
  height: 100%;
  width: 100%;
  position: relative;
- margin-bottom: 5%;
  .SlideHolder{
      width: 75%;
      height: 100%;
@@ -1055,14 +1054,30 @@ export const Main1 = styled.div`
   width: 75%;
   letter-spacing: 2px;
  }
+ .OpacityBackground2{
+    display: none;
+ }
  @media (max-width: 768px) {
   .textContent {
    font-size: 15px;
    width: 100%;
    font-weight: 100;
   }
+  .TextDiv{
+    z-index: 10;
+  }
+  .OpacityBackground2{
+    display: unset;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+  }
   .WhiteLetters{
      font-size: 25px;
+     z-index: 30;
   }
   .ImagesHolder{
      width: 100%;
@@ -1075,9 +1090,11 @@ export const Main1 = styled.div`
      width: 100%;
  }
  .MainText{
-     font-size: 30px;
-     line-height: 30px;
+     font-size: 50px;
+     font-weight: 1000;
+     line-height: 50px;
      text-align: center;
+     
  }
  .SubText{
      font-size: 25px;
@@ -1085,8 +1102,9 @@ export const Main1 = styled.div`
      text-align: center;
  }
  .MainText2{
-     font-size: 30px;
-     line-height: 30px;
+    font-size: 50px;
+     font-weight: 1000;
+     line-height: 50px;
      text-align: center;
  }
  .SubText2{

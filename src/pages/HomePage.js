@@ -445,6 +445,8 @@ const HomePage = () => {
      className="mySwiper"
     >
      <SwiperSlide className="SwiperSlide">
+     <div className='OpacityBackground2'></div>
+     
       <div className="ImagesHolder">
        <motion.img
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
@@ -485,9 +487,11 @@ const HomePage = () => {
          IT'S TIME TO FIGHT BACK
         </motion.span>
        </motion.p>
-      </div>
+       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
+     <div className='OpacityBackground2'></div>
+     
       <motion.div
        className="SlideHolder"
        initial={{ opacity: 0, y: -100 }} 
@@ -527,6 +531,8 @@ const HomePage = () => {
       </motion.div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
+     <div className='OpacityBackground2'></div>
+     
       <div className="SlideHolder">
        <motion.img
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
@@ -555,7 +561,10 @@ const HomePage = () => {
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
+     <div className='OpacityBackground2'></div>
+      
       <div className="SlideHolder">
+      
        <motion.img
          initial={{ opacity: 0, scale: 0 }} 
          animate={!Slide5 ? {} : { opacity: 1, scale: 1 }} 
@@ -581,6 +590,8 @@ const HomePage = () => {
       </div>
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
+     <div className='OpacityBackground2'></div>
+     
       <div className="SlideHolder">
        <img
         src="https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
