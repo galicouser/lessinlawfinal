@@ -44,6 +44,7 @@ export const FooterContainer = styled.footer`
         background-color:white;
         color: black;
         font-weight: 1000;
+        scale: 1.04;
     }
 
     .CallNumber{
@@ -58,6 +59,14 @@ export const FooterContainer = styled.footer`
         font-size: 15px;
         width: 250px;
         height: 60px;
+        transition: all 0.5s;
+    }
+    .CallNumber:hover {
+        background-color:black;
+        border:3px solid black;
+        color: white;
+        font-weight: 1000;
+        scale: 1.04;
     }
     .TextDivider{
         font-size: 20px;
