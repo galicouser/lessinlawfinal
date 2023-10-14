@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useModalContext } from '../context/modal_context'
 import Footer from '../components/Footer.js'
 import { carouselcontent1 } from '../utils/imagedata.js'
-import { motion } from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded' //Address
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled' // Contact Us
 import SupportAgentIcon from '@mui/icons-material/SupportAgent' // Live Chat
@@ -361,11 +361,14 @@ const HomePage = () => {
       <div className='NewsDisplay'>
             <div className='NewInner'>
                         <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" className='NewsImage'/>
-                        <div className='NewsTextArea'>
+                        <motion.div className='NewsTextArea'
+                        initial={{ opacity: 0}}
+                        animate={{opacity:1}}
+                        transition={{delay:0.5}}>
                               <p className='NewsMainText'>20 Gunshot Victims, Wounded by Their Defective Sig Sauer P320 Pistols</p>
                               <p className='NewsSubText'>Concord, New Hampshire (December 1 2022) – Highly-trained local, state and federal law enforcement officers, as well as experienced military veterans, </p>
                               <p></p>
-                        </div>
+                        </motion.div>
            
             </div>
       </div>
