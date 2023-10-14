@@ -705,16 +705,10 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Six-Figure Settlement In 'Breakdancing' Slip-and-Fall Case</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        A $ 650,000 settlement has been reached in a case brought by a Southwest Philadelphia man who 
+        broke his elbox after allegedly alipping on a wet floor while breakdancing in a Broad Street banquet hall
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -723,16 +717,11 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Plaintiff Settles for $1.6 Million For Injuries from Defective Chair</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+       The manufacturers of an office chair and the particle board used in it split the cost of a $1.6 million
+       settlement equally between them last week in Cioppi v. Bevco Precision Manufacturing Co.. Plaintiff Rosemary 
+       Cioppi of Chalfont had asked far more than $50,000 plus interest, costs and attorney fees in her amended complaint.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -742,16 +731,10 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Olympic Hopeful Awarded $1.5 Mil. for Car Accident Injuries</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        A Philadelphia jury was awarded $1.5 million to a 24-year-old wrestler who hoped to try out for the u.s Olympic
+        wrestling team but abandoned those plans after suffering multiple injuries in a car crash.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -760,16 +743,10 @@ const HomePage = () => {
       </div>
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">The National Trial Lawyers</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        Congratulations! You have been selected to recieve this invitatiom
+        for membership into The National Trial Lawyers: Top 100 Trial Lawyers organization.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -781,16 +758,12 @@ const HomePage = () => {
      <div className="Cardlist3">
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Very High Rating in Both Legal Ability & Ethical Standards</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        Jeffrey Robert Lessin 
+        <br/>
+        The Distinguished Rating is earned a strenuous Peer Review process that in managed and monitored by the world's 
+        most trusted legal resource. Martindale-Hubbell
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -800,16 +773,9 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Federal Jury Awards $3.8 Mil. Verdict in Wrongful-Death Suit</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        A trial over a fatal accident on I-83 near York, PA. In which a car was thrust by a tractor-trailer over a jersey barrier to be struc head-on by another speeding truck has ended with a $3.8 million verdict in federal court for the family of the women who died in the crash.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>
@@ -819,16 +785,9 @@ const HomePage = () => {
 
       <div className="displayCard">
        <p className="titletext">VERDICTS AND SETTLEMENTS</p>
-       <p className="AmountText">$26 M</p>
+       <p className="AmountText">Pickup broadsided utility van, injuring passenger</p>
        <p className="descriptionText">
-        $26.550 million is being provided to former landscape service worker
-        David Williams, 32, because those responsible for maintaining his
-        company truck allegedly wouldn’t spend a few hundred dollars to replace
-        bald, dangerous tires linked to the sudden November 2011 rollover that
-        rendered the father of three young sons a quadriplegic, attorney Robert
-        J. Mongeluzzi and his team at Saltz, Mongeluzzi & Bendesky, P.C.
-        announced today. The settlement amount is the largest ever in a
-        Philadelphia County personal injury case.
+        On Sept. 27, 2005, Plaintiff Kim L. Rous, a 24-year-old day laborer,was a passenger in the utility van that Sokhan Mey was driving westbound on Snyder Avenue, in south Philadelphia, when the van entered the 10th Street.
        </p>
        <div className="ShowMore">
         <p className="readText">Read Story</p>

@@ -558,7 +558,7 @@ export const CaseCards = styled.div`
       margin-bottom: 0px;
  }
  .AmountText{
-      font-size: 50px;
+      font-size: 35px;
       margin-top: 0px;
       margin-bottom: 5px;
       color: #012030;
