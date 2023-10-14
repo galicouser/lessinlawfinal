@@ -69,7 +69,7 @@ const HomePage = () => {
  const [message, setMessage] = useState('')
 
  
- const [Slide1, setSlide1] = useState(false)
+ const [Slide1, setSlide1] = useState(true)
 
  const [Slide2, setSlide2] = useState(false)
 
@@ -129,13 +129,26 @@ const HomePage = () => {
     setSlide1(false)
    }
    case 4: {
-    setSlide5(true)
+      setSlide4(false)
 
-    setSlide2(false)
+      setSlide2(false)
+  
+      setSlide3(false)
+  
+      setSlide5(true)
+      
+      setSlide1(false)
+   }
+   case 5: {
+      setSlide4(false)
 
-    setSlide3(false)
-
-    setSlide4(false)
+      setSlide2(false)
+  
+      setSlide3(false)
+  
+      setSlide5(false)
+      
+      setSlide1(false)
    }
   }
  }
@@ -419,21 +432,21 @@ const HomePage = () => {
       <div className="ImagesHolder">
        <motion.img
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
-        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        animate={ !Slide1 ? {} : { opacity: 1, scale: 1 }} // Final position inside the container
         transition={{ type: 'spring', stiffness: 260, damping: 30 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2022/01/Grenfell-tower-fire.jpg"
         className="SwiperImages"
        />
        <motion.img
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
-        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        animate={ !Slide1 ? {} :{ opacity: 1, scale: 1 }} // Final position inside the container
         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 0.5 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2022/01/amtrak-50.jpg"
         className="SwiperImages"
        />
        <motion.img
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
-        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        animate={ !Slide1 ? {} :{ opacity: 1, scale: 1 }} // Final position inside the container
         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }} // Spring animation config
         src="https://smbb.com/wp-content/uploads/2018/11/salvation-army-collapse-50.jpg"
         className="SwiperImages"
@@ -442,7 +455,7 @@ const HomePage = () => {
        <motion.p
         className="WhiteLetters"
         initial={{ opacity: 0, scale: 0 }} // Initial position above the container
-        animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+        animate={ !Slide1 ? {} :{ opacity: 1, scale: 1 }} // Final position inside the container
         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1.5 }} // Spring animation config
        >
         THEY HURT YOU
@@ -450,7 +463,7 @@ const HomePage = () => {
         <motion.span
          className="RedLetters"
          initial={{ opacity: 0, scale: 0 }} // Initial position above the container
-         animate={{ opacity: 1, scale: 1 }} // Final position inside the container
+         animate={ !Slide1 ? {} :{ opacity: 1, scale: 1 }} // Final position inside the container
          transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 2 }} // Spring animation config
         >
          IT'S TIME TO FIGHT BACK
@@ -461,8 +474,8 @@ const HomePage = () => {
      <SwiperSlide className="SwiperSlide">
       <motion.div
        className="SlideHolder"
-       initial={{ opacity: 0, y: -100 }} // Initial position above the container
-       animate={{ opacity: 1, y: 0 }} // Final position inside the container
+       initial={{ opacity: 0, y: -100 }} 
+       animate={{ opacity: 1, y: 0 }} 
        transition={{ type: 'spring', stiffness: 260, damping: 20 }} 
       >
        <motion.img
@@ -475,14 +488,14 @@ const HomePage = () => {
        <div className="TextDiv">
         <motion.p
          className="MainText"
-         initial={{ opacity: 0, y: -100 }} // Initial position above the container
-         animate={!Slide2 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+         initial={{ opacity: 0, y: -100 }} 
+         animate={!Slide2 ? {} : { opacity: 1, y: 0 }} 
          transition={{
           type: 'spring',
           stiffness: 260,
           damping: 30,
           delay: 0.4,
-         }} // Spring animation config
+         }} 
         >
          One of the nation's dominant personal injury firms
         </motion.p>
@@ -527,13 +540,27 @@ const HomePage = () => {
      </SwiperSlide>
      <SwiperSlide className="SwiperSlide">
       <div className="SlideHolder">
-       <img
+       <motion.img
+         initial={{ opacity: 0, scale: 0 }} 
+         animate={!Slide4 ? {} : { opacity: 1, scale: 1 }} 
+         transition={{ type: 'spring', stiffness: 260, damping: 30 }}
         src="https://images.unsplash.com/photo-1509330008791-ef3fb25a4a01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
         className="SingleImage"
        />
        <div className="TextDiv">
-        <p className="MainText">"The King of Construction Accidents."</p>
-        <p className="SubText">The Times Magazine</p>
+        <motion.p className="MainText"
+        initial={{ opacity: 0, y: -100 }} // Initial position above the container
+        animate={!Slide4 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+        transition={{
+         type: 'spring',
+         stiffness: 260,
+         damping: 30,
+         delay: 0.4,
+        }}>"The King of Construction Accidents."</motion.p>
+        <motion.p className="SubText"
+        initial={{ opacity: 0, y: 100 }} 
+        animate={!Slide4 ? {} : { opacity: 1, y: 0 }} 
+        transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }}>The Times Magazine</motion.p>
        </div>
       </div>
      </SwiperSlide>
@@ -544,7 +571,15 @@ const HomePage = () => {
         className="SingleImage"
        />
        <div className="TextDiv">
-        <p className="MainText2">$ 1 Million</p>
+        <motion.p className="MainText2"
+         initial={{ opacity: 0, y: -100 }} 
+         animate={!Slide5 ? {} : { opacity: 1, y: 0 }} 
+         transition={{
+          type: 'spring',
+          stiffness: 260,
+          damping: 30,
+          delay: 0.4,
+         }}>$ 1 Million</motion.p>
         <p className="SubText2">
          Settlement Reached in Amtrak Train Derailment
         </p>
