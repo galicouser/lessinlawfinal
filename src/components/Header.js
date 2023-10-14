@@ -20,7 +20,6 @@ import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 ///
-
 const Header = () => {
      const [isHovered, setIsHovered] = useState(false)
      const [isHovered2, setIsHovered2] = useState(false)
@@ -436,7 +435,7 @@ const Header = () => {
                                         {' '}
                                         Our Firm
                                    </p>
-                                   <Link to="/VerdictsPage">
+                                   <Link to="/Verdicts">
                                         <p
                                              className="SidebarOption"
                                              style={{
@@ -682,8 +681,13 @@ const Header = () => {
                                                   {' '}
                                                   Our Firm
                                              </p>
-
+                                             <p className="MenuItems" style={{ border: 'none' }}>
+                                                  {' '}
+                                                  Our Attorneys
+                                             </p>
+                                             <Link to="/verdicts">
                                              <p className="MenuItems">Verdicts</p>
+                                             </Link>
                                         </motion.div>
                                    )}
                                    <p className="NavigationButton">About Us</p>

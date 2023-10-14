@@ -605,8 +605,8 @@ const HomePage = () => {
     </Swiper>
    </Main1>
 
-   <CaseCards>
-    <div className="Toptext">
+   {/* <CaseCards> */}
+    {/* <div className="Toptext">
      Lessin Law is among the top personal injury firms nationwide, having
      successfully obtained some of the most substantial settlements and verdicts
      in the legal history of Pennsylvania and New Jersey. It enjoys widespread
@@ -819,8 +819,8 @@ const HomePage = () => {
       corporations and insurers and emerge victorious, individuals affected by
       accidents and their loved ones seek assistance from Lessin Law.
      </div>
-    </div>
-   </CaseCards>
+    </div> */}
+   {/* </CaseCards> */}
 
    <LawyerCarosel>
     <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
