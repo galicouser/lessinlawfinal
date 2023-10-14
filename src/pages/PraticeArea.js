@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Navigation } from 'swiper/modules';
 import { getPracticeAreasData } from '../utils/practiceAreasAPI';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const PraticeArea = () => {
     const [data, setData] = useState(null);
@@ -48,8 +50,13 @@ const PraticeArea = () => {
                     </p>
                 </div>
 
-                {loading ? ( // Render loading message while data is being fetched
-                    <></>
+                {loading ? ( 
+                     <Backdrop
+                     sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                     open={true}
+                   >
+                     <CircularProgress color="inherit" />
+                   </Backdrop>
                 ) : (
                     <Swiper
                         pagination={true}
