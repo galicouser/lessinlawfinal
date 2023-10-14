@@ -521,7 +521,7 @@ export const CaseCards = styled.div`
  .Cardlist1{
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       width: 27%;
  }
@@ -536,12 +536,11 @@ export const CaseCards = styled.div`
  .Cardlist3{
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       width: 27%;
  }
  .displayCard{
-      height: 100%;
       background-color: white;
       width: 100%;
       margin-top: 10%;
