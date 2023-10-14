@@ -139,17 +139,7 @@ const HomePage = () => {
       
       setSlide1(false)
    }
-   case 5: {
-      setSlide4(false)
-
-      setSlide2(false)
-  
-      setSlide3(false)
-  
-      setSlide5(false)
-      
-      setSlide1(false)
-   }
+ 
   }
  }
 
@@ -542,7 +532,7 @@ const HomePage = () => {
       <div className="SlideHolder">
        <motion.img
          initial={{ opacity: 0, scale: 0 }} 
-         animate={!Slide4 ? {} : { opacity: 1, scale: 1 }} 
+         animate={!Slide5 ? {} : { opacity: 1, scale: 1 }} 
          transition={{ type: 'spring', stiffness: 260, damping: 30 }}
         src="https://images.unsplash.com/photo-1509330008791-ef3fb25a4a01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
         className="SingleImage"
@@ -550,7 +540,7 @@ const HomePage = () => {
        <div className="TextDiv">
         <motion.p className="MainText"
         initial={{ opacity: 0, y: -100 }} // Initial position above the container
-        animate={!Slide4 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
+        animate={!Slide5 ? {} : { opacity: 1, y: 0 }} // Final position inside the container
         transition={{
          type: 'spring',
          stiffness: 260,
@@ -559,7 +549,7 @@ const HomePage = () => {
         }}>"The King of Construction Accidents."</motion.p>
         <motion.p className="SubText"
         initial={{ opacity: 0, y: 100 }} 
-        animate={!Slide4 ? {} : { opacity: 1, y: 0 }} 
+        animate={!Slide5 ? {} : { opacity: 1, y: 0 }} 
         transition={{ type: 'spring', stiffness: 260, damping: 30, delay: 1 }}>The Times Magazine</motion.p>
        </div>
       </div>
