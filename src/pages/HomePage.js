@@ -349,19 +349,27 @@ const HomePage = () => {
    <div className="Message">
     <ForumIcon className="Icon" style={{ fontSize: 50 }} />
    </div>
-      <div className='NewsPromptHolder'>
-      {/* FeaturedNews */}
-   <div className="NewsPrompt"
+    
+   <div  className={FeaturedNews ? "NewsPrompt2" : "NewsPrompt"}
    onClick={FeaturedNewClicked}>
-    <p className="NewsText">FEATURED NEWS</p>
-    <KeyboardArrowLeftIcon className="MoreArrow" />
-    {/* {
+       <p className="NewsText">FEATURED NEWS</p>
+    
+      {!FeaturedNews &&  <KeyboardArrowLeftIcon className={FeaturedNews ? "MoreArrow2" : "MoreArrow"} />
+   }
+    {
       FeaturedNews &&
       <div className='NewsDisplay'>
-            d
+            <div className='NewInner'>
+                        <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" className='NewsImage'/>
+                        <div className='NewsTextArea'>
+                              <p className='NewsMainText'>20 Gunshot Victims, Wounded by Their Defective Sig Sauer P320 Pistols</p>
+                              <p className='NewsSubText'>Concord, New Hampshire (December 1 2022) – Highly-trained local, state and federal law enforcement officers, as well as experienced military veterans, </p>
+                              <p></p>
+                        </div>
+           
+            </div>
       </div>
-    } */}
-   </div>
+    }
    </div>
    <motion.div
     className="SideIcons"

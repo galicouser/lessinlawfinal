@@ -87,10 +87,56 @@ export const HomePageContainer = styled.div`
      justify-content: center;
      align-items: center;
      right: 0%;
+     transition: all 1s;
  }
- .NewsPromptHolder{
-     position: relative;
+ 
+ .NewsPrompt2{
+     background-color: #8C030E;
+     position: fixed;
+     height: 400px;
+     width: 800px;
+     z-index: 100;
+     top:25%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     right: 0%;
+     transition: all 1s;
  }
+ .NewsDisplay{
+     width:100%;
+     height: 100%;
+     background-color: whitesmoke;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .NewInner{
+     width:95%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .NewsImage{
+     width: 40%;
+     height: 75%;
+ }
+ .NewsTextArea{
+     display: flex;
+     flex-direction: column;
+     width:50%;
+ }
+ .NewsMainText{
+     font-size: 17px;
+     font-weight: bold;
+ }
+ .NewsSubText{
+     font-size: 15px;
+     font-weight: 100;
+ }
+ 
 
  .NewsPrompt:hover{
      cursor: pointer;
@@ -100,6 +146,12 @@ export const HomePageContainer = styled.div`
      position: absolute;
      top:10%;
      right: 15px;
+ }
+ .MoreArrow2{
+     color: white;
+     position: absolute;
+     top:10%;
+     left: 15px;
  }
  .NewsText{
   transform: rotate(-90deg);
