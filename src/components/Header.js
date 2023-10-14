@@ -160,9 +160,11 @@ const Header = () => {
      </h3>
      <div
       className="SidebarHolder"
-//       onClick={PraticeClicked}
+      //  onClick={PraticeClicked}
+      onClick={toggleDrawer(anchor, false)}
       style={{ display: 'flex', color: 'white' }}
      >
+      <Link to="/PraticeArea">
       <h3
        style={{
         color: 'white',
@@ -174,6 +176,7 @@ const Header = () => {
       >
        Practice Areas
       </h3>
+      </Link>
       {/* <KeyboardArrowDownIcon className="SideArrow" /> */}
      </div>
      {PraticeClickedVal && (
