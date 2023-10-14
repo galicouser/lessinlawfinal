@@ -48,11 +48,12 @@ export const FooterContainer = styled.footer`
     }
 
     .CallNumber{
-        background: red;
-        border:3px solid red;
+        background: #7AB8BF;
+        border:3px solid #7AB8BF;
         color: white;
         padding: 1.5%;
         display: flex;
+        font-weight: 1000;
         justify-content: center;
         align-items: center;
         text-align: center;

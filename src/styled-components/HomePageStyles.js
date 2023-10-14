@@ -51,7 +51,7 @@ export const HomePageContainer = styled.div`
  position: relative;
 
  .LiveChatPrompt{
-     background-color: #8C030E;
+     background-color: #012030;
      position: fixed;
      height: 200px;
      width: 55px;
@@ -76,7 +76,7 @@ export const HomePageContainer = styled.div`
   font-weight: 500;
  }
  .NewsPrompt{
-     background-color: #8C030E;
+     background-color: #012030;
      position: fixed;
      height: 350px;
      width: 45px;
