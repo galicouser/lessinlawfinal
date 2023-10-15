@@ -887,6 +887,93 @@ export const LawyerCarosel = styled.div`
  }
  }
 `
+
+export const OurAttorneysStyles = styled.div`
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+.AttorneyInfoHolder{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+.AttorneyImage{
+    height: 50%;
+    width: 64%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 2.5%;
+}
+.ImageHolder{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.BioHolder{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+}
+.Bio{
+    font-size: 22px;
+    font-weight: 100;
+}
+.TitleHolder{
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.Name{
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+@media (max-width: 768px) {
+    .AttorneyInfoHolder{
+    width: 95%;
+    height: 100%;
+    flex-direction: column;
+}
+.ImageHolder{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+   
+}
+.BioHolder{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    
+}
+.Bio{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.TitleHolder{
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Name{
+    font-size: 25px;
+    font-weight: 1000;
+    
+    text-align: center;
+}
+}
+
+`
 export const Main1 = styled.div`
  display: flex;
  justify-content: center;

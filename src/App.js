@@ -32,6 +32,7 @@ import JerseyLocation from './pages/JerseyLocation'
 import VerdictsPage from './pages/VerdictsPage'
 import PraticeArea from './pages/PraticeArea'
 import Verdicts from './pages/Verdicts'
+import OurAttorneys from './pages/OurAttorneys'
 function App() {
  return (
   <Wrapper>
@@ -76,7 +77,9 @@ function App() {
      <Route path="/VerdictsPage" element={<VerdictsPage />} />
      <Route path="/PraticeArea" element={<PraticeArea />} />
      <Route path="/Verdicts" element={<Verdicts />} />
+     <Route path="/OurAttorneys" element={<OurAttorneys />} />
 
+     
      
     </Routes>
    </BrowserRouter>

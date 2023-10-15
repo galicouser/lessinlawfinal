@@ -681,10 +681,13 @@ const Header = () => {
                                                   {' '}
                                                   Our Firm
                                              </p>
-                                             <p className="MenuItems" style={{ border: 'none' }}>
+                                              <Link to="/OurAttorneys">
+                                              <p className="MenuItems" style={{ border: 'none' }}>
                                                   {' '}
                                                   Our Attorneys
                                              </p>
+                                              </Link>
+                                             
                                              <Link to="/verdicts">
                                              <p className="MenuItems">Verdicts</p>
                                              </Link>
