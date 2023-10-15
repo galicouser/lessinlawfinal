@@ -556,6 +556,15 @@ ol {
   font-size: 12px;
   height: 40px;
 }
+.LogoHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 185px;
+  background-color: #FBFAF8;
+  cursor: pointer;
+}
 .NavHolder{
   height: 40px;
   background-color: #EFEFEF;
