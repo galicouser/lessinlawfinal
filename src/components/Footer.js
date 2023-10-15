@@ -52,7 +52,8 @@ const Footer = () => {
             </div>
             <div className='TextDivider'>or</div>
             <div className='CallNumber'>
-                CALL +1 889 225 4444
+                CALL +1 215 599 1400
+                
             </div>
     </div>
     <hr className='Partetion'/>
