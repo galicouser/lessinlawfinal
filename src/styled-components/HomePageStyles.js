@@ -992,6 +992,7 @@ export const Main1 = styled.div`
      width: 50%;
      height: 100%;
      mask-image: linear-gradient(to right, transparent, black, black, transparent);
+     object-fit: cover;
  }
  .MainText{
      text-align: left;
