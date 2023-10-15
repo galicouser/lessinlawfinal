@@ -435,6 +435,18 @@ const Header = () => {
                                         {' '}
                                         Our Firm
                                    </p>
+                                   <Link to="/OurAttorneys">
+                                        <p
+                                             className="SidebarOption"
+                                             style={{
+                                                  color: 'white',
+                                                  fontSize: 18,
+                                                  textAlign: 'center',
+                                             }}
+                                        >
+                                             Our Attorneys
+                                        </p>
+                                   </Link>
                                    <Link to="/Verdicts">
                                         <p
                                              className="SidebarOption"
