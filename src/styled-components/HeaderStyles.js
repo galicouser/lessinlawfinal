@@ -553,9 +553,18 @@ ol {
   width:50%;
   display: flex;
   justify-content: center;
+  font-size: 12px;
+  height: 40px;
 }
+.NavHolder{
+  height: 40px;
+  background-color: #EFEFEF;
+}
+
 .FreeCase{
   width:50%;
+  height: 40px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -650,6 +659,7 @@ ol {
   }
   .HeaderHolder{
     background-color: black;
+    top:190px;
   }
   .HeaderInner{
     width: 100%;
