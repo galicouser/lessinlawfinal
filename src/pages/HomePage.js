@@ -337,6 +337,7 @@ const HomePage = () => {
  function FeaturedNewClicked (){
       setFeaturedNews(!FeaturedNews)
  }
+ const [isComplete,setisComplete] = useState(false)
 
  return (
   <HomePageContainer>
@@ -346,12 +347,15 @@ const HomePage = () => {
     </p>
    </div>
 
+   
+   {!isComplete && 
    <div className='Underconstruction'>
-    <div className='Opacitybackground'></div>
-        <p className='underText'>Site in under construction !</p>
-        <p className='underText'>Coming Soon</p>
-   </div>
-
+   <div className='Opacitybackground'></div>
+       <p className='underText'>Site in under construction !</p>
+       <p className='underText'>Coming Soon</p>
+       <p className='underText'>+12155991400</p>
+  </div>
+   }
    <div className="Message">
     <ForumIcon className="Icon" style={{ fontSize: 50 }} />
    </div>

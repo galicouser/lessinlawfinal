@@ -16,6 +16,8 @@ export const HomePageContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
+        width:100%
 }
 .Opacitybackground{
     position: absolute;
@@ -23,7 +25,7 @@ export const HomePageContainer = styled.div`
     width: 100%;
     background-color: black;
     z-index: -1;
-    opacity: 0.75;
+    opacity: 1;
 }
  
 .underText{
