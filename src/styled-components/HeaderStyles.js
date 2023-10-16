@@ -59,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Times New Roman', serif;
   padding-right: 10px;
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 17px;
   color: #012030;
   margin-top: 10px;
 }
