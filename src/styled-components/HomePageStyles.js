@@ -1,7 +1,37 @@
 import styled from 'styled-components'
 
 export const HomePageContainer = styled.div`
+
+
+.Underconstruction{
+        position: fixed;
+        z-index: 200;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        border-radius: 5%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.Opacitybackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.75;
+}
  
+.underText{
+    color:white;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+}
  .scroll-container::-webkit-scrollbar-track {
   background-color: #f0f0f0;
  }
