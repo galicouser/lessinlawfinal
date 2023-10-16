@@ -32,7 +32,7 @@ export const HomePageContainer = styled.div`
     color:white;
     text-align: center;
     font-weight: 1000;
-    font-size: 40px;
+    font-size: 25px;
 }
  .scroll-container::-webkit-scrollbar-track {
   background-color: #f0f0f0;

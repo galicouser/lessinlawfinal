@@ -353,7 +353,12 @@ const HomePage = () => {
    <div className='Opacitybackground'></div>
        <p className='underText'>Site in under construction !</p>
        <p className='underText'>Coming Soon</p>
-       <p className='underText'>+12155991400</p>
+       
+       <p className='underText'>Address : 1515  Market St# 1650, Philadelphia PA 19102</p>
+       <p className='underText'>Phone Number: (215) 599-1400</p>
+       <p className='underText'>Fax Number: (215) 599-0120</p>
+       <p className='underText'>Email: secure@lessinlaw.com</p>
+ 
   </div>
    }
    <div className="Message">
