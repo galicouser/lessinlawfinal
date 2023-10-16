@@ -9,6 +9,7 @@ import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
 import GlobalStyles from '../styled-components/HeaderStyles'
 import Logo from '../assets/Lessin Law.png'
+import LesinLogo from "../assets/LessinLogo.jpg"
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from 'react-router-dom'
 
@@ -538,7 +539,7 @@ const Header = () => {
                </div>
                <div className='LogoHolder'>
 
-                    <img src={Logo} onClick={()=>{navigate('/')}} className='CenterLogo' />
+                    <img src={LesinLogo} onClick={()=>{navigate('/')}} className='CenterLogo' />
                </div>
                <div className="HeaderHolder">
                     <div style={{ display: 'none' }}>
