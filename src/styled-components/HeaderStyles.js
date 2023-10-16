@@ -1,7 +1,75 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+/// new header components
+.HeaderOuter{
+  width: 100%;
+  height: 125px;
+  background-color: #FBFAF8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeaderContainer{
+  width: 80%;
+  height: 100%;
+  background-color: #FBFAF8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeaderLogo{
+  height: 300px;
+}
+.HeaderTextHolder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  height: 50%;
+}
+.ContactHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.contactText{
+  font-size: 14px;
+  margin-left: 40px;
+  font-weight:700;
+  display: flex;
+  align-items: center;
+  color: #012030;
+  letter-spacing: px;
+}
+.HeaderPhone{
 
+  background-color: #012030;
+  color:white;
+  margin: 4px;
+
+}
+.NavigationFlex{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkButton{
+  font-family: 'Times New Roman', serif;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #012030;
+  margin-top: 10px;
+}
+.headerDivider{
+  height: 10px;
+  margin-bottom: 15px;
+}
+
+
+///
 
 .PraticeAreaHolder{
   height: 100%;
