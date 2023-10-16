@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import ForumIcon from '@mui/icons-material/Forum'
-
+import Address from '../components/Address'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -1028,6 +1028,7 @@ const HomePage = () => {
 
     <Reviews />
    </Testimonials> */}
+   <Address/>
    <Footer />
   </HomePageContainer>
  )

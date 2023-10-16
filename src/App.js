@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from './components/Header'
 import HomePage from './pages/HomePage'
 
-// import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/AboutPage';
 // import ContactPage from './pages/ContactPage';
 import MedicalMalpratice from './pages/MedicalMalpratice'
 import SlipandFallAccidents from './pages/SlipandFallAccidents'
@@ -33,6 +33,14 @@ import VerdictsPage from './pages/VerdictsPage'
 import PraticeArea from './pages/PraticeArea'
 import Verdicts from './pages/Verdicts'
 import OurAttorneys from './pages/OurAttorneys'
+import HigherEducationLitigation from './pages/HigherEducationLitigation'
+import EmploymentLitigation from './pages/EmploymentLitigation'
+import CatastrophicPersonalInjury from './pages/CatastrophicPersonalInjury'
+import ComplexCivilLitigation from './pages/ComplexCivilLitigation'
+import CivilandConstitutionalRightsLitigation from './pages/CivilandConstitutionalRightsLitigation'
+import WhyTuckerLawGroup from './pages/WhyTuckerLawGroup'
+import OurClients from './pages/OurClients'
+import Industries from './pages/Industries'
 function App() {
  return (
   <Wrapper>
@@ -42,6 +50,7 @@ function App() {
 
     <Routes>
      <Route path="/" element={<HomePage />} />
+     <Route path="/About" element={<AboutPage />} />
      <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
      <Route path="/SlipandFallAccidents" element={<SlipandFallAccidents />} />
      <Route path="/BusAccidents" element={<BusAccidents />} />
@@ -78,6 +87,17 @@ function App() {
      <Route path="/PraticeArea" element={<PraticeArea />} />
      <Route path="/Verdicts" element={<Verdicts />} />
      <Route path="/OurAttorneys" element={<OurAttorneys />} />
+
+
+     <Route path="/HigherEducationLitigation" element={<HigherEducationLitigation />} />
+     <Route path="/EmploymentLitigation" element={<EmploymentLitigation />} />
+     <Route path="/CatastrophicPersonalInjury" element={<CatastrophicPersonalInjury />} />
+     <Route path="/ComplexCivilLitigation" element={<ComplexCivilLitigation />} />
+     <Route path="/CivilandConstitutionalRightsLitigation" element={<CivilandConstitutionalRightsLitigation />} />
+     <Route path="/WhyTuckerLawGroup" element={<WhyTuckerLawGroup />} />
+     <Route path="/OurClients" element={<OurClients />} />
+     <Route path="/Industries" element={<Industries />} />
+
 
      
      

@@ -6,11 +6,12 @@ import MessageIcon from '@mui/icons-material/Message'
 
 import Button from '@mui/material/Button'
 
- import FacebookIcon from '@mui/icons-material/Facebook';
-                import InstagramIcon from '@mui/icons-material/Instagram'; 
-                 import TwitterIcon from '@mui/icons-material/Twitter'; 
-                 import YouTubeIcon from '@mui/icons-material/YouTube'; 
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import YouTubeIcon from '@mui/icons-material/YouTube'
 
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 const Footer = () => {
  return (
   // <section>
@@ -44,7 +45,7 @@ const Footer = () => {
   //     </footer>
   // </section>
   <FooterContainer>
-    <div className='MainText'>ARE YOU READY FOR A FREE AND PRIVATE CASE ASSESSMENT?</div>
+   {/* <div className='MainText'>ARE YOU READY FOR A FREE AND PRIVATE CASE ASSESSMENT?</div>
     <div className='SubText'>Get in touch with us NOW. Timing is crucial for your case.</div>
     <div className='ActionHolder'>
             <div className='FormFill'>
@@ -69,8 +70,20 @@ const Footer = () => {
         <div className='CopyrightText'>
         © 2023 Lessin Law LLC All rights reserved.
         </div>
-    </div>
-   
+    </div> */}
+
+   <div className="FooterInner">
+    <p className="FooterText">
+     © 2023 BY TUCKER LAW GROUP. ALL RIGHTS RESERVED - DISCLAIMER | SITEMAP | A
+     PAPERSTREET WEB DESIGN |
+    </p>
+   </div>
+   <div className="GoUpButton">
+    <KeyboardDoubleArrowUpIcon style={{ fontSize: 15 }} />
+    <div>Back to Top</div>
+    <KeyboardDoubleArrowUpIcon style={{ fontSize: 15 }} />
+   </div>
+
    {/* <div className="background-image"></div>
    <Grid container gap={2}>
     <Grid item lg={12}>

@@ -1,7 +1,49 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
-    width: 100%;
+
+height: 400px;
+width:100%;
+background-color: #2B2F30;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+.FooterInner{
+    height: 90px;
+    width: 70%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FooterText{
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 20px;
+    color:grey;
+    text-align: center;
+}
+
+.GoUpButton{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color:white;
+    font-size: 15px;
+}
+.GoUpButton:hover {
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    padding-top: 10%;
+}
+    /* width: 100%;
     height: 100%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
@@ -114,7 +156,7 @@ export const FooterContainer = styled.footer`
     .CallNumber{
         width: 40%;
     }
-    }
+    } */
 
 
     /* background-color: #333;

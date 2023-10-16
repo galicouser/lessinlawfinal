@@ -1,5 +1,94 @@
 import styled from 'styled-components'
+import '../times-new-roman.css'
 
+
+
+export const AddressContainer = styled.div`
+
+height: 100%;
+width:100%;
+background-color: #2B2F30;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.LocationIcon{
+    color: #4E6287;
+
+}
+.AddressInner{
+    width:65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.Address1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.OfficeName{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color:white;
+    font-family: 'Times New Roman', serif;
+}
+.AddressText{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color:white;
+}
+.ContactNumber{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    color:white;
+}
+.Number{
+    color: white;
+    font-size:20px;
+}
+.DividerAddress{
+    width: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.ViewMapButton{
+    background-color: #910029;;
+    border:2px solid white;
+    color:white;
+    height:50px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+
+    .AddressInner{
+        flex-direction: column;
+        width: 100%;
+}
+.Address1{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+}
+
+`
 export const HomePageContainer = styled.div`
 
 

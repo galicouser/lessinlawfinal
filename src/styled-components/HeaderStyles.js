@@ -7,8 +7,12 @@ const GlobalStyles = createGlobalStyle`
   height: 125px;
   background-color: #FBFAF8;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.MobileTop{
+  display: none;
 }
 .HeaderContainer{
   width: 80%;
@@ -20,7 +24,10 @@ const GlobalStyles = createGlobalStyle`
   justify-content: space-between;
 }
 .HeaderLogo{
-  height: 300px;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  cursor: pointer;
 }
 .HeaderTextHolder{
   display: flex;
@@ -34,17 +41,17 @@ const GlobalStyles = createGlobalStyle`
   justify-content: space-between;
 }
 .contactText{
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 40px;
   font-weight:700;
   display: flex;
   align-items: center;
-  color: #012030;
+  color: #910029;
   letter-spacing: px;
 }
 .HeaderPhone{
 
-  background-color: #012030;
+  background-color: #910029;
   color:white;
   margin: 4px;
 
@@ -57,16 +64,18 @@ const GlobalStyles = createGlobalStyle`
 }
 .linkButton{
   font-family: 'Times New Roman', serif;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 11px;
+  padding-left: 11px;
   font-size: 17px;
   color: #012030;
   margin-top: 10px;
+  padding: 9px;
 }
 .headerDivider{
   height: 10px;
   margin-bottom: 15px;
 }
+
 
 
 ///
@@ -617,6 +626,37 @@ ol {
 }
 
 @media (max-width: 767px) {
+
+  
+  .HeaderOuter{
+    height: 100%;
+    flex-direction: column;;
+  }
+  /* .HeaderLogo{
+    height: 120px;
+  } */
+  .HeaderContainer{
+    justify-content: center;
+  }
+  .MobileTop{
+    display: unset;
+    width: 100%;
+    background-color: grey;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+  }
+.contactText{
+  
+  display: none;
+}
+
+.NavigationFlex{
+  display: none;
+}
+
+  /////
   .AttorneyReferral{
   width:50%;
   display: flex;
