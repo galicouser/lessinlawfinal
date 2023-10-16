@@ -348,7 +348,7 @@ const HomePage = () => {
    </div>
 
    
-   {/* {!isComplete && 
+   {!isComplete && 
    <div className='Underconstruction'>
    <div className='Opacitybackground'></div>
        <p className='underText'>Site in under construction !</p>
@@ -360,7 +360,7 @@ const HomePage = () => {
        <p className='underText'>Email: secure@lessinlaw.com</p>
  
   </div>
-   } */}
+   }
    
    <div className="Message">
     <ForumIcon className="Icon" style={{ fontSize: 50 }} />
