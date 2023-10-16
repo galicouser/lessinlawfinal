@@ -6,7 +6,7 @@ import Header from './components/Header'
 import HomePage from './pages/HomePage'
 
 import AboutPage from './pages/AboutPage';
-// import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/ContactPage';
 import MedicalMalpratice from './pages/MedicalMalpratice'
 import SlipandFallAccidents from './pages/SlipandFallAccidents'
 import BusAccidents from './pages/BusAccidents'
@@ -51,6 +51,7 @@ function App() {
     <Routes>
      <Route path="/" element={<HomePage />} />
      <Route path="/About" element={<AboutPage />} />
+     <Route path="/Contact" element={<ContactPage />} />
      <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
      <Route path="/SlipandFallAccidents" element={<SlipandFallAccidents />} />
      <Route path="/BusAccidents" element={<BusAccidents />} />
