@@ -44,12 +44,12 @@ const OurClients = () => {
                     <br />
                     Our firm’s clients include:
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="American University" />
                         </ListItem>
@@ -57,7 +57,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Arkema, Inc." />
                         </ListItem>
@@ -65,14 +65,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Children’s Hospital of Philadelphia" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Children’s Surgical Associates" />
                         </ListItem>
@@ -80,7 +80,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Comcast Cable" />
                         </ListItem>
@@ -89,14 +89,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Community College of Philadelphia" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Cornell University Drexel University" />
                         </ListItem>
@@ -104,7 +104,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Drexel University College of Medicine" />
                         </ListItem>
@@ -112,14 +112,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Exelon" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="GlaxoSmithKline" />
                         </ListItem>
@@ -127,7 +127,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Hershey Entertainment & Resorts, Co." />
                         </ListItem>
@@ -135,14 +135,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="HomeDepot" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Intercultural Family Services, Inc." />
                         </ListItem>
@@ -150,7 +150,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Mondelez International" />
                         </ListItem>
@@ -158,14 +158,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Patriot League" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Pet Smart" />
                         </ListItem>
@@ -173,21 +173,21 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Prudential Insurance" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Rent-A-Center" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="School District of Philadelphia." />
                         </ListItem>
@@ -195,7 +195,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Shell Oil Company" />
                         </ListItem>
@@ -203,14 +203,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Temple University – Of The Commonwealth System of Higher Education" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Temple University Hospital, Inc." />
                         </ListItem>
@@ -218,7 +218,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="United Educators" />
                         </ListItem>
@@ -226,14 +226,14 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="University of Pennsylvania" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Widener University" />
                         </ListItem>
@@ -241,7 +241,7 @@ const OurClients = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Yazaki Corporation" />
                         </ListItem>
@@ -268,7 +268,7 @@ const OurClients = () => {
 
                 </div>
 
-                <div className='Contact-Form' style={{ height: '1300px' }}>
+                <div className='Contact-Form' style={{ height: '1500px' }}>
                     <div className="Contact-Box">
                         <div className="Contact-Box-Header">
                             Get In Touch With Us
@@ -329,13 +329,13 @@ const OurClients = () => {
 
                     <div className='Data-Header'>About US</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/About') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Overview" />
                             </ListItemButton>
@@ -345,7 +345,7 @@ const OurClients = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/WhyTuckerLawGroup') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="WHY TUCKER LAW GROUP?" />
                             </ListItemButton>
@@ -355,7 +355,7 @@ const OurClients = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/Industries') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -365,7 +365,7 @@ const OurClients = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/OurClients') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clinets" />
                             </ListItemButton>

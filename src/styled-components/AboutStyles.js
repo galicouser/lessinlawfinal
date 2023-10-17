@@ -5,47 +5,47 @@ export const AboutWrapper = styled.div`
   height: 100%;
 
   .Banner {
+  width: 100%;
+  height: 400px;
+  background-color: #0B1340;
+  display: flex;
+
+  @media (max-width: 1050px) {
+    flex-direction: column; 
+    height: auto; 
+    margin-top: 70px;
+  }
+}
+
+.Banner-Text {
+  width: 30%; 
+  text-align: center;
+  color: white;
+  display: flex;
+  font-size: 70px; 
+  justify-content: center;
+  align-items: center;
+  
+  @media (max-width: 1050px) {
+    order: 2; 
+    font-size: 30px;
     width: 100%;
-    height: 400px;
-    background-color: #73022C;
-    display: flex;
-
-    @media (max-width: 1050px) {
-      flex-direction: column; 
-      height: auto; 
-      margin-top: 70px;
-    }
   }
+}
 
-  .Banner-Text {
-    width: 30%; 
-    text-align: center;
-    color: white;
-    display: grid;
-    font-size: 70px; 
-    justify-content: center;
-    place-content: center;
-    
-    @media (max-width: 1050px) {
-      order: 2; 
-      font-size: 30px;
-      width: 100%;
-    }
+.Banner-Img {
+  width: 70%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1050px) {
+    order: 1; 
+    margin-top: 10px; 
+    width: 100%; 
   }
-
-  .Banner-Img {
-    width: 70%; 
-    height: 100%; 
-    display: grid;
-    justify-content: center;
-    place-content: center;
-
-    @media (max-width: 1050px) {
-      order: 1; 
-      margin-top: 10px; 
-      width: 100%; 
-    }
-  }
+}
 
 
   .Content{
@@ -125,7 +125,7 @@ export const AboutWrapper = styled.div`
         width: 100%;
         height: 100px;
         display: grid;
-        background-color: #73022C;
+        background-color: #0B1340;
         color: #FFFFFF;
         text-align: center;
         font-weight: bold;
@@ -134,7 +134,7 @@ export const AboutWrapper = styled.div`
         justify-content: center;
         place-content: center;
         border-style: solid;
-        border-color: #73022C;
+        border-color: #0B1340;
     }
 
     .Contact-Box-Header:hover {
@@ -157,12 +157,12 @@ export const AboutWrapper = styled.div`
     input[type="email"]:focus, 
     textarea:focus, 
     select:focus {
-    border: 1px solid #73022C; /* Change border color on focus */
+    border: 1px solid #0B1340; /* Change border color on focus */
     }
 
     button {
     width: 100%;
-    background-color: #73022C;
+    background-color: #0B1340;
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;

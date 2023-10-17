@@ -40,13 +40,13 @@ const AboutPage = () => {
                     <div className='Data-SubText'>We Serve a Diverse Client Base</div>
                     <div className='Data-Paragraph'>Tucker Law Group, LLC counsels a diverse client base, ranging from individual litigants, Fortune 100 Companies, higher education institutions, non-profit organizations and governmental entities. Our attorneys represent clients in all aspects of litigation, trial and appellate courts at the federal and state levels, administrative agencies, arbitration and mediation proceedings. TLG is called upon to provide training and internal investigations to aid clients avoid costly disputes and litigation. Our representation spans a broad spectrum of practice areas, including:</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/HigherEducationLitigation')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Higher Education Law" />
                             </ListItemButton>
@@ -56,7 +56,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/EmploymentLitigation')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Employment Litigation" />
                             </ListItemButton>
@@ -66,7 +66,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/CatastrophicPersonalInjury')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Catastrophic Personal Injury" />
                             </ListItemButton>
@@ -76,7 +76,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/ComplexCivilLitigation')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Complex Civil Litigation" />
                             </ListItemButton>
@@ -86,7 +86,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/CivilandConstitutionalRightsLitigation')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Civil and Constitutional Rights Litigation" />
                             </ListItemButton>
@@ -103,13 +103,13 @@ const AboutPage = () => {
                         We invite you to learn more about our firm and what we do by visiting the following pages on our site:</div>
 
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/WhyTuckerLawGroup')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Why Tucker Law" />
                             </ListItemButton>
@@ -119,7 +119,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/OurClients')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clients" />
                             </ListItemButton>
@@ -129,7 +129,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={()=>{navigate('/Industries')}}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -200,14 +200,14 @@ const AboutPage = () => {
 
                     <div className='Data-Header'>About US</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
 
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/WhyTuckerLawGroup') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="WHY TUCKER LAW GROUP?" />
                             </ListItemButton>
@@ -217,7 +217,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/Industries') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -227,7 +227,7 @@ const AboutPage = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/OurClients') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clinets" />
                             </ListItemButton>

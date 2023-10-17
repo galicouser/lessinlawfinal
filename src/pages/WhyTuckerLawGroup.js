@@ -119,13 +119,13 @@ const WhyTuckerLawGroup = () => {
 
                     <div className='Data-Header'>About US</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/About') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Overview" />
                             </ListItemButton>
@@ -135,7 +135,7 @@ const WhyTuckerLawGroup = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/WhyTuckerLawGroup') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="WHY TUCKER LAW GROUP?" />
                             </ListItemButton>
@@ -145,7 +145,7 @@ const WhyTuckerLawGroup = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/Industries') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -155,7 +155,7 @@ const WhyTuckerLawGroup = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/OurClients') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clinets" />
                             </ListItemButton>

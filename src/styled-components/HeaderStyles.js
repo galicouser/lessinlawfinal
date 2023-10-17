@@ -47,12 +47,12 @@ const GlobalStyles = createGlobalStyle`
   font-weight:700;
   display: flex;
   align-items: center;
-  color: #910029;
+  color: #0B1340;
   letter-spacing: px;
 }
 .HeaderPhone{
 
-  background-color: #910029;
+  background-color: #0B1340;
   color:white;
   margin: 4px;
 

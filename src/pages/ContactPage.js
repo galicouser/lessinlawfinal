@@ -94,7 +94,7 @@ const FormTitle = styled.div`
     color: white;
     padding: 0.5rem;
     margin-top: 20px;
-    background-color: #73022C;
+    background-color: #0B1340;
     text-align: center;
     display: grid;
     justify-content: center;

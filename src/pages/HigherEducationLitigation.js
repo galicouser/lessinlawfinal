@@ -59,12 +59,12 @@ const HigherEducationLitigation = () => {
                         At Tucker Law Group, LLC our attorneys are well-positioned to handle the diverse range of complex issues that impact higher education institutions, including:
 
                         <List
-                            sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                            sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                             aria-label="contacts"
                         >
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Employment and Tenure Disputes" />
                             </ListItem>
@@ -72,7 +72,7 @@ const HigherEducationLitigation = () => {
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Constitutional Claims" />
                             </ListItem>
@@ -80,14 +80,14 @@ const HigherEducationLitigation = () => {
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Title IX Litigation" />
                             </ListItem>
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Sexual Misconduct" />
                             </ListItem>
@@ -95,7 +95,7 @@ const HigherEducationLitigation = () => {
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Student Misconduct" />
                             </ListItem>
@@ -103,14 +103,14 @@ const HigherEducationLitigation = () => {
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Campus Security" />
                             </ListItem>
 
                             <ListItem disablePadding>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Breach of Contract" />
                             </ListItem>
@@ -183,13 +183,13 @@ const HigherEducationLitigation = () => {
 
                     <div className='Data-Header'>Practice Areas</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/HigherEducationLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Higher Education Law" />
                             </ListItemButton>
@@ -199,7 +199,7 @@ const HigherEducationLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/EmploymentLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Employment Litigation" />
                             </ListItemButton>
@@ -209,7 +209,7 @@ const HigherEducationLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/CatastrophicPersonalInjury') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Catastrophic Personal Injury" />
                             </ListItemButton>
@@ -219,7 +219,7 @@ const HigherEducationLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/ComplexCivilLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Complex Civil Litigation" />
                             </ListItemButton>
@@ -229,7 +229,7 @@ const HigherEducationLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/CivilandConstitutionalRightsLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Civil and Constitutional Rights Litigation" />
                             </ListItemButton>

@@ -45,12 +45,12 @@ const Industries = () => {
                     <br />
                     Our attorneys are a devoted group of legal professionals with a strong track record of success representing institutional clients operating across a diverse range of industries. These industries include:
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Higher Education" />
                         </ListItem>
@@ -58,7 +58,7 @@ const Industries = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Health Care" />
                         </ListItem>
@@ -66,14 +66,14 @@ const Industries = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Non-Profits" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="State and Local Governments" />
                         </ListItem>
@@ -81,7 +81,7 @@ const Industries = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Public Safety" />
                         </ListItem>
@@ -90,14 +90,14 @@ const Industries = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Insurance Defense" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Telecommunications" />
                         </ListItem>
@@ -186,13 +186,13 @@ const Industries = () => {
 
                     <div className='Data-Header'>About US</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/About') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Overview" />
                             </ListItemButton>
@@ -202,7 +202,7 @@ const Industries = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/WhyTuckerLawGroup') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="WHY TUCKER LAW GROUP?" />
                             </ListItemButton>
@@ -212,7 +212,7 @@ const Industries = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/Industries') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -222,7 +222,7 @@ const Industries = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/OurClients') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clinets" />
                             </ListItemButton>

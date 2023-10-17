@@ -91,14 +91,14 @@ const NewsResourcesMain = () => {
 
                     <div className='Data-Header'>Categories</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
 
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => setSelectedCategory(null)}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="All" />
                             </ListItemButton>
@@ -107,7 +107,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => setSelectedCategory('Articles')}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Articles" />
                             </ListItemButton>
@@ -117,7 +117,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => setSelectedCategory('FAQ')}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="FAQs" />
                             </ListItemButton>
@@ -127,7 +127,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => setSelectedCategory('Firm News')}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Firm News" />
                             </ListItemButton>
@@ -136,7 +136,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => setSelectedCategory('Uncategorized')}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Uncategorized" />
                             </ListItemButton>
@@ -148,14 +148,14 @@ const NewsResourcesMain = () => {
 
                     {/* <div className='Data-Header'>Archives</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
 
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/WhyTuckerLawGroup') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="WHY TUCKER LAW GROUP?" />
                             </ListItemButton>
@@ -165,7 +165,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/Industries') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Industries" />
                             </ListItemButton>
@@ -175,7 +175,7 @@ const NewsResourcesMain = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/OurClients') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Our Clinets" />
                             </ListItemButton>
@@ -247,12 +247,12 @@ export const CardSubtext = styled.div`
 
 export const CardCategoryGroup = styled.div`
   font-size: 16px;
-  color: #73022C;
+  color: #0B1340;
 `;
 
 export const CardDate = styled.div`
   font-size: 14px;
-  color: #73022C;
+  color: #0B1340;
   margin-top: 10px;
 `;
 
@@ -262,7 +262,7 @@ export const CardParagraph = styled.div`
 `;
 
 export const CardButton = styled.button`
-  background-color: #73022C;
+  background-color: #0B1340;
   color: #FFFFFF;
   padding: 10px 20px;
   border: none;

@@ -524,7 +524,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
@@ -542,7 +542,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
@@ -555,7 +555,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
@@ -568,7 +568,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
@@ -580,7 +580,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,
@@ -593,7 +593,7 @@ const Header = () => {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             whileHover={{
-                                border: '2px solid #910029',
+                                border: '2px solid #0B1340',
                                 top: 0,
                                 right: 0,
                                 bottom: 0,

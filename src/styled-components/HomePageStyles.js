@@ -66,7 +66,7 @@ align-items: center;
     margin-bottom: 3%;
 }
 .ViewMapButton{
-    background-color: #910029;;
+    background-color: #0B1340;
     border:2px solid white;
     color:white;
     height:50px;
@@ -153,7 +153,7 @@ align-items: center;
     margin-bottom: 3%;
 }
 .ViewMapButton{
-    background-color: #910029;;
+    background-color: #0B1340;
     border:2px solid white;
     color:white;
     height:50px;
@@ -286,7 +286,7 @@ export const HomePageContainer = styled.div`
   font-weight: 500;
  }
  .NewsPrompt{
-     background-color: #73022C;
+     background-color: #0B1340;
      position: fixed;
      height: 350px;
      width: 45px;
@@ -794,7 +794,7 @@ export const CaseCards = styled.div`
       width:100%;
       padding-top:2%;
       padding-bottom:2%;
-      background-color: #73022C;
+      background-color: #0B1340;
       display: flex;
       justify-content: center;
       align-items: center;

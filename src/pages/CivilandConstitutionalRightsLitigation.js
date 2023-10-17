@@ -39,12 +39,12 @@ const CivilandConstitutionalRightsLitigation = () => {
                     <div className='Data-SubText'>Litigating High Stakes Civil and Constitutional Rights Cases</div>
                     <div className='Data-Paragraph'>With more than 150 years of collective legal experience, the attorneys at TLG have built a strong reputation for successfully litigating complex and high-stakes civil and constitutional rights cases. Our lawyers are strong and compelling courtroom advocates with the skills and experience necessary to handle a diverse range of cases involving federal, state and local civil rights statutes and protections, including:</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Constitutional and Statutory Claims" />
                         </ListItem>
@@ -52,7 +52,7 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Due Process Claims" />
                         </ListItem>
@@ -60,14 +60,14 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Equal Protection Claims" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="First Amendment Claims" />
                         </ListItem>
@@ -75,7 +75,7 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Section 1983 Actions" />
                         </ListItem>
@@ -83,7 +83,7 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Employment Discrimination" />
                         </ListItem>
@@ -91,28 +91,28 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Retaliation" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Wrongful Death" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="Libel and Defamation" />
                         </ListItem>
 
                         <ListItem disablePadding>
                             <ListItemIcon>
-                                <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                             </ListItemIcon>
                             <ListItemText primary="State Civil Rights Statutes and Municipal Ordinances" />
                         </ListItem>
@@ -214,13 +214,13 @@ const CivilandConstitutionalRightsLitigation = () => {
 
                     <div className='Data-Header'>Practice Areas</div>
                     <List
-                        sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
+                        sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
                     >
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/HigherEducationLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Higher Education Law" />
                             </ListItemButton>
@@ -230,7 +230,7 @@ const CivilandConstitutionalRightsLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/EmploymentLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Employment Litigation" />
                             </ListItemButton>
@@ -240,7 +240,7 @@ const CivilandConstitutionalRightsLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/CatastrophicPersonalInjury') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Catastrophic Personal Injury" />
                             </ListItemButton>
@@ -250,7 +250,7 @@ const CivilandConstitutionalRightsLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/ComplexCivilLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Complex Civil Litigation" />
                             </ListItemButton>
@@ -260,7 +260,7 @@ const CivilandConstitutionalRightsLitigation = () => {
                         <ListItem disablePadding>
                             <ListItemButton onClick={() => { navigate('/CivilandConstitutionalRightsLitigation') }}>
                                 <ListItemIcon>
-                                    <ArrowForwardIosIcon sx={{ color: '#73022C' }} />
+                                    <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Civil and Constitutional Rights Litigation" />
                             </ListItemButton>
