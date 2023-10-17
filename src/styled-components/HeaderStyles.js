@@ -674,6 +674,7 @@ ol {
     display: flex;
     justify-content: space-between;
     padding: 3%;
+    z-index: 10;
   }
 .contactText{
   

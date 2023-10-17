@@ -15,6 +15,11 @@ import OurLegalTeam from '../components/OurLegalTeam'
 import OurPraticeCarosel from './OurPraticeCarosel'
 import OurLitigationPratice from '../components/LitigationPratice'
 import BoutiqueLitigationFirm from '../components/BoutiqueLitigationFirm'
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
 import Hero from '../components/Hero'
 // Import Swiper styles
 import 'swiper/css'
@@ -34,319 +39,344 @@ import { Pagination } from 'swiper/modules'
 //
 
 import {
- HomePageContainer,
- CaseCards,
- LawyerCarosel,
- Awards,
- TextSwiper,
- Main,
- Main1,
- Sidebar,
- Ad,
- Testimonials,
- SwiperHolder,
- VideoBackground,
- InternalTag1,
- InternalTag2,
- Button2,
- ContactCard,
- Container1,
- Container2,
- Title,
+  HomePageContainer,
+  CaseCards,
+  LawyerCarosel,
+  Awards,
+  TextSwiper,
+  Main,
+  Main1,
+  Sidebar,
+  Ad,
+  Testimonials,
+  SwiperHolder,
+  VideoBackground,
+  InternalTag1,
+  InternalTag2,
+  Button2,
+  ContactCard,
+  Container1,
+  Container2,
+  Title,
 } from '../styled-components/HomePageStyles'
+import Rainbowchat from '../components/Rainbowchat'
 
 const HomePage = () => {
- const [testimonials, setTestimonials] = useState([])
- const [show, setShow] = useState(false)
- const { openModal } = useModalContext()
- const { openChat } = useModalContext()
- const { isModalOpen, closeModal } = useModalContext()
- const { isChatOpen, closeChat } = useModalContext()
- const [lessinColor, setLessinColor] = useState('#003366')
- const [lawColor, setLawColor] = useState('#B0C4DE')
- const handleClose = () => setShow(false)
- const handleShow = () => setShow(true)
- const [activeIndex1, setActiveIndex1] = useState(0)
- const [activeIndex2, setActiveIndex2] = useState(0)
+  const [testimonials, setTestimonials] = useState([])
+  const [show, setShow] = useState(false)
+  const { openModal } = useModalContext()
+  const { openChat } = useModalContext()
+  const { isModalOpen, closeModal } = useModalContext()
+  const { isChatOpen, closeChat } = useModalContext()
+  const [lessinColor, setLessinColor] = useState('#003366')
+  const [lawColor, setLawColor] = useState('#B0C4DE')
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+  const [activeIndex1, setActiveIndex1] = useState(0)
+  const [activeIndex2, setActiveIndex2] = useState(0)
 
- const [name, setName] = useState('')
- const [email, setEmail] = useState('')
- const [message, setMessage] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
- 
- const [Slide1, setSlide1] = useState(true)
 
- const [Slide2, setSlide2] = useState(false)
+  const [Slide1, setSlide1] = useState(true)
 
- const [Slide3, setSlide3] = useState(false)
+  const [Slide2, setSlide2] = useState(false)
 
- const [Slide4, setSlide4] = useState(false)
+  const [Slide3, setSlide3] = useState(false)
 
- const [Slide5, setSlide5] = useState(false)
+  const [Slide4, setSlide4] = useState(false)
 
- const handleSlideChange = (swiper) => {
-  console.log('Current slide index: ' + swiper.activeIndex)
+  const [Slide5, setSlide5] = useState(false)
 
-  switch (swiper.activeIndex) {
+  const handleSlideChange = (swiper) => {
+    console.log('Current slide index: ' + swiper.activeIndex)
+
+    switch (swiper.activeIndex) {
       case 0: {
-            setSlide1(true)
-            setSlide2(false)
-      
-            setSlide3(false)
-        
-            setSlide4(false)
-        
-            setSlide5(false)
-          break
-         }
-   case 1: {
-      setSlide2(true)
+        setSlide1(true)
+        setSlide2(false)
 
-      setSlide3(false)
-  
-      setSlide4(false)
-  
-      setSlide5(false)
-      setSlide1(false)
-    break
-   }
-   case 2: {
-      setSlide3(true)
+        setSlide3(false)
 
-    setSlide2(false)
+        setSlide4(false)
 
-    setSlide4(false)
+        setSlide5(false)
+        break
+      }
+      case 1: {
+        setSlide2(true)
 
-    setSlide5(false)
-    
-    setSlide1(false)
-    break
-   }
-   case 3: {
-    setSlide4(true)
+        setSlide3(false)
 
-    setSlide2(false)
+        setSlide4(false)
 
-    setSlide3(false)
+        setSlide5(false)
+        setSlide1(false)
+        break
+      }
+      case 2: {
+        setSlide3(true)
 
-    setSlide5(false)
-    
-    setSlide1(false)
-   }
-   case 4: {
-      setSlide4(false)
+        setSlide2(false)
 
-      setSlide2(false)
-  
-      setSlide3(false)
-  
-      setSlide5(true)
-      
-      setSlide1(false)
-   }
- 
+        setSlide4(false)
+
+        setSlide5(false)
+
+        setSlide1(false)
+        break
+      }
+      case 3: {
+        setSlide4(true)
+
+        setSlide2(false)
+
+        setSlide3(false)
+
+        setSlide5(false)
+
+        setSlide1(false)
+      }
+      case 4: {
+        setSlide4(false)
+
+        setSlide2(false)
+
+        setSlide3(false)
+
+        setSlide5(true)
+
+        setSlide1(false)
+      }
+
+    }
   }
- }
 
- const handleSubmit = (e) => {
-  e.preventDefault()
-  // Handle form submission logic here
-  console.log('Submitted:', { name, email, message })
-  // Reset form inputs
-  setName('')
-  setEmail('')
-  setMessage('')
- }
-
- useEffect(() => {
-  const timer = setTimeout(() => {
-   setActiveIndex1(
-    activeIndex1 === carouselcontent1.length - 1 ? 0 : activeIndex1 + 1
-   )
-  }, 8000)
-
-  return () => clearTimeout(timer)
- }, [activeIndex1])
- useEffect(() => {
-  const timer = setTimeout(() => {
-   setActiveIndex2(
-    activeIndex2 === carouselcontent1.length - 1 ? 0 : activeIndex2 + 1
-   )
-  }, 4000)
-
-  return () => clearTimeout(timer)
- }, [activeIndex2])
-
- const [isMobile, setIsMobile] = useState(false)
- const getRandomColor = () => {
-  const colors = [
-   '#001d33',
-   '#3d8d9c',
-   '#1f6a82',
-   '#196a8a',
-   '#4e6462',
-   '#1f4066',
-   '#2c6599',
-   '#3d7370',
-   '#1f898f',
-   '#00a6c2',
-   '#064d63',
-   '#0b9bb8',
-   '#006b87',
-   '#0088b3',
-   '#0b9fcc',
-   '#6a9dc7',
-   '#0d99cc',
-  ]
-
-  const randomIndex = Math.floor(Math.random() * colors.length)
-  return colors[randomIndex]
- }
- useEffect(() => {
-  const handleResize = () => setIsMobile(window.innerWidth <= 767)
-  handleResize()
-  window.addEventListener('resize', handleResize)
-  return () => window.removeEventListener('resize', handleResize)
- }, [])
-
- useEffect(() => {
-  const intervalId = setInterval(() => {
-   setLessinColor(getRandomColor())
-   setLawColor(getRandomColor())
-  }, 2000)
-  return () => {
-   clearInterval(intervalId)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Handle form submission logic here
+    console.log('Submitted:', { name, email, message })
+    // Reset form inputs
+    setName('')
+    setEmail('')
+    setMessage('')
   }
- }, [])
- const internalTagStyle1 = isMobile ? { fontSize: '0.93rem' } : {}
- const internalTagStyle2 = isMobile ? { fontSize: '0.95rem' } : {}
 
- const handleMapClick = () => {
-  // Open the map with the location
-  window.open(
-   'https://maps.google.com/?q=1515+Market+St+%231650,+Philadelphia,+PA'
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActiveIndex1(
+        activeIndex1 === carouselcontent1.length - 1 ? 0 : activeIndex1 + 1
+      )
+    }, 8000)
+
+    return () => clearTimeout(timer)
+  }, [activeIndex1])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActiveIndex2(
+        activeIndex2 === carouselcontent1.length - 1 ? 0 : activeIndex2 + 1
+      )
+    }, 4000)
+
+    return () => clearTimeout(timer)
+  }, [activeIndex2])
+
+  const [isMobile, setIsMobile] = useState(false)
+  const getRandomColor = () => {
+    const colors = [
+      '#001d33',
+      '#3d8d9c',
+      '#1f6a82',
+      '#196a8a',
+      '#4e6462',
+      '#1f4066',
+      '#2c6599',
+      '#3d7370',
+      '#1f898f',
+      '#00a6c2',
+      '#064d63',
+      '#0b9bb8',
+      '#006b87',
+      '#0088b3',
+      '#0b9fcc',
+      '#6a9dc7',
+      '#0d99cc',
+    ]
+
+    const randomIndex = Math.floor(Math.random() * colors.length)
+    return colors[randomIndex]
+  }
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 767)
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setLessinColor(getRandomColor())
+      setLawColor(getRandomColor())
+    }, 2000)
+    return () => {
+      clearInterval(intervalId)
+    }
+  }, [])
+  const internalTagStyle1 = isMobile ? { fontSize: '0.93rem' } : {}
+  const internalTagStyle2 = isMobile ? { fontSize: '0.95rem' } : {}
+
+  const handleMapClick = () => {
+    // Open the map with the location
+    window.open(
+      'https://maps.google.com/?q=1515+Market+St+%231650,+Philadelphia,+PA'
+    )
+  }
+  const openURL = () => {
+    window.open('https://g.page/r/CdWZcmBLeneOEB0/review', '_blank')
+  }
+
+  const card = (
+    // <ContactCard>
+    //     <Modal
+    //         size="lg"
+    //         aria-labelledby="contained-modal-title-vcenter"
+    //         centered
+    //         show={show}
+    //         onHide={handleClose}
+    //     >
+    //     </Modal>
+    // </ContactCard>
+    <>
+      {show && (
+        <ContactCard>
+          <div className="formContainer">
+            <form onSubmit={handleSubmit}>
+              <h2>Contact Form</h2>
+              <div className="formGroup">
+                <label>Name</label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="formGroup">
+                <label>Email</label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="formGroup">
+                <label>Message</label>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
+              <button type="submit">Send Message</button>
+
+              <button type="submit" onClick={handleClose}>
+                Close
+              </button>
+            </form>
+          </div>
+        </ContactCard>
+      )}
+    </>
   )
- }
- const openURL = () => {
-  window.open('https://g.page/r/CdWZcmBLeneOEB0/review', '_blank')
- }
+  const [scrollCheck, setscrollCheck] = useState(false)
+  function checkScroll() {
+    const scrollTop = window.scrollY || window.pageYOffset
 
- const card = (
-  // <ContactCard>
-  //     <Modal
-  //         size="lg"
-  //         aria-labelledby="contained-modal-title-vcenter"
-  //         centered
-  //         show={show}
-  //         onHide={handleClose}
-  //     >
-  //     </Modal>
-  // </ContactCard>
-  <>
-   {show && (
-    <ContactCard>
-     <div className="formContainer">
-      <form onSubmit={handleSubmit}>
-       <h2>Contact Form</h2>
-       <div className="formGroup">
-        <label>Name</label>
-        <input
-         type="text"
-         value={name}
-         onChange={(e) => setName(e.target.value)}
-        />
-       </div>
-       <div className="formGroup">
-        <label>Email</label>
-        <input
-         type="email"
-         value={email}
-         onChange={(e) => setEmail(e.target.value)}
-        />
-       </div>
-       <div className="formGroup">
-        <label>Message</label>
-        <textarea
-         value={message}
-         onChange={(e) => setMessage(e.target.value)}
-        />
-       </div>
-       <button type="submit">Send Message</button>
+    // Adjust this threshold as needed based on when you want the animation to trigger
+    const threshold = 100
 
-       <button type="submit" onClick={handleClose}>
-        Close
-       </button>
-      </form>
-     </div>
-    </ContactCard>
-   )}
-  </>
- )
- const [scrollCheck, setscrollCheck] = useState(false)
- function checkScroll() {
-  const scrollTop = window.scrollY || window.pageYOffset
-
-  // Adjust this threshold as needed based on when you want the animation to trigger
-  const threshold = 100
-
-  if (scrollTop > threshold) {
-   setscrollCheck(true)
-  } else {
-   setscrollCheck(false)
+    if (scrollTop > threshold) {
+      setscrollCheck(true)
+    } else {
+      setscrollCheck(false)
+    }
   }
- }
 
- window.addEventListener('scroll', checkScroll)
+  window.addEventListener('scroll', checkScroll)
 
- const [OurFirm, setOurFirm] = useState(false)
+  const [OurFirm, setOurFirm] = useState(false)
 
- const [SpecialCase, setSpecialCase] = useState(true)
+  const [SpecialCase, setSpecialCase] = useState(true)
 
- const [SpecialLawyers, setSpecialLawyers] = useState(false)
+  const [SpecialLawyers, setSpecialLawyers] = useState(false)
 
- const [OurFirm2, setOurFirm2] = useState(false)
+  const [OurFirm2, setOurFirm2] = useState(false)
 
- 
- const [FeaturedNews, setFeaturedNews] = useState(false)
 
- function OurFirmClicked() {
-  setOurFirm(!OurFirm)
-  setSpecialCase(false)
-  setSpecialLawyers(false)
-  setOurFirm2(false)
- }
- function SpecialCaseClicked() {
-  if (SpecialCase) {
-  } else {
-   setSpecialCase(!SpecialCase)
-   setSpecialLawyers(false)
-   setOurFirm2(false)
-   setOurFirm(false)
+  const [FeaturedNews, setFeaturedNews] = useState(false)
+
+  function OurFirmClicked() {
+    setOurFirm(!OurFirm)
+    setSpecialCase(false)
+    setSpecialLawyers(false)
+    setOurFirm2(false)
   }
- }
- function SpecialLawyersClicked() {
-  if (SpecialLawyers) {
-  } else {
-   setSpecialCase(false)
-   setSpecialLawyers(!SpecialLawyers)
-   setOurFirm2(false)
-   setOurFirm(false)
+  function SpecialCaseClicked() {
+    if (SpecialCase) {
+    } else {
+      setSpecialCase(!SpecialCase)
+      setSpecialLawyers(false)
+      setOurFirm2(false)
+      setOurFirm(false)
+    }
   }
- }
- function OurFirm2Clicked() {
-  setOurFirm2(!OurFirm2)
-  setOurFirm(false)
-  setSpecialCase(false)
-  setSpecialLawyers(false)
- }
- function FeaturedNewClicked (){
-      setFeaturedNews(!FeaturedNews)
- }
- const [isComplete,setisComplete] = useState(false)
+  function SpecialLawyersClicked() {
+    if (SpecialLawyers) {
+    } else {
+      setSpecialCase(false)
+      setSpecialLawyers(!SpecialLawyers)
+      setOurFirm2(false)
+      setOurFirm(false)
+    }
+  }
+  function OurFirm2Clicked() {
+    setOurFirm2(!OurFirm2)
+    setOurFirm(false)
+    setSpecialCase(false)
+    setSpecialLawyers(false)
+  }
+  function FeaturedNewClicked() {
+    setFeaturedNews(!FeaturedNews)
+  }
+  const [isComplete, setisComplete] = useState(false)
 
- return (
-  <HomePageContainer>
-   {/* <div className="LiveChatPrompt">
+  const [open, setOpen] = useState(false);
+
+  const handleOpenOverlay = () => {
+    setOpen(true);
+  };
+
+  const handleCloseOverlay = () => {
+    setOpen(false);
+  };
+
+  return (
+    <HomePageContainer>
+      <div className="Message" onClick={handleOpenOverlay}>
+        <ForumIcon className="Icon" style={{ fontSize: 50 }} />
+      </div>
+      <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
+        <DialogContent>
+          <Rainbowchat/>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseOverlay} color="primary">
+            Close
+          </Button>
+          {/* You can add additional action buttons if needed */}
+        </DialogActions>
+      </Dialog>
+      {/* <div className="LiveChatPrompt">
     <p className="LiveChatText">
      LIVE <span>CHAT</span>
     </p>
@@ -367,9 +397,7 @@ const HomePage = () => {
   </div>
    }
    
-   <div className="Message">
-    <ForumIcon className="Icon" style={{ fontSize: 50 }} />
-   </div>
+  
     
    <div  className={FeaturedNews ? "NewsPrompt2" : "NewsPrompt"}
    onClick={FeaturedNewClicked}>
@@ -395,7 +423,7 @@ const HomePage = () => {
       </div>
     }
    </div> */}
-   {/* <motion.div
+      {/* <motion.div
     className="SideIcons"
     initial={{ opacity: 0, y: 100 }}
     animate={
@@ -418,9 +446,9 @@ const HomePage = () => {
      <SupportAgentIcon className="Icon" />
     </div>
    </motion.div> */}
-   {/* <>{card}</> */}
-   {/* <Main1> */}
-    {/* <img
+      {/* <>{card}</> */}
+      {/* <Main1> */}
+      {/* <img
      src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
      className="ImageBack"
     />
@@ -459,7 +487,7 @@ const HomePage = () => {
      </div>
     </div> */}
 
-    {/* <Swiper
+      {/* <Swiper
      pagination={true}
      modules={[Pagination]}
      onSlideChange={handleSlideChange}
@@ -1008,7 +1036,7 @@ const HomePage = () => {
     </div>
    </TextSwiper> */}
 
-   {/* <Testimonials>
+      {/* <Testimonials>
     <div className="Holder">
      <p className="client">Client Testimonials</p>
      <div className="HolderInner">
@@ -1033,14 +1061,14 @@ const HomePage = () => {
 
     <Reviews />
    </Testimonials> */}
-   <Hero/>
-   <BoutiqueLitigationFirm/>
-   <OurLitigationPratice/>
-   <OurPraticeCarosel/>
-   {/* <OurLegalTeam/> */}
-   <Address/>
-   <Footer />
-  </HomePageContainer>
- )
+      <Hero />
+      <BoutiqueLitigationFirm />
+      <OurLitigationPratice />
+      <OurPraticeCarosel />
+      {/* <OurLegalTeam/> */}
+      <Address />
+      <Footer />
+    </HomePageContainer>
+  )
 }
 export default HomePage

@@ -8,10 +8,60 @@ export const HeroHolder = styled.div`
  flex-direction: row;
  justify-content: space-evenly;
  align-items: center;
- height: 90vh;
+ height: 100%;
  width: 100%;
  background-color: #0B1340;
 
+
+
+ .Banner {
+  width: 100%;
+  height: 400px;
+  background-color: #0B1340;
+  display: flex;
+
+  @media (max-width: 1050px) {
+    flex-direction: column; 
+    height: auto; 
+    margin-top: 70px;
+  }
+}
+
+.Banner-Buttons{
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+}
+
+.Banner-Text {
+  width: 30%; 
+  text-align: center;
+  color: white;
+  display: grid;
+  font-size: 50px; 
+  justify-content: center;
+  align-items: center;
+  
+  @media (max-width: 1050px) {
+    order: 2; 
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+.Banner-Img {
+  width: 70%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1050px) {
+    order: 1; 
+    margin-top: 10px; 
+    width: 100%; 
+  }
+}
 
  .ImageGrid{
     width:70%;
@@ -110,7 +160,7 @@ export const HeroHolder = styled.div`
   cursor: pointer;
  }
  
- @media (max-width: 1450px) {
+ @media (max-width: 767px) {
     .ImageGrid{
         display: none;
     }

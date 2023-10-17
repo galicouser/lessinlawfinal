@@ -178,9 +178,9 @@ const Header = () => {
                             fontWeight: 100,
                             textAlign: 'center',
                         }}
-                        onClick={() => { navigate("/Verdicts") }}
+                        onClick={() => { navigate("/Verdicts&SSettlements") }}
                     >
-                        Verdicts{' '}
+                        Verdicts & Settlements{' '}
                     </h4>
                     <h4
                         style={{
@@ -517,7 +517,7 @@ const Header = () => {
                             NEW JERSEY:
                             <PhoneIcon style={{ fontSize: 14.5 }} className="HeaderPhone" />{' '}
                             
-                            215-875-0609
+                            (856) 663-2566
                         </p>
                     </div>
 
@@ -565,7 +565,7 @@ const Header = () => {
                                 bottom: 0,
                                 left: 0
                             }}
-                            onClick={() => { navigate("/Verdicts") }}>VERDICTS</motion.p>
+                            onClick={() => { navigate("/Verdicts&SSettlements") }}>Verdicts & Settlements</motion.p>
                         <hr className="headerDivider" />
                         <motion.p
                             className="linkButton"

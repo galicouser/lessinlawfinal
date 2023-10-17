@@ -5,17 +5,15 @@ const Rainbowchat = () => {
         <div
             className="chat-container"
             style={{
-                width: '450px',
+                width: '100%',
                 height: '750px',
-                marginTop: '3.5rem',
 
             }}
         >
             <iframe
                 style={{
-                    width: '350px',
+                    width: '100%',
                     height: '650px',
-                    marginTop: '5rem',
                     borderRadius: '4%',
                 }}
                 id="rainbow-chat"
