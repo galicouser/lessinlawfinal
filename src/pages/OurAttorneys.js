@@ -60,32 +60,34 @@ const OurAttorneys = () => {
 
 
     <AboutWrapper>
-
-
-
-      <div className='Content'>
+  <div className='Content'>
         <div className='Data'>
           <div className='Data-Header'>Our Attorneys</div>
           <div className='Data-Paragraph'>Attorneys at THE TUCKER LAW GROUP, LLC come from diverse legal backgrounds, including large firms, solo practice, federal and local governmental administration, and district attorney’s offices. TLG’s attorneys are involved in various professional, pro bono and charitable activities, which include mentoring local students and participating in high school mock trial competitions. Each attorney is a member of the national, regional and local bar associations that keep us connected to our peers and profession. TLG’s attorneys take their obligations to the bar seriously and proudly volunteer their time to serve in leadership roles in bar-related organizations. Non-legal related activities are additional ways that TLG’s attorneys understand the community in which they practice. Attorneys at TLG have served as board members and volunteers for many non-profit organizations. These activities allow our attorneys to be good stewards of the community while at the same time understand the community in which they practice. At TLG, we value our attorneys’ community involvement because we know that these experiences often prove to be valuable tools in examining the legal matters that TLG handles and in assessing how those cases will impact the community or, where necessary, how they might be perceived by a jury in the community. This kind of experiential intelligence cannot be taught in a classroom or read in a book; rather, it is the result of living fully and serving others.</div>
 
 
 
-          {/* <OurAttorneysStyles>
+        
+        </div>
+      </div>
+<OurAttorneysStyles>
             <div className='AttorneyInfoHolder'>
               <div className='ImageHolder'>
                 <img src={Image} className='AttorneyImage' />
               </div>
               <div className='BioHolder'>
+                <div className="Bio">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                </div>
                 <p className='TitleHolder'>Founder</p>
                 <p className='Name'>Jeffery Lessin</p>
               </div>
             </div>
-          </OurAttorneysStyles> */}
-        </div>
-      </div>
+          </OurAttorneysStyles>
+
+    
 
 
-      <div className='ImageGrid'>
+      {/* <div className='ImageGrid'>
         {attorneys.map((attorney) => (
           <div className='ImageCard' key={attorney.id}>
             <div className="ImageContainer">
@@ -93,12 +95,14 @@ const OurAttorneys = () => {
               <div className="ImageText">{attorney.name}
               {/* <br/>
               <br/>
-              View Bio */}
+              View Bio 
               </div>
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+
+
       <Address />
       <Footer />
     </AboutWrapper >
