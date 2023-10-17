@@ -1037,7 +1037,7 @@ const HomePage = () => {
    <BoutiqueLitigationFirm/>
    <OurLitigationPratice/>
    <OurPraticeCarosel/>
-   <OurLegalTeam/>
+   {/* <OurLegalTeam/> */}
    <Address/>
    <Footer />
   </HomePageContainer>

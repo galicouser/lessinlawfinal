@@ -42,16 +42,16 @@ const Hero = () => {
 
 
     <div className='ImageLine1'>
-        <img src='https://www.tlgattorneys.com/wp-content/uploads/2016/01/Carl-Singley-regular-slider-image-1.jpg' className='ImagePerson1'/>
-        <img src={person2} className='ImagePerson1'/>
-        <img src={person3} className='ImagePerson1'/>
+        <img src='https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1740' className='ImagePerson1'/>
+        <img src={"https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1894"} className='ImagePerson1'/>
+        <img src={"https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1665"} className='ImagePerson1'/>
     </div>
     
     <div className='ImageLine2'>
    
-        <img src={"https://www.tlgattorneys.com/wp-content/uploads/2022/10/dc-hp.jpg"} className='ImagePerson1'/>
-        <img src={person4} className='ImagePerson1'/>
-        <img src={person5} className='ImagePerson3'/>
+    <img src={"https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1894"} className='ImagePerson1'/>
+        <img src={"https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1665"} className='ImagePerson1'/>
+     <img src={"https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1665"} className='ImagePerson3'/>
         {/* <img src={"https://www.tlgattorneys.com/wp-content/uploads/2016/01/Leslie-Greenspan-regular-slider-image.jpg"} className='ImagePerson1'/> */}
     </div>
 

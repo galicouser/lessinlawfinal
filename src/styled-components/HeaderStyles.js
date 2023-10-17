@@ -11,17 +11,24 @@ const GlobalStyles = createGlobalStyle`
   justify-content: center;
   align-items: center;
 }
+.bgImage{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .MobileTop{
   display: none;
 }
 .HeaderContainer{
   width: 80%;
   height: 100%;
-  background-color: #FBFAF8;
+  background-color: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 .HeaderLogo{
   width: 300px;

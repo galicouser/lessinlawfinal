@@ -473,6 +473,7 @@ const Header = () => {
 
         <div className="HeaderOuter">
             <GlobalStyles />
+            <img className='bgImage' src="https://images.unsplash.com/photo-1566305977571-5666677c6e98?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1845"/>
             <div style={{ display: 'none' }}>
                 {['left'].map((anchor) => (
                     <React.Fragment key={anchor}>
@@ -507,14 +508,15 @@ const Header = () => {
                         <p className="contactText">
                             PENNSYLVANIA:
                             <PhoneIcon style={{ fontSize: 14.5 }} className="HeaderPhone" />{' '}
-                            215-875-0609
+                            215-599-1400
                         </p>
 
                         <p className="contactText">
                             {' '}
                             NEW JERSEY:
                             <PhoneIcon style={{ fontSize: 14.5 }} className="HeaderPhone" />{' '}
-                            215-599-1400
+                            
+                            215-875-0609
                         </p>
                     </div>
 
