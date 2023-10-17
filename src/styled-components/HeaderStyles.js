@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .bgImage{
   position: absolute;
