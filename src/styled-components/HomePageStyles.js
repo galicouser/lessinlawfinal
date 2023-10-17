@@ -10,7 +10,7 @@ export const HeroHolder = styled.div`
  align-items: center;
  height: 90vh;
  width: 100%;
- background-color: #910029;
+ background-color: #0B1340;
 
 
  .ImageGrid{
@@ -164,14 +164,14 @@ export const BoutiqueLitigation = styled.div`
   position: absolute;
   height: 35px;
   width: 290px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 3;
  }
  .LayeredColor3 {
   position: absolute;
   height: 55px;
   width: 312px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 1;
  }
 
@@ -282,14 +282,14 @@ export const OurLitigationHome = styled.div`
   position: absolute;
   height: 35px;
   width: 290px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 3;
  }
  .LayeredColor3 {
   position: absolute;
   height: 55px;
   width: 312px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 1;
  }
 
@@ -310,7 +310,7 @@ export const OurLitigationHome = styled.div`
   margin-top: 10%;
  }
  .ItemIcon {
-  color: #910029;
+  color: #0B1340;
  }
  
  @media (max-width: 768px) {
@@ -554,14 +554,14 @@ export const OurLegalTeamContainer = styled.div`
   position: absolute;
   height: 35px;
   width: 290px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 3;
  }
  .LayeredColor3 {
   position: absolute;
   height: 55px;
   width: 312px;
-  background-color: #910029;
+  background-color: #0B1340;
   z-index: 1;
  }
 
