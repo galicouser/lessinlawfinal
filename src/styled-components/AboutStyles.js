@@ -99,6 +99,18 @@ export const AboutWrapper = styled.div`
     }
   }
 
+  .Contact-Form-NR{
+    width: 30%;
+    height: 400px;
+    display: grid;
+    padding: 2rem;
+    padding-left: 5%;
+
+    @media (max-width: 1050px) {
+        width: 100%;
+    }
+  }
+
     .Contact-Box {
         width: 100%;
         height: auto;
@@ -165,6 +177,24 @@ export const AboutWrapper = styled.div`
 
     textarea{
         height: 100px;
+    }
+
+
+    .ImageGrid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust the gap as needed */
+      justify-content: space-between; /* To create three images in each row */
+    }
+
+    .ImageCard {
+      width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+      text-align: center;
+    }
+
+    .ImageCard img {
+      max-width: 100%;
+      height: auto;
     }
 
 `;

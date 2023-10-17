@@ -286,7 +286,7 @@ export const HomePageContainer = styled.div`
   font-weight: 500;
  }
  .NewsPrompt{
-     background-color: #012030;
+     background-color: #73022C;
      position: fixed;
      height: 350px;
      width: 45px;
@@ -774,12 +774,12 @@ export const CaseCards = styled.div`
       color: #012030;
  }
  .descriptionText{
-      display: -webkit-box;
-  -webkit-line-clamp: 5; /* Adjust this number to the desired number of lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 20px;
-  font-weight: 100;
+     display: -webkit-box;
+    -webkit-line-clamp: 5; /* Adjust this number to the desired number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 100;
  }
  .ShowMore{
       display: flex;
@@ -794,7 +794,7 @@ export const CaseCards = styled.div`
       width:100%;
       padding-top:2%;
       padding-bottom:2%;
-      background-color: #012030;
+      background-color: #73022C;
       display: flex;
       justify-content: center;
       align-items: center;

@@ -41,6 +41,8 @@ import CivilandConstitutionalRightsLitigation from './pages/CivilandConstitution
 import WhyTuckerLawGroup from './pages/WhyTuckerLawGroup'
 import OurClients from './pages/OurClients'
 import Industries from './pages/Industries'
+import NewsResourcesMain from './pages/NewsAndResources.js/NewsResourcesMain'
+
 function App() {
  return (
   <Wrapper>
@@ -99,7 +101,7 @@ function App() {
      <Route path="/OurClients" element={<OurClients />} />
      <Route path="/Industries" element={<Industries />} />
 
-
+     <Route path="/News&Resources" element={<NewsResourcesMain />} />
      
      
     </Routes>

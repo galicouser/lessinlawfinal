@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
   justify-content: space-between;
   align-items: end;
   height: 50%;
+  width: 100%;
 }
 .ContactHeader{
   display: flex;
@@ -58,6 +59,7 @@ const GlobalStyles = createGlobalStyle`
 }
 .NavigationFlex{
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,10 +68,13 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'Times New Roman', serif;
   padding-right: 11px;
   padding-left: 11px;
-  font-size: 17px;
+  font-size: 13px;
   color: #012030;
   margin-top: 10px;
   padding: 9px;
+  cursor: pointer;
+  margin-left: 40px;
+  text-align: center;
 }
 .headerDivider{
   height: 10px;
@@ -625,16 +630,21 @@ ol {
   display:none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1020px) {
 
   
   .HeaderOuter{
     height: 100%;
     flex-direction: column;;
   }
-  /* .HeaderLogo{
+  .HeaderLogo{
     height: 120px;
-  } */
+    padding-top: 1rem;
+  }
+
+  .HeaderTextHolder{
+    display: none;
+  }
   .HeaderContainer{
     justify-content: center;
   }
