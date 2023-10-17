@@ -180,21 +180,60 @@ export const AboutWrapper = styled.div`
     }
 
 
-    .ImageGrid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px; /* Adjust the gap as needed */
-      justify-content: space-between; /* To create three images in each row */
-    }
+    /* In your CSS or styled-components */
+.ImageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+  justify-content: space-between;
+  padding: 3rem;
 
-    .ImageCard {
-      width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
-      text-align: center;
+  @media (max-width: 1000px) {
+    display: grid;
+    padding: 0rem;
+    width: 100%;
+    height: 100%;
     }
+}
 
-    .ImageCard img {
-      max-width: 100%;
-      height: auto;
+.ImageCard {
+  width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+  text-align: center;
+  padding: 3rem;
+  @media (max-width: 1000px) {
+    display: grid;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
     }
+}
+
+.ImageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.ImageContainer img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%); /* Start with a black and white effect */
+  transition: filter 0.3s; /* Smooth transition effect */
+}
+
+.ImageContainer:hover img {
+  filter: grayscale(0%); /* Remove the black and white effect on hover */
+}
+
+.ImageText {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3); /* Background color for text */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust as needed */
+  font-size: 16px; /* Font size */
+}
+
 
 `;

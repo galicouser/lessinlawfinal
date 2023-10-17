@@ -69,16 +69,7 @@ const OurAttorneys = () => {
           <div className='Data-Paragraph'>Attorneys at THE TUCKER LAW GROUP, LLC come from diverse legal backgrounds, including large firms, solo practice, federal and local governmental administration, and district attorney’s offices. TLG’s attorneys are involved in various professional, pro bono and charitable activities, which include mentoring local students and participating in high school mock trial competitions. Each attorney is a member of the national, regional and local bar associations that keep us connected to our peers and profession. TLG’s attorneys take their obligations to the bar seriously and proudly volunteer their time to serve in leadership roles in bar-related organizations. Non-legal related activities are additional ways that TLG’s attorneys understand the community in which they practice. Attorneys at TLG have served as board members and volunteers for many non-profit organizations. These activities allow our attorneys to be good stewards of the community while at the same time understand the community in which they practice. At TLG, we value our attorneys’ community involvement because we know that these experiences often prove to be valuable tools in examining the legal matters that TLG handles and in assessing how those cases will impact the community or, where necessary, how they might be perceived by a jury in the community. This kind of experiential intelligence cannot be taught in a classroom or read in a book; rather, it is the result of living fully and serving others.</div>
 
 
-          <div className='ImageGrid'>
-            {attorneys.map((attorney) => (
-              <div className='ImageCard' key={attorney.id}>
-                <img src={attorney.imageUrl} alt={attorney.name} />
-                <p>{attorney.name}</p>
-              </div>
-            ))}
-          </div>
 
-          
           {/* <OurAttorneysStyles>
             <div className='AttorneyInfoHolder'>
               <div className='ImageHolder'>
@@ -91,9 +82,22 @@ const OurAttorneys = () => {
             </div>
           </OurAttorneysStyles> */}
         </div>
+      </div>
 
 
-
+      <div className='ImageGrid'>
+        {attorneys.map((attorney) => (
+          <div className='ImageCard' key={attorney.id}>
+            <div className="ImageContainer">
+              <img src={attorney.imageUrl} alt={attorney.name} />
+              <div className="ImageText">{attorney.name}
+              {/* <br/>
+              <br/>
+              View Bio */}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
       <Address />
       <Footer />
