@@ -47,17 +47,17 @@ const OurLitigationPratice = () => {
     <div className='IndustriesItem'>
     <ChevronRightRoundedIcon className='ItemIcon'/>
   
-            <div className='ItemText'>Education Institutions - Colleges and universities</div>
+            <div className='ItemText'>Non-Profits</div>
    </div>
     <div className='IndustriesItem'>
     <ChevronRightRoundedIcon className='ItemIcon'/>
   
-            <div className='ItemText'>Education Institutions - Colleges and universities</div>
+            <div className='ItemText'>State and Local Governments</div>
     </div>
     <div className='IndustriesItem'>
     <ChevronRightRoundedIcon className='ItemIcon'/>
   
-            <div className='ItemText'>Education Institutions - Colleges and universities</div>
+            <div className='ItemText'>Public Safety</div>
      </div>
    </div>
   </OurLitigationHome>
