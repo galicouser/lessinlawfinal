@@ -10,21 +10,10 @@ const OurLitigationPratice = () => {
     <p className='MainText'>OUR LITIGATION PRACTICE</p>
     <p className='SubMainText'>Diverse Practice Scope</p>
     <p className='ParaText'>
-     The attorneys at our firm are well-positioned to achieve success in a wide
-     range of challenging civil cases. Our litigation practice primarily focuses
-     on higher education, employment discrimination, catastrophic personal
-     injury and malpractice, plaintiff and defense personal injury, complex
-     civil and commercial litigation, and civil and constitutional rights
-     matters.
+    The legal professionals at our firm are excellently equipped to excel in a diverse array of demanding civil cases. Our litigation practice primarily centers around higher education, employment discrimination, severe personal injury and malpractice, both on the plaintiff and defense sides, intricate civil and commercial litigation, as well as civil and constitutional rights issues.
     </p>
     <p className='ParaText'>
-     Our firm’s Higher Education practice is one of the largest in the region.
-     We have served as counsel to United Educators, which insures numerous
-     private and public universities around the nation, and have represented
-     dozens of colleges and universities in a wide variety of litigation matters
-     including employment discrimination and premises liability. We are also a
-     proud member of the National Association of College and University
-     Attorneys.
+    Our Higher Education practice at the firm is among the most extensive in the region. We have assumed the role of legal counsel for United Educators, an insurer for numerous private and public universities across the nation. Additionally, we have provided legal representation for numerous colleges and universities in a broad spectrum of litigation cases, encompassing issues such as employment discrimination and premises liability. Furthermore, our proud affiliation with the National Association of College and University Attorneys underscores our commitment to this sector.
     </p>
     <div className='ReadAction'>
         <div className='LayeredColor'></div>
@@ -38,8 +27,7 @@ const OurLitigationPratice = () => {
    <div className='Industries'>
    <p className='SubMainText'>Industries</p>
    <p className='ParaText'>
-   Our firm has extensive experience litigating complex cases in state and federal courts at both the trial and appellate levels. We represent clients across a wide range of industries, including:
-    </p>
+   Our firm boasts extensive expertise in handling intricate cases in both state and federal courts, spanning from trial proceedings to appellate stages. We advocate for clients hailing from a diverse array of industries, such as:    </p>
     <div className='IndustriesItem1'>
     <ChevronRightRoundedIcon className='ItemIcon'/>
             <div className='ItemText'>Education Institutions - Colleges and universities</div>

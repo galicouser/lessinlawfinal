@@ -36,13 +36,13 @@ const EmploymentLitigation = () => {
                 <div className='Data'>
                     <div className='Data-Header'>EMPLOYMENT LITIGATION</div>
                     <div className='Data-SubText'>Preventing and Resolving Difficult Employment Disputes</div>
-                    <div className='Data-Paragraph'>The attorneys at Tucker Law Group, LLC have a strong focus on helping our clients resolve all types of labor and employment disputes. In our experience we know that employment cases are very challenging and involve complicated Federal, state and local laws and regulations. Whether you are an organization looking for advice on how to comply with these constantly changing legal requirements, or an employer or employee in need of an attorney to represent you in an employment related dispute, TLG has the resources and experience to successfully handle the situation from start to finish.</div>
+                    <div className='Data-Paragraph'>The attorneys at Lessin Law, LLC have a strong focus on helping our clients resolve all types of labor and employment disputes. In our experience we know that employment cases are very challenging and involve complicated Federal, state and local laws and regulations. Whether you are an organization looking for advice on how to comply with these constantly changing legal requirements, or an employer or employee in need of an attorney to represent you in an employment related dispute, TLG has the resources and experience to successfully handle the situation from start to finish.</div>
 
                     <div className='Data-SubText'>Handling a Full Spectrum of Employment Law Matters</div>
-                    <div className='Data-Paragraph'>The attorneys at Tucker Law Group, LLC have decades of experience handling a complete range of employment law matters. TLG counsels and represents businesses, educational institutions, government agencies, nonprofits and other organizations facing complex labor and employment law issues. We also represent individual employees who have suffered adverse actions in the workplace.
+                    <div className='Data-Paragraph'>The attorneys at Lessin Law, LLC have decades of experience handling a complete range of employment law matters. TLG counsels and represents businesses, educational institutions, government agencies, nonprofits and other organizations facing complex labor and employment law issues. We also represent individual employees who have suffered adverse actions in the workplace.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC we understand just how much is at stake for both employers and employees when employment law issues arise. Our attorneys work together as a cohesive team, leveraging their diverse backgrounds and experiences to help our clients resolve workplace problems as quickly and cost-effectively as possible. TLG partners with our clients to address a full spectrum of employment and labor law matters, including:</div>
+                        At Lessin Law, LLC we understand just how much is at stake for both employers and employees when employment law issues arise. Our attorneys work together as a cohesive team, leveraging their diverse backgrounds and experiences to help our clients resolve workplace problems as quickly and cost-effectively as possible. TLG partners with our clients to address a full spectrum of employment and labor law matters, including:</div>
                     <List
                         sx={{ width: '100%', maxWidth: 360, color: '#73022C' }}
                         aria-label="contacts"
@@ -124,12 +124,12 @@ const EmploymentLitigation = () => {
 
 
                     <div className='Data-SubText'>Strong Reputation and Committed Legal Team</div>
-                    <div className='Data-Paragraph'>Since our firm’s founding in 1993, Tucker Law Group, LLC has worked to assemble a talented team of attorneys who are focused on achieving success for our clients. TLG has developed a strong reputation for providing exceptional client service and meticulous attention to detail at every stage of the legal process.
+                    <div className='Data-Paragraph'>Since our firm’s founding in 1993, Lessin Law, LLC has worked to assemble a talented team of attorneys who are focused on achieving success for our clients. TLG has developed a strong reputation for providing exceptional client service and meticulous attention to detail at every stage of the legal process.
 
                         <br />
                         <br />
 
-                        At Tucker Law Group, LLC, we are passionate about the practice of law. Every day we strive to help our clients resolve complicated legal issues so that they can focus on the matters that are important to them. Whether we are defending management in an employment discrimination case, conducting an audit or an internal investigation of an organization, or helping an employee receive the pay and benefits that he or she is legally entitled to, our attorneys “Make Results Happen”.
+                        At Lessin Law, LLC, we are passionate about the practice of law. Every day we strive to help our clients resolve complicated legal issues so that they can focus on the matters that are important to them. Whether we are defending management in an employment discrimination case, conducting an audit or an internal investigation of an organization, or helping an employee receive the pay and benefits that he or she is legally entitled to, our attorneys “Make Results Happen”.
 
 
                     </div>

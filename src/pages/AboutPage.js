@@ -35,10 +35,10 @@ const AboutPage = () => {
                 <div className='Data'>
                     <div className='Data-Header'>About US</div>
                     <div className='Data-SubText'>We Provide Exceptional Legal Counsel</div>
-                    <div className='Data-Paragraph'>What began in 1993 as an idea to deliver legal services in a different way has evolved into an outstanding team of legal professionals committed to providing exceptional legal counsel to clients in a wide range of complex legal issues. With offices in Philadelphia, Pennsylvania and Marlton, New Jersey, Tucker Law Group, LLC is an AV-rated boutique litigation firm that has attracted a diverse group of attorneys from some of the nations’ largest firms and most prestigious law schools. Our lawyers are talented, meticulous and dedicated professionals who use an innovative team approach to solve clients’ legal issues. Businesses and organizations routinely turn to our firm to handle their high-stakes litigation because they know that they can count on our attorneys to “Make Results Happen”.</div>
+                    <div className='Data-Paragraph'>What started as a concept in 1993 to revolutionize the delivery of legal services has transformed into a remarkable team of legal experts dedicated to offering exceptional legal guidance to clients facing a broad spectrum of intricate legal challenges. With established offices in Philadelphia, Pennsylvania, and Marlton, New Jersey, Lessin Law, LLC is a boutique litigation firm recognized with an AV rating. It has attracted a diverse cadre of attorneys from some of the nation's largest firms and prestigious law schools. Our lawyers are accomplished, detail-oriented, and committed professionals who employ an innovative team-based approach to address our clients' legal concerns. Businesses and organizations consistently choose our firm to manage their high-stakes litigation because they trust our attorneys to "Achieve Results."</div>
 
                     <div className='Data-SubText'>We Serve a Diverse Client Base</div>
-                    <div className='Data-Paragraph'>Tucker Law Group, LLC counsels a diverse client base, ranging from individual litigants, Fortune 100 Companies, higher education institutions, non-profit organizations and governmental entities. Our attorneys represent clients in all aspects of litigation, trial and appellate courts at the federal and state levels, administrative agencies, arbitration and mediation proceedings. TLG is called upon to provide training and internal investigations to aid clients avoid costly disputes and litigation. Our representation spans a broad spectrum of practice areas, including:</div>
+                    <div className='Data-Paragraph'>Lessin Law caters to a diverse clientele that spans individual litigants, Fortune 100 Companies, higher education institutions, non-profit organizations, and government entities. Our legal experts act as staunch advocates, representing clients across a spectrum of legal proceedings, encompassing trials and appeals at both federal and state jurisdictions, administrative bodies, as well as arbitration and mediation forums. Lessin Law is often called upon to provide training and conduct internal investigations, aiding clients in the prevention of costly disputes and legal entanglements. Our representation spans a broad spectrum of legal practice areas, including:</div>
                     <List
                         sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                         aria-label="contacts"
@@ -97,7 +97,9 @@ const AboutPage = () => {
 
 
                     <div className='Data-SubText'>We are Focused on a Single Goal: Your Success</div>
-                    <div className='Data-Paragraph'>Tucker Law Group, LLC is a different kind of law firm. We are a close-knit group of legal professionals who believe in running our law firm like a family, not a business. The attorneys and staff at our firm work together for a single purpose: to serve our clients and help them reach their goals. Whether we are representing our client in a high-stakes litigation matter or helping a worker to resolve an employment dispute, TLG is committed to providing personalized service and attention to our clients every step of the way. Our lawyers treat our clients as individuals, taking the time to understand their unique needs, concerns and objectives. Every client that we serve is a valued member of our legal team and we are in constant communication to ensure we receive all the information needed to aid TLG in their matter during all stages of the legal process. The lawyers at TLG seek frequent input and feedback to ensure our clients are satisfied. Building strong and lasting relationships with our clients is who we are and how we practice law.
+                    <div className='Data-Paragraph'>Lessin Law is a distinctive law firm that operates with a unique philosophy. We function as a tightly-knit community of legal experts, prioritizing a familial approach over a purely business one. Our attorneys and support staff collaborate with a shared mission: to diligently serve our clients and assist them in achieving their objectives. Whether we're advocating for a client in a high-stakes legal dispute or aiding an employee in resolving an employment-related issue, Lessin Law remains committed to delivering personalized service and unwavering attention to our clients at each stage of their legal journey.
+
+Our legal team treats each client as an individual, dedicating time to comprehend their distinct needs, concerns, and goals. Every client we serve is an esteemed member of our legal family, and we maintain constant communication to ensure that we have all the essential information necessary to support Lessin Law in addressing their legal matters throughout all phases of the legal process. The attorneys at Lessin Law actively seek client input and feedback to ensure satisfaction. The cultivation of robust and enduring relationships with our clients is an integral part of who we are and how we practice law.
                         <br />
                         <br />
                         We invite you to learn more about our firm and what we do by visiting the following pages on our site:</div>
@@ -111,7 +113,7 @@ const AboutPage = () => {
                                 <ListItemIcon>
                                     <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="Why Tucker Law" />
+                                <ListItemText primary="Why Lessin Law" />
                             </ListItemButton>
                         </ListItem>
 
@@ -209,7 +211,7 @@ const AboutPage = () => {
                                 <ListItemIcon>
                                     <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="WHY TUCKER LAW GROUP?" />
+                                <ListItemText primary="WHY LESSIN LAW GROUP?" />
                             </ListItemButton>
                         </ListItem>
 

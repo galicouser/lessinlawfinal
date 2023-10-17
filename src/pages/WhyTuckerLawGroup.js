@@ -34,27 +34,27 @@ const WhyTuckerLawGroup = () => {
 
             <div className='Content'>
                 <div className='Data'>
-                    <div className='Data-Header'>WHY TUCKER LAW GROUP?
+                    <div className='Data-Header'>WHY Lessin Law?
                     </div>
                     <div className='Data-SubText'>LONG-STANDING RELATIONSHIPS</div>
                     <div className='Data-Paragraph'>
-                        Tucker Law Group, LLC is dedicated to building strong relationships with each client that we serve. TLG respects and values our clients’ knowledge and expertise and we view our clients as true partners in the legal process. Our attorneys are legal professionals who can relate to individuals at all levels of an organization. By working side by side with our clients, TLG develops legal strategies that most effectively pursue our clients’ important goals and objectives, both in the short and long-term. Our clients know that we are focused on their success and they trust us to handle their most difficult and sensitive cases. We are proud of the long-standing relationships we have maintained with our clients and appreciate their generous referrals of colleagues and friends.
+                        Lessin Law, LLC is dedicated to building strong relationships with each client that we serve. TLG respects and values our clients’ knowledge and expertise and we view our clients as true partners in the legal process. Our attorneys are legal professionals who can relate to individuals at all levels of an organization. By working side by side with our clients, TLG develops legal strategies that most effectively pursue our clients’ important goals and objectives, both in the short and long-term. Our clients know that we are focused on their success and they trust us to handle their most difficult and sensitive cases. We are proud of the long-standing relationships we have maintained with our clients and appreciate their generous referrals of colleagues and friends.
                     </div>
 
 
                     <div className='Data-SubText'>TEAM APPROACH</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC, we take a different approach to the practice of law.Our lawyers work together as a cohesive team to solve difficult and challenging legal problems for our clients. Whether we are litigating a complex personal injury case or advising an employer on the creation of a new workplace policy or procedure, we draw upon the talent and expertise of the attorneys and staff throughout our firm to achieve optimal results for our clients. We know that our teamwork and collaboration allows our firm to create innovative legal strategies and solutions that best serve our clients’ needs and goals.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC, we take a different approach to the practice of law.Our lawyers work together as a cohesive team to solve difficult and challenging legal problems for our clients. Whether we are litigating a complex personal injury case or advising an employer on the creation of a new workplace policy or procedure, we draw upon the talent and expertise of the attorneys and staff throughout our firm to achieve optimal results for our clients. We know that our teamwork and collaboration allows our firm to create innovative legal strategies and solutions that best serve our clients’ needs and goals.
                     </div>
 
 
 
                     <div className='Data-SubText'>WEALTH OF EXPERIENCE</div>
-                    <div className='Data-Paragraph'>AThe legal team at Tucker Law Group, LLC is comprised of an exceptional group of attorneys and staff. Our lawyers are graduates from some of the most prestigious law schools in the nation and several of our attorneys hold graduate degrees in various disciplines. We also bring a range of prior professional experiences to our practice which includes attorneys working in law firms of all sizes. The attorneys at TLG have clerked for federal and state judges, served as attorneys in government agencies and our diverse backgrounds and wealth of experience make Tucker Law Group, LLC an equal match for any law firm we come across.
+                    <div className='Data-Paragraph'>AThe legal team at Lessin Law, LLC is comprised of an exceptional group of attorneys and staff. Our lawyers are graduates from some of the most prestigious law schools in the nation and several of our attorneys hold graduate degrees in various disciplines. We also bring a range of prior professional experiences to our practice which includes attorneys working in law firms of all sizes. The attorneys at TLG have clerked for federal and state judges, served as attorneys in government agencies and our diverse backgrounds and wealth of experience make Lessin Law, LLC an equal match for any law firm we come across.
                     </div>
 
 
                     <div className='Data-SubText'>ACCOMPLISHED TRIAL LAWYERS</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC you will find a strong and dedicated team of accomplished trial lawyers. Our firm has tried more than 100 cases to verdict in Federal and state courts. All the attorneys at our firm have first or second chair trial experience. The attorneys are admitted to practice law in six states and 15 Federal district and appeals courts. TLG is known as an experienced and aggressive group of trial attorneys who are fully-prepared to litigate the most complex cases through all stages of the legal process including the highest levels of judicial appeals.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC you will find a strong and dedicated team of accomplished trial lawyers. Our firm has tried more than 100 cases to verdict in Federal and state courts. All the attorneys at our firm have first or second chair trial experience. The attorneys are admitted to practice law in six states and 15 Federal district and appeals courts. TLG is known as an experienced and aggressive group of trial attorneys who are fully-prepared to litigate the most complex cases through all stages of the legal process including the highest levels of judicial appeals.
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@ const WhyTuckerLawGroup = () => {
                                 <ListItemIcon>
                                     <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="WHY TUCKER LAW GROUP?" />
+                                <ListItemText primary="WHY Lessin Law?" />
                             </ListItemButton>
                         </ListItem>
 

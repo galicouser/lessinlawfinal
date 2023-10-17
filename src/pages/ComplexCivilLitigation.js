@@ -37,10 +37,10 @@ const ComplexCivilLitigation = () => {
                     <div className='Data-Header'>COMPLEX CIVIL LITIGATION
                     </div>
                     <div className='Data-SubText'>Complex Civil Litigation Law Firm</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC we have what it takes to handle high-stakes, complex civil litigation cases. Our attorneys are highly respected trial lawyers who bring a wealth of experience to the table. The lawyers at TLG are well positioned to litigate a diverse range of legal matters at all levels of complexity. Regardless of how complicated or sophisticated the case may be, we have the skills, staffing and resources to successfully take the matter through trial and the highest levels of judicial appeals.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC we have what it takes to handle high-stakes, complex civil litigation cases. Our attorneys are highly respected trial lawyers who bring a wealth of experience to the table. The lawyers at TLG are well positioned to litigate a diverse range of legal matters at all levels of complexity. Regardless of how complicated or sophisticated the case may be, we have the skills, staffing and resources to successfully take the matter through trial and the highest levels of judicial appeals.
                         <br />
                         <br />
-                        With offices in Philadelphia, Pennsylvania, and Marlton, New Jersey, Tucker Law Group, LLC represents clients in all types of complex civil litigation matters, including:
+                        With offices in Philadelphia, Pennsylvania, and Marlton, New Jersey, Lessin Law, LLC represents clients in all types of complex civil litigation matters, including:
                         <List
                             sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
                             aria-label="contacts"
@@ -90,7 +90,7 @@ const ComplexCivilLitigation = () => {
                     </div>
 
                     <div className='Data-SubText'>Highly Accomplished Litigation Team</div>
-                    <div className='Data-Paragraph'>The attorneys at Tucker Law Group, LLC are recognized as an exceptional team of legal professionals with a proven track record of success. Our lawyers offer more than 150 years of collective litigation experience, including jury and nonjury trials, appeals, administrative agency hearings and mediation and arbitration proceedings. We have tried more than 100 cases to verdict and have achieved winning outcomes for our clients at all levels of the litigation process, from pre-suit mediation to appeal.
+                    <div className='Data-Paragraph'>The attorneys at Lessin Law, LLC are recognized as an exceptional team of legal professionals with a proven track record of success. Our lawyers offer more than 150 years of collective litigation experience, including jury and nonjury trials, appeals, administrative agency hearings and mediation and arbitration proceedings. We have tried more than 100 cases to verdict and have achieved winning outcomes for our clients at all levels of the litigation process, from pre-suit mediation to appeal.
                         <br />
                         <br />
                         Our lawyers come from some of the nation’s largest firms and most prestigious law schools. TLG is a diverse and talented team focused on achieving results for our clients. Several of our attorneys have been named as Pennsylvania Super Lawyers and Pennsylvania Rising Stars and two of our lawyers have been inducted as fellows into the International Academy of Trial Lawyers, recognized as the most prestigious organization of trial advocates in the world.
@@ -103,7 +103,7 @@ const ComplexCivilLitigation = () => {
 
 
                     <div className='Data-SubText'>Equipped to Handle Complex and Sophisticated Cases</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC we are proud of who we are. We are a full-service boutique litigation firm that concentrates on developing innovative and cost-effective solutions for our clients. Whether we are representing a large corporation, a nonprofit entity, or an individual, our clients know that their needs and interests will be our first priority when we are building their case. They also know that our attorneys are strong advocates who have the experience and resources needed to successfully manage their case no matter how large or complex it may be.                    </div>
+                    <div className='Data-Paragraph'>At Lessin Law, LLC we are proud of who we are. We are a full-service boutique litigation firm that concentrates on developing innovative and cost-effective solutions for our clients. Whether we are representing a large corporation, a nonprofit entity, or an individual, our clients know that their needs and interests will be our first priority when we are building their case. They also know that our attorneys are strong advocates who have the experience and resources needed to successfully manage their case no matter how large or complex it may be.                    </div>
                 </div>
 
                 <div className='Contact-Form' style={{ height: '1800px' }}>

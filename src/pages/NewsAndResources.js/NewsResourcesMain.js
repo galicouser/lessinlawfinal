@@ -24,17 +24,17 @@ const NewsResourcesMain = () => {
     // Define the data array
     const data = [
         {
-            header: 'KENNETH A. MURPHY JOINS THE TUCKER LAW GROUP',
+            header: 'KENNETH A. MURPHY JOINS THE Lessin Law',
             subtext: 'Subtext for Page 1',
-            group: 'Tucker Law Group ',
+            group: 'Lessin Law ',
             category: 'Firm News',
-            paragraph: 'Philadelphia, Pennsylvania, March 28, 2022: After over 30 years of litigating cases as a partner at some of Philadelphia’s most respected law firms, Kenneth A. Murphy has decided to retire from Big Law and join The Tucker Law Group, a prominent Blackowned boutique litigation firm founded by Joe H. Tucker, Jr. in 1993. View Press Release',
+            paragraph: 'Philadelphia, Pennsylvania, March 28, 2022: After over 30 years of litigating cases as a partner at some of Philadelphia’s most respected law firms, Kenneth A. Murphy has decided to retire from Big Law and join The Lessin Law, a prominent Blackowned boutique litigation firm founded by Joe H. Tucker, Jr. in 1993. View Press Release',
             date: 'Mar 28, 2022'
         },
         {
             header: 'STEPHEN KULP HAS BEEN RECOGNIZED AS ONE OF THE 40 BEST LGBTQ+ LAWYERS UNDER 40',
-            subtext: ' Tucker Law Group ',
-            group: 'Tucker Law Group',
+            subtext: ' Lessin Law ',
+            group: 'Lessin Law',
             category: 'Articles',
             paragraph: 'Stephen Kulp has been recognized as one of the 40 Best LGBTQ+ Lawyers Under 40',
             date: 'Mar 18, 2022'
@@ -42,7 +42,7 @@ const NewsResourcesMain = () => {
         {
             header: 'JESSICA RICKABAUGH HONORED AS 2019 DISTINGUISHED ADVOCATE',
             subtext: 'Subtext for Page 3',
-            group: 'Tucker Law Group',
+            group: 'Lessin Law',
             category: ' Uncategorized ',
             paragraph: 'On April 10, 2019, Jessica Rickabaugh will be honored as a 2019 Distinguished Advocate for her volunteer service to the Support Center for Child Advocates.  Jessica will be recognized during the Annual Benefit this year.  Please join us in supporting Jessica.',
             date: '1/1/3'
@@ -166,7 +166,7 @@ const NewsResourcesMain = () => {
                                 <ListItemIcon>
                                     <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="WHY TUCKER LAW GROUP?" />
+                                <ListItemText primary="WHY Lessin Law?" />
                             </ListItemButton>
                         </ListItem>
 

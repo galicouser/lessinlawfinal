@@ -39,13 +39,13 @@ const HigherEducationLitigation = () => {
                     <div className='Data-Paragraph'>Colleges and universities operate like small cities. Every day institutions of higher learning must deal with a complete range of legal issues and challenges, from First Amendment rights to labor and employment disputes to student safety and campus security. The higher education environment is dynamic and complex and the laws and regulations that impact colleges and universities are constantly evolving.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC we understand higher education. Our attorneys are skilled higher education lawyers who have a breadth of experience counseling and advising post-secondary institutions. We understand the culture of colleges and universities and are aware of the diverse and sophisticated legal issues that often arise in their daily environments.</div>
+                        At Lessin Law, LLC we understand higher education. Our attorneys are skilled higher education lawyers who have a breadth of experience counseling and advising post-secondary institutions. We understand the culture of colleges and universities and are aware of the diverse and sophisticated legal issues that often arise in their daily environments.</div>
 
                     <div className='Data-SubText'>Entrenched in the Higher Education Community</div>
-                    <div className='Data-Paragraph'>Founded in 1993, Tucker Law Group, LLC offers one of the largest higher education practices in the region. Our firm has developed a reputation for providing innovative legal solutions and top-notch representation to some of the country’s most prominent colleges and universities. We have been named as a preferred provider of services for United Educators which insures nearly 1,300 public and private educational institution members throughout the nation. We are also proud members of the National Association of Colleges and Universities.
+                    <div className='Data-Paragraph'>Founded in 1993, Lessin Law, LLC offers one of the largest higher education practices in the region. Our firm has developed a reputation for providing innovative legal solutions and top-notch representation to some of the country’s most prominent colleges and universities. We have been named as a preferred provider of services for United Educators which insures nearly 1,300 public and private educational institution members throughout the nation. We are also proud members of the National Association of Colleges and Universities.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC we are entrenched in the higher education environment – many of our attorneys have taught as professors at law schools and universities and one of our lawyers is a former college Dean. This first-hand understanding of the educational environment, combined with our diverse legal backgrounds and experience, means that our attorneys are well-prepared to tackle the complex and unique legal challenges facing the higher education community</div>
+                        At Lessin Law, LLC we are entrenched in the higher education environment – many of our attorneys have taught as professors at law schools and universities and one of our lawyers is a former college Dean. This first-hand understanding of the educational environment, combined with our diverse legal backgrounds and experience, means that our attorneys are well-prepared to tackle the complex and unique legal challenges facing the higher education community</div>
 
 
 
@@ -56,7 +56,7 @@ const HigherEducationLitigation = () => {
                         <br />
                         <br />
 
-                        At Tucker Law Group, LLC our attorneys are well-positioned to handle the diverse range of complex issues that impact higher education institutions, including:
+                        At Lessin Law, LLC our attorneys are well-positioned to handle the diverse range of complex issues that impact higher education institutions, including:
 
                         <List
                             sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
@@ -117,7 +117,7 @@ const HigherEducationLitigation = () => {
                         </List>
 
                         <div className='Data-SubText'>Working with Individuals at All Levels of the Organization</div>
-                        <div className='Data-Paragraph'>Tucker Law Group, LLC understands that legal issues can involve individuals at all levels of the organization. Our attorneys are experienced professionals who know how to develop strong and trusting relationships with people working in all areas of higher education. Whether we are advising the President of a university on a controversial policy, working with management to resolve a labor dispute, or serving as litigation counsel for a carrier on a major liability case, our lawyers have the talent and capability to “Make Results Happen”.</div>
+                        <div className='Data-Paragraph'>Lessin Law, LLC understands that legal issues can involve individuals at all levels of the organization. Our attorneys are experienced professionals who know how to develop strong and trusting relationships with people working in all areas of higher education. Whether we are advising the President of a university on a controversial policy, working with management to resolve a labor dispute, or serving as litigation counsel for a carrier on a major liability case, our lawyers have the talent and capability to “Make Results Happen”.</div>
 
 
                     </div>

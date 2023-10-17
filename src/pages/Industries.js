@@ -39,7 +39,7 @@ const Industries = () => {
                     </div>
                     <div className='Data-SubText'>Representing Diverse Industries</div>
                     <div className='Data-Paragraph'>
-                        Tucker Law Group, LLC is a highly respected boutique litigation firm with offices in Philadelphia, Pennsylvania, Miramar, Florida and Marlton, New Jersey. Since 1993, TLG has emerged as a leader in litigating complex and sophisticated legal matters with national, state, and local implications. We represent major corporations, educational institutions, non-profit organizations, governmental bodies, health care providers and other entities in a diverse range of civil and commercial matters, including higher education litigation, employment litigation, catastrophic personal injury, complex civil litigation and civil and constitutional rights litigation.
+                        Lessin Law, LLC is a highly respected boutique litigation firm with offices in Philadelphia, Pennsylvania, Miramar, Florida and Marlton, New Jersey. Since 1993, TLG has emerged as a leader in litigating complex and sophisticated legal matters with national, state, and local implications. We represent major corporations, educational institutions, non-profit organizations, governmental bodies, health care providers and other entities in a diverse range of civil and commercial matters, including higher education litigation, employment litigation, catastrophic personal injury, complex civil litigation and civil and constitutional rights litigation.
                     </div>
                     <br />
                     <br />
@@ -117,10 +117,10 @@ const Industries = () => {
 
 
                     <div className='Data-SubText'>Delivering the Highest Quality Legal Services</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC, we use a team-approach to meet the needs of our clients. Our attorneys and professional staff collaborate and work together to deliver the highest quality legal services available. Regardless of how large or complicated the case or issue may be, our clients trust our firm and know that we have the knowledge, resources and skills to solve their problems.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC, we use a team-approach to meet the needs of our clients. Our attorneys and professional staff collaborate and work together to deliver the highest quality legal services available. Regardless of how large or complicated the case or issue may be, our clients trust our firm and know that we have the knowledge, resources and skills to solve their problems.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC we know that our clients face challenging and complicated legal issues on an everyday basis. We also appreciate that new legislation and changes to existing laws and policies can seriously impact the industries that we serve. Our attorneys are committed to staying on top of the most recent developments in the law and sharing this important information with our clients. We know that our clients are counting on us to provide them with carefully considered and accurate advice so that they can properly address their legal issues and make the right decisions for their companies and organizations.
+                        At Lessin Law, LLC we know that our clients face challenging and complicated legal issues on an everyday basis. We also appreciate that new legislation and changes to existing laws and policies can seriously impact the industries that we serve. Our attorneys are committed to staying on top of the most recent developments in the law and sharing this important information with our clients. We know that our clients are counting on us to provide them with carefully considered and accurate advice so that they can properly address their legal issues and make the right decisions for their companies and organizations.
                     </div>
 
                 </div>
@@ -204,7 +204,7 @@ const Industries = () => {
                                 <ListItemIcon>
                                     <ArrowForwardIosIcon sx={{ color: '#0B1340' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="WHY TUCKER LAW GROUP?" />
+                                <ListItemText primary="WHY Lessin Law?" />
                             </ListItemButton>
                         </ListItem>
 
@@ -233,7 +233,7 @@ const Industries = () => {
 
                     <div className='Data-Header'>Related FAQs</div>
                     <div className='Data-SubText'>What types of personal injury claims does your firm handle?</div>
-                    <div className='Data-Paragraph'>The Tucker Law Group, LLC handles all types of personal injury cases, including claims relating to the following:
+                    <div className='Data-Paragraph'>The Lessin Law, LLC handles all types of personal injury cases, including claims relating to the following:
 
                         Civil rights violations, Medical malpractice, Slip and fall incidents, Motor vehicle accidents, Spinal, brain and other significant injuries, Wrongful death.
 

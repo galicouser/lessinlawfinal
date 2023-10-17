@@ -122,7 +122,7 @@ const CivilandConstitutionalRightsLitigation = () => {
 
 
                     <div className='Data-SubText'>In-Depth Understanding of the Law</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC our lawyers have a deep understanding of the complicated legal issues that so often arise in civil and constitutional rights cases. We frequently represent governmental and non-governmental entities in Section 1983 actions ranging from alleged substantive and procedural due process violations to retaliation cases involving the exercise of First Amendment rights. Our firm has also represented plaintiffs in claims against state actors for constitutional rights violations in the areas of de facto takings of property without just compensation, unequal enforcement of governmental regulations and licenses, and other constitutional torts.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC our lawyers have a deep understanding of the complicated legal issues that so often arise in civil and constitutional rights cases. We frequently represent governmental and non-governmental entities in Section 1983 actions ranging from alleged substantive and procedural due process violations to retaliation cases involving the exercise of First Amendment rights. Our firm has also represented plaintiffs in claims against state actors for constitutional rights violations in the areas of de facto takings of property without just compensation, unequal enforcement of governmental regulations and licenses, and other constitutional torts.
                         <br />
                         <br />
                         The attorneys at TLG have successfully represented both plaintiffs and defendants in actions involving allegations ranging from intentional infliction of emotional distress and negligent supervision of employees.
@@ -131,7 +131,7 @@ const CivilandConstitutionalRightsLitigation = () => {
 
 
                     <div className='Data-SubText'>Trusted and Experienced Trial Attorneys Focused on Results</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC we focus on “Making Results Happen”. Whether we are defending a police officer accused of misconduct, or representing a victim of employment discrimination, we know just how much is at stake in these types of situations. Our legal team takes these cases very seriously, carefully interviewing witnesses and gathering all of the evidence needed to build the strongest case possible for our clients.
+                    <div className='Data-Paragraph'>At Lessin Law, LLC we focus on “Making Results Happen”. Whether we are defending a police officer accused of misconduct, or representing a victim of employment discrimination, we know just how much is at stake in these types of situations. Our legal team takes these cases very seriously, carefully interviewing witnesses and gathering all of the evidence needed to build the strongest case possible for our clients.
                         <br />
                         <br />
 
@@ -139,7 +139,7 @@ const CivilandConstitutionalRightsLitigation = () => {
                         <br />
                         <br />
 
-                        We have worked together to build a strong law firm with an impeccable reputation. Our opponents know that when they are dealing with Tucker Law Group, LLC, our attorneys will meticulously prepare the case and be fully prepared to take it through trial and all levels of appeal. No matter how large or complex the matter may be, our depth of experience and ability to deliver results makes Tucker Law Group, LLC unique.
+                        We have worked together to build a strong law firm with an impeccable reputation. Our opponents know that when they are dealing with Lessin Law, LLC, our attorneys will meticulously prepare the case and be fully prepared to take it through trial and all levels of appeal. No matter how large or complex the matter may be, our depth of experience and ability to deliver results makes Lessin Law, LLC unique.
 
 
                     </div>

@@ -74,7 +74,7 @@ const Footer = () => {
 
    <div className="FooterInner">
     <p className="FooterText">
-     © 2023 BY TUCKER LAW GROUP. ALL RIGHTS RESERVED - DISCLAIMER | SITEMAP | A
+     © 2023 BY LESSIN LAW. ALL RIGHTS RESERVED - DISCLAIMER | SITEMAP | A
      PAPERSTREET WEB DESIGN |
     </p>
    </div>

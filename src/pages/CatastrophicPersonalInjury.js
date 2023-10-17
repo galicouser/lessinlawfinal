@@ -38,16 +38,16 @@ const CatastrophicPersonalInjury = () => {
                     <div className='Data-Header'>CATASTROPHIC PERSONAL INJURY
                     </div>
                     <div className='Data-SubText'>CATASTROPHIC PERSONAL INJURY AND WRONGFUL DEATH LAWYERS</div>
-                    <div className='Data-Paragraph'>Tucker Law Group, LLC is a boutique litigation firm with vast experience litigating catastrophic personal injury cases. We have handled serious personal injury and wrongful death claims on behalf of both plaintiffs and defendants in trial and appellate courts. As seasoned trial attorneys, our lawyers have the ability to recognize key issues regarding liability and damages very early on in the litigation process. We draw upon this insight and experience to successfully prepare and litigate high-stakes personal injury cases before judges and juries throughout Pennsylvania.
+                    <div className='Data-Paragraph'>Lessin Law, LLC is a boutique litigation firm with vast experience litigating catastrophic personal injury cases. We have handled serious personal injury and wrongful death claims on behalf of both plaintiffs and defendants in trial and appellate courts. As seasoned trial attorneys, our lawyers have the ability to recognize key issues regarding liability and damages very early on in the litigation process. We draw upon this insight and experience to successfully prepare and litigate high-stakes personal injury cases before judges and juries throughout Pennsylvania.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC our clients’ goals are our first priority. From the outset of litigation to its final conclusion, our lawyers work one on one with our clients to develop litigation strategies that are tailored to their individual needs and objectives. TLG views our clients as a valued member of our legal team and we make sure that they have all of the information they need to make the right decisions in their case.
+                        At Lessin Law, LLC our clients’ goals are our first priority. From the outset of litigation to its final conclusion, our lawyers work one on one with our clients to develop litigation strategies that are tailored to their individual needs and objectives. TLG views our clients as a valued member of our legal team and we make sure that they have all of the information they need to make the right decisions in their case.
                         <br />
                         <br />
                         Whether we are representing an individual who has been injured in a serious accident or defending an entity in a wrongful death or catastrophic personal injury case, we always act in the best interests of our client. We will thoroughly review all angles of the case and provide timely and accurate information to our clients, so that we can properly advise them as to whether it is in their best interest to proceed to trial or seek a favorable settlement in their case.</div>
 
                     <div className='Data-SubText'>Handling a Broad Range of Injury Cases</div>
-                    <div className='Data-Paragraph'>At Tucker Law Group, LLC we represent plaintiffs and defendants in a broad range of serious and catastrophic personal injury cases, including:
+                    <div className='Data-Paragraph'>At Lessin Law, LLC we represent plaintiffs and defendants in a broad range of serious and catastrophic personal injury cases, including:
                         <br />
                         <List
                             sx={{ width: '100%', maxWidth: 360, color: '#0B1340' }}
@@ -102,13 +102,13 @@ const CatastrophicPersonalInjury = () => {
 
 
                     <div className='Data-SubText'>Talented Team of Trial Attorneys</div>
-                    <div className='Data-Paragraph'>The attorneys at Tucker Law Group, LLC are widely recognized for their strong courtroom and advocacy skills. TLG is a diverse team of professionals who know how to relate to witnesses and jurors so that we can achieve positive outcomes for our clients at trial.
+                    <div className='Data-Paragraph'>The attorneys at Lessin Law, LLC are widely recognized for their strong courtroom and advocacy skills. TLG is a diverse team of professionals who know how to relate to witnesses and jurors so that we can achieve positive outcomes for our clients at trial.
                         <br />
                         <br />
                         Every attorney at our firm has first or second chair trial experience and collectively we have tried more than 100 cases to verdict in state and Federal courts. Our lawyers bring a wide range of professional experiences to the table, including working in large law firms, mid-size practices and as solo practitioners. Several of our attorneys have clerked for Federal and state judges and a number of our lawyers have served in government positions.
                         <br />
                         <br />
-                        At Tucker Law Group, LLC, we believe that our diversity and breadth of experience not only defines who we are as a law firm but also contributes to our success and, more importantly, the success of our clients. You can count on our attorneys to “Make Results Happen”.
+                        At Lessin Law, LLC, we believe that our diversity and breadth of experience not only defines who we are as a law firm but also contributes to our success and, more importantly, the success of our clients. You can count on our attorneys to “Make Results Happen”.
 
 
                     </div>
