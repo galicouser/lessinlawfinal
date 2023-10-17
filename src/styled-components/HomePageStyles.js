@@ -1,7 +1,601 @@
 import styled from 'styled-components'
 import '../times-new-roman.css'
 
+import '../times-new-roman.css'
 
+export const HeroHolder = styled.div`
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 90vh;
+ width: 100%;
+ background-color: #910029;
+
+
+ .ImageGrid{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .ImagePerson1:hover{
+    filter: none;
+ }
+ .ImagePerson3:hover{
+    filter: none;
+ }
+ .ImagePerson1{
+    filter: grayscale(100%);
+ }
+ .ImageLine1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .ImagePerson3{
+    width: 41%;
+    filter: grayscale(100%);
+ }
+ .ImageLine2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .TextHolder {
+  height: 80%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .MainText {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  line-height: 62px;
+ }
+ .LayeredColor {
+  position: absolute;
+  height: 45px;
+  width: 300px;
+  background-color: white;
+  z-index: 2;
+ }
+ .LayeredColor2 {
+  position: absolute;
+  height: 35px;
+  width: 290px;
+  background-color: black;
+  z-index: 3;
+ }
+ .LayeredColor3 {
+  position: absolute;
+  height: 55px;
+  width: 312px;
+  background-color: black;
+  z-index: 1;
+ }
+
+ .ActionText {
+  z-index: 10;
+ }
+ .ActionIcon {
+  z-index: 10;
+ }
+ .ReadAction {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: 100;
+ }
+ 
+ @media (max-width: 768px) {
+    .ImageGrid{
+        display: none;
+    }
+ }
+`
+
+export const BoutiqueLitigation = styled.div`
+ height: 100%;
+ width: 100%;
+ display: flex;
+ background-color: white;
+ .LitigationText {
+  width: 70%;
+  padding: 5%;
+  padding-left: 10%;
+ }
+ .Image {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+ }
+ .ImagesHolder {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+ .MainText {
+  margin-bottom: 50px;
+  color: #393d53;
+  font-size: 32px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 100;
+ }
+ .ParaText {
+  color: grey;
+  margin-top: 20px;
+
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 85%;
+ }
+ .LayeredColor {
+  position: absolute;
+  height: 45px;
+  width: 300px;
+  background-color: white;
+  z-index: 2;
+ }
+ .LayeredColor2 {
+  position: absolute;
+  height: 35px;
+  width: 290px;
+  background-color: #910029;
+  z-index: 3;
+ }
+ .LayeredColor3 {
+  position: absolute;
+  height: 55px;
+  width: 312px;
+  background-color: #910029;
+  z-index: 1;
+ }
+
+ .ActionText {
+  z-index: 10;
+ }
+ .ActionIcon {
+  z-index: 10;
+ }
+ .ReadAction {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: 100;
+ }
+ 
+ @media (max-width: 768px) {
+    flex-direction: column;
+    padding-bottom: 4%;
+    .LitigationText{
+        width: 100%;
+    }
+    .ImagesHolder{
+        flex-direction: row;
+        width: 100%;
+    }
+    .Image {
+  width: 30%;
+  height: 100px;
+  object-fit: contain;
+ }
+ }
+`
+
+export const OurLitigationHome = styled.div`
+ height: 100%;
+ width: 100%;
+ display: flex;
+ background-color: white;
+
+ .OurLitigation {
+  padding: 5%;
+  padding-left: 10%;
+  width: 50%;
+  background-color: #f1f1f1;
+ }
+ .Industries {
+  padding: 5%;
+  width: 50%;
+ }
+
+ .MainText {
+  margin-bottom: 50px;
+  color: #393d53;
+  font-size: 32px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 100;
+ }
+ .SubMainText {
+  color: #6686a4;
+  font-size: 22.5px;
+  font-weight: 500;
+ }
+ .ReadAction {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: 100;
+ }
+ .ParaText {
+  color: grey;
+  margin-top: 20px;
+
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 85%;
+ }
+ .LayeredColor {
+  position: absolute;
+  height: 45px;
+  width: 300px;
+  background-color: white;
+  z-index: 2;
+ }
+ .LayeredColor2 {
+  position: absolute;
+  height: 35px;
+  width: 290px;
+  background-color: #910029;
+  z-index: 3;
+ }
+ .LayeredColor3 {
+  position: absolute;
+  height: 55px;
+  width: 312px;
+  background-color: #910029;
+  z-index: 1;
+ }
+
+ .ActionText {
+  z-index: 10;
+ }
+ .ActionIcon {
+  z-index: 10;
+ }
+ .IndustriesItem {
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+ }
+ .IndustriesItem1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+ }
+ .ItemIcon {
+  color: #910029;
+ }
+ 
+ @media (max-width: 768px) {
+    flex-direction: column;
+ 
+    .OurLitigation{
+        width: 100%;
+    }
+    .Industries{
+        width: 100%;
+    }
+ 
+ }
+`
+
+export const OurPraticeHome = styled.div`
+ height: 100%;
+ padding-bottom: 7.5%;
+ width: 100%;
+ background-color: #d9d9d9;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ .Imagegrid {
+  width: 80%;
+  height: 250px;
+  display: flex;
+  background-color: red;
+ }
+ .item {
+  height: 100%;
+  width: 25%;
+  background-color: pink;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .OverlayText {
+  font-size: 18px;
+  z-index: 100;
+  position: absolute;
+  z-index: 6;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+ }
+ .ImageDiv {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 4;
+ }
+ .TitleText {
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  margin-top: 5%;
+  color: #212735;
+ }
+ .topborder {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 7px;
+  background-color: white;
+  z-index: 10;
+ }
+ .bottomborder {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: 7px;
+  background-color: white;
+  z-index: 10;
+ }
+ .opacityLayer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 5;
+ }
+ .AnimationOpacity {
+  display: none;
+ }
+ .item:hover .AnimationOpacity {
+  display: unset;
+  position: absolute;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  opacity: 0.25;
+  transition: all 0.1s;
+ }
+
+ .item:hover .borderedDiv {
+  scale: 1;
+ }
+
+ .borderedDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: none;
+  z-index: 10;
+  border: 5px solid white;
+  scale: 0;
+  transition: all 1s;
+ }
+ 
+
+ @media (max-width: 768px) {
+    
+ }
+`
+
+export const OurLegalTeamContainer = styled.div`
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 10%;
+ padding-bottom: 10%;
+ background-color: white;
+
+ .TeamInner {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .LatestNews {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .OurLegal {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .dateholder {
+  display: flex;
+  width: 145px;
+  justify-content: space-between;
+  align-items: center;
+  color: #a8a8a8;
+  margin-top: 2%;
+ }
+ .DateIcon {
+  font-size: 18px;
+  margin: 1.5%;
+  margin-bottom: 4px;
+  color: #a8a8a8;
+ }
+ .Date {
+  font-size: 15px;
+ }
+ .MainText {
+  margin-bottom: 50px;
+  color: #393d53;
+  font-size: 32px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 100;
+ }
+ .SubMainText {
+  color: #5c667f;
+  font-size: 25px;
+  font-weight: 500;
+ }
+ .SubMainText2 {
+  color: #5c667f;
+  font-size: 22px;
+  font-weight: 400;
+ }
+ .ParaText {
+  columns: #8f8f8f;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+ }
+ .ParaText2 {
+  columns: #8f8f8f;
+  font-size: 16px;
+  font-weight: 400;
+ }
+ .ReadMoreHolder {
+  display: flex;
+  color: #7d1532;
+  margin-bottom: 2.5%;
+  align-items: center;
+ }
+ .ReadText {
+  font-weight: 700;
+  font-size: 16px;
+ }
+ .DividerLegal {
+  width: 100%;
+  opacity: 0.4;
+  margin-top: 14px;
+  margin-bottom: 14px;
+ }
+ .ReadAction {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-top: 2%;
+  font-size: 15px;
+  font-weight: 100;
+ }
+ .LayeredColor {
+  position: absolute;
+  height: 45px;
+  width: 300px;
+  background-color: white;
+  z-index: 2;
+ }
+ .LayeredColor2 {
+  position: absolute;
+  height: 35px;
+  width: 290px;
+  background-color: #910029;
+  z-index: 3;
+ }
+ .LayeredColor3 {
+  position: absolute;
+  height: 55px;
+  width: 312px;
+  background-color: #910029;
+  z-index: 1;
+ }
+
+ .ActionText {
+  z-index: 10;
+ }
+ .ActionIcon {
+  z-index: 10;
+ }
+
+ @media (max-width: 768px) {
+  .TeamInner {
+   width: 80%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .LatestNews {
+   width: 90%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+  }
+
+  .OurLegal {
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 10%;
+  }
+ }
+`
 
 export const AddressContainer = styled.div`
 

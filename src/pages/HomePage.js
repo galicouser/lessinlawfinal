@@ -11,6 +11,11 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import ForumIcon from '@mui/icons-material/Forum'
 import Address from '../components/Address'
+import OurLegalTeam from '../components/OurLegalTeam'
+import OurPraticeCarosel from './OurPraticeCarosel'
+import OurLitigationPratice from '../components/LitigationPratice'
+import BoutiqueLitigationFirm from '../components/BoutiqueLitigationFirm'
+import Hero from '../components/Hero'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -341,14 +346,14 @@ const HomePage = () => {
 
  return (
   <HomePageContainer>
-   <div className="LiveChatPrompt">
+   {/* <div className="LiveChatPrompt">
     <p className="LiveChatText">
      LIVE <span>CHAT</span>
     </p>
    </div>
 
    
-   {!isComplete && 
+   {isComplete && 
    <div className='Underconstruction'>
    <div className='Opacitybackground'></div>
        <p className='underText'>Site in under construction !</p>
@@ -389,7 +394,7 @@ const HomePage = () => {
             </div>
       </div>
     }
-   </div>
+   </div> */}
    {/* <motion.div
     className="SideIcons"
     initial={{ opacity: 0, y: 100 }}
@@ -413,8 +418,8 @@ const HomePage = () => {
      <SupportAgentIcon className="Icon" />
     </div>
    </motion.div> */}
-   <>{card}</>
-   <Main1>
+   {/* <>{card}</> */}
+   {/* <Main1> */}
     {/* <img
      src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
      className="ImageBack"
@@ -454,7 +459,7 @@ const HomePage = () => {
      </div>
     </div> */}
 
-    <Swiper
+    {/* <Swiper
      pagination={true}
      modules={[Pagination]}
      onSlideChange={handleSlideChange}
@@ -1001,7 +1006,7 @@ const HomePage = () => {
       </SwiperSlide>
      </Swiper>
     </div>
-   </TextSwiper>
+   </TextSwiper> */}
 
    {/* <Testimonials>
     <div className="Holder">
@@ -1028,6 +1033,11 @@ const HomePage = () => {
 
     <Reviews />
    </Testimonials> */}
+   <Hero/>
+   <BoutiqueLitigationFirm/>
+   <OurLitigationPratice/>
+   <OurPraticeCarosel/>
+   <OurLegalTeam/>
    <Address/>
    <Footer />
   </HomePageContainer>
