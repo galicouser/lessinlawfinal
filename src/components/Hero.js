@@ -42,7 +42,7 @@ const Hero = () => {
 
 
     <div className='ImageLine1'>
-        <img src={person1} className='ImagePerson1'/>
+        <img src='https://www.tlgattorneys.com/wp-content/uploads/2016/01/Carl-Singley-regular-slider-image-1.jpg' className='ImagePerson1'/>
         <img src={person2} className='ImagePerson1'/>
         <img src={person3} className='ImagePerson1'/>
     </div>
