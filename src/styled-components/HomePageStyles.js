@@ -82,10 +82,12 @@ export const HeroHolder = styled.div`
   width: 312px;
   background-color: black;
   z-index: 1;
+  cursor: pointer;
  }
 
  .ActionText {
   z-index: 10;
+  cursor: pointer;
  }
  .ActionIcon {
   z-index: 10;
@@ -105,6 +107,7 @@ export const HeroHolder = styled.div`
   margin-top: 5%;
   font-size: 15px;
   font-weight: 100;
+  cursor: pointer;
  }
  
  @media (max-width: 1450px) {
@@ -173,10 +176,12 @@ export const BoutiqueLitigation = styled.div`
   width: 312px;
   background-color: #0B1340;
   z-index: 1;
+  cursor: pointer;
  }
 
  .ActionText {
   z-index: 10;
+  cursor: pointer;
  }
  .ActionIcon {
   z-index: 10;
@@ -196,6 +201,7 @@ export const BoutiqueLitigation = styled.div`
   margin-top: 5%;
   font-size: 15px;
   font-weight: 100;
+  cursor: pointer;
  }
  
  @media (max-width: 768px) {
@@ -260,6 +266,7 @@ export const OurLitigationHome = styled.div`
   margin-top: 5%;
   font-size: 15px;
   font-weight: 100;
+  cursor: pointer;
  }
  .ParaText {
   color: grey;
@@ -291,10 +298,12 @@ export const OurLitigationHome = styled.div`
   width: 312px;
   background-color: #0B1340;
   z-index: 1;
+  cursor: pointer;
  }
 
  .ActionText {
   z-index: 10;
+  cursor: pointer;
  }
  .ActionIcon {
   z-index: 10;
@@ -542,6 +551,7 @@ export const OurLegalTeamContainer = styled.div`
   margin-top: 2%;
   font-size: 15px;
   font-weight: 100;
+  cursor: pointer;
  }
  .LayeredColor {
   position: absolute;
