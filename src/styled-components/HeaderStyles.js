@@ -826,6 +826,12 @@ ol {
   }
 }
 
+@media (max-width: 767px) {
+  .HeaderLogo{
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 767px) and (max-width: 1050px){
   .NavigationHolder{
     display: none;
