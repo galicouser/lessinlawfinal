@@ -27,14 +27,14 @@ const OurAttorneys = () => {
       name: 'John Doe',
       practiceAreas: ['Family Law', 'Real Estate'],
       bio: 'John Doe is an experienced attorney...',
-      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2018/02/Atkins-bio-1.png', // Image URL
+      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2022/10/dc-bio.jpg', // Image URL
     },
     {
       id: 2,
       name: 'John Doe',
       practiceAreas: ['Family Law', 'Real Estate'],
       bio: 'John Doe is an experienced attorney...',
-      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2018/02/Atkins-bio-1.png', // Image URL
+      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2019/12/sd-bio.jpg', // Image URL
     },
 
     {
@@ -42,7 +42,7 @@ const OurAttorneys = () => {
       name: 'John Doe',
       practiceAreas: ['Family Law', 'Real Estate'],
       bio: 'John Doe is an experienced attorney...',
-      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2018/02/Atkins-bio-1.png', // Image URL
+      imageUrl: 'https://www.tlgattorneys.com/wp-content/uploads/2016/01/Leslie-Greenspan-bio.jpg', // Image URL
     },
 
     {

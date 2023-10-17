@@ -24,36 +24,45 @@ const NewsResourcesMain = () => {
     // Define the data array
     const data = [
         {
-            header: 'Page 1',
+            header: 'KENNETH A. MURPHY JOINS THE TUCKER LAW GROUP',
             subtext: 'Subtext for Page 1',
-            group: 'Articles',
-            category: 'Articles',
-            paragraph: 'Philadelphia, Pennsylvania, March 28, 2022: After over 30 years of litigating cases as a partner at some of Philadelphia’s most respected law firms, Kenneth A. Murphy has decided to retire from Big Law and join The Tucker Law Group, a prominent Blackowned boutique litigation firm founded by Joe H. Tucker, Jr. in 1993. View Press Release',
-            date: '1/1/3'
-        },
-        {
-            header: 'Page 2',
-            subtext: 'Subtext for Page 2',
-            group: 'FAQ',
-            category: 'FAQ',
-            paragraph: 'This is the content for Page 1.',
-            date: '1/1/3'
-        },
-        {
-            header: 'Page 3',
-            subtext: 'Subtext for Page 3',
-            group: 'Firm News',
+            group: 'Tucker Law Group ',
             category: 'Firm News',
-            paragraph: 'This is the content for Page 1.',
+            paragraph: 'Philadelphia, Pennsylvania, March 28, 2022: After over 30 years of litigating cases as a partner at some of Philadelphia’s most respected law firms, Kenneth A. Murphy has decided to retire from Big Law and join The Tucker Law Group, a prominent Blackowned boutique litigation firm founded by Joe H. Tucker, Jr. in 1993. View Press Release',
+            date: 'Mar 28, 2022'
+        },
+        {
+            header: 'STEPHEN KULP HAS BEEN RECOGNIZED AS ONE OF THE 40 BEST LGBTQ+ LAWYERS UNDER 40',
+            subtext: ' Tucker Law Group ',
+            group: 'Tucker Law Group',
+            category: 'Articles',
+            paragraph: 'Stephen Kulp has been recognized as one of the 40 Best LGBTQ+ Lawyers Under 40',
+            date: 'Mar 18, 2022'
+        },
+        {
+            header: 'JESSICA RICKABAUGH HONORED AS 2019 DISTINGUISHED ADVOCATE',
+            subtext: 'Subtext for Page 3',
+            group: 'Tucker Law Group',
+            category: ' Uncategorized ',
+            paragraph: 'On April 10, 2019, Jessica Rickabaugh will be honored as a 2019 Distinguished Advocate for her volunteer service to the Support Center for Child Advocates.  Jessica will be recognized during the Annual Benefit this year.  Please join us in supporting Jessica.',
             date: '1/1/3'
         },
         {
-            header: 'Page 4',
+            header: 'TLG ESTABLISHES NEW EMPLOYMENT LAW IN THE THIRD CIRCUIT',
             subtext: 'Subtext for Page 4',
-            group: 'Uncategorized',
+            group: ' PaperstreetWebDesign ',
+            category: 'Articles',
+            paragraph: 'Leslie M. Greenspan, Esquire led a TLG trial team that established new law in the Third Circuit in the employment realm. This precedent-setting litigation is a significant victory for employers litigating Family and Medical Leave Act (FMLA) retaliation claims. On January 30, 2017, the Third Circuit Court of Appeals adopted TLG’s argument that the “honest belief” defense can overcome a retaliation claim under the FMLA. The opinion confirmed an employer’s right to terminate an employee for suspected abuse of FMLA leave – a legitimate and non-discriminatory basis for termination.',
+            date: 'Feb 22, 2017'
+        },
+        ,
+        {
+            header: 'TLG ESTABLISHES NEW EMPLOYMENT LAW IN THE THIRD CIRCUIT',
+            subtext: 'Subtext for Page 4',
+            group: ' PaperstreetWebDesign ',
             category: 'Uncategorized',
-            paragraph: 'This is the content for Page 1.',
-            date: '1/1/3'
+            paragraph: 'Leslie M. Greenspan, Esquire led a TLG trial team that established new law in the Third Circuit in the employment realm. This precedent-setting litigation is a significant victory for employers litigating Family and Medical Leave Act (FMLA) retaliation claims. On January 30, 2017, the Third Circuit Court of Appeals adopted TLG’s argument that the “honest belief” defense can overcome a retaliation claim under the FMLA. The opinion confirmed an employer’s right to terminate an employee for suspected abuse of FMLA leave – a legitimate and non-discriminatory basis for termination.',
+            date: 'Feb 22, 2017'
         },
     ];
 

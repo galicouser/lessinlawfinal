@@ -87,7 +87,7 @@ function App() {
      />
      <Route path="/JerseyLocation" element={<JerseyLocation />} />
      <Route path="/VerdictsPage" element={<VerdictsPage />} />
-     <Route path="/PraticeArea" element={<PraticeArea />} />
+     <Route path="/PracticeArea" element={<PraticeArea />} />
      <Route path="/Verdicts" element={<Verdicts />} />
      <Route path="/OurAttorneys" element={<OurAttorneys />} />
 

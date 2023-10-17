@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosAPI = axios.create({
-    baseURL: "https://lessinapi.onrender.com/",
+    baseURL: "https://1738api.lessinlaw.com/",
 });
 
 export const getPracticeAreasData = async () => {

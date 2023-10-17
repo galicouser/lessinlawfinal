@@ -189,8 +189,9 @@ const Header = () => {
                             fontWeight: 100,
                             textAlign: 'center',
                         }}
+                        onClick={()=>{navigate("/PracticeArea")}}
                     >
-                        Pratice Area{' '}
+                        Practice Area{' '}
                     </h4>
 
                     <h4
@@ -573,7 +574,9 @@ const Header = () => {
                                 right: 0,
                                 bottom: 0,
                                 left: 0
-                            }}>PRATICE AREA</motion.p>
+                            }}
+                            onClick={()=>{navigate("/PracticeArea")}}
+                            >PRACTICE AREA</motion.p>
                         <hr className="headerDivider" />
                         <motion.p
                             className="linkButton"
