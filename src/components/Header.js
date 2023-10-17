@@ -473,6 +473,7 @@ const Header = () => {
 
         <div className="HeaderOuter">
             <GlobalStyles />
+            <div className='overlaybg'></div>
             <img className='bgImage' src="https://images.unsplash.com/photo-1566305977571-5666677c6e98?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1845"/>
             <div style={{ display: 'none' }}>
                 {['left'].map((anchor) => (

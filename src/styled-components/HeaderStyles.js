@@ -12,11 +12,21 @@ const GlobalStyles = createGlobalStyle`
   align-items: center;
   position: relative;
 }
+.overlaybg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: white;
+  z-index: 9;
+  opacity: 0.60;
+}
 .bgImage{
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 8;
 }
 .MobileTop{
   display: none;
