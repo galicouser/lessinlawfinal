@@ -107,7 +107,7 @@ export const HeroHolder = styled.div`
   font-weight: 100;
  }
  
- @media (max-width: 768px) {
+ @media (max-width: 1450px) {
     .ImageGrid{
         display: none;
     }
@@ -340,6 +340,7 @@ export const OurPraticeHome = styled.div`
   height: 250px;
   display: flex;
   background-color: red;
+
  }
  .item {
   height: 100%;
@@ -429,7 +430,7 @@ export const OurPraticeHome = styled.div`
  
 
  @media (max-width: 768px) {
-    
+    display: none
  }
 `
 
