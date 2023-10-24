@@ -9,21 +9,19 @@ const BoutiqueLitigationFirm = () => {
    <div className="LitigationText">
     <p className="MainText">BOUTIQUE LITIGATION FIRM</p>
     <p className="ParaText">
-     Jeffrey R. Lessin & Associates PC, located in Philadelphia, Pennsylvania,
-     is a premier personal injury litigation firm. We specialize in providing
-     outstanding legal representation for personal injury cases, serving both
-     individuals and major Fortune 100 corporations. If you're searching for a
-     dedicated and experienced personal injury lawyer in Philadelphia, look no
-     further than our trusted team.
+     At the heart of Philadelphia, Pennsylvania, lies Jeffrey R. Lessin &
+     Associates P.C., a leading personal injury litigation firm. Our mission is to
+     provide unwavering support and genuine care for individuals, irrespective
+     of their socioeconomic status, who have experienced personal injuries.
     </p>
     <p className="ParaText">
-     Established over two decades ago, Jeffrey R. Lessin & Associates PC has an
-     unwavering commitment to legal excellence, especially in the realm of
-     personal injury. With vast expertise and experience, our team has the
-     essential assets to tackle complex legal challenges and deliver victories,
-     particularly in demanding situations. If you're in search of a personal
-     injury lawyer with a proven track record and significant legal influence in
-     Philadelphia, our firm stands as a testament to consistent accomplishment.
+     Jeffrey R. Lessin & Associates P.C. was founded over two decades ago with a
+     steadfast dedication to legal excellence, especially in personal injury.
+     Our seasoned team possesses the depth of knowledge and expertise to
+     navigate the complexities of the legal system, consistently achieving
+     favorable outcomes for our clients. For those in Philadelphia seeking a
+     personal injury lawyer with a distinguished track record, our firm remains
+     a beacon of commitment and success.
     </p>
     <div
      className="ReadAction"
