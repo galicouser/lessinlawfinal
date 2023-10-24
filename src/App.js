@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import Header from './components/Header'
 import HomePage from './pages/HomePage'
 
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 import MedicalMalpratice from './pages/MedicalMalpratice'
 import SlipandFallAccidents from './pages/SlipandFallAccidents'
 import BusAccidents from './pages/BusAccidents'
@@ -42,7 +42,7 @@ import WhyTuckerLawGroup from './pages/WhyTuckerLawGroup'
 import OurClients from './pages/OurClients'
 import Industries from './pages/Industries'
 import NewsResourcesMain from './pages/NewsAndResources.js/NewsResourcesMain'
-
+import UnderConstruction from './pages/UnderConstruction'
 function App() {
  return (
   <Wrapper>
@@ -51,7 +51,9 @@ function App() {
     <Navbar />
 
     <Routes>
-     <Route path="/" element={<HomePage />} />
+     {/* <Route path="/" element={<HomePage />} /> */}
+     <Route path="/" element={<UnderConstruction />} />
+
      <Route path="/About" element={<AboutPage />} />
      <Route path="/Contact" element={<ContactPage />} />
      <Route path="/MedicalMalpratice" element={<MedicalMalpratice />} />
@@ -91,19 +93,28 @@ function App() {
      <Route path="/Verdicts&SSettlements" element={<Verdicts />} />
      <Route path="/OurAttorneys" element={<OurAttorneys />} />
 
-
-     <Route path="/HigherEducationLitigation" element={<HigherEducationLitigation />} />
+     <Route
+      path="/HigherEducationLitigation"
+      element={<HigherEducationLitigation />}
+     />
      <Route path="/EmploymentLitigation" element={<EmploymentLitigation />} />
-     <Route path="/CatastrophicPersonalInjury" element={<CatastrophicPersonalInjury />} />
-     <Route path="/ComplexCivilLitigation" element={<ComplexCivilLitigation />} />
-     <Route path="/CivilandConstitutionalRightsLitigation" element={<CivilandConstitutionalRightsLitigation />} />
+     <Route
+      path="/CatastrophicPersonalInjury"
+      element={<CatastrophicPersonalInjury />}
+     />
+     <Route
+      path="/ComplexCivilLitigation"
+      element={<ComplexCivilLitigation />}
+     />
+     <Route
+      path="/CivilandConstitutionalRightsLitigation"
+      element={<CivilandConstitutionalRightsLitigation />}
+     />
      <Route path="/WhyTuckerLawGroup" element={<WhyTuckerLawGroup />} />
      <Route path="/OurClients" element={<OurClients />} />
      <Route path="/Industries" element={<Industries />} />
 
      <Route path="/News&Resources" element={<NewsResourcesMain />} />
-     
-     
     </Routes>
    </BrowserRouter>
   </Wrapper>
