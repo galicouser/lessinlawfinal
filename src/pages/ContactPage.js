@@ -68,10 +68,6 @@ const ContactPage = () => {
                     <StyledInput type="text" placeholder="Fax Number" value={faxNumber} onChange={(e) => setFaxNumber(e.target.value)} />
                     <StyledInput type="email" placeholder="Email Address" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} />
                     <StyledTextarea placeholder="Tell Us Your Story" value={story} onChange={(e) => setStory(e.target.value)}></StyledTextarea>
-                    // <StyledSelect value={lawArea} onChange={(e) => setLawArea(e.target.value)}>
-                    //     <option value="">Please select</option>
-                    //     {/* Add your options for areas of law here */}
-                    // </StyledSelect>
                     <StyledButton type="submit">GET IN TOUCH</StyledButton>
                 </StyledForm>
             </FormContainer>
