@@ -51,31 +51,32 @@ const ContactPage = () => {
         };
 
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_HOST}/api/contact`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
+            console.log(123);
+            // const response = await fetch(`${process.env.REACT_APP_API_HOST}/api/contact`, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(data)
+            // });
 
-            if (response.ok) {
-                alertify.success('Your message has been sent successfully.');
-                // Reset form fields
-                setFullName('');
-                setAddress1('');
-                setAddress2('');
-                setCity('');
-                setState('');
-                setZipCode('');
-                setPhoneNumber('');
-                setFaxNumber('');
-                setEmailAddress('');
-                setStory('');
-                setCaptchaValue(null);
-            } else {
-                alertify.error('There was an issue sending your message. Please try again.');
-            }
+            // if (response.ok) {
+            //     alertify.success('Your message has been sent successfully.');
+            //     // Reset form fields
+            //     setFullName('');
+            //     setAddress1('');
+            //     setAddress2('');
+            //     setCity('');
+            //     setState('');
+            //     setZipCode('');
+            //     setPhoneNumber('');
+            //     setFaxNumber('');
+            //     setEmailAddress('');
+            //     setStory('');
+            //     setCaptchaValue(null);
+            // } else {
+            //     alertify.error('There was an issue sending your message. Please try again.');
+            // }
         } catch (error) {
             console.error('Error:', error);
             alertify.error('An error occurred. Please try again later.');
