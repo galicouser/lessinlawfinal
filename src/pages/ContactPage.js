@@ -51,7 +51,7 @@ const ContactPage = () => {
         };
 
         try {
-            const response = await fetch(`http://localhost:3032/api/contact`, {
+            const response = await fetch('http://localhost:3032/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
